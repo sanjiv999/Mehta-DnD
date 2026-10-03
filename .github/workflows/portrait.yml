@@ -1,0 +1,26 @@
+name: Generate a hero portrait
+# Manual: Actions → "Generate a hero portrait" → Run workflow. Needs the OPENAI_API_KEY secret.
+on:
+  workflow_dispatch:
+    inputs:
+      hero: { description: "Character id (folder name)", required: true }
+      session: { description: "Session number", default: "0" }
+      note: { description: "Why the look changed", default: "" }
+permissions:
+  contents: write
+jobs:
+  portrait:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - env: { OPENAI_API_KEY: "${{ secrets.OPENAI_API_KEY }}" }
+        run: python tools/portrait_generate.py "${{ inputs.hero }}" --session "${{ inputs.session }}" --note "${{ inputs.note }}"
+      - run: |
+          git config user.name "portrait-bot"
+          git config user.email "portrait-bot@users.noreply.github.com"
+          git add characters/
+          git commit -m "Portrait for ${{ inputs.hero }} (session ${{ inputs.session }})" || echo "nothing to commit"
+          git push

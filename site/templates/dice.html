@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Dice · Mehta D&D{% endblock %}
+{% block head %}<script defer src="{{ root }}static/dice.js"></script>{% endblock %}
+{% block content %}
+<h1>Dice</h1>
+<section class="dice">
+  <div class="result" id="result"><span id="total">—</span><small id="detail"></small></div>
+  <div class="dice-row">
+    {% for d in [4, 6, 8, 10, 12, 20, 100] %}<button class="die" data-die="{{ d }}">d{{ d }}</button>{% endfor %}
+  </div>
+  <div class="dice-row">
+    <label>Modifier <input type="number" id="mod" value="0" step="1"></label>
+    <label><input type="checkbox" id="adv"> Advantage</label>
+    <label><input type="checkbox" id="dis"> Disadvantage</label>
+    <label>Who <input type="text" id="who" placeholder="Arya" list="party"></label>
+    <datalist id="party">{% for h in party %}<option value="{{ h.name or h.player }}">{% endfor %}</datalist>
+  </div>
+  <div class="dice-row">
+    <input type="text" id="expr" placeholder="2d6+3  or  4d6kh3"><button id="go">Roll</button>
+  </div>
+  <div class="dice-row">
+    <span class="muted">Difficulty:</span>
+    {% for name, dc in [('Easy', 10), ('Tricky', 13), ('Hard', 16), ('Heroic', 20)] %}<button class="dc" data-dc="{{ dc }}">{{ name }} {{ dc }}</button>{% endfor %}
+  </div>
+</section>
+<section class="dice">
+  <h2>Oracle</h2>
+  <p class="muted">Ask a yes/no question, pick how likely, press.</p>
+  <div class="dice-row">
+    {% for name, thr in [('Almost certain', 3), ('Likely', 7), ('Even', 11), ('Unlikely', 15), ('Almost impossible', 19)] %}<button class="oracle" data-thr="{{ thr }}">{{ name }}</button>{% endfor %}
+  </div>
+  <div class="result small" id="oracle-result">—</div>
+</section>
+<section>
+  <h2>Tonight's rolls</h2>
+  <p class="muted">Kept in this browser only. Read big rolls aloud so the recording hears them.</p>
+  <ol id="log" class="rolllog"></ol>
+  <button id="clear" class="ghost">Clear</button>
+</section>
+{% endblock %}

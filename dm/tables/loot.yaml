@@ -1,0 +1,14 @@
+name: loot
+description: Small treasures for chapters 1 to 3.
+die: d10
+entries:
+  - { text: "A pouch of 2d6 silver coins", weight: 3 }
+  - A kite that pulls you 10 feet into the air once per session
+  - A jar of saffron (worth a favour from any cook)
+  - A mirror that shows the truth for one question (then cracks)
+  - A vial of coloured water from the baoli: restores one grey thing
+  - A brass monkey token: the Vanara Guild will carry one message
+  - A sweet from Bibi Chandni that heals 1d6
+  - A cheetah-hair bracelet: +10 ft speed for a scene, once per day
+  - A tiny astrolabe that points at the nearest lie
+  - A feather of Mirza: when burned, he says one true word

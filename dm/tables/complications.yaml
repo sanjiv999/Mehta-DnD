@@ -1,0 +1,14 @@
+name: complications
+description: When a check fails or the oracle says "but".
+die: d10
+entries:
+  - It takes longer than expected.
+  - It makes noise. Someone notices.
+  - It works, but something breaks.
+  - A stranger offers help with a price.
+  - You drop something small and important.
+  - An animal gets involved.
+  - Two people want the same thing.
+  - The way back is now blocked.
+  - Someone recognises you.
+  - It starts to rain.

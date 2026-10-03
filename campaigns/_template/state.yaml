@@ -1,0 +1,11 @@
+chapter: 1
+chapter_title: ""
+location: ""
+world_date: ""
+party_goal: ""
+open_threads: []          # { id, text, since_session, status: open|resolved }
+recent_events: []         # last 5 things that happened, newest last
+next_hook: ""             # the cliffhanger or question for next session
+reputation: {}            # faction: -3..3
+flags: {}                 # arbitrary booleans the chapters check
+resume_note: ""           # written when paused

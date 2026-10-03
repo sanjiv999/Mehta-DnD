@@ -1,0 +1,33 @@
+id: sanjiv
+player: Sanjiv
+name: ""
+status: draft
+kids_mode: false
+campaign_origin: peacock-throne
+aliases: {}
+concept: ""
+species: ""
+class: ""
+level: 1
+xp: 0
+proficiency: 2
+abilities: { str: 10, dex: 10, con: 10, int: 10, wis: 10, cha: 10 }
+hp: { max: 10, current: 10 }
+ac: 10
+speed: 30
+hero_points: 3
+hit_dice: d8
+trained_skills: []
+powers: []
+inventory: []
+keepsake: ""
+coins: 10
+appearance: { age: "", height: "", build: "", hair: "", eyes: "", skin: "", clothing: "", distinguishing: "", colors: "" }
+personality: { traits: [], loves: [], fears: [], dream: "", ideal: "", bond: "", flaw: "" }
+backstory: ""
+companions: []
+relationships: []
+conditions: []
+achievements: []
+portrait: { style_override: "", current: "", history: [] }
+secret: ""

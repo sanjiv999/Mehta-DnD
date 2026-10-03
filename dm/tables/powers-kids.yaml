@@ -1,0 +1,24 @@
+name: powers-kids
+description: Kid-named powers with the mechanic each maps to.
+die: d20
+entries:
+  - "Tiger Roar (Intimidation with advantage, once per scene)"
+  - "Sparkle Shield (Arcane Shield: +4 AC once per short rest)"
+  - "Super Climb (climb at full speed, no roll)"
+  - "Animal Talk (Speak with Animals at will)"
+  - "Healing Hug (Healing Touch)"
+  - "Zoom (Dash as a bonus action)"
+  - "Invisible Tiptoe (Hide with advantage)"
+  - "Fire Fingers (Spark, 1d8)"
+  - "Friend Song (Inspire, give a d6)"
+  - "Big Jump (jump 20 ft)"
+  - "Bubble Breath (breathe underwater)"
+  - "Glow Hands (Light, and advantage to Perception in the dark)"
+  - "Fix-It (Mend anything small)"
+  - "Shield Friend (take a hit for an ally)"
+  - "Sneaky Pocket (steal one small thing, Sneaking)"
+  - "Rainbow Blast (deal 1d8 to a grey or mirror thing)"
+  - "Pocket Pet (a companion with 5 HP)"
+  - "Whisper Message (Message cantrip)"
+  - "Feather Fall (never hurt by falling)"
+  - "Lucky Penny (reroll one die per session)"

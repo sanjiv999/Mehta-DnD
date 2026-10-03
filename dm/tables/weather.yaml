@@ -1,0 +1,11 @@
+name: weather
+die: d8
+entries:
+  - Clear and hot
+  - Clear and cool, kites everywhere
+  - { text: Hazy, dust in the air, weight: 1 }
+  - Monsoon shower, ten minutes, then steam
+  - Storm coming; birds flying low
+  - Fog on the river
+  - Wind: good for kites, bad for hats
+  - Perfect golden evening

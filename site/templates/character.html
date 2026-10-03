@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% set accent = hero.origin.accent_color if hero.origin else none %}
+{% block title %}{{ hero.name or hero.player }} · Mehta D&D{% endblock %}
+{% block content %}
+<article class="sheet">
+  <header class="sheet-head">
+    <div class="portrait big">
+      {% if hero.portrait.current %}<img src="{{ hero.id }}/{{ hero.portrait.current.split('/')[-1] }}" alt="{{ hero.name }}">
+      {% else %}<div class="placeholder">{{ (hero.name or hero.player)[:1] }}</div>
+      <p class="muted small">No portrait yet. Run <code>tools/portrait_prompt.py {{ hero.id }}</code>.</p>{% endif %}
+    </div>
+    <div>
+      <p class="eyebrow">{{ hero.player }}'s hero{% if hero.kids_mode %} · kids mode{% endif %}{% if not hero.in_party %} · resting{% endif %}</p>
+      <h1>{{ hero.name or "A hero in the making" }}</h1>
+      {% if hero.concept %}<p class="lede">{{ hero.concept }}</p>{% endif %}
+      {% if hero.status == 'draft' %}
+      <p class="pill draft">Still being made. Use the walkthrough in characters/GUIDE.md.</p>
+      {% else %}
+      <p><strong>{{ hero.species }} {{ hero.class }}</strong> · Level {{ hero.level }} · {{ hero.xp }} XP</p>
+      <div class="stats">
+        <div><span class="k">HP</span><span class="v">{{ hero.hp.current }}<small>/{{ hero.hp.max }}</small></span></div>
+        <div><span class="k">AC</span><span class="v">{{ hero.ac }}</span></div>
+        <div><span class="k">Speed</span><span class="v">{{ hero.speed }}</span></div>
+        <div><span class="k">Hero ✦</span><span class="v">{{ hero.hero_points }}</span></div>
+        <div><span class="k">Prof.</span><span class="v">+{{ hero.proficiency }}</span></div>
+      </div>
+      <div class="abilities">
+        {% for k, v in hero.abilities.items() %}
+        <div><span class="k">{{ k|upper }}</span><span class="v">{{ v|bonus }}</span><small>{{ v }}</small></div>
+        {% endfor %}
+      </div>
+      {% if hero.conditions %}<p><strong>Right now:</strong> {{ hero.conditions|join(', ') }}</p>{% endif %}
+      {% endif %}
+    </div>
+  </header>
+
+  {% if hero.status != 'draft' %}
+  <div class="cols">
+    <section>
+      <h2>Powers</h2>
+      <ul class="powers">
+      {% for p in hero.powers %}
+        <li><strong>{{ p.kid_name or p.name }}</strong>{% if p.kid_name and p.kid_name != p.name %} <span class="muted">({{ p.name }})</span>{% endif %}
+        <br>{{ p.description }} <span class="muted">· {{ p.uses }}</span></li>
+      {% endfor %}
+      </ul>
+      {% if hero.trained_skills %}<h3>Trained skills</h3><p>{{ hero.trained_skills|join(' · ') }}</p>{% endif %}
+      {% if hero.companions %}<h3>Companions</h3><ul>{% for c in hero.companions %}<li><strong>{{ c.name }}</strong> the {{ c.kind }} · {{ c.hp }} HP · {{ c.trick }}</li>{% endfor %}</ul>{% endif %}
+    </section>
+    <section>
+      <h2>Pack</h2>
+      {% if hero.keepsake %}<p class="keepsake">★ Keepsake: {{ hero.keepsake }}</p>{% endif %}
+      <ul>{% for i in hero.inventory %}<li>{{ i.name }}{% if i.qty and i.qty > 1 %} ×{{ i.qty }}{% endif %}{% if i.notes %} <span class="muted">· {{ i.notes }}</span>{% endif %}</li>{% endfor %}</ul>
+      <p class="muted">{{ hero.coins }} coins</p>
+      {% if hero.achievements %}<h3>Hero moments</h3><div class="badges">{% for a in hero.achievements %}<span class="badge" title="Session {{ a.session }}: {{ a.note }}">🏅 {{ a.title }}</span>{% endfor %}</div>{% endif %}
+    </section>
+  </div>
+
+  <section>
+    <h2>Who they are</h2>
+    <div class="cols">
+      <div>
+        {% if hero.personality.traits %}<p><strong>Traits:</strong> {{ hero.personality.traits|join(', ') }}</p>{% endif %}
+        {% if hero.personality.loves %}<p><strong>Loves:</strong> {{ hero.personality.loves|join(', ') }}</p>{% endif %}
+        {% if hero.personality.fears %}<p><strong>A little scared of:</strong> {{ hero.personality.fears|join(', ') }}</p>{% endif %}
+        {% if hero.personality.dream %}<p><strong>Dream:</strong> {{ hero.personality.dream }}</p>{% endif %}
+      </div>
+      <div>
+        {% if hero.appearance.distinguishing %}<p><strong>You'd know them by:</strong> {{ hero.appearance.distinguishing }}</p>{% endif %}
+        {% if hero.relationships %}<p><strong>Friends and rivals:</strong></p><ul>{% for r in hero.relationships %}<li>{{ r.who }} <span class="muted">· {{ r.feeling }}{% if r.note %} · {{ r.note }}{% endif %}</span></li>{% endfor %}</ul>{% endif %}
+      </div>
+    </div>
+    {% if hero.backstory %}<div class="prose">{{ hero.backstory|md }}</div>{% endif %}
+  </section>
+  {% endif %}
+
+  <section class="prose journal">
+    {{ hero.journal_html }}
+  </section>
+
+  {% if hero.portrait_files|length > 1 or hero.portrait.history %}
+  <section>
+    <h2>Portraits over time</h2>
+    <div class="gallery">
+      {% for p in hero.portrait.history %}
+      <figure><img src="{{ hero.id }}/{{ p.file.split('/')[-1] }}" alt=""><figcaption>Session {{ p.session }} · {{ p.date }}{% if p.note %} · {{ p.note }}{% endif %}</figcaption></figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

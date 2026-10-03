@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% set accent = campaign.accent_color %}
+{% block title %}{{ campaign.title }} · Mehta D&D{% endblock %}
+{% block content %}
+<article>
+  <header class="camp-head">
+    <p class="eyebrow">{{ campaign.genre }} · {{ campaign.status }} · levels {{ campaign.level_range[0] }} to {{ campaign.level_range[1] }}</p>
+    <h1>{{ campaign.title }}</h1>
+    <p class="lede">{{ campaign.tagline }}</p>
+    {% if campaign.status in ['active', 'paused'] %}
+    <div class="status-grid">
+      <div><span class="k">Chapter</span><span class="v">{{ campaign.state.chapter }}: {{ campaign.state.chapter_title }}</span></div>
+      <div><span class="k">Location</span><span class="v">{{ campaign.state.location }}</span></div>
+      <div><span class="k">World date</span><span class="v">{{ campaign.state.world_date }}</span></div>
+      <div><span class="k">Goal</span><span class="v">{{ campaign.state.party_goal }}</span></div>
+    </div>
+    {% if campaign.state.next_hook %}<blockquote class="hook">{{ campaign.state.next_hook }}</blockquote>{% endif %}
+    {% endif %}
+  </header>
+
+  <div class="tabs">
+    <input type="radio" name="t" id="t-story" checked><label for="t-story">Story</label>
+    <input type="radio" name="t" id="t-world"><label for="t-world">World</label>
+    <input type="radio" name="t" id="t-people"><label for="t-people">People</label>
+    <input type="radio" name="t" id="t-places"><label for="t-places">Places</label>
+    <input type="radio" name="t" id="t-sessions"><label for="t-sessions">Sessions ({{ campaign.sessions|length }})</label>
+
+    <section class="tab" id="p-story">
+      <h2>Chapters</h2>
+      <ol class="chapters">
+      {% for ch in campaign.chapters %}<li class="status-{{ ch.status }}"><strong>{{ ch.title }}</strong> <span class="pill">{{ ch.status }}</span></li>{% endfor %}
+      </ol>
+      {% if campaign.state.open_threads %}<h2>Open threads</h2><ul class="threads">{% for t in campaign.state.open_threads if t.status != 'resolved' %}<li>{{ t.text }}</li>{% endfor %}</ul>{% endif %}
+      {% if campaign.state.recent_events %}<h2>Recently</h2><ul>{% for e in campaign.state.recent_events %}<li>{{ e }}</li>{% endfor %}</ul>{% endif %}
+      {% if campaign.state.reputation %}<h2>Reputation</h2><ul class="rep">{% for k, v in campaign.state.reputation.items() %}<li><span>{{ k }}</span><meter min="-3" max="3" value="{{ v }}"></meter><span>{{ '%+d'|format(v) }}</span></li>{% endfor %}</ul>{% endif %}
+    </section>
+    <section class="tab prose" id="p-world">{{ campaign.html }}</section>
+    <section class="tab" id="p-people">
+      <div class="cards">{% for n in campaign.npcs %}<div class="card prose"><p class="eyebrow">{{ n.role }} · {{ n.attitude }}</p>{{ n.html }}</div>{% endfor %}</div>
+    </section>
+    <section class="tab" id="p-places">
+      <div class="cards">{% for l in campaign.locations %}<div class="card prose {% if l.visited %}visited{% endif %}"><p class="eyebrow">{{ l.region }}{% if l.visited %} · visited{% endif %}</p>{{ l.html }}</div>{% endfor %}</div>
+    </section>
+    <section class="tab" id="p-sessions">
+      {% if not campaign.sessions %}<p class="muted">No sessions yet. The first one is waiting.</p>{% endif %}
+      {% for s in campaign.sessions|reverse %}
+      <details class="session" id="session-{{ s.number }}" {% if loop.first %}open{% endif %}>
+        <summary>Session {{ s.number }}: {{ s.title }} <span class="muted">{{ s.date }}</span></summary>
+        <div class="prose">{{ s.html }}</div>
+        {% if s.hero_moments %}<div class="badges">{% for m in s.hero_moments %}<span class="badge">🏅 {{ m.who }}: {{ m.what }}</span>{% endfor %}</div>{% endif %}
+      </details>
+      {% endfor %}
+    </section>
+  </div>
+</article>
+{% endblock %}

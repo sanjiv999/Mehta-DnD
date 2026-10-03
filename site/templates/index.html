@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% set accent = active.accent_color if active else none %}
+{% block content %}
+<section class="hero-banner">
+  <p class="eyebrow">Where we are</p>
+  {% if active %}
+  <h1>{{ active.title }}</h1>
+  <p class="lede">{{ active.tagline }}</p>
+  <div class="status-grid">
+    <div><span class="k">Chapter</span><span class="v">{{ active.state.chapter }}: {{ active.state.chapter_title }}</span></div>
+    <div><span class="k">Location</span><span class="v">{{ active.state.location }}</span></div>
+    <div><span class="k">World date</span><span class="v">{{ active.state.world_date }}</span></div>
+    <div><span class="k">Sessions played</span><span class="v">{{ active.sessions|length }} here · {{ world.session_counter }} total</span></div>
+  </div>
+  {% if active.state.party_goal %}<p class="goal"><strong>The party's goal:</strong> {{ active.state.party_goal }}</p>{% endif %}
+  {% if active.state.next_hook %}<blockquote class="hook">{{ active.state.next_hook }}</blockquote>{% endif %}
+  <a class="btn" href="campaigns/{{ active.id }}.html">Open the campaign →</a>
+  {% else %}
+  <h1>Between adventures</h1>
+  <p class="lede">No campaign is active. Pick one below to begin or resume.</p>
+  {% endif %}
+</section>
+
+<section>
+  <h2>The party</h2>
+  <div class="cards">
+    {% for h in party %}
+    <a class="card hero-card" href="characters/{{ h.id }}.html">
+      <div class="portrait">
+        {% if h.portrait.current %}<img src="characters/{{ h.id }}/{{ h.portrait.current.split('/')[-1] }}" alt="{{ h.name }}">
+        {% else %}<div class="placeholder">{{ (h.name or h.player)[:1] }}</div>{% endif %}
+      </div>
+      <h3>{{ h.name or "Unnamed hero" }}</h3>
+      <p class="muted">{{ h.player }}{% if h.kids_mode %} · kids mode{% endif %}</p>
+      {% if h.status == 'draft' %}<p class="pill draft">still being made</p>
+      {% else %}<p>{{ h.species }} {{ h.class }} · Level {{ h.level }}</p>
+      <div class="hpbar"><div style="width: {{ (100 * h.hp.current / h.hp.max) if h.hp.max else 0 }}%"></div></div>
+      <p class="muted">HP {{ h.hp.current }}/{{ h.hp.max }} · AC {{ h.ac }} · ✦ {{ h.hero_points }}</p>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+  {% if resting %}<p class="muted">Resting heroes: {% for h in resting %}<a href="characters/{{ h.id }}.html">{{ h.name or h.player }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
+</section>
+
+{% if active and active.state.open_threads %}
+<section>
+  <h2>Open threads</h2>
+  <ul class="threads">
+  {% for t in active.state.open_threads if t.status != 'resolved' %}<li>{{ t.text }}</li>{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section>
+  <h2>Campaigns</h2>
+  <p class="muted">The Lantern of Many Roads: {{ world.lantern_pieces }} of 4 pieces found.</p>
+  <div class="cards">
+    {% for cid in world.campaign_order if cid in campaigns %}{% set c = campaigns[cid] %}
+    <a class="card camp-card status-{{ c.status }}" href="campaigns/{{ c.id }}.html" style="--accent: {{ c.accent_color }}">
+      <span class="pill">{{ c.status }}</span>
+      <h3>{{ c.title }}</h3>
+      <p>{{ c.tagline }}</p>
+      <p class="muted">Levels {{ c.level_range[0] }} to {{ c.level_range[1] }} · {{ c.sessions|length }} sessions</p>
+      {% if c.state.resume_note %}<p class="muted"><em>Resume: {{ c.state.resume_note }}</em></p>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+  <details class="howto">
+    <summary>How to start, switch or resume a campaign</summary>
+    <pre>python tools/campaign.py status
+python tools/campaign.py switch moon-road        # pauses the current one, starts this one
+python tools/campaign.py pause --note "mid-chapter 2"
+python tools/campaign.py resume peacock-throne</pre>
+  </details>
+</section>
+
+{% if active and active.sessions %}
+<section>
+  <h2>Recent sessions</h2>
+  <ul class="sessions">
+  {% for s in active.sessions|reverse %}{% if loop.index <= 5 %}
+    <li><a href="campaigns/{{ active.id }}.html#session-{{ s.number }}">Session {{ s.number }}: {{ s.title }}</a> <span class="muted">{{ s.date }}</span></li>
+  {% endif %}{% endfor %}
+  </ul>
+</section>
+{% endif %}
+{% endblock %}

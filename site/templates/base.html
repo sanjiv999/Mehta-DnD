@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Mehta Family D&D{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ root }}static/style.css">
+{% block head %}{% endblock %}
+</head>
+<body{% if accent %} style="--accent: {{ accent }}"{% endif %}>
+<nav class="nav">
+  <a class="brand" href="{{ root }}index.html">⚔ Mehta D&amp;D</a>
+  <div class="links">
+    <a href="{{ root }}index.html">Home</a>
+    {% for h in party %}<a href="{{ root }}characters/{{ h.id }}.html">{{ h.name or h.player }}</a>{% endfor %}
+    {% if active %}<a href="{{ root }}campaigns/{{ active.id }}.html">Campaign</a>{% endif %}
+    <a href="{{ root }}dice.html">Dice</a>
+    <a href="{{ root }}rules.html">Rules</a>
+  </div>
+</nav>
+<main class="wrap">
+{% block content %}{% endblock %}
+</main>
+<footer class="foot">Built {{ built }} from the repository. Every page here is generated from plain text files.</footer>
+</body>
+</html>

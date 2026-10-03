@@ -1,0 +1,82 @@
+# Character sheet. Copy this folder to characters/<id>/ and fill it in.
+# Fields marked (kids) are the ones a Kids Mode hero needs; the DM fills the rest.
+id: template                      # folder name, lowercase, no spaces
+player: Player Name               # the real person
+name: Hero Name                   # (kids)
+status: draft                     # draft | active | resting | retired
+kids_mode: false
+campaign_origin: peacock-throne   # where this hero was born
+aliases: {}                       # per-campaign local names, e.g. moon-road: "Kitsune Samurai"
+
+concept: One exciting sentence about who this hero is.   # (kids)
+species: Human
+class: Warrior
+level: 1
+xp: 0
+proficiency: 2
+
+abilities:                        # 8 to 18. Standard array: 15 14 13 12 10 8
+  str: 15
+  dex: 13
+  con: 14
+  int: 10
+  wis: 12
+  cha: 8
+
+hp: { max: 12, current: 12 }
+ac: 13
+speed: 30
+hero_points: 3
+hit_dice: d10
+
+trained_skills: [Athletics, Perception, Animals, Intimidation]
+
+powers:                           # (kids) three named powers in the player's words
+  - name: Shield Friend
+    kid_name: ""                  # what the kid calls it, if different
+    description: When a friend next to me is hit, I take the hit instead.
+    uses: 1 per short rest
+    source: class
+
+inventory:
+  - { name: Talwar, qty: 1, notes: "1d6 slashing" }
+  - { name: Shield, qty: 1, notes: "+2 AC" }
+  - { name: Backpack, qty: 1, notes: "rope, torch, rations x3" }
+keepsake: ""                      # the one item that crosses between campaigns
+coins: 10
+
+appearance:                       # feeds the portrait prompt
+  age: ""
+  height: ""
+  build: ""
+  hair: ""
+  eyes: ""
+  skin: ""
+  clothing: ""
+  distinguishing: ""              # scar, tattoo, pet on shoulder, glowing eyes...
+  colors: ""                      # two or three signature colors
+
+personality:
+  traits: []                      # (kids) "brave", "giggles at danger"
+  loves: []                       # (kids) people, animals, foods, places
+  fears: []
+  dream: ""                       # (kids) what they want more than anything
+  ideal: ""
+  bond: ""
+  flaw: ""
+
+backstory: |
+  Three to five sentences. Where they come from, why they left, what they carry.
+
+companions: []                    # pets, familiars, animal friends: { name, kind, hp, trick }
+relationships: []                 # { who, campaign, feeling, note }
+conditions: []                    # current: dizzy, poisoned, blessed...
+achievements: []                  # { title, session, note } shown as badges on the site
+
+portrait:
+  style_override: ""              # leave blank to use the campaign's art_style
+  current: ""                     # e.g. portraits/001.png
+  history: []                     # { file, session, date, note }
+
+secret: |
+  DM-only notes about this hero. Never rendered to the site.

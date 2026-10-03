@@ -1,0 +1,8 @@
+_site/
+__pycache__/
+*.pyc
+.DS_Store
+dm/transcripts/*.m4a
+dm/transcripts/*.mp3
+dm/transcripts/*.wav
+.env

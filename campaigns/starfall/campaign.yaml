@@ -1,0 +1,16 @@
+id: starfall
+title: Starfall Station
+tagline: A space station at the edge of a nebula, a crew of four, and a signal nobody else can hear.
+setting: Starfall Station orbits a glowing nebula where ships go to be repaired, stories are traded, and something is singing from inside the cloud.
+genre: sci-fi
+tone: [curiosity, teamwork, awe]
+status: planned
+accent_color: "#5e35b1"
+art_style: >-
+  Retro-futurist space opera illustration, soft nebula glow in violet and teal, chunky friendly
+  robots, clean hard-surface suits, optimistic Moebius-like linework.
+level_range: [3, 7]
+door: Airlock 7, which opens onto a corridor that is not on the station's plans.
+lantern_piece: The light itself, a captured fragment of the nebula's song.
+started: null
+sessions_played: 0

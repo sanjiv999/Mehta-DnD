@@ -1,0 +1,61 @@
+# A fully worked example sheet, for reference when building real heroes. Not rendered or validated.
+id: zara
+player: Example
+name: Zara Sunclaw
+status: active
+kids_mode: true
+campaign_origin: peacock-throne
+aliases: { moon-road: "Zara the Kitsune Scout" }
+concept: A tiger-kin rogue who climbs anything, is scared of mice, and wants to fly.
+species: Tiger-kin
+class: Rogue
+level: 1
+xp: 0
+proficiency: 2
+abilities: { str: 12, dex: 15, con: 13, int: 10, wis: 14, cha: 8 }
+hp: { max: 9, current: 9 }
+ac: 13
+speed: 30
+hero_points: 3
+hit_dice: d8
+trained_skills: [Sneaking, Acrobatics, Perception, Animals]
+powers:
+  - { name: Sneak Attack, kid_name: Pounce!, description: "Extra 1d6 damage when I attack with advantage or next to a friend.", uses: always, source: class }
+  - { name: Super Climb, kid_name: Super Climb, description: "I can climb anything at full speed without rolling.", uses: always, source: species }
+  - { name: Lucky Penny, kid_name: Tiger Luck, description: "Reroll one die.", uses: 1 per session, source: player }
+inventory:
+  - { name: Two daggers, qty: 1, notes: "1d4 each, can throw" }
+  - { name: Rope and grappling hook, qty: 1, notes: "" }
+  - { name: A bag of dried mangoes, qty: 1, notes: "for monkeys" }
+keepsake: A feather from a giant eagle she saw once, which hums when the wind is right.
+coins: 12
+appearance:
+  age: "young"
+  height: "small"
+  build: "wiry"
+  hair: "orange with black stripes, in two braids"
+  eyes: "gold"
+  skin: "striped fur"
+  clothing: "a green kurta with gold embroidery and bare feet"
+  distinguishing: "a giant eagle feather tucked behind one ear"
+  colors: "orange, green, gold"
+personality:
+  traits: [brave, giggles at danger, curious]
+  loves: [her little sister, climbing, mangoes]
+  fears: [mice, thunder]
+  dream: To fly, just once, on purpose.
+  ideal: Nobody gets left behind.
+  bond: Her sister gave her the green kurta.
+  flaw: Cannot resist a dare.
+backstory: |
+  I grew up in the rooftop village above the Great Bazaar, where the vanara run the mail and the
+  air smells like cardamom. I left because an eagle dropped a feather on me and I decided it was
+  an invitation. I know Keisha's hero from the time we both got stuck on the same roof.
+companions: []
+relationships:
+  - { who: Captain Hanuvant, campaign: peacock-throne, feeling: respect, note: "He said I climb like a vanara." }
+conditions: []
+achievements:
+  - { title: First on the Roof, session: 1, note: "Climbed the bazaar awnings before anyone rolled." }
+portrait: { style_override: "", current: "", history: [] }
+secret: She is secretly afraid she cannot really climb as well as everyone thinks.

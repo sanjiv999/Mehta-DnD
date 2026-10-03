@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Rules · Mehta D&D{% endblock %}
+{% block content %}
+<h1>Rules</h1>
+<nav class="toc">{% for r in rules %}<a href="#{{ r.slug }}">{{ r.title }}</a>{% endfor %}</nav>
+{% for r in rules %}<section class="prose rule" id="{{ r.slug }}">{{ r.html }}</section>{% endfor %}
+{% endblock %}

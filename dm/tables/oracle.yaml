@@ -1,0 +1,10 @@
+name: oracle
+description: Yes/no oracle. Use `roll.py --oracle <likelihood>` rather than rolling this table directly.
+die: d20
+entries:
+  - "No, and something worse"
+  - "No"
+  - "No, but"
+  - "Yes, but"
+  - "Yes"
+  - "Yes, and something better"

@@ -1,0 +1,15 @@
+id: template
+title: Campaign Title
+tagline: One line that sells it.
+setting: Where and when, in a sentence.
+genre: fantasy                 # fantasy | historical-fantasy | sci-fi | mystery
+tone: [wonder, humor, courage] # three words
+status: planned                # planned | active | paused | completed
+accent_color: "#b5651d"        # site accent for this campaign
+art_style: >-
+  Painterly, warm light, storybook illustration.   # appended to every portrait prompt while active
+level_range: [1, 5]
+door: Where this world touches the others (see rules/crossings.md).
+lantern_piece: The piece of the Lantern of Many Roads hidden here.
+started: null
+sessions_played: 0
