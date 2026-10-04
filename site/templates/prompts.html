@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Prompt sheet · DM{% endblock %}
+{% block content %}
+<h1>Prompt sheet</h1>
+<p class="muted">Every picture the game is missing, in a sensible order. Tap <strong>Copy</strong>, paste into Gemini or Claude, save the picture with the name shown, then run <code>python tools/images.py intake ~/Downloads</code>. Ticks are remembered on this device.</p>
+<p class="muted">{{ prompts|length }} prompts · <button class="ghost" id="hide-done">Hide ticked</button></p>
+{% set ns = namespace(last=none) %}
+{% for s in prompts %}
+  {% if s.campaign != ns.last %}<h2>{{ s.campaign }}</h2>{% set ns.last = s.campaign %}{% endif %}
+  <div class="prompt-row" data-id="{{ s.campaign }}/{{ s.slot }}">
+    <label class="tick"><input type="checkbox"> done</label>
+    <div>
+      <p class="eyebrow">{{ '%02d'|format(loop.index) }} · {{ s.kind }} · save as <code>{{ s.slot }}.png</code></p>
+      <strong>{{ s.title }}</strong>
+      <p class="prompt-text">{{ s.final_prompt }}</p>
+    </div>
+    <button class="copy">Copy</button>
+  </div>
+{% endfor %}
+<script>
+(() => {
+  const key = 'prompts-done'; let done = {}; try { done = JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) {}
+  document.querySelectorAll('.prompt-row').forEach(r => {
+    const id = r.dataset.id, cb = r.querySelector('input'); cb.checked = !!done[id]; r.classList.toggle('done', cb.checked);
+    cb.addEventListener('change', () => { done[id] = cb.checked; r.classList.toggle('done', cb.checked); try { localStorage.setItem(key, JSON.stringify(done)); } catch (e) {} });
+    r.querySelector('.copy').addEventListener('click', async () => { const t = r.querySelector('.prompt-text').textContent; try { await navigator.clipboard.writeText(t); } catch (e) { const ta = document.createElement('textarea'); ta.value = t; document.body.append(ta); ta.select(); document.execCommand('copy'); ta.remove(); } r.querySelector('.copy').textContent = 'Copied ✓'; setTimeout(() => r.querySelector('.copy').textContent = 'Copy', 1500); });
+  });
+  let hiding = false; document.getElementById('hide-done').addEventListener('click', () => { hiding = !hiding; document.body.classList.toggle('hide-done', hiding); });
+})();
+</script>
+{% endblock %}

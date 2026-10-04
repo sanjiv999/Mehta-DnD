@@ -42,8 +42,9 @@ prep  ──▶  play (record + dice)  ──▶  ingest transcript  ──▶  
 ```
 
 `tools/session.py prep` reads global and campaign state and prints the DM brief.
-Ingestion is done by Claude following `CLAUDE.md` and `dm/prompts/session-ingest.md`, or automatically
-by `tools/ingest.py` (Anthropic API, structured output) via the ingest workflow, which opens a pull request.
+Ingestion is done by Claude Code following `CLAUDE.md`, or by `tools/ingest.py prompt` (one paste-ready
+prompt for any chat app) and `tools/ingest.py apply` (validates and applies the JSON reply). An optional
+`run` subcommand calls the API directly for anyone who wants to pay for that.
 
 ### Portrait loop
 ```
@@ -60,8 +61,9 @@ chapter at `play/<campaign>/<NN>.html`. `build_site.py --dm` renders `_site_dm/`
 complications, stat blocks, NPC secrets and planned chapters alongside. Never publish `_site_dm`.
 
 ### Images
-Every picture is an image slot with a composed prompt (`docs/IMAGES.md`). `tools/images.py plan`
-lists them, `generate` fills the missing ones through a provider, and the build substitutes a
+Every picture is an image slot with a composed prompt (`docs/IMAGES.md`). `tools/images.py sheet`
+and the DM build's Prompts page list them for pasting into Gemini or Claude, `intake` files the
+downloads, an optional `generate` calls a paid provider, and the build substitutes a
 procedural SVG placeholder (`tools/placeholder.py`) wherever a file is missing. Player art in
 `campaigns/<id>/art/` overrides generated art.
 

@@ -1,9 +1,7 @@
-name: Ingest a session transcript
-# Drop a transcript in dm/transcripts/ (NNN-YYYY-MM-DD.md) on any branch and push: Claude writes the
-# session log, updates state and journals, and opens a pull request for review.
+name: Ingest a session transcript (optional, uses the paid API)
+# OPTIONAL. Never runs on its own. The free route is `python tools/ingest.py prompt` + `apply`, or
+# asking Claude Code. Run this only if you have added ANTHROPIC_API_KEY as a secret and accept the cost.
 on:
-  push:
-    paths: ["dm/transcripts/*.md"]
   workflow_dispatch:
     inputs:
       transcript: { description: "Path to the transcript", required: true }
@@ -19,25 +17,14 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install -r requirements.txt anthropic pydantic
-      - name: Find new transcripts
-        id: find
-        run: |
-          if [ -n "${{ inputs.transcript }}" ]; then echo "files=${{ inputs.transcript }}" >> $GITHUB_OUTPUT; exit 0; fi
-          FILES=$(git diff --name-only HEAD~1 HEAD -- 'dm/transcripts/*.md' | grep -v README || true)
-          echo "files=$FILES" >> $GITHUB_OUTPUT
       - name: Ingest
-        if: steps.find.outputs.files != ''
         env: { ANTHROPIC_API_KEY: "${{ secrets.ANTHROPIC_API_KEY }}" }
         run: |
-          for f in ${{ steps.find.outputs.files }}; do
-            [ -f "${f%.md}.ingested" ] && continue
-            python tools/ingest.py "$f"
-          done
+          python tools/ingest.py run "${{ inputs.transcript }}"
           python tools/validate.py
       - uses: peter-evans/create-pull-request@v6
-        if: steps.find.outputs.files != ''
         with:
           branch: ingest/${{ github.run_id }}
-          title: "Session ingest: ${{ steps.find.outputs.files }}"
+          title: "Session ingest: ${{ inputs.transcript }}"
           commit-message: "Ingest session transcript"
           body: "Claude's draft of the session log, state and journal updates. Review, fix anything the kids would dispute, merge."

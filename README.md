@@ -47,7 +47,8 @@ python tools/build_site.py --dm && python -m http.server -d _site_dm 8001   # th
 python tools/campaign.py status
 python tools/session.py prep
 python tools/roll.py d20 --adv
-python tools/images.py plan --campaign peacock-throne --missing
+python tools/images.py sheet --campaign peacock-throne       # prompts to paste into Gemini/Claude
+python tools/images.py intake ~/Downloads                     # file the pictures you downloaded
 ```
 
 ## The loop
@@ -55,15 +56,19 @@ python tools/images.py plan --campaign peacock-throne --missing
 1. **Session Zero**: build heroes with `build.html` or Claude (`dm/prompts/character-builder.md`); generate portraits.
 2. **Prep**: `session.py prep` and the DM deck.
 3. **Play**: deck on the TV, dice on a phone, recording on in Claude.
-4. **Ingest**: drop the transcript in `dm/transcripts/` and ask Claude, or push it and let the
-   ingest workflow open a pull request.
-5. **Illustrate**: `images.py generate` or the images workflow; merge the pull request.
+4. **Ingest**: drop the transcript in `dm/transcripts/` and ask Claude Code, or `ingest.py prompt` → paste into a chat app → `ingest.py apply`.
+5. **Illustrate**: copy prompts from the Prompts page into Gemini or Claude, then `images.py intake ~/Downloads`.
 6. **Publish**: push to `main`; the site rebuilds.
 
 Full detail: `docs/PLAYBOOK.md`, `docs/ARCHITECTURE.md`, `docs/IMAGES.md`, `docs/DESIGN.md`.
 
-## Enabling the website and the pipelines
+## No API keys
 
-- Settings → Pages → Source: **GitHub Actions**. The `pages` workflow deploys on every push to `main`.
-- Secrets (Settings → Secrets → Actions): `OPENAI_API_KEY` or `STABILITY_API_KEY` for images,
-  `ANTHROPIC_API_KEY` for automatic ingest. Both pipelines open pull requests; merging is approval.
+Everything runs on subscriptions you already have plus GitHub Pages. Pictures: copy prompts from
+the DM build's Prompts page into Gemini or Claude, download, `images.py intake`. Transcripts: ask
+Claude Code, or `ingest.py prompt` → paste → `ingest.py apply`. See `docs/NO-API.md`.
+The three workflows that call paid APIs are optional, manual-only, and can be deleted.
+
+## Enabling the website
+
+Settings → Pages → Source: **GitHub Actions**. The `pages` workflow deploys on every push to `main`.

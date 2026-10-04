@@ -24,9 +24,9 @@ scene stalls.
 | Moment | What the system does | What the human does |
 |---|---|---|
 | Making a hero | Asks the questions, offers three ideas each time, computes the sheet | The kid's answers and drawing |
-| Scene art | Composes a consistent prompt for every slot, generates, placeholders meanwhile | Picks the best, overrides prompts, scans the kids' drawings |
+| Scene art | Composes a consistent prompt for every slot, placeholders meanwhile | Pastes into Gemini or Claude, picks the best, overrides prompts, scans the kids' drawings |
 | Running a session | Deck with read-aloud, missions, buttons, music chips, DM notes | Voices, pacing, improvisation, saying yes |
-| After a session | Ingests the transcript into logs, state, journals, badges | Reviews the diff, fixes what the kids would dispute |
+| After a session | Claude Code (or a pasted prompt) turns the transcript into logs, state, journals, badges | Reviews the diff, fixes what the kids would dispute |
 | Between campaigns | Crossings, keepsakes, the Lantern | Deciding what the fifth world is |
 
 ## Why files

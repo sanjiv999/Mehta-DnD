@@ -46,7 +46,9 @@ action), a complication table, and two optional encounters from the campaign's `
 Scenes should have a job for the youngest players (something to find, name, choose or roll).
 
 ### 3. Ingest a session recording
-Input: a transcript in `dm/transcripts/` or pasted text. Use `dm/prompts/session-ingest.md`.
+Input: a transcript in `dm/transcripts/` or pasted text. Use `dm/prompts/session-ingest.md`. You do
+this yourself, in this session; do not point the DM at an API. (`tools/ingest.py prompt` and `apply`
+exist for the chat-app route; `run` is optional and paid.)
 Output, in this order:
 1. `campaigns/<id>/sessions/NNN-slug.md` with the front matter in `campaigns/_template/sessions/000-template.md`.
 2. Update `campaigns/<id>/state.yaml`: chapter, location, date, threads, recent events, next hook.
@@ -81,9 +83,10 @@ complication table, rewards, and a "How it ends and what it sets up". Finales ar
 that look like fights. Run `python tools/build_site.py` to check the deck renders.
 
 ### 8. Images
-`python tools/images.py plan --campaign <id> --missing` lists slots and prompts. Improve prompts in
-`campaigns/<id>/images/overrides.yaml` rather than editing chapter text. Never claim an image was
-generated unless the file exists. See `docs/IMAGES.md`.
+No API keys are used in this project. `python tools/images.py sheet --campaign <id>` writes the prompts
+the DM pastes into Gemini or Claude; `python tools/images.py intake <folder>` files the downloads.
+Improve prompts in `campaigns/<id>/images/overrides.yaml` rather than editing chapter text. Never
+claim an image was generated unless the file exists. Never suggest adding an API key. See `docs/IMAGES.md`.
 
 ## Style for narrative text
 Short sentences. Concrete sensory detail. Second person for recaps read aloud at the table.

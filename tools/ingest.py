@@ -1,24 +1,29 @@
 #!/usr/bin/env python3
-"""Automated session ingest: turn a transcript into a session log, state updates and journal
-entries using Claude, then apply them to the repository files.
+"""Session ingest without an API key: turn a transcript into a session log, state updates and
+journal entries, using whichever Claude or Gemini app you already have.
 
-  python tools/ingest.py dm/transcripts/001-2026-10-12.md            # active campaign, next session number
-  python tools/ingest.py <file> --campaign peacock-throne --number 3 --dry-run
+  ingest.py prompt <transcript>            write <transcript>.prompt.md: one self-contained prompt that
+                                           includes the campaign state, the heroes, the rules and the
+                                           transcript. Paste it into claude.ai or Gemini.
+  ingest.py apply <transcript> <reply>     paste the model's JSON reply into a file and apply it to the repo
+                                           (validated against the schema; --dry-run to preview)
 
-Needs the `anthropic` package and ANTHROPIC_API_KEY (or an `ant auth login` profile).
-The interactive route (asking Claude Code to ingest, per CLAUDE.md) remains the richer option;
-this script is the "drop a file, get a pull request" path used by the ingest workflow.
+The easiest route of all is Claude Code itself (included in a Claude subscription): open the repo
+and say "ingest dm/transcripts/NNN.md". CLAUDE.md tells it what to do.
+
+Optional, only if you ever want to pay for API calls:
+  ingest.py run <transcript>               calls the Anthropic API directly (needs ANTHROPIC_API_KEY)
 """
 from __future__ import annotations
 import argparse
+import json
 import re
 import sys
 from datetime import date
 from pathlib import Path
 from typing import List, Optional
 
-import anthropic
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ValidationError
 
 from common import ROOT, CAMPAIGNS, CHARACTERS, STATE, load_yaml, dump_yaml, world, load_campaign, load_character
 from scenes import chapters
@@ -168,40 +173,90 @@ def apply(cid: str, n: int, r: SessionIngest, transcript_name: str, dry: bool) -
     return changed
 
 
-def main(argv=None):
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("transcript")
-    ap.add_argument("--campaign")
-    ap.add_argument("--number", type=int)
-    ap.add_argument("--dry-run", action="store_true")
-    a = ap.parse_args(argv)
+SYSTEM = ("You are the co-Dungeon Master for a family tabletop game (players include a 7 and a 5 year old). "
+          "You turn a messy session transcript into accurate, family-friendly, consistent game records. "
+          "Never invent events that did not happen; list ambiguities in `unclear`. Journals must sound like each hero. "
+          "Kids Mode heroes get short words and at most one exclamation mark.")
+
+
+def resolve(a):
     w = world()
     cid = a.campaign or w.get("active_campaign") or sys.exit("No active campaign")
     c = load_campaign(cid)
     n = a.number or (len(c["sessions"]) + 1)
-    text = Path(a.transcript).read_text(encoding="utf-8")
+    return cid, n
 
-    client = anthropic.Anthropic()
-    system = ("You are the co-Dungeon Master for a family tabletop game (players include a 7 and a 5 year old). "
-              "You turn a messy session transcript into accurate, family-friendly, consistent game records. "
-              "Never invent events that did not happen; list ambiguities in `unclear`. Journals must sound like each hero. "
-              "Kids Mode heroes get short words and at most one exclamation mark.")
-    prompt = build_context(cid, n) + f"\n\n# Transcript of session {n}\n\n{text}\n\nProduce the ingest record."
-    print(f"Ingesting {a.transcript} as session {n} of {cid} with {MODEL}...")
-    resp = client.messages.parse(model=MODEL, max_tokens=16000, system=system,
-                                 output_config={"effort": "high"},
-                                 messages=[{"role": "user", "content": prompt}],
-                                 output_format=SessionIngest)
-    if resp.stop_reason == "refusal":
-        sys.exit(f"Model declined: {getattr(resp.stop_details, 'explanation', '')}")
-    r = resp.parsed_output
+
+def finish(a, cid, n, r):
     changed = apply(cid, n, r, Path(a.transcript).name, a.dry_run)
     print(("Would change" if a.dry_run else "Changed") + ":\n  " + "\n  ".join(changed))
     if r.unclear:
         print("\nUnclear:\n  " + "\n  ".join(r.unclear))
     if not a.dry_run:
         Path(a.transcript).with_suffix(".ingested").write_text(f"session {n} {cid} {date.today()}\n")
+        print("Now: python tools/validate.py, review the diff, commit.")
     return 0
+
+
+def cmd_prompt(a):
+    cid, n = resolve(a)
+    text = Path(a.transcript).read_text(encoding="utf-8")
+    schema = json.dumps(SessionIngest.model_json_schema(), indent=1)
+    out = Path(a.transcript).with_suffix(".prompt.md")
+    out.write_text(
+        f"{SYSTEM}\n\nReply with ONE JSON object only, no prose before or after, no code fence, matching this JSON "
+        f"schema exactly (all required fields present):\n\n{schema}\n\n{build_context(cid, n)}\n\n"
+        f"# Transcript of session {n}\n\n{text}\n\nProduce the ingest record as JSON.\n", encoding="utf-8")
+    print(f"Wrote {out} ({out.stat().st_size // 1024} KB). Paste it into claude.ai or Gemini, save the JSON reply as a file, then:\n"
+          f"  python tools/ingest.py apply {a.transcript} <reply.json>")
+    return 0
+
+
+def cmd_apply(a):
+    cid, n = resolve(a)
+    raw = Path(a.reply).read_text(encoding="utf-8").strip()
+    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw)          # tolerate a code fence
+    start, end = raw.find("{"), raw.rfind("}")
+    if start < 0 or end < 0:
+        sys.exit("No JSON object found in the reply file.")
+    try:
+        r = SessionIngest.model_validate_json(raw[start:end + 1])
+    except ValidationError as e:
+        sys.exit(f"The reply does not match the schema:\n{e}\nAsk the model to fix those fields and try again.")
+    return finish(a, cid, n, r)
+
+
+def cmd_run(a):
+    try:
+        import anthropic
+    except ImportError:
+        sys.exit("pip install anthropic (this path costs API money; prefer `prompt` + `apply`).")
+    cid, n = resolve(a)
+    text = Path(a.transcript).read_text(encoding="utf-8")
+    client = anthropic.Anthropic()
+    prompt = build_context(cid, n) + f"\n\n# Transcript of session {n}\n\n{text}\n\nProduce the ingest record."
+    print(f"Ingesting {a.transcript} as session {n} of {cid} with {MODEL}...")
+    resp = client.messages.parse(model=MODEL, max_tokens=16000, system=SYSTEM,
+                                 output_config={"effort": "high"},
+                                 messages=[{"role": "user", "content": prompt}],
+                                 output_format=SessionIngest)
+    if resp.stop_reason == "refusal":
+        sys.exit(f"Model declined: {getattr(resp.stop_details, 'explanation', '')}")
+    return finish(a, cid, n, resp.parsed_output)
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = ap.add_subparsers(dest="cmd", required=True)
+    for name, fn in (("prompt", cmd_prompt), ("apply", cmd_apply), ("run", cmd_run)):
+        p = sub.add_parser(name)
+        p.add_argument("transcript")
+        if name == "apply":
+            p.add_argument("reply")
+        p.add_argument("--campaign"); p.add_argument("--number", type=int); p.add_argument("--dry-run", action="store_true")
+        p.set_defaults(fn=fn)
+    a = ap.parse_args(argv)
+    return a.fn(a)
 
 
 if __name__ == "__main__":

@@ -28,20 +28,20 @@ Two ways, pick one:
 **Interactive.** Save the transcript as `dm/transcripts/NNN-YYYY-MM-DD.md`, then ask Claude Code:
 "Ingest `dm/transcripts/NNN-....md` for the active campaign." It follows CLAUDE.md and edits the files.
 
-**Automatic.** Commit the transcript and push. The ingest workflow runs `tools/ingest.py` with the
-Anthropic API and opens a pull request with the session log, state and journal changes.
+**Chat apps.** `python tools/ingest.py prompt dm/transcripts/NNN-....md`, paste the generated prompt
+file into claude.ai or Gemini, save the JSON reply, `python tools/ingest.py apply <transcript> reply.json`.
 
 Then: review the diff, fix anything the kids would dispute, run `python tools/validate.py`,
-merge or push to `main`. The site rebuilds. If the session log has an `image_prompt`, the next
-image run illustrates it for the Story So Far page.
+merge or push to `main`. The site rebuilds. If the session log has an `image_prompt`, it shows up on the
+Prompts page as `session-NNN` so the Story So Far page can be illustrated.
 
 ## Session Zero (the first night)
 
 1. Open `build.html` on the tablet. Each player walks through the hero builder; it writes a
    `character.yaml` to download. Or sit with Claude and dm/prompts/character-builder.md.
 2. Drop each file into `characters/<id>/character.yaml`, add the ids to `party:` in `state/world.yaml`.
-3. `python tools/images.py heroes` for portraits (or paste the prompt from
-   `python tools/portrait_prompt.py <id>` into any image tool).
+3. `python tools/images.py heroes --prompts`, paste each into Gemini, save as `portrait-<id>.png`,
+   `python tools/images.py intake ~/Downloads`.
 4. Read the campaign's pitch from the overview. Play scene 1 of chapter 1 if there is time.
 
 ## Switching campaigns

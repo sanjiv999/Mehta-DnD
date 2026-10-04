@@ -208,6 +208,9 @@ def main(argv=None) -> int:
         depth = dest.count("/")
         (out / dest).write_text(env.get_template(tpl).render(root="../" * depth, page=dest, **ctx, **extra), encoding="utf-8")
 
+    if DM:
+        from images import sheet_rows
+        render("prompts.html", "prompts.html", prompts=sheet_rows(list(campaigns.keys())))
     render("index.html", "index.html")
     render("dice.html", "dice.html")
     render("rules.html", "rules.html")

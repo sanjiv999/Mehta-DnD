@@ -1,0 +1,762 @@
+{
+  "01": {
+    "campaign": "emberwood",
+    "slot": "cover"
+  },
+  "02": {
+    "campaign": "emberwood",
+    "slot": "ch01"
+  },
+  "03": {
+    "campaign": "emberwood",
+    "slot": "ch02"
+  },
+  "04": {
+    "campaign": "emberwood",
+    "slot": "ch03"
+  },
+  "05": {
+    "campaign": "emberwood",
+    "slot": "ch04"
+  },
+  "06": {
+    "campaign": "emberwood",
+    "slot": "ch05"
+  },
+  "07": {
+    "campaign": "emberwood",
+    "slot": "ch06"
+  },
+  "08": {
+    "campaign": "emberwood",
+    "slot": "npc-brokk-emberward"
+  },
+  "09": {
+    "campaign": "emberwood",
+    "slot": "npc-councillor-biscuit"
+  },
+  "10": {
+    "campaign": "emberwood",
+    "slot": "npc-grizzle"
+  },
+  "11": {
+    "campaign": "emberwood",
+    "slot": "npc-kindle"
+  },
+  "12": {
+    "campaign": "emberwood",
+    "slot": "npc-mayor-bramble"
+  },
+  "13": {
+    "campaign": "emberwood",
+    "slot": "npc-nana-nettle"
+  },
+  "14": {
+    "campaign": "emberwood",
+    "slot": "npc-sunder"
+  },
+  "15": {
+    "campaign": "emberwood",
+    "slot": "npc-teddy"
+  },
+  "16": {
+    "campaign": "emberwood",
+    "slot": "npc-wren"
+  },
+  "17": {
+    "campaign": "emberwood",
+    "slot": "location-hearth"
+  },
+  "18": {
+    "campaign": "emberwood",
+    "slot": "location-night-market"
+  },
+  "19": {
+    "campaign": "emberwood",
+    "slot": "location-sunders-peak"
+  },
+  "20": {
+    "campaign": "emberwood",
+    "slot": "location-the-deep-halls"
+  },
+  "21": {
+    "campaign": "emberwood",
+    "slot": "location-the-hedge"
+  },
+  "22": {
+    "campaign": "emberwood",
+    "slot": "location-the-tower"
+  },
+  "23": {
+    "campaign": "emberwood",
+    "slot": "ch01-s1"
+  },
+  "24": {
+    "campaign": "emberwood",
+    "slot": "ch01-s2"
+  },
+  "25": {
+    "campaign": "emberwood",
+    "slot": "ch01-s3"
+  },
+  "26": {
+    "campaign": "emberwood",
+    "slot": "ch01-s4"
+  },
+  "27": {
+    "campaign": "emberwood",
+    "slot": "ch02-s1"
+  },
+  "28": {
+    "campaign": "emberwood",
+    "slot": "ch02-s2"
+  },
+  "29": {
+    "campaign": "emberwood",
+    "slot": "ch02-s3"
+  },
+  "30": {
+    "campaign": "emberwood",
+    "slot": "ch02-s4"
+  },
+  "31": {
+    "campaign": "emberwood",
+    "slot": "ch03-s1"
+  },
+  "32": {
+    "campaign": "emberwood",
+    "slot": "ch03-s2"
+  },
+  "33": {
+    "campaign": "emberwood",
+    "slot": "ch03-s3"
+  },
+  "34": {
+    "campaign": "emberwood",
+    "slot": "ch03-s4"
+  },
+  "35": {
+    "campaign": "emberwood",
+    "slot": "ch04-s1"
+  },
+  "36": {
+    "campaign": "emberwood",
+    "slot": "ch04-s2"
+  },
+  "37": {
+    "campaign": "emberwood",
+    "slot": "ch04-s3"
+  },
+  "38": {
+    "campaign": "emberwood",
+    "slot": "ch04-s4"
+  },
+  "39": {
+    "campaign": "emberwood",
+    "slot": "ch05-s1"
+  },
+  "40": {
+    "campaign": "emberwood",
+    "slot": "ch05-s2"
+  },
+  "41": {
+    "campaign": "emberwood",
+    "slot": "ch05-s3"
+  },
+  "42": {
+    "campaign": "emberwood",
+    "slot": "ch05-s4"
+  },
+  "43": {
+    "campaign": "emberwood",
+    "slot": "ch06-s1"
+  },
+  "44": {
+    "campaign": "emberwood",
+    "slot": "ch06-s2"
+  },
+  "45": {
+    "campaign": "emberwood",
+    "slot": "ch06-s3"
+  },
+  "46": {
+    "campaign": "emberwood",
+    "slot": "map"
+  },
+  "47": {
+    "campaign": "moon-road",
+    "slot": "cover"
+  },
+  "48": {
+    "campaign": "moon-road",
+    "slot": "ch01"
+  },
+  "49": {
+    "campaign": "moon-road",
+    "slot": "ch02"
+  },
+  "50": {
+    "campaign": "moon-road",
+    "slot": "ch03"
+  },
+  "51": {
+    "campaign": "moon-road",
+    "slot": "ch04"
+  },
+  "52": {
+    "campaign": "moon-road",
+    "slot": "ch05"
+  },
+  "53": {
+    "campaign": "moon-road",
+    "slot": "ch06"
+  },
+  "54": {
+    "campaign": "moon-road",
+    "slot": "npc-captain-masaru"
+  },
+  "55": {
+    "campaign": "moon-road",
+    "slot": "npc-daigoro"
+  },
+  "56": {
+    "campaign": "moon-road",
+    "slot": "npc-kappa-gen"
+  },
+  "57": {
+    "campaign": "moon-road",
+    "slot": "npc-kiko"
+  },
+  "58": {
+    "campaign": "moon-road",
+    "slot": "npc-okami-tama"
+  },
+  "59": {
+    "campaign": "moon-road",
+    "slot": "npc-old-kame"
+  },
+  "60": {
+    "campaign": "moon-road",
+    "slot": "npc-old-keeper-hoshi"
+  },
+  "61": {
+    "campaign": "moon-road",
+    "slot": "npc-ponkichi"
+  },
+  "62": {
+    "campaign": "moon-road",
+    "slot": "npc-ryuko"
+  },
+  "63": {
+    "campaign": "moon-road",
+    "slot": "location-bamboo-sea"
+  },
+  "64": {
+    "campaign": "moon-road",
+    "slot": "location-castle-shirogane"
+  },
+  "65": {
+    "campaign": "moon-road",
+    "slot": "location-lake-kagami"
+  },
+  "66": {
+    "campaign": "moon-road",
+    "slot": "location-mount-tsukimi"
+  },
+  "67": {
+    "campaign": "moon-road",
+    "slot": "location-shiokaze"
+  },
+  "68": {
+    "campaign": "moon-road",
+    "slot": "location-yuzuki-springs"
+  },
+  "69": {
+    "campaign": "moon-road",
+    "slot": "ch01-s1"
+  },
+  "70": {
+    "campaign": "moon-road",
+    "slot": "ch01-s2"
+  },
+  "71": {
+    "campaign": "moon-road",
+    "slot": "ch01-s3"
+  },
+  "72": {
+    "campaign": "moon-road",
+    "slot": "ch01-s4"
+  },
+  "73": {
+    "campaign": "moon-road",
+    "slot": "ch02-s1"
+  },
+  "74": {
+    "campaign": "moon-road",
+    "slot": "ch02-s2"
+  },
+  "75": {
+    "campaign": "moon-road",
+    "slot": "ch02-s3"
+  },
+  "76": {
+    "campaign": "moon-road",
+    "slot": "ch02-s4"
+  },
+  "77": {
+    "campaign": "moon-road",
+    "slot": "ch03-s1"
+  },
+  "78": {
+    "campaign": "moon-road",
+    "slot": "ch03-s2"
+  },
+  "79": {
+    "campaign": "moon-road",
+    "slot": "ch03-s3"
+  },
+  "80": {
+    "campaign": "moon-road",
+    "slot": "ch03-s4"
+  },
+  "81": {
+    "campaign": "moon-road",
+    "slot": "ch04-s1"
+  },
+  "82": {
+    "campaign": "moon-road",
+    "slot": "ch04-s2"
+  },
+  "83": {
+    "campaign": "moon-road",
+    "slot": "ch04-s3"
+  },
+  "84": {
+    "campaign": "moon-road",
+    "slot": "ch04-s4"
+  },
+  "85": {
+    "campaign": "moon-road",
+    "slot": "ch05-s1"
+  },
+  "86": {
+    "campaign": "moon-road",
+    "slot": "ch05-s2"
+  },
+  "87": {
+    "campaign": "moon-road",
+    "slot": "ch05-s3"
+  },
+  "88": {
+    "campaign": "moon-road",
+    "slot": "ch05-s4"
+  },
+  "89": {
+    "campaign": "moon-road",
+    "slot": "ch06-s1"
+  },
+  "90": {
+    "campaign": "moon-road",
+    "slot": "ch06-s2"
+  },
+  "91": {
+    "campaign": "moon-road",
+    "slot": "ch06-s3"
+  },
+  "92": {
+    "campaign": "moon-road",
+    "slot": "ch06-s4"
+  },
+  "93": {
+    "campaign": "moon-road",
+    "slot": "map"
+  },
+  "94": {
+    "campaign": "peacock-throne",
+    "slot": "cover"
+  },
+  "95": {
+    "campaign": "peacock-throne",
+    "slot": "ch01"
+  },
+  "96": {
+    "campaign": "peacock-throne",
+    "slot": "ch02"
+  },
+  "97": {
+    "campaign": "peacock-throne",
+    "slot": "ch03"
+  },
+  "98": {
+    "campaign": "peacock-throne",
+    "slot": "ch04"
+  },
+  "99": {
+    "campaign": "peacock-throne",
+    "slot": "ch05"
+  },
+  "100": {
+    "campaign": "peacock-throne",
+    "slot": "npc-badal"
+  },
+  "101": {
+    "campaign": "peacock-throne",
+    "slot": "npc-bibi-chandni"
+  },
+  "102": {
+    "campaign": "peacock-throne",
+    "slot": "npc-captain-hanuvant"
+  },
+  "103": {
+    "campaign": "peacock-throne",
+    "slot": "npc-dhoomketu"
+  },
+  "104": {
+    "campaign": "peacock-throne",
+    "slot": "npc-gulnar"
+  },
+  "105": {
+    "campaign": "peacock-throne",
+    "slot": "npc-hakim-fariduddin"
+  },
+  "106": {
+    "campaign": "peacock-throne",
+    "slot": "npc-lady-shabnam-and-firoz"
+  },
+  "107": {
+    "campaign": "peacock-throne",
+    "slot": "npc-mirza-the-parrot"
+  },
+  "108": {
+    "campaign": "peacock-throne",
+    "slot": "npc-nagini-tara"
+  },
+  "109": {
+    "campaign": "peacock-throne",
+    "slot": "npc-padishah-azim"
+  },
+  "110": {
+    "campaign": "peacock-throne",
+    "slot": "npc-rani-padma"
+  },
+  "111": {
+    "campaign": "peacock-throne",
+    "slot": "npc-rukmini"
+  },
+  "112": {
+    "campaign": "peacock-throne",
+    "slot": "npc-shahzadi-zeb"
+  },
+  "113": {
+    "campaign": "peacock-throne",
+    "slot": "npc-vizier-qamar-i-aina"
+  },
+  "114": {
+    "campaign": "peacock-throne",
+    "slot": "location-sikri"
+  },
+  "115": {
+    "campaign": "peacock-throne",
+    "slot": "location-the-baoli-of-whispers"
+  },
+  "116": {
+    "campaign": "peacock-throne",
+    "slot": "location-the-ghats"
+  },
+  "117": {
+    "campaign": "peacock-throne",
+    "slot": "location-the-great-bazaar"
+  },
+  "118": {
+    "campaign": "peacock-throne",
+    "slot": "location-the-mirror-fort"
+  },
+  "119": {
+    "campaign": "peacock-throne",
+    "slot": "location-the-mughal-throne-room"
+  },
+  "120": {
+    "campaign": "peacock-throne",
+    "slot": "location-the-naga-court"
+  },
+  "121": {
+    "campaign": "peacock-throne",
+    "slot": "location-the-observatory"
+  },
+  "122": {
+    "campaign": "peacock-throne",
+    "slot": "location-the-western-desert"
+  },
+  "123": {
+    "campaign": "peacock-throne",
+    "slot": "ch01-s1"
+  },
+  "124": {
+    "campaign": "peacock-throne",
+    "slot": "ch01-s2"
+  },
+  "125": {
+    "campaign": "peacock-throne",
+    "slot": "ch01-s3"
+  },
+  "126": {
+    "campaign": "peacock-throne",
+    "slot": "ch01-s4"
+  },
+  "127": {
+    "campaign": "peacock-throne",
+    "slot": "ch02-s1"
+  },
+  "128": {
+    "campaign": "peacock-throne",
+    "slot": "ch02-s2"
+  },
+  "129": {
+    "campaign": "peacock-throne",
+    "slot": "ch02-s3"
+  },
+  "130": {
+    "campaign": "peacock-throne",
+    "slot": "ch02-s4"
+  },
+  "131": {
+    "campaign": "peacock-throne",
+    "slot": "ch03-s1"
+  },
+  "132": {
+    "campaign": "peacock-throne",
+    "slot": "ch03-s2"
+  },
+  "133": {
+    "campaign": "peacock-throne",
+    "slot": "ch03-s3"
+  },
+  "134": {
+    "campaign": "peacock-throne",
+    "slot": "ch03-s4"
+  },
+  "135": {
+    "campaign": "peacock-throne",
+    "slot": "ch04-s1"
+  },
+  "136": {
+    "campaign": "peacock-throne",
+    "slot": "ch04-s2"
+  },
+  "137": {
+    "campaign": "peacock-throne",
+    "slot": "ch04-s3"
+  },
+  "138": {
+    "campaign": "peacock-throne",
+    "slot": "ch04-s4"
+  },
+  "139": {
+    "campaign": "peacock-throne",
+    "slot": "ch05-s1"
+  },
+  "140": {
+    "campaign": "peacock-throne",
+    "slot": "ch05-s2"
+  },
+  "141": {
+    "campaign": "peacock-throne",
+    "slot": "ch05-s3"
+  },
+  "142": {
+    "campaign": "peacock-throne",
+    "slot": "ch05-s4"
+  },
+  "143": {
+    "campaign": "peacock-throne",
+    "slot": "ch05-s5"
+  },
+  "144": {
+    "campaign": "peacock-throne",
+    "slot": "map"
+  },
+  "145": {
+    "campaign": "starfall",
+    "slot": "cover"
+  },
+  "146": {
+    "campaign": "starfall",
+    "slot": "ch01"
+  },
+  "147": {
+    "campaign": "starfall",
+    "slot": "ch02"
+  },
+  "148": {
+    "campaign": "starfall",
+    "slot": "ch03"
+  },
+  "149": {
+    "campaign": "starfall",
+    "slot": "ch04"
+  },
+  "150": {
+    "campaign": "starfall",
+    "slot": "ch05"
+  },
+  "151": {
+    "campaign": "starfall",
+    "slot": "ch06"
+  },
+  "152": {
+    "campaign": "starfall",
+    "slot": "npc-captain-ilse-varga"
+  },
+  "153": {
+    "campaign": "starfall",
+    "slot": "npc-chair-vexley"
+  },
+  "154": {
+    "campaign": "starfall",
+    "slot": "npc-dockmaster-oola"
+  },
+  "155": {
+    "campaign": "starfall",
+    "slot": "npc-orbit"
+  },
+  "156": {
+    "campaign": "starfall",
+    "slot": "npc-the-cloud-whale"
+  },
+  "157": {
+    "campaign": "starfall",
+    "slot": "npc-the-hobby-club"
+  },
+  "158": {
+    "campaign": "starfall",
+    "slot": "npc-the-pakora"
+  },
+  "159": {
+    "campaign": "starfall",
+    "slot": "location-orbit-core"
+  },
+  "160": {
+    "campaign": "starfall",
+    "slot": "location-repair-bay-7"
+  },
+  "161": {
+    "campaign": "starfall",
+    "slot": "location-the-choir-ship"
+  },
+  "162": {
+    "campaign": "starfall",
+    "slot": "location-the-docks"
+  },
+  "163": {
+    "campaign": "starfall",
+    "slot": "location-the-garden-deck"
+  },
+  "164": {
+    "campaign": "starfall",
+    "slot": "location-the-heart-of-the-cloud"
+  },
+  "165": {
+    "campaign": "starfall",
+    "slot": "location-the-nebula-edge"
+  },
+  "166": {
+    "campaign": "starfall",
+    "slot": "location-the-ring"
+  },
+  "167": {
+    "campaign": "starfall",
+    "slot": "ch01-s1"
+  },
+  "168": {
+    "campaign": "starfall",
+    "slot": "ch01-s2"
+  },
+  "169": {
+    "campaign": "starfall",
+    "slot": "ch01-s3"
+  },
+  "170": {
+    "campaign": "starfall",
+    "slot": "ch01-s4"
+  },
+  "171": {
+    "campaign": "starfall",
+    "slot": "ch02-s1"
+  },
+  "172": {
+    "campaign": "starfall",
+    "slot": "ch02-s2"
+  },
+  "173": {
+    "campaign": "starfall",
+    "slot": "ch02-s3"
+  },
+  "174": {
+    "campaign": "starfall",
+    "slot": "ch02-s4"
+  },
+  "175": {
+    "campaign": "starfall",
+    "slot": "ch03-s1"
+  },
+  "176": {
+    "campaign": "starfall",
+    "slot": "ch03-s2"
+  },
+  "177": {
+    "campaign": "starfall",
+    "slot": "ch03-s3"
+  },
+  "178": {
+    "campaign": "starfall",
+    "slot": "ch03-s4"
+  },
+  "179": {
+    "campaign": "starfall",
+    "slot": "ch04-s1"
+  },
+  "180": {
+    "campaign": "starfall",
+    "slot": "ch04-s2"
+  },
+  "181": {
+    "campaign": "starfall",
+    "slot": "ch04-s3"
+  },
+  "182": {
+    "campaign": "starfall",
+    "slot": "ch04-s4"
+  },
+  "183": {
+    "campaign": "starfall",
+    "slot": "ch05-s1"
+  },
+  "184": {
+    "campaign": "starfall",
+    "slot": "ch05-s2"
+  },
+  "185": {
+    "campaign": "starfall",
+    "slot": "ch05-s3"
+  },
+  "186": {
+    "campaign": "starfall",
+    "slot": "ch05-s4"
+  },
+  "187": {
+    "campaign": "starfall",
+    "slot": "ch06-s1"
+  },
+  "188": {
+    "campaign": "starfall",
+    "slot": "ch06-s2"
+  },
+  "189": {
+    "campaign": "starfall",
+    "slot": "ch06-s3"
+  },
+  "190": {
+    "campaign": "starfall",
+    "slot": "map"
+  }
+}

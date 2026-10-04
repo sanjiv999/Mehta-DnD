@@ -38,22 +38,28 @@ miniature in Sikri, the woodblock print on the Moon Road). `images/STYLE.md` is 
 
 1. `python tools/images.py plan --campaign peacock-throne --missing` lists what is missing with the auto-prompt.
 2. For any slot you care about, write a better prompt in `campaigns/<id>/images/overrides.yaml`.
-3. Generate, or paste the prompt into whatever image tool you like and `images.py record` the result.
-4. Every generated batch arrives as a pull request. Merging is approval.
+3. Paste the prompt into Gemini or Claude and `images.py intake` the download.
+4. Paste, download, `intake`. You chose every picture, so there is nothing to approve.
 
-## Generating
+## Making the pictures (no API key)
 
 ```bash
-export OPENAI_API_KEY=...                      # or STABILITY_API_KEY, or IMAGE_CMD for a local model
-python tools/images.py generate --campaign peacock-throne --limit 6 --dry-run
-python tools/images.py generate --campaign peacock-throne --limit 6
-python tools/images.py heroes                  # portraits for active heroes without one
+python tools/build_site.py --dm            # then open _site_dm/prompts.html: every prompt with a Copy button
+python tools/images.py sheet               # or a Markdown sheet at dm/prompts/PROMPTS.md
+python tools/images.py heroes --prompts    # portrait prompts for active heroes
+python tools/images.py intake ~/Downloads  # file the downloads by slot name or sheet number
 ```
 
-Or in GitHub: Actions → **Generate campaign images** → Run workflow. It needs the API key as a
-repository secret and opens a pull request with the pictures.
+Paste each prompt into Gemini or Claude. Save the picture with the slot name (`ch01-s3.png`), or
+with the sheet number (`07.png`), or leave the download name and make sure the slot name appears in
+it. `intake` files everything, writes sidecars, and records hero portraits. Full walk-through in
+`docs/NO-API.md`.
 
-`IMAGE_CMD` lets you plug in anything: `IMAGE_CMD='python ~/sd/gen.py --prompt {prompt} --out {out}'`.
+## Optional: letting an API do the pasting
+
+`images.py generate --provider openai|stability|cmd` and the **Generate campaign images** workflow
+exist for anyone who prefers to pay per image. They never run unless started by hand.
+`IMAGE_CMD` lets you plug in a local model: `IMAGE_CMD='python ~/sd/gen.py --prompt {prompt} --out {out}'`.
 
 ## Suggested order
 Covers (4) → chapter covers (23) → NPCs (~40) → locations (~26) → scenes (~90). A campaign's
