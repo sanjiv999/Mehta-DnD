@@ -42,7 +42,8 @@ prep  ──▶  play (record + dice)  ──▶  ingest transcript  ──▶  
 ```
 
 `tools/session.py prep` reads global and campaign state and prints the DM brief.
-Ingestion is done by Claude following `CLAUDE.md` and `dm/prompts/session-ingest.md`.
+Ingestion is done by Claude following `CLAUDE.md` and `dm/prompts/session-ingest.md`, or automatically
+by `tools/ingest.py` (Anthropic API, structured output) via the ingest workflow, which opens a pull request.
 
 ### Portrait loop
 ```
@@ -50,6 +51,19 @@ character.yaml + campaign art style ──▶ tools/portrait_prompt.py ──▶
    ──▶ image model (manual paste or tools/portrait_generate.py with an API key)
    ──▶ characters/<id>/portraits/NNN.png ──▶ --record ──▶ site gallery
 ```
+
+### Scene decks and the DM screen
+Chapters follow a fixed Markdown convention (`tools/scenes.py` parses it): `### Scene N: Title (kind)`,
+blockquotes are read-aloud, `Jobs for the kids`, `Choices` and `Music` are player-safe, `Image` is
+art direction, everything else is DM-only. The public build renders a deck per active or finished
+chapter at `play/<campaign>/<NN>.html`. `build_site.py --dm` renders `_site_dm/` with the DM notes,
+complications, stat blocks, NPC secrets and planned chapters alongside. Never publish `_site_dm`.
+
+### Images
+Every picture is an image slot with a composed prompt (`docs/IMAGES.md`). `tools/images.py plan`
+lists them, `generate` fills the missing ones through a provider, and the build substitutes a
+procedural SVG placeholder (`tools/placeholder.py`) wherever a file is missing. Player art in
+`campaigns/<id>/art/` overrides generated art.
 
 ### Site build
 `tools/build_site.py` loads every YAML and Markdown file, strips secrets, renders Jinja2
@@ -63,6 +77,10 @@ Pages rendered:
 | `index.html` | world.yaml + every campaign.yaml + state.yaml: the dashboard and campaign switcher |
 | `characters/<id>.html` | character.yaml, journal.md, portraits |
 | `campaigns/<id>.html` | campaign.yaml, overview.md, state.yaml, sessions, public NPCs and locations |
+| `play/<cid>/<NN>.html` | scene deck for one chapter |
+| `story.html` | every session recap in order, illustrated |
+| `stickers.html` | achievements and hero moments across all sessions |
+| `build.html` | the hero builder wizard; downloads a character.yaml |
 | `dice.html` | dice roller and oracle, pure JavaScript |
 | `rules.html` | rules/*.md |
 

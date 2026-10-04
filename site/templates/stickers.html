@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Sticker Book · Mehta D&D{% endblock %}
+{% block content %}
+<h1>Sticker Book</h1>
+<p class="muted">Every hero moment, every badge. Earned at the table, kept forever.</p>
+{% if not stickers %}<p class="muted">Empty for now. The first Big Win goes here.</p>{% endif %}
+<div class="stickers">
+{% for s in stickers %}
+  <div class="sticker" style="--accent: {{ (s.campaign.accent_color if s.campaign else (s.hero.origin.accent_color if s.hero and s.hero.origin else '#c9a227')) }}">
+    <div class="sticker-icon">🏅</div>
+    <strong>{{ s.title }}</strong>
+    <span class="muted">{{ (s.hero.name if s.hero and s.hero.name else s.who) }} · session {{ s.session }}</span>
+    {% if s.note %}<small>{{ s.note }}</small>{% endif %}
+  </div>
+{% endfor %}
+</div>
+{% endblock %}

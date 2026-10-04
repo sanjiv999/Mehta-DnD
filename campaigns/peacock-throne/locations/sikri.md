@@ -2,6 +2,7 @@
 name: Sikri
 region: The Imperial Heartland
 public: true
+map: { x: 52, y: 40 }
 visited: true
 ---
 # Sikri, the Red City

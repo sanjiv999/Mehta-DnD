@@ -27,3 +27,10 @@ Every campaign has a **Door**: a place where the worlds touch. The Doors are lis
 A hero's species and class stay the same in mechanics but are *described* in the new world's terms.
 Example: a Tiger-kin Warrior in The Peacock Throne is a Kitsune Samurai on the Moon Road.
 Record the local name under `aliases:` in `character.yaml`.
+
+## The finished Lantern
+When all four pieces are found (frame, shade, wick, light), the series finale in
+`campaigns/starfall/chapters/06-the-lantern-of-many-roads.md` can be played from any world. The
+assembled Lantern opens every Door at once onto the Crossroads, lets friends visit between worlds,
+and lights one new road: a fifth campaign the family writes (`python tools/campaign.py new`).
+Heroes who hold the Lantern no longer need a keepsake to cross; they carry everything.

@@ -2,6 +2,7 @@
 name: The Naga Court
 region: Under the river, beyond the Makara rapids
 public: true
+map: { x: 78, y: 18 }
 visited: false
 ---
 # The Naga Court

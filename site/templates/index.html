@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% set accent = active.accent_color if active else none %}
 {% block content %}
-<section class="hero-banner">
+<section class="hero-banner" {% if active %}style="background-image: linear-gradient(to right, var(--bg2) 62%, rgba(255,255,255,0) 100%), url('{{ active.cover }}')"{% endif %}>
   <p class="eyebrow">Where we are</p>
   {% if active %}
   <h1>{{ active.title }}</h1>
@@ -14,7 +14,8 @@
   </div>
   {% if active.state.party_goal %}<p class="goal"><strong>The party's goal:</strong> {{ active.state.party_goal }}</p>{% endif %}
   {% if active.state.next_hook %}<blockquote class="hook">{{ active.state.next_hook }}</blockquote>{% endif %}
-  <a class="btn" href="campaigns/{{ active.id }}.html">Open the campaign →</a>
+  {% for ch in active.chapters if ch.number == active.state.chapter and ch.deck %}<a class="btn" href="play/{{ active.id }}/{{ '%02d'|format(ch.number) }}.html">▶ Play chapter {{ ch.number }}: {{ ch.title }}</a> {% endfor %}
+  <a class="btn ghostbtn" href="campaigns/{{ active.id }}.html">Open the campaign →</a>
   {% else %}
   <h1>Between adventures</h1>
   <p class="lede">No campaign is active. Pick one below to begin or resume.</p>
@@ -57,10 +58,11 @@
   <div class="cards">
     {% for cid in world.campaign_order if cid in campaigns %}{% set c = campaigns[cid] %}
     <a class="card camp-card status-{{ c.status }}" href="campaigns/{{ c.id }}.html" style="--accent: {{ c.accent_color }}">
+      <img class="card-cover" src="{{ c.cover }}" alt="">
       <span class="pill">{{ c.status }}</span>
       <h3>{{ c.title }}</h3>
       <p>{{ c.tagline }}</p>
-      <p class="muted">Levels {{ c.level_range[0] }} to {{ c.level_range[1] }} · {{ c.sessions|length }} sessions</p>
+      <p class="muted">{{ c.chapters|length }} chapters · about {{ c.hours|int }} hours · levels {{ c.level_range[0] }} to {{ c.level_range[1] }} · {{ c.sessions|length }} played</p>
       {% if c.state.resume_note %}<p class="muted"><em>Resume: {{ c.state.resume_note }}</em></p>{% endif %}
     </a>
     {% endfor %}
@@ -74,6 +76,12 @@ python tools/campaign.py resume peacock-throne</pre>
   </details>
 </section>
 
+<section>
+  <h2>Shortcuts</h2>
+  <div class="shortcuts">
+    <a href="build.html">🧙 Make a hero</a><a href="dice.html">🎲 Dice</a><a href="story.html">📖 The story so far</a><a href="stickers.html">🏅 Sticker book</a><a href="rules.html">📜 Rules</a>
+  </div>
+</section>
 {% if active and active.sessions %}
 <section>
   <h2>Recent sessions</h2>

@@ -2,6 +2,7 @@
 name: The Great Bazaar
 region: Sikri
 public: true
+map: { x: 58, y: 46 }
 visited: false
 ---
 # The Great Bazaar

@@ -72,6 +72,19 @@ Compose a prompt with `python tools/portrait_prompt.py <character-id>`. The DM p
 an image model, saves the result as `characters/<id>/portraits/NNN.png`, and runs
 `python tools/portrait_prompt.py <id> --record NNN.png --session N`.
 
+### 7. Write or extend a chapter
+Follow the scene convention exactly (see `campaigns/_template/chapters/01-template.md` and
+`tools/scenes.py`): `### Scene N: Title (kind)`, read-aloud in blockquotes, `- **Jobs for the kids:**`,
+`- **Choices:**` with an emoji-led nested list, `- **Image:**` art direction, `- **Music:**` mood.
+Every scene needs a mission for the five-year-old that cannot fail. Every chapter needs a d6
+complication table, rewards, and a "How it ends and what it sets up". Finales are conversations
+that look like fights. Run `python tools/build_site.py` to check the deck renders.
+
+### 8. Images
+`python tools/images.py plan --campaign <id> --missing` lists slots and prompts. Improve prompts in
+`campaigns/<id>/images/overrides.yaml` rather than editing chapter text. Never claim an image was
+generated unless the file exists. See `docs/IMAGES.md`.
+
 ## Style for narrative text
 Short sentences. Concrete sensory detail. Second person for recaps read aloud at the table.
 Journals are first person in the hero's voice and must sound like that hero.

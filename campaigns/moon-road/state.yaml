@@ -7,6 +7,12 @@ open_threads: []
 recent_events: []
 next_hook: A torii gate stands in the sea at the end of a pier. Through it, a fishing town where every
   lantern but one has gone dark.
-reputation: {}
+reputation:
+  shrine-keepers: 0
+  road-wardens: 0
+  hundred-night-parade: 0
+  lake: 0
+  castle: 0
 flags: {}
 resume_note: ''
+location_id: shiokaze

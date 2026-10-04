@@ -1,16 +1,25 @@
 id: starfall
 title: Starfall Station
-tagline: A space station at the edge of a nebula, a crew of four, and a signal nobody else can hear.
-setting: Starfall Station orbits a glowing nebula where ships go to be repaired, stories are traded, and something is singing from inside the cloud.
+tagline: A space station at the edge of a singing nebula, a dented ship with a personality, and a crew of four who are about to make first contact.
+setting: >-
+  Starfall Station orbits a glowing violet nebula where ships go to be repaired, stories are
+  traded, and something has started singing from inside the cloud. The station is run by a
+  cheerful forgetful AI, a dockmaster octopus, robots with hobbies, and a council of traders
+  who want the nebula left alone. Gravity fails for ten seconds every hour. Everyone floats politely.
 genre: sci-fi
 tone: [curiosity, teamwork, awe]
 status: planned
 accent_color: "#5e35b1"
 art_style: >-
-  Retro-futurist space opera illustration, soft nebula glow in violet and teal, chunky friendly
-  robots, clean hard-surface suits, optimistic Moebius-like linework.
+  Retro-futurist space opera illustration: soft nebula glow in violet and teal, chunky friendly
+  robots, clean hard-surface suits with coloured stripes, optimistic Moebius-like linework,
+  expressive faces suitable for children.
+cover_prompt: A ring-shaped space station lit warm against a vast violet and teal nebula, a small dented ship docking, tiny figures waving from a window, retro-futurist illustration
 level_range: [3, 7]
 door: Airlock 7, which opens onto a corridor that is not on the station's plans.
 lantern_piece: The light itself, a captured fragment of the nebula's song.
+map:
+  caption: Starfall Station and the Nebula
+  routes: [[repair-bay-7, the-ring], [the-ring, orbit-core], [the-ring, the-garden-deck], [the-ring, the-docks], [the-docks, the-nebula-edge], [the-nebula-edge, the-choir-ship], [the-choir-ship, the-heart-of-the-cloud]]
 started: null
 sessions_played: 0

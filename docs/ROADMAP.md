@@ -1,31 +1,25 @@
 # Roadmap
 
-## Phase 1: Foundation (this commit)
-- [x] Repository layout, data model, templates
-- [x] Family rules, kids mode, combat and dice reference
-- [x] Character builder guide and interactive CLI
-- [x] Four hero slots
-- [x] Flagship campaign: The Peacock Throne (chapter 1 fully playable)
-- [x] Three planned campaigns with premise and hooks
-- [x] Dice roller (CLI + web), random tables, oracle
-- [x] Session prep and ingest protocol for Claude
-- [x] Static site build and GitHub Pages deploy
-- [x] Validation workflow
+## Done
+- Repository layout, data model, templates, validation, Pages deploy
+- Family rules, kids mode, classes, combat, dice, crossings, advanced options
+- Character builder (guide, CLI, and the web wizard), four hero slots, worked example
+- Four campaigns, 23 chapters, roughly 60 hours of play: The Peacock Throne (5), Lanterns of
+  the Moon Road (6), The Emberwood (6), Starfall Station (5 + series finale)
+- Scene decks for play, DM screen build, illustrated maps, Story So Far, sticker book
+- Image pipeline: slots, consistent prompts, placeholders, generation, overrides, player art, PR approval
+- Transcript ingest: interactive (CLAUDE.md) and automatic (workflow + Anthropic API)
+- Dice roller, oracle and random tables (CLI and web)
 
-## Phase 2: First sessions
-- [ ] Session Zero: build all four heroes, generate portraits
-- [ ] Play chapter 1, run the ingest loop end to end, fix friction
+## Next
+- [ ] Session Zero: build the four heroes, generate portraits, play chapter 1
+- [ ] First image batch: covers, chapter covers, Peacock Throne NPCs and places
 - [ ] Tune kids-mode difficulty from real rolls in `dm/rolls.log`
+- [ ] Session recap illustrations after each session (`image_prompt` in the log)
 
-## Phase 3: Depth
-- [ ] Chapters 2 to 5 of The Peacock Throne
-- [ ] Battle map images for key locations
-- [ ] Automated portrait generation via `portrait.yml` workflow with an API secret
-- [ ] Map page on the site (SVG with visited locations lit up)
-- [ ] Achievements and "hero moments" gallery for the kids
-
-## Phase 4: More worlds
-- [ ] Lanterns of the Moon Road chapter 1
-- [ ] The Emberwood chapter 1
-- [ ] Starfall Station chapter 1
-- [ ] Cross-campaign artifact that links all four worlds
+## Later
+- [ ] Battle-map images for the four finales
+- [ ] Sound: a "music" link per scene to a playlist (the chips already carry the mood words)
+- [ ] A printable hero card (the print stylesheet exists; a PDF export would be nicer)
+- [ ] The fifth world, written by the family in the series finale
+- [ ] Voice: read-aloud text to speech on the deck for when the DM's voice is gone

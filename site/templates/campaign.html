@@ -3,8 +3,8 @@
 {% block title %}{{ campaign.title }} · Mehta D&D{% endblock %}
 {% block content %}
 <article>
-  <header class="camp-head">
-    <p class="eyebrow">{{ campaign.genre }} · {{ campaign.status }} · levels {{ campaign.level_range[0] }} to {{ campaign.level_range[1] }}</p>
+  <header class="camp-head" style="background-image: linear-gradient(to bottom, rgba(0,0,0,.15), var(--bg) 95%), url('{{ root }}{{ campaign.cover }}')">
+    <p class="eyebrow">{{ campaign.genre }} · {{ campaign.status }} · levels {{ campaign.level_range[0] }} to {{ campaign.level_range[1] }} · {{ campaign.chapters|length }} chapters · about {{ campaign.hours|int }} hours</p>
     <h1>{{ campaign.title }}</h1>
     <p class="lede">{{ campaign.tagline }}</p>
     {% if campaign.status in ['active', 'paused'] %}
@@ -15,42 +15,78 @@
       <div><span class="k">Goal</span><span class="v">{{ campaign.state.party_goal }}</span></div>
     </div>
     {% if campaign.state.next_hook %}<blockquote class="hook">{{ campaign.state.next_hook }}</blockquote>{% endif %}
+    {% for ch in campaign.chapters if ch.number == campaign.state.chapter and ch.deck %}<a class="btn" href="{{ root }}play/{{ campaign.id }}/{{ '%02d'|format(ch.number) }}.html">▶ Play chapter {{ ch.number }}</a>{% endfor %}
     {% endif %}
   </header>
 
   <div class="tabs">
     <input type="radio" name="t" id="t-story" checked><label for="t-story">Story</label>
+    <input type="radio" name="t" id="t-map"><label for="t-map">Map</label>
     <input type="radio" name="t" id="t-world"><label for="t-world">World</label>
     <input type="radio" name="t" id="t-people"><label for="t-people">People</label>
     <input type="radio" name="t" id="t-places"><label for="t-places">Places</label>
     <input type="radio" name="t" id="t-sessions"><label for="t-sessions">Sessions ({{ campaign.sessions|length }})</label>
+    {% if dm %}<input type="radio" name="t" id="t-dm"><label for="t-dm">DM</label>{% endif %}
 
     <section class="tab" id="p-story">
       <h2>Chapters</h2>
       <ol class="chapters">
-      {% for ch in campaign.chapters %}<li class="status-{{ ch.status }}"><strong>{{ ch.title }}</strong> <span class="pill">{{ ch.status }}</span></li>{% endfor %}
+      {% for ch in campaign.chapters %}
+        <li class="status-{{ ch.status }} chapter-row">
+          <img src="{{ root }}{{ ch.image }}" alt="">
+          <div>
+            <strong>{{ ch.title }}</strong> <span class="pill">{{ ch.status }}</span>
+            <p class="muted">{{ ch.summary }}</p>
+            <p class="muted small">{{ ch.scenes|length }} scenes · {{ ch.sessions_estimate }} session{{ 's' if ch.sessions_estimate != 1 }} · about {{ ch.hours_estimate }} h · levels {{ ch.levels[0] }}–{{ ch.levels[1] }}
+            {% if ch.deck %} · <a href="{{ root }}play/{{ campaign.id }}/{{ '%02d'|format(ch.number) }}.html">open the deck →</a>{% endif %}</p>
+          </div>
+        </li>
+      {% endfor %}
       </ol>
       {% if campaign.state.open_threads %}<h2>Open threads</h2><ul class="threads">{% for t in campaign.state.open_threads if t.status != 'resolved' %}<li>{{ t.text }}</li>{% endfor %}</ul>{% endif %}
       {% if campaign.state.recent_events %}<h2>Recently</h2><ul>{% for e in campaign.state.recent_events %}<li>{{ e }}</li>{% endfor %}</ul>{% endif %}
       {% if campaign.state.reputation %}<h2>Reputation</h2><ul class="rep">{% for k, v in campaign.state.reputation.items() %}<li><span>{{ k }}</span><meter min="-3" max="3" value="{{ v }}"></meter><span>{{ '%+d'|format(v) }}</span></li>{% endfor %}</ul>{% endif %}
+      {% if campaign.side_quests_html %}<details class="howto"><summary>Side quests</summary><div class="prose">{{ campaign.side_quests_html|safe }}</div></details>{% endif %}
     </section>
-    <section class="tab prose" id="p-world">{{ campaign.html }}</section>
+
+    <section class="tab" id="p-map">
+      <p class="muted">{{ campaign.map.caption if campaign.map else '' }} · lit places have been visited · the glowing one is where the party is now.</p>
+      <div class="map" style="background-image: url('{{ root }}{{ campaign.map_image }}')">
+        <svg viewBox="0 0 100 60" preserveAspectRatio="none" class="map-routes">
+          {% for a_, b_ in campaign.map_routes %}<line x1="{{ a_.map.x }}" y1="{{ a_.map.y * 0.6 }}" x2="{{ b_.map.x }}" y2="{{ b_.map.y * 0.6 }}"/>{% endfor %}
+        </svg>
+        {% for l in campaign.locations if l.map %}
+        <a class="pin {% if l.visited %}visited{% endif %} {% if l.slug == campaign.state.location_id %}here{% endif %}" style="left: {{ l.map.x }}%; top: {{ l.map.y }}%" href="#p-places" title="{{ l.name }}">
+          <span class="dot"></span><span class="label">{{ l.name }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="tab prose" id="p-world">{{ campaign.html|safe }}</section>
     <section class="tab" id="p-people">
-      <div class="cards">{% for n in campaign.npcs %}<div class="card prose"><p class="eyebrow">{{ n.role }} · {{ n.attitude }}</p>{{ n.html }}</div>{% endfor %}</div>
+      <div class="cards">{% for n in campaign.npcs %}<div class="card prose npc-card"><img src="{{ root }}{{ n.image }}" alt=""><p class="eyebrow">{{ n.role }} · {{ n.attitude }}</p>{{ n.html|safe }}{% if dm and n.secret_html %}<div class="dmnotes"><strong>Secret</strong>{{ n.secret_html|safe }}</div>{% endif %}</div>{% endfor %}</div>
     </section>
     <section class="tab" id="p-places">
-      <div class="cards">{% for l in campaign.locations %}<div class="card prose {% if l.visited %}visited{% endif %}"><p class="eyebrow">{{ l.region }}{% if l.visited %} · visited{% endif %}</p>{{ l.html }}</div>{% endfor %}</div>
+      <div class="cards">{% for l in campaign.locations %}<div class="card prose place-card {% if l.visited %}visited{% endif %}"><img src="{{ root }}{{ l.image }}" alt=""><p class="eyebrow">{{ l.region }}{% if l.visited %} · visited{% endif %}</p>{{ l.html|safe }}{% if dm and l.secret_html %}<div class="dmnotes"><strong>Secret</strong>{{ l.secret_html|safe }}</div>{% endif %}</div>{% endfor %}</div>
     </section>
     <section class="tab" id="p-sessions">
       {% if not campaign.sessions %}<p class="muted">No sessions yet. The first one is waiting.</p>{% endif %}
       {% for s in campaign.sessions|reverse %}
       <details class="session" id="session-{{ s.number }}" {% if loop.first %}open{% endif %}>
         <summary>Session {{ s.number }}: {{ s.title }} <span class="muted">{{ s.date }}</span></summary>
-        <div class="prose">{{ s.html }}</div>
+        {% if s.image %}<img class="session-img" src="{{ root }}{{ s.image }}" alt="">{% endif %}
+        <div class="prose">{{ s.html|safe }}</div>
         {% if s.hero_moments %}<div class="badges">{% for m in s.hero_moments %}<span class="badge">🏅 {{ m.who }}: {{ m.what }}</span>{% endfor %}</div>{% endif %}
       </details>
       {% endfor %}
     </section>
+    {% if dm %}
+    <section class="tab" id="p-dm">
+      <p class="pill">DM only · never publish this build</p>
+      {% for p in campaign.dm_pages %}<details class="dmpage"><summary>{{ p.title }}</summary><div class="prose">{{ p.html|safe }}</div></details>{% endfor %}
+    </section>
+    {% endif %}
   </div>
 </article>
 {% endblock %}

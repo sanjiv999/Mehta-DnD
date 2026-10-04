@@ -2,6 +2,7 @@
 name: The Baoli of Whispers
 region: Sikri, beneath the old city
 public: true
+map: { x: 47, y: 48 }
 visited: false
 ---
 # The Baoli of Whispers

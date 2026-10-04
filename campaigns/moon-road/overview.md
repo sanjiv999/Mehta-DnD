@@ -1,33 +1,37 @@
 # Lanterns of the Moon Road
 
-## The pitch
-Every autumn the villages along the Moon Road light stone lanterns so the mountain spirits can
-find their way home. This year the lanterns are going out one by one, from the sea toward the
-mountains, and nobody knows why. The heroes are hired, begged or tricked into walking the road
-and relighting them, meeting the spirits of each station: a grumpy tanuki innkeeper, a crane who
-owes a debt, a dragon who sleeps under a lake and is dreaming the wrong dream.
+## The pitch (read this to the players)
+Every autumn the villages along the Moon Road light their stone lanterns so the mountain spirits
+can find their way home for the winter. The road runs from the sea to the shrine on Mount
+Tsukimi, and there are six stations along it, each with its own spirits and its own trouble.
+This year the lanterns are going out, one station at a time, from the sea toward the mountain.
+If they all go dark before the first snow, the spirits will be lost, and a lost spirit is a sad
+and dangerous thing.
 
-The road has thirteen stations. Each is a session. At the end is the shrine on the mountain
-where the first lantern was lit, and the answer to who is blowing them out.
+You arrive through a torii gate standing in the sea. A small fox with two tails is waiting on
+the pier. She says she has forgotten her name, and that you are late.
 
 ## The world in five facts
-1. Spirits (yokai) are everywhere and mostly polite. Rudeness is the real danger.
-2. Every village has a shrine and a shrine has a keeper, a fox, or both.
-3. The Shogun's samurai keep order on the road but cannot see spirits. The heroes can.
-4. Paper, salt and song are the three tools that work on spirits. Swords only annoy them.
-5. The dragon under Lake Kagami dreams the weather.
+1. **Spirits are everywhere and mostly polite.** Yokai live in every tree, pot and puddle. Rudeness is the real danger.
+2. **Paper, salt and song work on spirits.** Swords only annoy them. Ofuda (paper charms) are the real weapons.
+3. **The samurai cannot see spirits.** The Shogun's road wardens keep order and think the heroes are odd.
+4. **Every station has a keeper.** A shrine keeper, a fox, or both. Help the keeper and the lantern can be relit.
+5. **The dragon under Lake Kagami dreams the weather.** When she has a nightmare, it snows in summer.
 
 ## What heroes do here
-Relight lanterns, solve a spirit's problem at each station, collect ofuda (paper charms) as
-rewards, and gradually learn the lantern-thief's name.
+Walk the road station by station. At each, solve the spirits' trouble, relight the lantern, earn
+an ofuda, and learn a little more about who is blowing the lanterns out. Then climb the mountain.
 
 ## Factions
-- The Shrine Keepers (allies, scattered)
-- The Shogun's Road Wardens (lawful, blind to spirits)
-- The Hundred-Night Parade (mischievous yokai who are not the villains but love a prank)
-- Whoever is blowing out the lanterns (nobody knows yet)
+| Faction | What they want | Face |
+|---|---|---|
+| The Shrine Keepers | The lanterns lit | Old Keeper Hoshi |
+| The Road Wardens | Order, and for the heroes to stop talking to "nothing" | Captain Masaru |
+| The Hundred-Night Parade | Pranks, parties, to be invited | Tanuki Boss Ponkichi |
+| The Lake | Sleep | Ryūko the dragon |
+| The one blowing out the lanterns | Not what you think | see dm/ |
 
 ## Hooks for each hero
-- A kid hero is adopted for the journey by a small fox spirit who speaks only in riddles.
-- A grown-up hero recognises the road from a dream.
-- Any hero's keepsake glows at the first station.
+- A **kid hero** is adopted by Kiko, the two-tailed fox, who rides on their shoulder and speaks in riddles.
+- A **grown-up hero** has walked this road in a dream and remembers the sixth station before seeing it.
+- Any hero's **keepsake** glows warm at the first station: the lantern recognises it.

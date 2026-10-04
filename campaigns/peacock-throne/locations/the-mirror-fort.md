@@ -2,6 +2,7 @@
 name: The Mirror Fort
 region: The Western Desert, three days by camel
 public: true
+map: { x: 14, y: 30 }
 visited: false
 ---
 # The Mirror Fort

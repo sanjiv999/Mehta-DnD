@@ -4,13 +4,23 @@ location: Sikri, the Nauroz festival grounds outside the Diwan-i-Am
 world_date: First morning of Nauroz, year 42 of the Peacock Throne
 party_goal: Find Badal, the Padishah's white elephant, before the sunset parade.
 open_threads:
-  - { id: grey-gems, text: "Gems on the Peacock Throne are losing their colour. Nobody at court will say it aloud.", since_session: 0, status: open }
-  - { id: badal, text: "Badal the white elephant walked out of the royal stables at dawn and nobody stopped him.", since_session: 0, status: open }
+- id: grey-gems
+  text: Gems on the Peacock Throne are losing their colour. Nobody at court will say it aloud.
+  since_session: 0
+  status: open
+- id: badal
+  text: Badal the white elephant walked out of the royal stables at dawn and nobody stopped him.
+  since_session: 0
+  status: open
 recent_events: []
-next_hook: >-
-  Shahzadi Zeb has slipped away from her tutors and found the party in the festival crowd.
-  She whispers: "My brother's elephant is missing, and I think he went on purpose. Will you help me
-  before the whole court notices?"
-reputation: { court: 0, bazaar: 0, vanara-guild: 0, naga: 0 }
+next_hook: 'Shahzadi Zeb has slipped away from her tutors and found the party in the festival crowd. She
+  whispers: "My brother''s elephant is missing, and I think he went on purpose. Will you help me before
+  the whole court notices?"'
+reputation:
+  court: 0
+  bazaar: 0
+  vanara-guild: 0
+  naga: 0
 flags: {}
-resume_note: ""
+resume_note: ''
+location_id: sikri

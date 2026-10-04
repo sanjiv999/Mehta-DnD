@@ -6,6 +6,12 @@ party_goal: Find out why ships come back from the nebula with their crews hummin
 open_threads: []
 recent_events: []
 next_hook: The hourly gravity outage has just begun, and a humming freighter is drifting toward the dock.
-reputation: {}
+reputation:
+  orbit: 0
+  dock-guild: 0
+  council: 0
+  robots: 0
+  the-choir: 0
 flags: {}
 resume_note: ''
+location_id: repair-bay-7

@@ -1,16 +1,25 @@
 id: emberwood
 title: The Emberwood
-tagline: A classic forest-and-castle fantasy with a dragon who is not what she seems.
-setting: The free town of Hearth on the edge of a vast enchanted forest, with ruins, goblins, a wizard's tower and a dragon on the mountain.
+tagline: "A classic forest-and-castle fantasy: goblin markets, a seven-year-old wizard, dwarven halls, and a dragon who is afraid of something."
+setting: >-
+  The free town of Hearth on the edge of the Emberwood, a vast forest whose trees glow faintly
+  at night and whose paths rearrange themselves. Goblins run a night market, a wizard's tower
+  holds a child prodigy, old dwarven halls run under everything, and on the mountain lives
+  Sunder the dragon, who the town pays in pies. This year the pies have stopped working.
 genre: fantasy
 tone: [adventure, cosy, brave]
 status: planned
 accent_color: "#2e7d32"
 art_style: >-
-  Classic fantasy book-cover oil painting, golden-hour forest light, rich greens and bronze,
-  detailed armor and cloaks, slight storybook whimsy.
+  Classic fantasy book-cover oil painting: golden-hour forest light, rich greens and bronze,
+  detailed cloaks and armour, glowing mushrooms and fireflies, a touch of storybook whimsy,
+  warm expressive faces suitable for children.
+cover_prompt: A cosy town with a hedge wall at the edge of a glowing enchanted forest at dusk, a dragon silhouette on a distant mountain, fireflies, oil painting style
 level_range: [1, 6]
-door: A hollow oak with a door-knocker shaped like a sleeping fox.
+door: A hollow oak in the hedge with a door-knocker shaped like a sleeping fox.
 lantern_piece: The brass frame, forged by dwarves for a king who never came to collect it.
+map:
+  caption: Hearth and the Emberwood
+  routes: [[hearth, the-hedge], [the-hedge, night-market], [night-market, the-tower], [the-tower, the-deep-halls], [the-deep-halls, sunders-peak], [hearth, the-tower]]
 started: null
 sessions_played: 0

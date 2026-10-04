@@ -4,6 +4,10 @@ title: The Elephant Who Walked Away
 status: active
 levels: [1, 2]
 sessions_estimate: 2
+hours_estimate: 2.5
+summary: The Padishah's white elephant has wandered off on festival morning. Find him before the sunset parade.
+music: festival drums, sitar, bells
+image_prompt: A white elephant painted with festival flowers walking calmly out of a red sandstone gate at dawn while guards bow, kites in the sky
 ---
 # Chapter 1: The Elephant Who Walked Away
 
@@ -19,66 +23,87 @@ found quietly. Badal, it turns out, has gone to help someone.
 ## Scenes
 
 ### Scene 1: The festival crowd (social)
-- **Setup:** Drums, kites, sugar-cane juice, a cheetah on a leash yawning in the shade. Zeb appears,
-  disguised in a servant's shawl, and asks for help. She gives the party a **golden anklet bell**
-  that Badal shed in the stable.
-- **Jobs for the kids:** Pick which of three stalls to ask first (sweets, kites, or the cheetah handler).
-  Each gives a clue. Keisha's job: ring the bell and listen; it hums when pointed toward Badal.
-- **Choices:** Ask around openly (Persuasion, Easy) or sneak into the stables for tracks (Sneaking, Tricky).
-- **Outcomes:** Either way they learn Badal headed toward the Great Bazaar, and that he was
-  "following a sound". Bibi Chandni mentions, unprompted, that the parrots have gone quiet.
+> Drums. Kites in every colour. The smell of sugar-cane juice and hot jalebi. A cheetah on a
+> golden leash yawns in the shade. You have come to Sikri for Nauroz, the festival of the new
+> year, and the whole red city is dancing.
+> A girl in a servant's shawl pushes through the crowd and stops in front of you. Ink on her
+> fingers. A gold ring she has forgotten to hide. "You look like people who can keep a secret,"
+> she says. "My brother's elephant is missing. Will you help me before the whole court notices?"
+- **Setup:** Zeb, disguised badly. She gives the party a **golden anklet bell** Badal shed in the stable.
+- **Jobs for the kids:** Keisha rings the bell and listens; it hums when pointed toward Badal (cannot fail). Arya chooses which stall to ask first.
+- **Choices:**
+  - 🍬 Ask the sweet-seller
+  - 🪁 Ask the kite-maker
+  - 🐆 Ask the cheetah handler
+  - 🤫 Sneak into the stables for tracks
+- **Rolls:** Persuasion Easy (asking) or Sneaking Tricky (stables). Any success gives the clue.
+- **Outcomes:** Badal headed for the Great Bazaar "following a sound". Bibi Chandni adds, unprompted, that the parrots have gone quiet.
+- **Image:** A girl in a servant's shawl holding out a tiny golden bell to four heroes in a festival crowd
+- **Music:** festival drums and flutes
 
 ### Scene 2: The Great Bazaar (exploration)
-- **Setup:** Elephant-sized gap through the spice stalls. Turmeric footprints. The Vanara Guild
-  on the rooftops are laughing at something.
-- **Jobs for the kids:** Follow the yellow footprints (cannot fail). Arya's job: spot that one footprint is
-  going the wrong way (Perception, Easy, gives a secret: a second set of tiny tracks beside Badal's).
-- **Choices:** Bribe the vanara with mangoes (they tell everything), climb up to them (Athletics, Tricky),
-  or ignore them (they drop a pot on someone, Whoops-style).
-- **Complication:** A merchant insists Badal ate his entire stock of bananas and wants the heroes to pay.
-  Truth: the monkeys did. Resolving it earns Bazaar reputation +1.
-- **Outcomes:** The trail leads down the ghats to the river and then, strangely, back up into the city
-  toward the Baoli of Whispers.
+> The bazaar is a canyon of colour. Spice pyramids as tall as you, silk awnings, a hundred voices
+> bargaining. And straight down the middle, an elephant-sized gap through the stalls, with
+> big round yellow footprints in the spilled turmeric. On the rooftops, monkeys in little red
+> sashes are laughing at something.
+- **Setup:** The Vanara Guild watched everything. A merchant is furious about missing bananas.
+- **Jobs for the kids:** Follow the yellow footprints (cannot fail). Arya spots one footprint going the wrong way (Perception Easy) and finds a second set of tiny tracks beside Badal's.
+- **Choices:**
+  - 🥭 Offer the monkeys mangoes
+  - 🧗 Climb up and talk to them
+  - 🙈 Ignore them
+  - 🍌 Help the banana merchant first
+- **Rolls:** Athletics Tricky to climb. Persuasion Easy for the banana dispute; the truth (monkeys did it) settles it and gives Bazaar reputation +1.
+- **Outcomes:** Trail goes down to the river ghats, then back up into the old city toward the Baoli of Whispers. Captain Hanuvant says Badal was "listening to the ground".
+- **Image:** Kids following huge yellow turmeric footprints through a spice bazaar while monkeys in red sashes watch from awnings
+- **Music:** bazaar bustle, bells
 
 ### Scene 3: The Baoli of Whispers (exploration, then action)
-- **Setup:** A stepwell the size of a palace turned upside down into the earth. Badal is at the bottom,
-  standing in dry stone where water should be, trunk raised, humming. The whispers are the djinn
-  of the well calling for help: the water has gone **grey and still**, and a djinn child named
-  **Firoz** is stuck in the stone at the bottom step. Badal was the only one who heard.
-- **Jobs for the kids:** Count the steps down (108). Keisha names the djinn child's favourite colour,
-  which turns out to be the key. Arya finds the loose carved tile that shows a peacock feather.
+> A palace turned upside down into the earth. One hundred and eight steps zigzag down to a square
+> of water that should be green and is grey. From every carved niche, a whisper says your name.
+> At the very bottom, standing in a square of dry stone where water should be, is a white
+> elephant with his trunk raised, humming.
+- **Setup:** The djinn child Firoz is stuck in the stone of the lowest step. Badal heard him crying. The grey water is the first sign of the stolen colour.
+- **Jobs for the kids:** Count the steps down (they can count by tens). Keisha names Firoz's favourite colour; it is the key. Arya finds the loose tile carved with a peacock feather.
 - **Choices:**
-  - Free Firoz with gentleness: sing, tell a story, or share a colour (any Performance or Persuasion, Easy).
-  - Free Firoz with force: break the stone (Athletics, Hard, and it upsets the well).
-- **Action:** When Firoz is freed, the grey water lurches up as **three Mirror-Shards** (see dm/bestiary.md):
-  reflections of the heroes made of grey glass. They are beaten by being shown something colourful,
-  or by ordinary attacks. **How it ends:** each shard shatters into coloured sand that Firoz gathers happily.
-- **Outcomes:** Firoz's mother, the djinn **Lady Shabnam**, grants a boon: each hero may ask one
-  question of the well, which answers truthfully but in riddles. Badal lets the kids ride him home.
+  - 🎵 Sing or tell a story to the stone
+  - 🌈 Share a colour with Firoz
+  - 💪 Break the stone (upsets the well)
+- **Rolls:** Performance or Persuasion Easy to free Firoz gently. Athletics Hard to break it.
+- **Action:** Freeing Firoz makes the grey water rear up as three **Mirror-Shards** (dm/bestiary.md), one per hero present. They copy the heroes. Showing them something colourful (Performance Easy) deals 1d8. **How it ends:** each shatters into coloured sand that Firoz scoops up, giggling.
+- **Outcomes:** Lady Shabnam grants a boon: one question each, answered truthfully in a riddle. Badal lets the kids ride him home.
+- **Image:** A vast stepwell with 108 zigzag steps, a white elephant at the bottom beside a small orange smoke-child, grey water glowing
+- **Music:** echoing water drips, low hum, then rising strings
 
 ### Scene 4: The parade (social, celebration)
-- **Setup:** Sunset. Badal walks in the parade with the heroes on his back. The Padishah, who is
-  eleven, is thrilled. Zeb mouths "thank you." As the throne is carried past, a **ruby** on it goes grey
-  in full view of the crowd.
-- **Jobs for the kids:** Wave. Choose a sweet from Bibi Chandni's tray. Name the elephant's new trick.
-- **Outcomes:** The party is invited to the palace as "Friends of the Throne". Chapter 2 hook: Zeb
-  asks them to find out why the throne is greying, and the Vizier of Mirrors, smiling, offers to "assist".
+> Sunset turns the red walls to gold. Badal walks in the parade with you on his back, flowers
+> painted on his trunk, and the crowd roars. The Padishah, who is eleven, stands up on the
+> throne and cheers so loudly a vizier has to hold his turban. Zeb mouths "thank you". And then,
+> as the throne is carried past, a ruby the size of your fist goes grey. Everybody saw.
+- **Jobs for the kids:** Wave. Choose a sweet from Bibi Chandni's tray. Name Badal's new trick (it is now canon).
+- **Choices:**
+  - 👑 Tell the Padishah about the grey ruby
+  - 🤫 Tell only Zeb
+  - 🔍 Watch the Vizier's face
+- **Outcomes:** The party is named "Friends of the Throne". Court reputation +1. The Vizier of Mirrors offers to "assist" the heroes. Mirza the parrot lands on a kid and says one word: "Mirror."
+- **Image:** A sunset parade with a flower-painted white elephant carrying four heroes past a jewelled throne, one gem glowing grey
+- **Music:** triumphant drums, shehnai
 
 ## Complications (roll d6 if a scene stalls)
 1. A kite string tangles a kid hero and a cheetah. The cheetah is friendly and heavy.
-2. The Vanara Guild steals the golden bell. Chase on the rooftops (Acrobatics, Tricky).
-3. A palace guard recognises Zeb. Bluffing (Easy) or she hides in Badal's shadow.
-4. The grey water in the baoli rises one step. Hurry.
-5. Mirza the parrot lands on someone and says a single word: "Mirror."
+2. The Vanara Guild steals the golden bell. Rooftop chase (Acrobatics Tricky).
+3. A palace guard recognises Zeb. Bluffing Easy, or she hides in Badal's shadow.
+4. The grey water rises one step. Hurry.
+5. Mirza lands on someone and says "Mirror."
 6. Firoz hiccups and turns the nearest hero's hair a new colour for the rest of the session.
 
 ## Rewards
-- 100 XP per hero for the scene with Firoz, 50 for the bazaar, 50 for the parade. Most heroes reach level 2.
+- 100 XP for the baoli, 50 for the bazaar, 50 for the parade. Heroes reach level 2.
 - The **golden anklet bell** (keepsake-eligible: hums toward lost friends).
-- Bazaar reputation +1 if the banana dispute was settled. Court reputation +1.
-- A boon question each from the well. Record answers in state.yaml under flags.
+- Court +1, Bazaar +1 if the bananas were settled.
+- A boon question each. Record answers in state.yaml flags.
 
 ## How it ends and what it sets up
-Badal is home, the festival is saved, and the whole court saw a gem go grey. The Vizier
-Qamar-i-Aina has noticed the heroes. The well's whispers now say the heroes' names *and* one
-more: "Aina" (mirror). Chapter 2 opens three nights later at the Night Market of Lamps.
+Badal is home, the festival is saved, and the whole court saw a gem go grey. The well's whispers
+now say the heroes' names and one more: "Aina" (mirror). Chapter 2 opens three nights later at
+the Festival of Lamps.

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Make a Hero · Mehta D&D{% endblock %}
+{% block head %}<script defer src="{{ root }}static/build.js"></script>{% endblock %}
+{% block content %}
+<div class="wizard" id="wizard">
+  <h1>Make a hero</h1>
+  <p class="muted">Tap what you like. There are no wrong answers. You can change anything later.</p>
+  <div id="steps"></div>
+  <nav class="decknav"><button id="back" class="ghost">◀ Back</button><span id="wpos"></span><button id="fwd">Next ▶</button></nav>
+  <section id="result" hidden>
+    <h2>Your hero</h2>
+    <div id="summary" class="card"></div>
+    <p>Download the sheet and put it in <code>characters/&lt;id&gt;/character.yaml</code>, or show it to the Dungeon Master.</p>
+    <button id="download">Download character.yaml</button>
+    <details><summary>Show the file</summary><pre id="yaml"></pre></details>
+  </section>
+</div>
+{% endblock %}

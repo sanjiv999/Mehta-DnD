@@ -4,6 +4,7 @@ from __future__ import annotations
 import sys
 from common import (CAMPAIGNS, CHARACTERS, TABLES, load_yaml, load_md, world,
                     campaign_ids, character_ids)
+from scenes import parse_chapter
 
 CHAR_REQUIRED = ["id", "player", "name", "status", "kids_mode", "level", "xp", "abilities", "hp", "ac",
                  "powers", "inventory", "appearance", "personality", "portrait"]
@@ -101,8 +102,20 @@ def main() -> int:
                     for a in meta.get("attendees", []):
                         if a not in chids:
                             problems.append(f"{md}: attendee {a!r} unknown")
-                elif sub == "chapters" and "number" not in meta:
-                    problems.append(f"{md}: missing number")
+                elif sub == "chapters":
+                    for k in ["number", "title", "status", "levels", "summary"]:
+                        if k not in meta:
+                            problems.append(f"{md}: missing {k}")
+                    ch = parse_chapter(md)
+                    if not ch["scenes"]:
+                        problems.append(f"{md}: no '### Scene N: Title (kind)' headings found")
+                    for s in ch["scenes"]:
+                        if not s["read_aloud"]:
+                            problems.append(f"{md}: scene {s['number']} has no read-aloud blockquote")
+                        if not s["jobs"]:
+                            problems.append(f"{md}: scene {s['number']} has no 'Jobs for the kids'")
+                        if not s["choices"]:
+                            problems.append(f"{md}: scene {s['number']} has no Choices list")
                 elif sub in ("npcs", "locations") and "name" not in meta:
                     problems.append(f"{md}: missing name")
     if active > 1:
@@ -117,7 +130,8 @@ def main() -> int:
         print("\n".join(f"  ✗ {p}" for p in problems))
         print(f"\n{len(problems)} problem(s).")
         return 1
-    print(f"✓ {len(chids)} heroes, {len(cids)} campaigns, {len(list(TABLES.glob('*.yaml')))} tables: all valid.")
+    nch = sum(len(list((CAMPAIGNS / c / 'chapters').glob('*.md'))) for c in cids)
+    print(f"✓ {len(chids)} heroes, {len(cids)} campaigns, {nch} chapters, {len(list(TABLES.glob('*.yaml')))} tables: all valid.")
     return 0
 
 

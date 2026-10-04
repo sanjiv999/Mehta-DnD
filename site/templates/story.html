@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}The Story So Far · Mehta D&D{% endblock %}
+{% block content %}
+<h1>The Story So Far</h1>
+{% if not story %}<p class="muted">No sessions yet. The first chapter is waiting on the campaign page.</p>{% endif %}
+{% set ns = namespace(last=none) %}
+{% for e in story %}
+  {% if e.campaign.id != ns.last %}<h2 style="--accent: {{ e.campaign.accent_color }}; color: var(--accent)">{{ e.campaign.title }}</h2>{% set ns.last = e.campaign.id %}{% endif %}
+  <article class="storycard" style="--accent: {{ e.campaign.accent_color }}">
+    {% if e.session.image %}<img src="{{ e.session.image }}" alt="">{% endif %}
+    <div><p class="eyebrow">Session {{ e.session.number }} · {{ e.session.date }}</p><h3>{{ e.session.title }}</h3><div class="prose">{{ e.recap_html|safe }}</div>
+    <a href="campaigns/{{ e.campaign.id }}.html#session-{{ e.session.number }}">Read the full log →</a></div>
+  </article>
+{% endfor %}
+{% endblock %}

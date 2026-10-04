@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% set accent = campaign.accent_color %}
+{% block title %}{{ chapter.title }} · {{ campaign.title }}{% endblock %}
+{% block head %}<script defer src="{{ root }}static/deck.js"></script>{% endblock %}
+{% block content %}
+<div class="deck" id="deck" data-count="{{ chapter.scenes|length + 1 }}">
+  <section class="slide active" data-i="0">
+    <div class="slide-img"><img src="{{ root }}{{ chapter.image }}" alt=""></div>
+    <div class="slide-body">
+      <p class="eyebrow">{{ campaign.title }} · Chapter {{ chapter.number }}{% if dm %} · DM screen{% endif %}</p>
+      <h1>{{ chapter.title }}</h1>
+      <p class="lede">{{ chapter.summary }}</p>
+      {% if chapter.music %}<p class="chip">🎵 {{ chapter.music }}</p>{% endif %}
+      <p class="muted">{{ chapter.scenes|length }} scenes · about {{ chapter.hours_estimate }} hours · levels {{ chapter.levels[0] }} to {{ chapter.levels[1] }}</p>
+      {% if dm %}<details class="dmnotes" open><summary>DM: premise, goal, complications, rewards</summary>{{ chapter.dm_html|safe }}</details>{% endif %}
+    </div>
+  </section>
+  {% for s in chapter.scenes %}
+  <section class="slide" data-i="{{ loop.index }}">
+    <div class="slide-img"><img src="{{ root }}{{ s.image_url }}" alt=""></div>
+    <div class="slide-body">
+      <p class="eyebrow">Scene {{ s.number }}{% if s.kind %} · {{ s.kind }}{% endif %}</p>
+      <h2>{{ s.title }}</h2>
+      <div class="readaloud">{% for p in s.read_aloud %}<p>{{ p }}</p>{% endfor %}</div>
+      {% if s.jobs %}<div class="missions"><strong>🎯 Your missions</strong><p>{{ s.jobs }}</p></div>{% endif %}
+      {% if s.choices %}<div class="choices">{% for c in s.choices %}<button class="choice">{{ c }}</button>{% endfor %}</div>{% endif %}
+      {% if s.music %}<p class="chip">🎵 {{ s.music }}</p>{% endif %}
+      {% if dm %}<details class="dmnotes"><summary>DM notes</summary>{{ s.dm_html|safe }}</details>{% endif %}
+    </div>
+  </section>
+  {% endfor %}
+  <nav class="decknav">
+    <button id="prev" class="ghost">◀</button>
+    <span id="pos">1 / {{ chapter.scenes|length + 1 }}</span>
+    <button id="next">▶</button>
+    <a class="ghost btnlink" href="{{ root }}campaigns/{{ campaign.id }}.html">Campaign</a>
+    <a class="ghost btnlink" href="{{ root }}dice.html">Dice</a>
+  </nav>
+</div>
+{% endblock %}

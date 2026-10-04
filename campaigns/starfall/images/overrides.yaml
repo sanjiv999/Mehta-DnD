@@ -1,0 +1,4 @@
+# Human spark: write a better prompt for any image slot here and it replaces the generated one.
+# Slot names come from `python tools/images.py plan --campaign <id>`. Example:
+# ch01-s3: "A vast stepwell at twilight, 108 zigzag steps, a white elephant at the bottom beside a giggling child made of orange smoke"
+{}

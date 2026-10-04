@@ -3,6 +3,7 @@
 {% block title %}{{ hero.name or hero.player }} · Mehta D&D{% endblock %}
 {% block content %}
 <article class="sheet">
+  <p class="noprint"><button class="ghost" onclick="window.print()">🖨 Print this hero</button></p>
   <header class="sheet-head">
     <div class="portrait big">
       {% if hero.portrait.current %}<img src="{{ hero.id }}/{{ hero.portrait.current.split('/')[-1] }}" alt="{{ hero.name }}">
@@ -50,7 +51,7 @@
     <section>
       <h2>Pack</h2>
       {% if hero.keepsake %}<p class="keepsake">★ Keepsake: {{ hero.keepsake }}</p>{% endif %}
-      <ul>{% for i in hero.inventory %}<li>{{ i.name }}{% if i.qty and i.qty > 1 %} ×{{ i.qty }}{% endif %}{% if i.notes %} <span class="muted">· {{ i.notes }}</span>{% endif %}</li>{% endfor %}</ul>
+      <ul class="pack">{% for i in hero.inventory %}<li>{{ i.name|icon }} {{ i.name }}{% if i.qty and i.qty > 1 %} ×{{ i.qty }}{% endif %}{% if i.notes %} <span class="muted">· {{ i.notes }}</span>{% endif %}</li>{% endfor %}</ul>
       <p class="muted">{{ hero.coins }} coins</p>
       {% if hero.achievements %}<h3>Hero moments</h3><div class="badges">{% for a in hero.achievements %}<span class="badge" title="Session {{ a.session }}: {{ a.note }}">🏅 {{ a.title }}</span>{% endfor %}</div>{% endif %}
     </section>

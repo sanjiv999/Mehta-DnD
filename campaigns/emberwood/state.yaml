@@ -6,6 +6,11 @@ party_goal: Take jobs from the notice board and find out what is waking in the w
 open_threads: []
 recent_events: []
 next_hook: The notice board in Hearth has a job with each hero's name on it, in handwriting nobody recognises.
-reputation: {}
+reputation:
+  council: 0
+  goblins: 0
+  tower: 0
+  deep-halls: 0
 flags: {}
 resume_note: ''
+location_id: hearth
