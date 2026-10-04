@@ -327,6 +327,25 @@ def eval_lifecycle(W: Path):
     r = run(["tools/build_site.py"], W); check("site builds with a completed, a paused and a new world", r.returncode == 0 and "Lantern of Many Roads: 1 of 4" in (W / "_site/index.html").read_text())
 
 
+def eval_links(W: Path):
+    section("Every picture and link resolves")
+    for label in ("_site", "_site_dm"):
+        base = W / label
+        if not base.exists():
+            continue
+        missing = []
+        for page in base.rglob("*.html"):
+            html = page.read_text(encoding="utf-8")
+            for attr, pat in (("src", r'<img[^>]+src="([^"#?]+)"'), ("href", r'<(?:a|link)[^>]+href="([^"#?]+)"')):
+                for ref in re.findall(pat, html):
+                    if ref.startswith(("http", "mailto", "data:")):
+                        continue
+                    target = (page.parent / ref).resolve()
+                    if not target.exists():
+                        missing.append(f"{page.relative_to(base)} -> {ref}")
+        check(f"{label}: all images and local links resolve", not missing, " | ".join(missing[:5]) + (f" (+{len(missing)-5})" if len(missing) > 5 else ""))
+
+
 def eval_leaks(W: Path):
     section("Nothing secret reaches the public site")
     run(["tools/build_site.py"], W)
@@ -442,7 +461,7 @@ def main(argv=None):
         eval_content(W); eval_dice(W); eval_character_cli(W)
         run(["tools/build_site.py"], W)
         eval_character_web(W, browser)
-        eval_story(W); eval_images(W); eval_leaks(W); eval_lifecycle(W); eval_browser(W, browser)
+        eval_story(W); eval_images(W); eval_links(W); eval_leaks(W); eval_lifecycle(W); eval_browser(W, browser)
     finally:
         if browser: browser.close()
         if pw: pw.stop()

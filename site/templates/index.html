@@ -28,7 +28,7 @@
     {% for h in party %}
     <a class="card hero-card" href="characters/{{ h.id }}.html">
       <div class="portrait">
-        {% if h.portrait.current %}<img src="characters/{{ h.id }}/{{ h.portrait.current.split('/')[-1] }}" alt="{{ h.name }}">
+        {% if h.portrait.current %}<img src="characters/{{ h.id }}/portraits/{{ h.portrait.current.split('/')[-1] }}" alt="{{ h.name }}">
         {% else %}<div class="placeholder">{{ (h.name or h.player)[:1] }}</div>{% endif %}
       </div>
       <h3>{{ h.name or "Unnamed hero" }}</h3>

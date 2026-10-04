@@ -6,7 +6,7 @@
   <p class="noprint"><button class="ghost" onclick="window.print()">🖨 Print this hero</button></p>
   <header class="sheet-head">
     <div class="portrait big">
-      {% if hero.portrait.current %}<img src="{{ hero.id }}/{{ hero.portrait.current.split('/')[-1] }}" alt="{{ hero.name }}">
+      {% if hero.portrait.current %}<img src="{{ hero.id }}/portraits/{{ hero.portrait.current.split('/')[-1] }}" alt="{{ hero.name }}">
       {% else %}<div class="placeholder">{{ (hero.name or hero.player)[:1] }}</div>
       <p class="muted small">No portrait yet. Run <code>tools/portrait_prompt.py {{ hero.id }}</code>.</p>{% endif %}
     </div>
@@ -84,7 +84,7 @@
     <h2>Portraits over time</h2>
     <div class="gallery">
       {% for p in hero.portrait.history %}
-      <figure><img src="{{ hero.id }}/{{ p.file.split('/')[-1] }}" alt=""><figcaption>Session {{ p.session }} · {{ p.date }}{% if p.note %} · {{ p.note }}{% endif %}</figcaption></figure>
+      <figure><img src="{{ hero.id }}/portraits/{{ p.file.split('/')[-1] }}" alt=""><figcaption>Session {{ p.session }} · {{ p.date }}{% if p.note %} · {{ p.note }}{% endif %}</figcaption></figure>
       {% endfor %}
     </div>
   </section>
