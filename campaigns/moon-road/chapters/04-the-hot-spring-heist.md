@@ -29,7 +29,7 @@ was there. The oni was in the bath with six witnesses. The chapter is a mystery 
 > captain has arrested the oni. The oni is the only person in the village who cannot have done
 > it, because he was in my bath with six witnesses, and I have written them down."
 - **Setup:** Evening. Okami Tama has a list. Suspects: Daigoro the oni (innocent, bowing in custody), Kappa Shin the plumber (saw a light), Kasa the umbrella (saw the hat), the wardens (arrested the obvious), and a pilgrim in a straw hat who checked out at dawn and left no footprints.
-- **Jobs for the kids:** Keisha picks who to visit first. Arya draws the suspects on a board with a line for each.
+- **Jobs for the kids:** Keshu picks who to visit first. Aarya draws the suspects on a board with a line for each.
 - **Choices:**
   - 👹 Daigoro, in custody
   - 🔧 Shin, among the pipes
@@ -46,7 +46,7 @@ was there. The oni was in the bath with six witnesses. The chapter is a mystery 
 > shuts. "I saw the hat," it whispers. "It walked through the wall of the pilgrim's room.
 > Through. The. Wall."
 - **Setup:** The pilgrim's room: a straw hat on the floor with nobody in it, and a fourth burned charm under the pillow. Wet three-toed prints (Shin's, checking pipes) and prints with no toes at all (nothing) go up the hill to the old bathhouse. Masaru will release Daigoro if six witnesses come to the checkpoint, which they will, in bathrobes.
-- **Jobs for the kids:** Keisha finds the charm under the pillow. Arya follows the no-toed prints (Perception Easy).
+- **Jobs for the kids:** Keshu finds the charm under the pillow. Aarya follows the no-toed prints (Perception Easy).
 - **Choices:**
   - 🔍 Search the pilgrim's room
   - ⛰️ Follow the light up the hill
@@ -62,7 +62,7 @@ was there. The oni was in the bath with six witnesses. The chapter is a mystery 
 > figures in straw hats, all the same height, all perfectly still. "It's learned," Kiko says.
 > "It's making more of itself."
 - **Setup:** Six **Shadows**, 6 HP each, that scatter when hit. The lantern has to be carried out lit. Daigoro can carry it: nothing an oni holds can be blown out. The way out is through the doors with a painted moon; the others lead to more pools.
-- **Jobs for the kids:** Keisha rides on Daigoro's shoulders holding the lantern. Arya finds the moon doors.
+- **Jobs for the kids:** Keshu rides on Daigoro's shoulders holding the lantern. Aarya finds the moon doors.
 - **Choices:**
   - 👹 Daigoro carries the lantern
   - 🧂 A ring of salt round the pool
@@ -79,7 +79,7 @@ was there. The oni was in the bath with six witnesses. The chapter is a mystery 
 > grandfather did a hundred years ago. "The keeper up there is very old," he says, "and very
 > angry. And I think," carefully, "he has stopped being able to tell who he is angry at."
 - **Setup:** Long rest. The turn: the Monk is connected to the mountain keeper. Daigoro stays with the party.
-- **Jobs for the kids:** Keisha names the smell of the spring. Arya asks Daigoro what his grandfather did (he will not say; he is embarrassed; it was a kettle).
+- **Jobs for the kids:** Keshu names the smell of the spring. Aarya asks Daigoro what his grandfather did (he will not say; he is embarrassed; it was a kettle).
 - **Choices:**
   - 👹 Ask about the grandfather
   - 🏔️ Ask about the keeper
@@ -93,7 +93,7 @@ was there. The oni was in the bath with six witnesses. The chapter is a mystery 
 2. The bath monkeys take every towel. A small heist inside the heist.
 3. A Shadow hides in a sandal and walks it round the room on its own.
 4. Tama's rice cakes are so good a hero will not leave. Persuasion Easy.
-5. The lantern, found, dims when looked at directly. Keisha looks away politely and it brightens.
+5. The lantern, found, dims when looked at directly. Keshu looks away politely and it brightens.
 6. Daigoro's politeness spreads. Everyone bows for the rest of the night.
 
 ## Rewards

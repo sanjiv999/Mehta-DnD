@@ -28,7 +28,7 @@ takes her shape.
 > Biscuit is sitting on top of a cart of forty pies. "Apple," he says. "She likes the apple
 > ones. Whatever the mayor tells you." The track goes up through the glowing wood into cloud.
 - **Setup:** Three stops: the Firefly Bridge (a river crossed by fireflies; the wisps make a bridge if asked nicely), the Cold Shelf (CON save Easy; Nettle's cloak negates), and the ledge, where the ox stops.
-- **Jobs for the kids:** Keisha carries one pie herself the whole way. Arya asks the wisps for the bridge.
+- **Jobs for the kids:** Keshu carries one pie herself the whole way. Aarya asks the wisps for the bridge.
 - **Choices:**
   - 🥧 The cart, slowly, all forty
   - 🎒 One pie each, fast
@@ -43,7 +43,7 @@ takes her shape.
 > says. "You're the ones from the Halls. Brokk's Heart is lit. I felt it." A long breath goes
 > out of her. "I would like very much to eat the pie. I'm afraid that if I move, it wakes."
 - **Setup:** Pure talk. She answers every question exactly. She knows the drawing. The Heart holds most of the Ember; one crack remains, hers. To close it, the Ember must be reminded it was a forge-fire with a name, Kindle, that the dwarves talked to.
-- **Jobs for the kids:** Keisha gives her the pie (she eats it where she lies, carefully). Arya shows her the drawing.
+- **Jobs for the kids:** Keshu gives her the pie (she eats it where she lies, carefully). Aarya shows her the drawing.
 - **Choices:**
   - 🥧 Give her the pie
   - 🖼️ Show her the drawing
@@ -59,7 +59,7 @@ takes her shape.
 > with ash for eyes, taller than she is. It does not roar. It speaks, and the sound is a bellows working:
 > "Who am I?"
 - **Setup:** **Ember-Sunder** (dm/bestiary.md, HP 50, cannot be killed). Each round a hero attacks (it gets smaller and more confused) or tells it a true thing about forge-fire: it made the toy horse; it warmed the nursery; it lit Nettle's lamp oil; its name is Kindle; the hammer's ring. Four true things and it is a hearth-fire. Sunder will not fight her own shape but shelters the kids under a wing.
-- **Jobs for the kids:** Keisha tells it about the toy horse. Arya tells it its name.
+- **Jobs for the kids:** Keshu tells it about the toy horse. Aarya tells it its name.
 - **Choices:**
   - 🗣️ Tell Kindle what it was
   - 🔨 The hammer (it rings; a true thing)
@@ -78,7 +78,7 @@ takes her shape.
 > lantern with a space for a wick and a shade. "They made it for a king who never came," says
 > Kindle. "I kept it warm."
 - **Setup:** The brass frame. Sunder flies the party home. Hearth feasts. Kindle moves into the bakery oven. The Halls reopen. If the DM wants the beat: two tired adults walk out of the tower door at the feast.
-- **Jobs for the kids:** Keisha names the bakery's oven-fire (it is Kindle). Arya decides what the town does with the Halls.
+- **Jobs for the kids:** Keshu names the bakery's oven-fire (it is Kindle). Aarya decides what the town does with the Halls.
 - **Choices:**
   - 🐉 Ride Sunder home
   - 🔥 Invite Kindle into the oven

@@ -1,6 +1,6 @@
 # Global game state. The single place that answers "where are we?"
 active_campaign: peacock-throne
-party: [sanjiv, partner, arya, keisha]   # character ids currently adventuring together
+party: [sanjiv, vai, aarya, keshu]   # character ids currently adventuring together
 session_counter: 0                        # total sessions played across all campaigns
 last_played: null                         # YYYY-MM-DD
 campaign_order: [peacock-throne, moon-road, emberwood, starfall]   # suggested sequence

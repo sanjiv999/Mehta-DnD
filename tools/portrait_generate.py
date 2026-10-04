@@ -5,7 +5,7 @@ Provider is chosen by IMAGE_PROVIDER (default "openai"). Requires an API key in 
   OPENAI_API_KEY   for provider openai (model gpt-image-1)
 This file is deliberately small; swap the provider function for any service you prefer.
 
-  python tools/portrait_generate.py arya --session 1 --note "first portrait"
+  python tools/portrait_generate.py aarya --session 1 --note "first portrait"
 """
 from __future__ import annotations
 import argparse

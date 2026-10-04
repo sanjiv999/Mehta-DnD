@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Compose an image prompt for a hero, or record a generated portrait.
 
-  portrait_prompt.py arya                      print the prompt and append it to portraits/prompt.md
-  portrait_prompt.py arya --print-only
-  portrait_prompt.py arya --record 001.png --session 1 --note "first portrait"
+  portrait_prompt.py aarya                      print the prompt and append it to portraits/prompt.md
+  portrait_prompt.py aarya --print-only
+  portrait_prompt.py aarya --record 001.png --session 1 --note "first portrait"
 """
 from __future__ import annotations
 import argparse

@@ -31,7 +31,7 @@ piece of what sleeps under the mountain, and it has started coming up.
 > sitting on top of the board, looking at you. The baker leans out of her window. "Oh good,
 > you're here. Biscuit said you would be."
 - **Setup:** Mayor Bramble, flour to the elbows, explains the pies came back. The cat says nothing yet. The kids pick first.
-- **Jobs for the kids:** Keisha picks a job. Arya looks at the handwriting and says what she thinks wrote it (a paw).
+- **Jobs for the kids:** Keshu picks a job. Aarya looks at the handwriting and says what she thinks wrote it (a paw).
 - **Choices:**
   - 🐱 "Find the councillor's cat" (he is right there; he wants following)
   - 🎩 "The scarecrow wants a hat"
@@ -48,7 +48,7 @@ piece of what sleeps under the mountain, and it has started coming up.
 > length and arguing with an old woman. "Twelve pence." "They were three on Saturday." "On
 > Saturday, madam, they were not lit up like that."
 - **Setup:** Any hat will do for Hob; a kid's drawing of a hat is accepted and Wren can make it real later. Grizzle is overcharging because the mushrooms frighten him and he wants rid of them. The truth settles it.
-- **Jobs for the kids:** Keisha gives Hob a hat and describes it (canon). Arya counts pence and finds the fair price.
+- **Jobs for the kids:** Keshu gives Hob a hat and describes it (canon). Aarya counts pence and finds the fair price.
 - **Choices:**
   - 🎩 Give the scarecrow a hat
   - 🍄 Ask Grizzle why they glow
@@ -65,7 +65,7 @@ piece of what sleeps under the mountain, and it has started coming up.
 > with an iron knocker shaped like a sleeping fox, and light under the door, warm, the colour
 > of a coal under ash. "Well," says the cat, in a perfectly ordinary voice. "Knock."
 - **Setup:** Biscuit talks and always has. Behind the door is a short root-tunnel into the wood, and in it a dwarven rune-stone, cracked, with ember-light leaking from the crack.
-- **Jobs for the kids:** Keisha knocks. Arya reads the rune: a dragon, asleep, with its eyes open.
+- **Jobs for the kids:** Keshu knocks. Aarya reads the rune: a dragon, asleep, with its eyes open.
 - **Choices:**
   - 🚪 Knock
   - 🐱 Ask the cat what he wants
@@ -78,9 +78,9 @@ piece of what sleeps under the mountain, and it has started coming up.
 > The wood at night is full of small lights. Mushrooms glowing on the trunks. Fireflies. The
 > trees themselves, faintly, like coals. One light is bigger than the others and it is coming
 > toward you between the trunks, a ball of ember-light the size of a cat, on legs. It stops in
-> front of Keisha and crackles. It seems to want something.
+> front of Keshu and crackles. It seems to want something.
 - **Setup:** An **Ember-Wisp** (dm/bestiary.md): a sliver of Kindle, curious, drawn to children. Calm it and it follows as a lantern. Strike it and it splits.
-- **Jobs for the kids:** Keisha holds out her hand; the wisp lands. Arya names it (canon).
+- **Jobs for the kids:** Keshu holds out her hand; the wisp lands. Aarya names it (canon).
 - **Choices:**
   - 🤲 Hold out your hand
   - 🍄 Offer a glowing mushroom (it eats it; pleased)
@@ -92,7 +92,7 @@ piece of what sleeps under the mountain, and it has started coming up.
 - **Music:** fireflies, which make no sound
 
 ## Complications (roll d6)
-1. The crows do laugh. Keisha tells them off and they stop.
+1. The crows do laugh. Keshu tells them off and they stop.
 2. Grizzle's mushrooms make a hero's nose glow for the session.
 3. Mayor Bramble follows the party into the hedge and gets stuck on the stile. Pull him off.
 4. The door is locked. The fox knocker wants a riddle ("what has a tail and a door"; a fox, and this oak).

@@ -27,7 +27,7 @@ and laughs at once.
 > The Whale is above, circling, her pulses too fast. The ship grits whatever she has
 > instead of teeth. "Going down. Vexley, stop screaming, it's bad for the hull."
 - **Setup:** Four legs, Tricky; a fail costs the ship 1d6 (HP 30). Vexley turns out to be a good navigator and calls the lightning. The jar bends the lightning away from the ship on one leg; the cloud-fish shield the hull once.
-- **Jobs for the kids:** Keisha holds the jar to the window (one leg succeeds without a roll). Arya calls the course from the scarf (advantage on one leg).
+- **Jobs for the kids:** Keshu holds the jar to the window (one leg succeeds without a roll). Aarya calls the course from the scarf (advantage on one leg).
 - **Choices:**
   - 🫙 Light the way with the jar
   - 🐟 Ask the fish to shield
@@ -41,8 +41,8 @@ and laughs at once.
 > The child is right there, as long as the dock, barely lit. The jar has to be opened beside it,
 > outside, by hand. Above, the Whale understands, and holds still, and when she holds still the
 > cloud does, and the lightning stops, and there is quiet. The airlock opens. Somebody has to go.
-- **Setup:** The kids decide who goes out on the line (the jar prefers Keisha; a grown-up can go too). The DM counts down from ten aloud. At three the jar opens. It cannot really fail; a wobble is a tug on the line and a grown-up pulling.
-- **Jobs for the kids:** Keisha goes out and opens the jar. Arya counts, and holds the line.
+- **Setup:** The kids decide who goes out on the line (the jar prefers Keshu; a grown-up can go too). The DM counts down from ten aloud. At three the jar opens. It cannot really fail; a wobble is a tug on the line and a grown-up pulling.
+- **Jobs for the kids:** Keshu goes out and opens the jar. Aarya counts, and holds the line.
 - **Choices:**
   - 🧑‍🚀 Go out with the jar
   - 🪢 Hold the line
@@ -72,7 +72,7 @@ and laughs at once.
 > a school. The ship parks in Bay 7 and says, "Good. Now somebody fix my left thruster, I've
 > been asking for a month."
 - **Setup:** The Choir goes home. ORBIT keeps a crew log now, with the drawings in it. Airlock 7 is crew quarters, on the plans. Its far door opens onto a stepwell, a torii in the sea, a hollow oak.
-- **Jobs for the kids:** Keisha names the school. Arya writes the first line of ORBIT's log.
+- **Jobs for the kids:** Keshu names the school. Aarya writes the first line of ORBIT's log.
 - **Choices:**
   - 🏫 Name the school
   - 📖 Start the log

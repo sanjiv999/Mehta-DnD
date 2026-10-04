@@ -52,7 +52,7 @@ between worlds, or a very good party.
 > mountain. Wren says a tower, obviously. The ship says somewhere with a good repair bay.
 > Everyone looks at you.
 - **Setup:** The family decides the fifth world. `python tools/campaign.py new <id> "<Title>"`. The kids name it. The Lantern is its Door.
-- **Jobs for the kids:** Keisha chooses the first thing the new road should have. Arya names the world.
+- **Jobs for the kids:** Keshu chooses the first thing the new road should have. Aarya names the world.
 - **Choices:**
   - 🌍 A new world
   - 🚪 Keep the Doors open for visiting

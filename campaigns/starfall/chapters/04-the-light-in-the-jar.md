@@ -28,7 +28,7 @@ Vexley round or go through him. Nobody gets hurt.
 > And I'm still going to seal it, because next time it might be your ship, and I'd have to tell
 > ORBIT." From the ceiling, ORBIT says nothing, which she has never done.
 - **Setup:** Plan a heist, or plan to convince him, or both. The planning scene is the kids' job: a map on a table, robots to assign, forty-eight minutes to the outage.
-- **Jobs for the kids:** Keisha assigns each robot a job. Arya picks the route on the scarf.
+- **Jobs for the kids:** Keshu assigns each robot a job. Aarya picks the route on the scarf.
 - **Choices:**
   - 🗺️ Plan the heist
   - 🗣️ Try Vexley once more (Persuasion Hard; he nearly)
@@ -44,7 +44,7 @@ Vexley round or go through him. Nobody gets hurt.
 > has knitted every security camera a small hat. And you float in a line down the maintenance
 > shaft, holding hands, to a wall between hatch 6 and hatch 8.
 - **Setup:** Sneaking Easy with the distractions; a fail means a guard sees you and SONNET starts a second poem. The jar hums louder as it is carried; it knows where it is going. Back at the dock: Vexley's ship the *Prudence* across the doors, Vexley on its ramp.
-- **Jobs for the kids:** Keisha carries the jar (cannot drop it). Arya leads the chain.
+- **Jobs for the kids:** Keshu carries the jar (cannot drop it). Aarya leads the chain.
 - **Choices:**
   - 🤫 Sneak under cover
   - 💨 Rush the outage
@@ -56,11 +56,11 @@ Vexley round or go through him. Nobody gets hurt.
 
 ### Scene 3: A clipboard (climax)
 > He has no weapon. He has a clipboard. "I can't move my ship," he says. "I told the council.
-> If you want to go, you go around me, and there isn't an around." The jar in Keisha's arms
+> If you want to go, you go around me, and there isn't an around." The jar in Keshu's arms
 > pulses, and out through the big window the cloud pulses back, and ORBIT says, for the first
 > time: "Chair Vexley. The crew would like to speak."
 - **Setup:** Honesty, not force. Three things move him: the jar (a child's light), the rescued crew (Tomas speaks), and ORBIT (she tells the council who the heroes are and what they were doing when she forgot). The kids deliver the first.
-- **Jobs for the kids:** Keisha shows him the jar and says it is a baby's light. Arya says the Whale is its mother.
+- **Jobs for the kids:** Keshu shows him the jar and says it is a baby's light. Aarya says the Whale is its mother.
 - **Choices:**
   - 🫙 Show him the jar
   - 🗣️ Let Tomas speak
@@ -76,7 +76,7 @@ Vexley round or go through him. Nobody gets hurt.
 > Oola waves with all eight arms. The Hobby Club is lined up along the dock, and TUBA, for
 > once, is playing in tune. At the edge of the cloud the cloud-fish are waiting. Beyond them,
 > something turns to look.
-- **Jobs for the kids:** Keisha names the song (canon). Arya plots the course from the scarf.
+- **Jobs for the kids:** Keshu names the song (canon). Aarya plots the course from the scarf.
 - **Choices:**
   - 🎵 Name the song
   - 🧶 Plot the course

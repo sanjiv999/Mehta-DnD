@@ -24,10 +24,10 @@ taking shapes down here: dwarves of coal, and then, when it sees them, the heroe
 ### Scene 1: A cup on a table (exploration)
 > The stairs end and your lantern cannot find the ceiling. Pillars carved like trees. A street
 > with shopfronts. A fountain, dry. On a table through a doorway, a cup. On a step, a wooden
-> toy horse. Everything is where it was put down three hundred years ago. The map in Arya's
+> toy horse. Everything is where it was put down three hundred years ago. The map in Aarya's
 > hands is drawing as fast as it can.
 - **Setup:** Three streets: Forge Street (an Ember-Hound, a dwarven hammer), the Library of Stone (Wren reads; the thane's name, Brokk Emberward; a joke book nobody understands), the Nursery (the toy horse's room; a child's drawing of a hatchling dragon; never any enemies).
-- **Jobs for the kids:** Keisha chooses the first street. Arya reads the map aloud.
+- **Jobs for the kids:** Keshu chooses the first street. Aarya reads the map aloud.
 - **Choices:**
   - 🔥 Forge Street
   - 📚 Library of Stone
@@ -40,9 +40,9 @@ taking shapes down here: dwarves of coal, and then, when it sees them, the heroe
 > Down the street, lights, and the lights are walking: short, broad, bearded in flame, the
 > shape of dwarves made of coals. "It remembered them," Wren whispers. "Badly." They stop when
 > they see you. One of them tilts its head. And slowly, starting at the feet, it changes into
-> the shape of Keisha.
+> the shape of Keshu.
 - **Setup:** Three **Ember-Shapes** (dm/bestiary.md, HP 12 each). They copy. They stop when a hero tells them what they really are. The lullaby works too.
-- **Jobs for the kids:** Keisha tells her copy who she is (it bows and becomes a wisp). Arya sings the chorus.
+- **Jobs for the kids:** Keshu tells her copy who she is (it bows and becomes a wisp). Aarya sings the chorus.
 - **Choices:**
   - 🗣️ Tell them what they are
   - 🎵 The lullaby
@@ -54,11 +54,11 @@ taking shapes down here: dwarves of coal, and then, when it sees them, the heroe
 
 ### Scene 3: Nobody has said that (social)
 > The throne room is small for a king. A dwarf in a crown too big is asleep on the throne,
-> sitting up, and you can see the throne through him. Arya says the name from the library.
+> sitting up, and you can see the throne through him. Aarya says the name from the library.
 > "Brokk Emberward." One eye opens. "Nobody has said that in three hundred years," he says.
 > "Who are you? And why have you brought a dragon into my hall?" He is looking at the drawing.
 - **Setup:** Brokk tells the truth: the Ember is Kindle, the forge-fire; the Heart ran on being remembered; he stayed to be its memory; the hatchling in the drawing is Sunder, who has kept the Ember asleep with her own warmth since. The Heart needs a true story about the dwarves, told aloud.
-- **Jobs for the kids:** Keisha shows him the drawing. Arya asks what the Heart needs.
+- **Jobs for the kids:** Keshu shows him the drawing. Aarya asks what the Heart needs.
 - **Choices:**
   - 👑 Ask about the Ember
   - 🐉 Ask about the dragon
@@ -73,7 +73,7 @@ taking shapes down here: dwarves of coal, and then, when it sees them, the heroe
 > cracked, and the cracks are full of light. The whole mountain is holding still. "Tell it,"
 > says Brokk. "Tell it who we were."
 - **Setup:** Each hero tells the Heart one true thing about the dwarves they learned (the lamp oil, the toy horse, the hatchling drawing, the lullaby, "paid in full, and sorry"). Each lights a facet (Persuasion or Performance Easy; automatic if sincere). Wisps push up through the cracks each round; a kid singing holds them. Five facets and the cracks close.
-- **Jobs for the kids:** Keisha sings. Arya tells the story of the drawing.
+- **Jobs for the kids:** Keshu sings. Aarya tells the story of the drawing.
 - **Choices:**
   - 📖 A true thing about the dwarves
   - 🎵 Hold the cracks with the lullaby
@@ -87,7 +87,7 @@ taking shapes down here: dwarves of coal, and then, when it sees them, the heroe
 1. The goblin stowaway is found asleep in the nursery, with the toy horse. He has been very brave.
 2. The forge wakes and hammers once by itself. It has made one small thing for a child. Name it.
 3. A copy of Teddy. The two bears hug. Both are fine.
-4. The map runs out of paper. Arya adds a page from her journal.
+4. The map runs out of paper. Aarya adds a page from her journal.
 5. Wren reads a joke from the stone book aloud. Nobody gets it. Everyone laughs anyway.
 6. The Heart hiccups and every wisp goes blue for a scene.
 

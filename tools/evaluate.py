@@ -146,8 +146,8 @@ def eval_dice(W: Path):
 
 
 def eval_character_cli(W: Path):
-    section("Character creation (CLI, as Keisha)")
-    answers = ["Keisha", "keisha", "y",                                   # player, id, kids mode
+    section("Character creation (CLI, as Keshu)")
+    answers = ["Keshu", "keshu", "y",                                   # player, id, kids mode
                "Tiger-kin", "sneak and climb anything", "my sister, mangoes", "thunder", "to fly",   # spark
                "Zara Sunclaw", "",                                          # name, concept (default)
                "orange with black stripes", "gold", "a green kurta", "orange, green, gold", "an eagle feather behind one ear", "young",
@@ -156,9 +156,9 @@ def eval_character_cli(W: Path):
                "",                                                          # class: accept the guess (rogue)
                "", "", "", "", "", "",                                      # abilities: accept suggestions
                "Sneaking, Acrobatics, Perception, Animals", "brave, giggly, curious",
-               "the rooftops above the bazaar, cardamom, monkeys", "an eagle dropped a feather on me", "I know Arya from the roof", "y"]
+               "the rooftops above the bazaar, cardamom, monkeys", "an eagle dropped a feather on me", "I know Aarya from the roof", "y"]
     r = run(["tools/new_character.py"], W, stdin="\n".join(answers) + "\n")
-    c = load(W / "characters" / "keisha" / "character.yaml")
+    c = load(W / "characters" / "keshu" / "character.yaml")
     check("builder writes the sheet", r.returncode == 0 and c["name"] == "Zara Sunclaw" and c["status"] == "active", r.stderr[-200:])
     check("kids mode and species recorded", c["kids_mode"] is True and c["species"] == "Tiger-kin")
     check("coolest thing guesses the class", c["class"] == "Rogue", c["class"])
@@ -166,20 +166,20 @@ def eval_character_cli(W: Path):
     hp_expected = 8 + (c["abilities"]["con"] - 10) // 2
     check("HP and AC follow the rules", c["hp"]["max"] == hp_expected and c["ac"] == 10 + (c["abilities"]["dex"] - 10) // 2, f"hp {c['hp']} ac {c['ac']}")
     check("three player powers plus keepsake", len(c["powers"]) == 3 and c["keepsake"].startswith("a feather"))
-    check("journal written in first person", "I" in (W / "characters" / "keisha" / "journal.md").read_text())
+    check("journal written in first person", "I" in (W / "characters" / "keshu" / "journal.md").read_text())
     r = run(["tools/validate.py"], W); check("sheet validates", r.returncode == 0, r.stdout[-200:])
-    pp = run(["tools/portrait_prompt.py", "keisha", "--print-only"], W).stdout
+    pp = run(["tools/portrait_prompt.py", "keshu", "--print-only"], W).stdout
     check("portrait prompt uses the sheet and the world's art style", "Zara Sunclaw" in pp and "Tiger-kin" in pp and "Mughal" in pp)
 
 
 def eval_character_web(W: Path, browser):
-    section("Character creation (web wizard, as Arya)")
+    section("Character creation (web wizard, as Aarya)")
     if not browser:
         check("skipped (no browser)", True); return
     page = browser.new_page(viewport={"width": 390, "height": 844}, accept_downloads=True)
     errors = []; page.on("pageerror", lambda e: errors.append(str(e)))
     page.goto(f"file://{W}/_site/build.html"); page.wait_for_timeout(300)
-    page.fill("#f", "Arya"); page.click("#fwd")                                       # 1 name
+    page.fill("#f", "Aarya"); page.click("#fwd")                                       # 1 name
     page.click(".chipbtn:has-text('Fairy')"); page.click("#fwd")                      # 2 species
     page.click(".chipbtn:has-text('Do magic')"); page.click("#fwd")                   # 3 cool
     for text in ["my little sister, the sea", "mice", "to find a dragon"]:
@@ -194,7 +194,7 @@ def eval_character_web(W: Path, browser):
     for s in ["Lore", "Perception", "Persuasion", "Nature"]:
         page.click(f".chipbtn:has-text('{s}')")
     page.click("#fwd")                                                                # 14
-    for text in ["a lighthouse, salt, gulls", "the light went out", "Keisha's hero from the roof"]:
+    for text in ["a lighthouse, salt, gulls", "the light went out", "Keshu's hero from the roof"]:
         page.fill("#f", text); page.click("#fwd")                                       # 15-17 (finish)
     page.wait_for_selector("#result:not([hidden])")
     y = page.text_content("#yaml")
@@ -206,9 +206,9 @@ def eval_character_web(W: Path, browser):
     check("downloaded YAML parses", c.get("name") == "Pip Starlight" and c.get("species") == "Fairy" and c.get("class") == "Mage", str(c.get("name")))
     check("coolest thing drives INT", c["abilities"]["int"] == 15 and c["hp"]["max"] == 6 + (c["abilities"]["con"] - 10) // 2)
     check("skills and powers carried over", len(c["trained_skills"]) == 4 and len(c["powers"]) == 4 and c["keepsake"].startswith("a map"))
-    # drop it into the repo as Arya's sheet and make sure the whole repo still validates
-    c["id"] = "arya"; c["player"] = "Arya"; c["status"] = "active"; c["kids_mode"] = True
-    (W / "characters" / "arya" / "character.yaml").write_text(yaml.safe_dump(c, sort_keys=False, allow_unicode=True))
+    # drop it into the repo as Aarya's sheet and make sure the whole repo still validates
+    c["id"] = "aarya"; c["player"] = "Aarya"; c["status"] = "active"; c["kids_mode"] = True
+    (W / "characters" / "aarya" / "character.yaml").write_text(yaml.safe_dump(c, sort_keys=False, allow_unicode=True))
     r = run(["tools/validate.py"], W); check("wizard sheet validates in the repo", r.returncode == 0, r.stdout[-200:])
     page.close()
 
@@ -242,8 +242,8 @@ def synth_reply(W: Path, cid: str, chapter_no: int, n: int, party: list[str]) ->
 
 
 def activate_grownups(W: Path):
-    """The parents build quickly: name and activate any hero still in draft (Keisha and Arya were built above)."""
-    for pid, name, species, cls in (("sanjiv", "Raja Vikram", "Human", "Warrior"), ("partner", "Meera the Wise", "Elf", "Priest")):
+    """The parents build quickly: name and activate any hero still in draft (Keshu and Aarya were built above)."""
+    for pid, name, species, cls in (("sanjiv", "Raja Vikram", "Human", "Warrior"), ("vai", "Meera the Wise", "Elf", "Priest")):
         p = W / "characters" / pid / "character.yaml"; c = load(p)
         if c["status"] == "draft":
             c.update(name=name, species=species, **{"class": cls}, status="active", concept=f"{name}, a {species} {cls}")

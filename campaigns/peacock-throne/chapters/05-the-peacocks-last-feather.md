@@ -30,7 +30,7 @@ wrong since he was nine.
 > Rukmini ties her boat to the palace steps. On the fifth floor of the Panch Mahal, an old man
 > unlocks a drawer he has kept locked for twenty years.
 - **Setup:** Each ally the party earned offers one thing for tonight (table in dm/secrets.md). Fariduddin's drawer holds Qamar's first mirror. Daulat, if treated kindly, brings a child's drawing of a blue peacock. Three allies can come into the hall; the rest wait outside.
-- **Jobs for the kids:** Choose the three. Keisha hands out the Wish Lamps. Arya asks Mirza for his word; he says "feather."
+- **Jobs for the kids:** Choose the three. Keshu hands out the Wish Lamps. Aarya asks Mirza for his word; he says "feather."
 - **Choices:**
   - 🐒 Hanuvant's runners (a way out through the roof)
   - 🐯 Dhoomketu (counter-illusions)
@@ -48,7 +48,7 @@ wrong since he was nine.
 > throne." Something is pacing between the mirrors. A feather, green and blue, grown the height
 > of a tree, with an eye in it.
 - **Setup:** The **Mirror-Maze Guardian** (dm/bestiary.md) is Mirza's missing tail feather. It can only be hit by a hero looking away from it, into a reflection. Returned to Mirza, it shrinks and he gets his voice.
-- **Jobs for the kids:** Keisha holds a Wish Lamp up so everyone can see which reflections have shadows. Arya follows the Padishah's voice and brings him back by the hand (cannot fail).
+- **Jobs for the kids:** Keshu holds a Wish Lamp up so everyone can see which reflections have shadows. Aarya follows the Padishah's voice and brings him back by the hand (cannot fail).
 - **Choices:**
   - 🪶 Catch the feather and give it to Mirza
   - 🗡️ Fight it head on (disadvantage)
@@ -82,7 +82,7 @@ wrong since he was nine.
 > the marigolds on Badal. The only colour left in the hall is standing where you are standing.
 > "Show me," says the Vizier, and it is not an order. "Show me what counts, if this does not."
 - **Setup:** Each hero shows him one true colour: a value, a person, a thing they did. The player says it; then rolls Persuasion, Performance or any ability the DM allows, Tricky. Each success cracks the mirror. Four cracks and it goes. A failure costs a Hero Point or 1d8 of greying (HP). Allies give advantage. Fariduddin's first mirror, Padma's Pearl, the sky-jar, a Wish Lamp, the winding key and Daulat's drawing each give one automatic crack if used with sense.
-- **Jobs for the kids:** Say your colour out loud. The DM narrates each crack as that colour comes back into the room, Keisha's first.
+- **Jobs for the kids:** Say your colour out loud. The DM narrates each crack as that colour comes back into the room, Keshu's first.
 - **Choices:**
   - 💛 Show him joy
   - ❤️ Show him love
@@ -114,7 +114,7 @@ wrong since he was nine.
 
 ## Complications (roll d6)
 1. Dhoomketu gets stage fright and sends an illusion of himself to do the talking. It is better at it.
-2. The Padishah tries to help and gets into a mirror. Arya pulls him out by the turban.
+2. The Padishah tries to help and gets into a mirror. Aarya pulls him out by the turban.
 3. The Clockwork Peacock, wound, will not stop dancing. The Vizier cannot concentrate. Good.
 4. The runners open the roof and the full moon comes in and every mirror goes white.
 5. Tara sneezes and it rains inside the hall for a round. Everyone slips, including the Vizier.

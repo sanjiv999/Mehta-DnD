@@ -87,7 +87,7 @@ def cmd_new(a):
                .replace("title: Session Title", f"title: {a.title}")
                .replace("chapter: 1", f"chapter: {c['state'].get('chapter', 1)}")
                .replace("# Session 0: Title", f"# Session {n}: {a.title}")
-               .replace("attendees: [sanjiv, partner, arya, keisha]", f"attendees: {w.get('party', [])}"))
+               .replace("attendees: [sanjiv, vai, aarya, keshu]", f"attendees: {w.get('party', [])}"))
     out = c["dir"] / "sessions" / f"{n:03d}-{slug(a.title)}.md"
     out.write_text(text, encoding="utf-8")
     print(f"Created {out.relative_to(CAMPAIGNS.parent)}")

@@ -12,7 +12,7 @@ The family looks at the website.
 
 | Moment | What you do | What Claude does |
 |---|---|---|
-| First night | Open the repo in Claude Code and type `/start` | Explains the world, then builds each hero by asking questions (`/hero Keisha, age 5`) |
+| First night | Open the repo in Claude Code and type `/start` | Explains the world, then builds each hero by asking questions (`/hero Keshu, age 5`) |
 | Before a session | `/recap` | Reads the state and gives you a recap to read aloud, the next scenes, and the kids' missions |
 | At the table | `/play`, then tell Claude what the players decide | Narrates each scene, calls for rolls, resolves them, keeps a live log |
 | After | `/ingest` (or just say "we're done") | Writes the session log, updates every hero and journal, awards badges, pushes |

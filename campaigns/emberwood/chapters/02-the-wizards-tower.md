@@ -29,7 +29,7 @@ strangers. They are not wrong to worry.
 > very tired: "Welcome. The young mistress is on the fourth floor. The stairs are on the second
 > floor today. Please don't run, and please don't lie. The tower can tell."
 - **Setup:** Three rooms: the Library (books fly like starlings; a kid must shush them), the Kitchen (a pot wants a recipe; a kid invents one, canon), the Stairs (which ask each hero one honest question and vanish for a round at a lie).
-- **Jobs for the kids:** Keisha shushes the library. Arya gives the pot a recipe.
+- **Jobs for the kids:** Keshu shushes the library. Aarya gives the pot a recipe.
 - **Choices:**
   - 📚 Library first
   - 🍲 Kitchen first
@@ -45,7 +45,7 @@ strangers. They are not wrong to worry.
 > herself. "If you win, you can ask me anything. If you lose, you tell me a story. Those are
 > the rules. I made them."
 - **Setup:** Not real chess. Each game is a contest: d20 + INT for grown-ups, or any game a kid invents on the spot, with rules Wren agrees to instantly. Losing means a story, which is the real win.
-- **Jobs for the kids:** Keisha invents the game. Arya tells the story.
+- **Jobs for the kids:** Keshu invents the game. Aarya tells the story.
 - **Choices:**
   - ♟️ Chess (INT Tricky)
   - 🎲 The kids' game
@@ -62,7 +62,7 @@ strangers. They are not wrong to worry.
 > back on. "Something has forgotten the dwarves. That's why the locks are going. Somebody has
 > to remember them."
 - **Setup:** Exposition made active: the kids ask, Wren answers. The seals are memory. The way under the mountain is through the goblins' market, which stands on the gate.
-- **Jobs for the kids:** Keisha asks what a dwarf is (Wren is delighted to explain). Arya copies the rune into her journal (advantage in the Halls later).
+- **Jobs for the kids:** Keshu asks what a dwarf is (Wren is delighted to explain). Aarya copies the rune into her journal (advantage in the Halls later).
 - **Choices:**
   - ❓ Ask about the Ember
   - ❓ Ask about the dwarves
@@ -77,7 +77,7 @@ strangers. They are not wrong to worry.
 > "I'm going. They're my friends. Tower, stop being a baby."
 > The tower, which has never been called a baby, throws the furniture.
 - **Setup:** The **Tower Tantrum** (dm/bestiary.md): one piece of flying furniture a round, DEX save Easy. Teddy blocks the door and must be reasoned with: he only wants Wren safe; promise him the job of guarding her on the trip and he comes. The front door opens to "please".
-- **Jobs for the kids:** Keisha says please to the door. Arya talks to the bear.
+- **Jobs for the kids:** Keshu says please to the door. Aarya talks to the bear.
 - **Choices:**
   - 🧸 Reason with the bear
   - 🙏 Say please to the door

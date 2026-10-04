@@ -32,7 +32,7 @@ blow it out again.
 > at dawn. I'd light it myself, but I've forgotten my name, and a fox without a name can't
 > hold fire." She looks at the smallest of you. "You'll do."
 - **Setup:** Morning, grey. Kiko climbs onto a kid hero's shoulder. The fishers will talk if given tea first; Masaru is at the village well watering a horse and watching strangers.
-- **Jobs for the kids:** Keisha agrees to carry Kiko and asks her one thing; Kiko answers with a riddle whose answer is "footprints." Arya counts the boats on the stones (eleven; none out).
+- **Jobs for the kids:** Keshu agrees to carry Kiko and asks her one thing; Kiko answers with a riddle whose answer is "footprints." Aarya counts the boats on the stones (eleven; none out).
 - **Choices:**
   - 🦊 Ask Kiko what happened
   - 🎣 Ask a fisher, over tea
@@ -48,7 +48,7 @@ blow it out again.
 > dozens of worn-out straw sandals, and down into a tide pool behind it. Something green is
 > crouched in the pool with its arms round a turtle the size of a cart wheel, and it is crying.
 - **Setup:** The cat must be bowed to or paid in fish. The sandal fence is where pilgrims hang their worn pair for luck; there have been no new ones for years. Gen bows first, out of caution.
-- **Jobs for the kids:** Follow the prints. Count the toes. Keisha bows to the cat (it lets her pass).
+- **Jobs for the kids:** Follow the prints. Count the toes. Keshu bows to the cat (it lets her pass).
 - **Choices:**
   - 🙇 Bow to the kappa (he bows back; his dish spills; he is honest and harmless)
   - 🥒 Offer a cucumber (a fisher's wife has one and a story about her son's name on it)
@@ -64,7 +64,7 @@ blow it out again.
 > road with a message," Kiko says, "and the lanterns were dark, so he lost the road, and now
 > he's lost inside as well." The kappa sniffs. "I was only trying to help."
 - **Setup:** Warm the turtle: Medicine Tricky, Animals Tricky, or a kid sings to him (works). Then the message, in shaking handwriting: "Someone is walking the road the wrong way."
-- **Jobs for the kids:** Sing to Kame. Keisha names the song. Arya unties the red thread and reads the message aloud.
+- **Jobs for the kids:** Sing to Kame. Keshu names the song. Aarya unties the red thread and reads the message aloud.
 - **Choices:**
   - 🎵 Sing
   - 🩹 Treat the shell (Medicine)
@@ -79,7 +79,7 @@ blow it out again.
 > raises a hand to its mouth and blows, the way you blow out a birthday candle. The lantern
 > gutters. The fox's fur stands on end.
 - **Setup:** The **Shadow** (dm/bestiary.md) cannot be caught this chapter. It flees from salt and from a lantern held close. It drops something.
-- **Jobs for the kids:** Keisha cups her hands round the flame (it stays lit; cannot fail). Arya sees which way the hat goes.
+- **Jobs for the kids:** Keshu cups her hands round the flame (it stays lit; cannot fail). Aarya sees which way the hat goes.
 - **Choices:**
   - 🏃 Chase it over the roofs
   - 🛡️ Guard the lantern
@@ -95,7 +95,7 @@ blow it out again.
 3. The cucumber was the cook's last. Apologise.
 4. Kame sneezes. Everyone within ten feet is salted.
 5. A fisher offers a boat ride to the next station. A quiet, lovely half hour; Kame swims alongside.
-6. The sandal fence falls over. Hanging the sandals back up, in order, is a job Keisha takes seriously.
+6. The sandal fence falls over. Hanging the sandals back up, in order, is a job Keshu takes seriously.
 
 ## Rewards
 - 100 XP. The first ofuda. Kame's message. Kiko as a companion (3 HP, one riddle-answer per session).

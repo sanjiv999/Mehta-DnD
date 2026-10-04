@@ -28,7 +28,7 @@ tea, and holding a lantern lit while the saddest thing on the road walks up to b
 > lights going down into the dark. Ahead, nothing is lit. Kikyo walks beside you now with three
 > tails, not on a shoulder. "I lit these every night," she says. "Until I thought no one noticed."
 - **Setup:** Three small trials on the way up, from the mountain's own spirits: a tengu's riddle (answer: a shadow), a stone that two heroes must move together, and a cold wind that only a song warms. Each gives advantage in the finale.
-- **Jobs for the kids:** Keisha answers the tengu. Arya and a grown-up move the stone.
+- **Jobs for the kids:** Keshu answers the tengu. Aarya and a grown-up move the stone.
 - **Choices:**
   - 🦅 The riddle
   - 🪨 The stone
@@ -43,7 +43,7 @@ tea, and holding a lantern lit while the saddest thing on the road walks up to b
 > it is. "Visitors," he says, and his voice is wind in dry grass. "Nobody comes up. I light
 > the lantern. I sweep. I had a fox." He looks at Kikyo and does not know her. "She left."
 - **Setup:** The Monk is Hoshi's loneliness walking. Kikyo did not leave; she went down to light the road and forgot the way back. Daigoro's apology (the kettle) makes Hoshi laugh, and laughing makes him solid.
-- **Jobs for the kids:** Keisha hands him the kettle; he puts it on, the first thing he has done for someone in years. Arya says Kikyo's name with the name-charm so that he hears it.
+- **Jobs for the kids:** Keshu hands him the kettle; he puts it on, the first thing he has done for someone in years. Aarya says Kikyo's name with the name-charm so that he hears it.
 - **Choices:**
   - 📜 Say her name with the charm
   - 🍵 Make him tea
@@ -59,7 +59,7 @@ tea, and holding a lantern lit while the saddest thing on the road walks up to b
 > against his hand. "Then let's wake you up." Far down the stair, a straw hat turns, and
 > starts up toward the first lantern.
 - **Setup:** The Monk climbs (HP 35, cannot be killed). The heroes must light the first lantern before he arrives and hold it lit. Everything matters: the weather-charm (no wind), the salt-charm (a ring), the lantern-charm (light it now), the tanuki (a parade round the shrine), Daigoro (holds it; nothing he holds goes out), the dragon scales, Kame's message (help from the sea). Victory: lantern lit and held, Kikyo says Hoshi's name, and one hero sits with Hoshi so he is not alone when the Monk arrives. Then the Monk walks into the light and is a straw hat on the step.
-- **Jobs for the kids:** Keisha sits with Hoshi (the most important job; cannot fail). Arya lights the first lantern.
+- **Jobs for the kids:** Keshu sits with Hoshi (the most important job; cannot fail). Aarya lights the first lantern.
 - **Choices:**
   - 📜 Lantern-charm on the first lantern
   - 👹 Daigoro holds it

@@ -30,7 +30,7 @@ the ghats. Padma does not know the blue was a child's. Telling her is the chapte
 > river beyond the lake is flowing uphill, carrying a fishing boat backward toward the hills.
 > "Rukmini says she will take you up," Zeb says. "She says the river asked."
 - **Setup:** The city is thirsty. The Padishah has gone quiet; the court pretends not to notice. Rukmini's boat has eyes painted on the prow and Chhaya the dolphin follows it. Chhaya carries a riddle from Padma: "I gave my rain for the sky and was given a face instead."
-- **Jobs for the kids:** Choose a gift for the naga queen (a Wish Lamp, a mango, a drawing). Keisha names Chhaya's trick (she will now do it on request).
+- **Jobs for the kids:** Choose a gift for the naga queen (a Wish Lamp, a mango, a drawing). Keshu names Chhaya's trick (she will now do it on request).
 - **Choices:**
   - 🚣 Up the river in Rukmini's boat
   - 🐘 Up the bank on Badal (slower, meets the farmers and their split fields)
@@ -46,7 +46,7 @@ the ghats. Padma does not know the blue was a child's. Telling her is the chapte
 > grey back the length of the hull, and behind it, on a flat rock in the white water, a clutch
 > of eggs the size of melons.
 - **Setup:** The **Makara** (dm/bestiary.md) is guarding its eggs and capsizes boats that come near. It is not angry; it is a parent. Show it the party means no harm and it will carry the boat past.
-- **Jobs for the kids:** Keisha bails and counts the scoops. Arya spots the eggs before anyone else (Perception Easy) and says why the thing is angry.
+- **Jobs for the kids:** Keshu bails and counts the scoops. Aarya spots the eggs before anyone else (Perception Easy) and says why the thing is angry.
 - **Choices:**
   - 🥚 Show it you will not touch the eggs
   - 🐬 Let Chhaya talk to it
@@ -63,7 +63,7 @@ the ghats. Padma does not know the blue was a child's. Telling her is the chapte
 > "Mama says you'll need them," he says. You walk in. The water is warm. Lights below. Pillars
 > of shell. Crowned heads turning to look at you, all together, with great politeness.
 - **Setup:** The naga court. Manners matter: bow, give the gift, do not step on tails. The court musicians are playing the Padishah's parade song very slowly, because it came with the jar.
-- **Jobs for the kids:** Present the gift. Keisha counts the crowns. Arya recognises the parade song and says where she heard it.
+- **Jobs for the kids:** Present the gift. Keshu counts the crowns. Aarya recognises the parade song and says where she heard it.
 - **Choices:**
   - 🎁 Give the gift first
   - 🙇 Bow and wait to be spoken to
@@ -92,7 +92,7 @@ the ghats. Padma does not know the blue was a child's. Telling her is the chapte
 ## Complications (roll d6)
 1. A bubble pops. Firoz blows another; the hero speaks in bubbles for the scene and the court finds it hilarious.
 2. The Naga Guard take a Wish Lamp for a weapon. Explain (Easy).
-3. Chhaya is lost in the court. Keisha finds her by her squeak.
+3. Chhaya is lost in the court. Keshu finds her by her squeak.
 4. Tara wants to come now. Say yes and gain a friend for the campaign.
 5. The Makara follows the party to the lake and waits outside the court, embarrassed.
 6. The rain comes too hard and the party rides the flood back to Sikri in a single loud scene.

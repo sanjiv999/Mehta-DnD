@@ -1,8 +1,8 @@
-id: keisha
-player: Keisha
+id: vai
+player: Vai
 name: ""
 status: draft
-kids_mode: true
+kids_mode: false
 campaign_origin: peacock-throne
 aliases: {}
 concept: ""

@@ -31,7 +31,7 @@ gets. Hanuvant knows who built it. He has not said, because he has said things b
 > "Friends of the Throne," he says. "Good. We did not take the lamps. We saw what did. Nobody
 > listens to a monkey. You will have to listen for us."
 - **Setup:** Morning in the palace courtyard. Hanuvant will describe the thief as "a bird made of knives that walks on water" and will not say whose it is until the party has done something for him. The Vizier is across the courtyard being kind to a gardener. His mirror is turned to face the cage.
-- **Jobs for the kids:** Keisha chooses what to bring Hanuvant through the bars: a mango, a blanket, or his telescope. Arya notices which way the Vizier's mirror is facing.
+- **Jobs for the kids:** Keshu chooses what to bring Hanuvant through the bars: a mango, a blanket, or his telescope. Aarya notices which way the Vizier's mirror is facing.
 - **Choices:**
   - 🥭 Bring him something and wait
   - 👑 Get Zeb to open the cage on a promise
@@ -66,7 +66,7 @@ gets. Hanuvant knows who built it. He has not said, because he has said things b
 > a row with a sound like someone blowing out candles very quickly. People scream. From the
 > roofs, a whistle: the guild has seen where it is going. The old bridge.
 - **Setup:** Night. The **Clockwork Peacock** (dm/bestiary.md) skates the water on folded feet and swallows lamps whole. It is heading for the bridge, under which the Vizier's man waits with a jar. Chase by roof, water, or air.
-- **Jobs for the kids:** Keisha floats her Wish Lamp and watches which way it drifts: it drifts after the thief, against the current (cannot fail). Arya goes up on Patang's kite with the guild holding the string (Acrobatics Easy; a fail means she comes down in the lake, which she will enjoy).
+- **Jobs for the kids:** Keshu floats her Wish Lamp and watches which way it drifts: it drifts after the thief, against the current (cannot fail). Aarya goes up on Patang's kite with the guild holding the string (Acrobatics Easy; a fail means she comes down in the lake, which she will enjoy).
 - **Choices:**
   - 🪁 From the air, on the kite
   - 🐒 Across the roofs with the runners
@@ -86,7 +86,7 @@ gets. Hanuvant knows who built it. He has not said, because he has said things b
 > years ago. The boy who made it is not a boy now." He does not say the name. Zeb, by the stair,
 > has gone very still.
 - **Setup:** Morning. Inside the chest, stamped in the brass: a crescent and a mirror. Fariduddin will not name the Vizier, because he taught him and because he has no proof. He gives the party the facts and lets them say it.
-- **Jobs for the kids:** Arya matches the stamp to the mirror on the Vizier's chain (Investigation Easy; she saw it in chapter 1). Keisha decides what the party tells Hanuvant when they let him out.
+- **Jobs for the kids:** Aarya matches the stamp to the mirror on the Vizier's chain (Investigation Easy; she saw it in chapter 1). Keshu decides what the party tells Hanuvant when they let him out.
 - **Choices:**
   - 👑 Tell Zeb what the stamp means
   - 🤐 Say nothing until there is proof
@@ -99,7 +99,7 @@ gets. Hanuvant knows who built it. He has not said, because he has said things b
 ## Complications (roll d6)
 1. A lamp catches an awning. Everyone with hands: Athletics Easy, one round, buckets.
 2. The tail-dazzle makes a kid see three peacocks. Only one has a shadow on the water.
-3. Rukmini's boat takes water. Keisha bails with her lamp and counts the scoops.
+3. Rukmini's boat takes water. Keshu bails with her lamp and counts the scoops.
 4. The Vizier's mirror says a hero's fear back to them. WIS Easy or disadvantage next roll.
 5. Chhaya surfaces with a river pearl in her mouth and will not say where she got it.
 6. The runners bring back the wrong lamp: gold, the Padishah's own. Returning it is Court +1.

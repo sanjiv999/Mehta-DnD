@@ -8,7 +8,7 @@ No API key is needed. The default workflow is copy-and-paste:
                                                     Gemini, Claude, or any image app; the DM site build also
                                                     shows it at prompts.html with copy buttons
   images.py intake <folder-or-files...>             file downloaded images: names like ch01-s3.png, npc-badal.jpg,
-                                                    portrait-arya.png, or the sheet number (07.png) all work
+                                                    portrait-aarya.png, or the sheet number (07.png) all work
   images.py plan [--campaign id] [--missing]        what exists, what is missing
   images.py prompt <campaign> <slot>                print one composed prompt
   images.py record <campaign> <slot> <file>         register one image by hand
@@ -324,7 +324,7 @@ def cmd_intake(a):
                     print(f"  ({f.name}: slot {hits[0][1]!r} exists in {', '.join(sorted(cids))}; using {cid}. "
                           f"Put the campaign id in the file name or pass --campaign to choose.)")
                 done = place_image(cid, hits[0][1], f, "intake")
-        print(done or f"skip {f.name}: name it after a slot (ch01-s3, npc-badal, portrait-arya) or a sheet number (07)")
+        print(done or f"skip {f.name}: name it after a slot (ch01-s3, npc-badal, portrait-aarya) or a sheet number (07)")
         if done and not done.startswith("skip") and a.move:
             f.unlink()
     print("Rebuild the site to see them: python tools/build_site.py")

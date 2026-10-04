@@ -34,7 +34,7 @@ the baoli in the heat of the afternoon, the parade at sunset.
 > Someone takes your sleeve. A girl in a servant's shawl with ink on her fingers. "You're not
 > from here. Good. His elephant is gone. Help me before he finds out, and I'll owe you."
 - **Setup:** Nauroz morning, first light, the weighing. Zeb has picked the heroes because they are strangers. She gives them one of Badal's ankle bells, shed in the stable, the size of a walnut. It hums when pointed the right way. Her fear is specific: if the court learns Badal is missing it will ask how, and the answer is her.
-- **Jobs for the kids:** Keisha holds the bell and turns in a circle until it hums (it hums toward the bazaar; cannot fail). Arya looks at Zeb's hands and says what she sees: the ink is wet.
+- **Jobs for the kids:** Keshu holds the bell and turns in a circle until it hums (it hums toward the bazaar; cannot fail). Aarya looks at Zeb's hands and says what she sees: the ink is wet.
 - **Choices:**
   - 🍬 Ask the sweet-seller at the bazaar mouth
   - 🐆 Ask the cheetah keepers in the shade (the cheetahs are hooded and asleep)
@@ -52,7 +52,7 @@ the baoli in the heat of the afternoon, the parade at sunset.
 > round and yellow and as wide as a cartwheel, all the way down the hill.
 > On the awning poles above, langurs in red sashes are watching you and finding it funny.
 - **Setup:** Morning, the hour of bargaining. The vanara guild saw everything from the roofs. A banana seller is shouting that the elephant ate his stock; the langurs did. Daulat's mirror stall is at the quiet end of the street; a kind word to him now pays off in chapter 5.
-- **Jobs for the kids:** Keisha follows the yellow footprints with her finger in the air (cannot fail). Arya notices that one print, near the bottom, points back uphill, and beside it there is a smaller set of prints with three toes that go on alone.
+- **Jobs for the kids:** Keshu follows the yellow footprints with her finger in the air (cannot fail). Aarya notices that one print, near the bottom, points back uphill, and beside it there is a smaller set of prints with three toes that go on alone.
 - **Choices:**
   - 🥭 Offer the langurs mangoes and ask what they saw
   - 🧗 Climb the awning pole and ask them face to face
@@ -71,7 +71,7 @@ the baoli in the heat of the afternoon, the parade at sunset.
 > At the bottom, the water is the colour of ash and perfectly still, and standing in a square
 > of dry stone beside it is a white elephant with his trunk raised, humming.
 - **Setup:** Afternoon. The well has gone grey since dawn. Firoz is stuck in the stone of the lowest step, the dry one, crying; Badal heard him from the stables. Lady Shabnam cannot free her son because the grey water will not let her touch the step. The djinn whisper names because that is what a well does with voices.
-- **Jobs for the kids:** Count the steps by tens on the way down (108; the DM counts with them). Keisha asks Firoz what his favourite colour is and he hiccups it onto the nearest thing; that colour, laid on the stone, is what loosens it. Arya finds the one carved tile on the bottom step that is a peacock feather and not a flower.
+- **Jobs for the kids:** Count the steps by tens on the way down (108; the DM counts with them). Keshu asks Firoz what his favourite colour is and he hiccups it onto the nearest thing; that colour, laid on the stone, is what loosens it. Aarya finds the one carved tile on the bottom step that is a peacock feather and not a flower.
 - **Choices:**
   - 🎵 Sing to the stone, or tell it something true
   - 🌈 Put Firoz's colour on the step
@@ -91,7 +91,7 @@ the baoli in the heat of the afternoon, the parade at sunset.
 > When the throne passes under the gate, a ruby the size of your fist goes out like a lamp.
 > Everyone near it sees. The Padishah does not; a man in grey silk has stepped in front of him.
 - **Setup:** Sunset. The court saw a gem grey in public for the first time. The Vizier moved to block the Padishah's view, kindly. Zeb mouths "thank you" from the palanquin.
-- **Jobs for the kids:** Wave from the elephant (cannot fail). Keisha chooses a sweet from Bibi Chandni's tray, which has been carried up to the elephant on a pole. Arya names the trick Badal does with his trunk for the crowd; it is now his trick.
+- **Jobs for the kids:** Wave from the elephant (cannot fail). Keshu chooses a sweet from Bibi Chandni's tray, which has been carried up to the elephant on a pole. Aarya names the trick Badal does with his trunk for the crowd; it is now his trick.
 - **Choices:**
   - 👑 Tell the Padishah what you saw
   - 🤫 Tell only Zeb

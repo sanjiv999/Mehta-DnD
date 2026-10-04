@@ -6,7 +6,7 @@ look at the website. Claude does the rest.
 ## Session Zero (the first night, 45 minutes)
 
 1. Type `/start`. Claude explains the world and reads the pitch.
-2. For each player, `/hero Keisha, age 5` (and so on). Claude asks one question at a time: what
+2. For each player, `/hero Keshu, age 5` (and so on). Claude asks one question at a time: what
    creature, what is the coolest thing you can do, who do you love, what are you scared of, what do
    you want. The grown-up relays the answers. Claude suggests three ideas after each. When the
    player is happy, Claude writes the sheet, the first journal entry, and gives you a portrait
@@ -25,7 +25,7 @@ Open the play deck on the TV or a tablet from the dashboard's **Play chapter** b
 ## At the table (30 to 75 minutes)
 
 1. `/play`. Claude gives you the read-aloud text, the missions and the choices for the scene.
-2. Read it. Let the kids tap or shout their choice. Tell Claude: "Keisha rang the bell and Arya
+2. Read it. Let the kids tap or shout their choice. Tell Claude: "Keshu rang the bell and Aarya
    climbed to the monkeys and rolled a 14."
 3. Claude resolves it, narrates in a few sentences, and gives you the next beat. If you want
    Claude to roll, say so; it rolls with the logged dice.

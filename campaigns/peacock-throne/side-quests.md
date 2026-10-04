@@ -28,7 +28,7 @@ delighted by everything and terrified of pigeons. **Reward:** Naga +1 and Tara a
 can be summoned once for a scene by pouring water on the ground.
 
 ## The farmers' feast (after chapter 4)
-The villages whose fields were saved throw a feast. Each hero gets a toast. Keisha names the
+The villages whose fields were saved throw a feast. Each hero gets a toast. Keshu names the
 dish. **Reward:** Court +1, Bazaar +1, and a jar of pickle that heals 1d6 (one use).
 
 ## Mirza's lost feather (chapter 5, if skipped in the maze)

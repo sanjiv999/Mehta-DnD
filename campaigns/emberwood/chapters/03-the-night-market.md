@@ -30,7 +30,7 @@ spoons underground "to remember by."
 > Three rules. Don't touch what you can't pay for. Don't say 'cheap'. And everything, everything,
 > is for trade. What've you got?"
 - **Setup:** Each hero has something to trade: a story (ten silver), a drawing (twenty), a song (fifteen), a kid's joke (priceless, once). The map is at Stall 3. Nana Nettle at Stall 9 will teach the gate-song if the party stops whatever is ruining her stall at midnight.
-- **Jobs for the kids:** Keisha trades a drawing (it stays on the goblin's stall forever). Arya haggles for the map.
+- **Jobs for the kids:** Keshu trades a drawing (it stays on the goblin's stall forever). Aarya haggles for the map.
 - **Choices:**
   - 🗺️ Trade for the map
   - 🎵 Ask about the gate-song
@@ -47,7 +47,7 @@ spoons underground "to remember by."
 > each one taking something small and shiny and pulling it back down. A spoon. A button. A
 > goblin's hat, with the goblin still in it.
 - **Setup:** Wisps, harmless, collecting shiny things for the Ember. Calm one with the party's own wisp and follow them to the crack in the stone.
-- **Jobs for the kids:** Keisha's wisp talks to them in crackles; the kids interpret. Arya pulls the goblin out of his hat.
+- **Jobs for the kids:** Keshu's wisp talks to them in crackles; the kids interpret. Aarya pulls the goblin out of his hat.
 - **Choices:**
   - 🤲 Calm them with your wisp
   - 🪤 Net one
@@ -65,7 +65,7 @@ spoons underground "to remember by."
 > 'don't let it remember you.' Then they walked into the wood and the wood moved its paths and
 > nobody found them." She sniffs. "I remember them. Somebody should."
 - **Setup:** "Don't let it remember you": the Ember learns the shape of what it sees. The gate-song is a lullaby; the Ember sleeps when it is sung.
-- **Jobs for the kids:** Learn the chorus (two lines the DM makes up with them; canon). Keisha asks what a dwarf looked like; Nettle draws one on the back of her ledger.
+- **Jobs for the kids:** Learn the chorus (two lines the DM makes up with them; canon). Keshu asks what a dwarf looked like; Nettle draws one on the back of her ledger.
 - **Choices:**
   - 🎵 Learn the song
   - ❓ Ask where the dwarves went

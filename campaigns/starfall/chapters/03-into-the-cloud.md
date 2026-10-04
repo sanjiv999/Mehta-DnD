@@ -27,7 +27,7 @@ her child, dim, who cannot follow her home.
 > a curtain. The instruments spin and give up. "Right," says the ship. "Eyes and ears. The
 > song's louder to the left. Who's got a good ear?"
 - **Setup:** Three legs. Each hero takes a job: ears (Perception), hands (DEX), eyes (WIS), heart (CHA, talking to the ship). One roll per leg, Easy; a child humming counts as a success without a roll.
-- **Jobs for the kids:** Keisha hums and points where it is louder. Arya watches for shapes.
+- **Jobs for the kids:** Keshu hums and points where it is louder. Aarya watches for shapes.
 - **Choices:**
   - 👂 Follow the song
   - 👀 Follow the lights
@@ -39,10 +39,10 @@ her child, dim, who cannot follow her home.
 ### Scene 2: Holding hands (rescue)
 > The lost ship is dark and cold and full of singing. In the galley six people float in a
 > circle holding hands with their eyes shut, humming in parts, smiling. Soup has gone cold on
-> the stove. The air is thin. The captain opens his eyes when Keisha hums. "You hear it," he
+> the stove. The air is thin. The captain opens his eyes when Keshu hums. "You hear it," he
 > whispers. "It's a child. It's a child singing. And its mother singing back."
 - **Setup:** Zero-g throughout; the *Lantern Jack*'s gravity is dead. Six crew; each hero guides one or two (Athletics Easy). A kid humming wakes each one as they are reached. The trick of the campaign: answer the song and the singer wakes.
-- **Jobs for the kids:** Keisha hums to wake each crew member. Arya guides Captain Tomas by the ship's lamp.
+- **Jobs for the kids:** Keshu hums to wake each crew member. Aarya guides Captain Tomas by the ship's lamp.
 - **Choices:**
   - 🎵 Hum them awake
   - 🪢 Line them up and tow
@@ -58,7 +58,7 @@ her child, dim, who cannot follow her home.
 > at the ship, and the low half of the song is so close the tea trembles in its cup. The ship
 > says, very small: "Hello."
 - **Setup:** No fight. The Whale talks in song and light; the heroes talk back with anything: a hummed phrase, the hull lights in rhythm, a drawing held to the window, a question. She answers in pictures in the cloud: a small shape, lost; a station taking its light in a jar.
-- **Jobs for the kids:** Keisha holds her drawing to the window. Arya flashes the lights in the tune's rhythm.
+- **Jobs for the kids:** Keshu holds her drawing to the window. Aarya flashes the lights in the tune's rhythm.
 - **Choices:**
   - 🎵 Sing to her
   - 💡 Flash the lights
@@ -73,7 +73,7 @@ her child, dim, who cannot follow her home.
 > and the small voice is in it. "Storm pockets," says the ship. "Lightning that sings. Hold on
 > to something. Hold on to each other."
 - **Setup:** DEX saves Tricky per leg; the ship takes 1d6 per fail (HP 30). Cloud-fish scatter. At the bottom, the child: as long as the dock, dim, singing thinly. It cannot be moved. Its light is on the station.
-- **Jobs for the kids:** Keisha holds the lever steady. Arya calls the lightning (Perception Easy gives the pilot advantage).
+- **Jobs for the kids:** Keshu holds the lever steady. Aarya calls the lightning (Perception Easy gives the pilot advantage).
 - **Choices:**
   - ⚡ Straight through
   - 🐟 A cloud-fish's path

@@ -50,7 +50,7 @@ personality:
 backstory: |
   I grew up in the rooftop village above the Great Bazaar, where the vanara run the mail and the
   air smells like cardamom. I left because an eagle dropped a feather on me and I decided it was
-  an invitation. I know Keisha's hero from the time we both got stuck on the same roof.
+  an invitation. I know Keshu's hero from the time we both got stuck on the same roof.
 companions: []
 relationships:
   - { who: Captain Hanuvant, campaign: peacock-throne, feeling: respect, note: "He said I climb like a vanara." }

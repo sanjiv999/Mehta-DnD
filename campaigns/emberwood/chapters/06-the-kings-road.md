@@ -34,7 +34,7 @@ valley of dwarves who tell the story every night and do not know the mountain is
 > her shoulder and a baby on her hip looks at you, then up at the dragon, then at the ghost of a
 > king in a crown too big standing beside you. "Grandfather?" she says.
 - **Setup:** Thane Hild. The dwarves never forgot; the Heart could not hear them from here.
-- **Jobs for the kids:** Keisha tells them the Ember is safe (they do not believe her; Sunder nods; they do). Arya gives Hild the toy horse.
+- **Jobs for the kids:** Keshu tells them the Ember is safe (they do not believe her; Sunder nods; they do). Aarya gives Hild the toy horse.
 - **Choices:**
   - 🐴 Give Hild the horse
   - 📖 Tell them everything, in order

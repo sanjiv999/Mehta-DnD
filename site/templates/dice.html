@@ -12,7 +12,7 @@
     <label>Modifier <input type="number" id="mod" value="0" step="1"></label>
     <label><input type="checkbox" id="adv"> Advantage</label>
     <label><input type="checkbox" id="dis"> Disadvantage</label>
-    <label>Who <input type="text" id="who" placeholder="Arya" list="party"></label>
+    <label>Who <input type="text" id="who" placeholder="Aarya" list="party"></label>
     <datalist id="party">{% for h in party %}<option value="{{ h.name or h.player }}">{% endfor %}</datalist>
   </div>
   <div class="dice-row">

@@ -30,7 +30,7 @@ Hollow Monk, for the first time, comes in person.
 > Daigoro bows and sits down to wait. Across the road, a hundred very round umbrella sellers
 > are also waiting, in a line, with their leaves showing.
 - **Setup:** Masaru is at the checkpoint reading papers. He can get the heroes an audience with Lord Shirogane after the festival's end, if they are not spies, or if they are interesting spies.
-- **Jobs for the kids:** Keisha chooses a festival mask. Arya hands Masaru the tanuki's handwritten card and explains it.
+- **Jobs for the kids:** Keshu chooses a festival mask. Aarya hands Masaru the tanuki's handwritten card and explains it.
 - **Choices:**
   - 👮 Ask Masaru for an audience
   - 🎭 Join the lion-dance to get inside (two kids under the lion)
@@ -47,7 +47,7 @@ Hollow Monk, for the first time, comes in person.
 > was a story." The baby reaches toward the window, where nobody but you can see a two-tailed
 > fox sitting on the sill. The baby waves. The fox waves back.
 - **Setup:** Proof is possible: the weather-charm, the dragon scales, the baby. The lord wants to believe his grandmother.
-- **Jobs for the kids:** Keisha plays with the baby, who points at every spirit in the room. Arya uses the weather-charm and makes it snow cherry blossom indoors.
+- **Jobs for the kids:** Keshu plays with the baby, who points at every spirit in the room. Aarya uses the weather-charm and makes it snow cherry blossom indoors.
 - **Choices:**
   - 🌸 Weather-charm
   - 👶 Let the baby show him
@@ -64,7 +64,7 @@ Hollow Monk, for the first time, comes in person.
 > the rest and has nearly a face. It looks at the fox. "Little fox," it says, and its voice is like
 > wind in dry grass. "Have you remembered your name yet?"
 - **Setup:** The **Hollow Monk** in person (dm/bestiary.md, HP 35, cannot be killed, driven off). He knows Kiko. He goes when the lantern is lit and the parade, the drum and the salt ring are all in play.
-- **Jobs for the kids:** Keisha leads the tanuki drum. Arya throws the salt ring. Both cannot fail; they choose the order.
+- **Jobs for the kids:** Keshu leads the tanuki drum. Aarya throws the salt ring. Both cannot fail; they choose the order.
 - **Choices:**
   - 🥁 Parade round the lantern
   - 🧂 Salt-charm ring

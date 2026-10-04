@@ -29,7 +29,7 @@ stronger in the dark here.
 > sighs from your shoulder. "The forest only holds still for a parade. Or for someone who knows
 > its song. The tanuki know it. The tanuki are sulking."
 - **Setup:** Three ways through: learn the song from a bird (Nature Tricky), follow the sound of a belly-drum (Perception Easy), or walk in a chain with eyes closed, holding hands, which the forest allows for children.
-- **Jobs for the kids:** Keisha holds everyone's hands in a line. Arya listens for the drum and points.
+- **Jobs for the kids:** Keshu holds everyone's hands in a line. Aarya listens for the drum and points.
 - **Choices:**
   - 🥁 Follow the drum
   - 🐦 Learn the song
@@ -45,7 +45,7 @@ stronger in the dark here.
 > Fifty years we've asked. Fifty years no card. So." He folds his arms harder. Behind him the
 > station lantern sits dark on its post with a tanuki asleep on top of it, snoring.
 - **Setup:** Ponkichi wants a written invitation. The heroes can promise one (they will need the lord at the castle), perform, or offer to carry the parade's lanterns themselves tonight.
-- **Jobs for the kids:** Keisha tries a drum; Ponkichi is impressed and tries not to be. Arya writes an invitation card by hand, with his name on it, now.
+- **Jobs for the kids:** Keshu tries a drum; Ponkichi is impressed and tries not to be. Aarya writes an invitation card by hand, with his name on it, now.
 - **Choices:**
   - ✉️ Write him a card yourselves, and promise a real one
   - 🎭 Put on a show
@@ -59,11 +59,11 @@ stronger in the dark here.
 ### Scene 3: The Hundred-Night Parade (action)
 > A hundred paper lanterns light at once and the tanuki stand up and stretch and change: into
 > teapots, into umbrellas with one eye, into enormous versions of themselves with their bellies
-> out. Keisha hits the drum. The paths line up. Every stone of the road is in a straight line
+> out. Keshu hits the drum. The paths line up. Every stone of the road is in a straight line
 > to the station lantern, lit by a hundred lamps. And at the far end of that line, in the dark
 > past the last lantern, a straw hat.
 - **Setup:** The parade walks. Every hero carries a lantern. Mischief sprites snatch and tickle. At the end, the **Shadow** (12 HP here) stands between the parade and the post.
-- **Jobs for the kids:** Keisha keeps the beat (if she stops, the paths move; she will not stop). Arya keeps her lantern from the sprites (DEX save Easy).
+- **Jobs for the kids:** Keshu keeps the beat (if she stops, the paths move; she will not stop). Aarya keeps her lantern from the sprites (DEX save Easy).
 - **Choices:**
   - 🥁 Keep drumming whatever happens
   - 🧂 Salt the shadow
@@ -79,7 +79,7 @@ stronger in the dark here.
 > Kiko puts the two burned charms side by side on the drumhead. The holes are in the same
 > place: where the shrine's seal should be. "These are keeper's charms," she says. "From the
 > mountain. Whoever is blowing out the lanterns was given these by the shrine itself."
-- **Jobs for the kids:** Line up the charms. Keisha decides what to tell the tanuki.
+- **Jobs for the kids:** Line up the charms. Keshu decides what to tell the tanuki.
 - **Choices:**
   - 🔍 Keep the charms
   - 📨 Send Kame to the mountain with a question
@@ -92,7 +92,7 @@ stronger in the dark here.
 1. The paths move while someone ties a sandal. They are alone; Kiko's riddle ("tallest when newest") leads them back along the bamboo shoots.
 2. A tanuki transforms into a copy of a hero. It is a bad copy. Everyone laughs, including the copy.
 3. Masaru rides through and sees "a child drumming in an empty forest". He writes it down and rides on.
-4. A sprite steals the drumstick. Keisha gets it back by being funnier than a sprite.
+4. A sprite steals the drumstick. Keshu gets it back by being funnier than a sprite.
 5. The lanterns bring fireflies. Stop and watch.
 6. Ponkichi, moved, offers the fox a place in the parade. She declines so quickly it is obviously yes.
 

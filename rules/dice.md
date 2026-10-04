@@ -10,7 +10,7 @@ order: 5
 
 ```bash
 python tools/roll.py d20 --adv        # advantage
-python tools/roll.py 2d6+3 --label "Arya's talwar"
+python tools/roll.py 2d6+3 --label "Aarya's talwar"
 python tools/roll.py 4d6kh3 -n 6      # roll ability scores
 python tools/roll.py --table weather
 python tools/roll.py --oracle likely   # yes/no with a nudge

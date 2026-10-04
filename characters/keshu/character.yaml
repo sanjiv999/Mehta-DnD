@@ -1,8 +1,8 @@
-id: partner
-player: Player 2 (rename me)
+id: keshu
+player: Keshu
 name: ""
 status: draft
-kids_mode: false
+kids_mode: true
 campaign_origin: peacock-throne
 aliases: {}
 concept: ""

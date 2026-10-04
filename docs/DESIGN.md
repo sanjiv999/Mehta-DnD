@@ -7,14 +7,14 @@ kids look at: their hero, their badges, the map, the next scene. No one installs
 the Python in `tools/` is Claude's and GitHub's, not the family's.
 
 ## The loop, for a five-year-old
-Every scene gives Keisha a **mission that cannot fail**: find, count, name, choose, hum, hold.
+Every scene gives Keshu a **mission that cannot fail**: find, count, name, choose, hum, hold.
 These are written into every chapter as `Jobs for the kids` and appear on the play screen as
 "Your missions". The dice are for the grown-ups and the seven-year-old; the five-year-old rolls
 when she wants to and succeeds whenever she tries. Things she names become canon forever (camels,
 dishes, songs, the ship's paint job) and show up on the website the next day.
 
 ## The loop, for a seven-year-old
-Arya gets **secrets and spotting**: the footprint going the wrong way, the maker's mark, the map
+Aarya gets **secrets and spotting**: the footprint going the wrong way, the maker's mark, the map
 that draws itself. One new mechanic per session. She reads the choice buttons aloud. She tells
 the story when someone loses at chess. She gets a hero moment badge most sessions and can see
 her sticker book grow.

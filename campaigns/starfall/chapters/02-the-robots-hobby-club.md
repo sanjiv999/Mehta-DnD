@@ -27,7 +27,7 @@ unseal the dock, and one of them built Airlock 7 and was told to forget where. H
 > Your ship stays docked until the lane is sealed. I'm sure you understand." At the back of the
 > room an octopus is slowly turning red.
 - **Setup:** Vexley is not a villain; he signed the letters last time. He cannot be argued round today. He lets slip that the robots hold the seals "and only talk about their hobbies."
-- **Jobs for the kids:** Keisha asks Vexley what he is scared of; he tells her the truth. Arya notices the robot in the corner taking the minutes in rhyme.
+- **Jobs for the kids:** Keshu asks Vexley what he is scared of; he tells her the truth. Aarya notices the robot in the corner taking the minutes in rhyme.
 - **Choices:**
   - 🗣️ Argue for the ship (Persuasion Hard; a kind no)
   - ❓ Ask what he is afraid of
@@ -44,7 +44,7 @@ unseal the dock, and one of them built Airlock 7 and was told to forget where. H
 > hundredth time. A cargo bot the size of a car is playing a tuba, badly. "Visitors!" says the
 > welder. "Do you have a hobby?"
 - **Setup:** Each robot is won by joining in: knit a row (DEX Easy or describe it), write two lines with SONNET (a kid's job), paint the cloud with PIP (describe it; PIP weeps coolant), play along with TUBA (Performance Easy; being bad together is the point).
-- **Jobs for the kids:** Keisha paints. Arya writes the poem.
+- **Jobs for the kids:** Keshu paints. Aarya writes the poem.
 - **Choices:**
   - 🧶 KNIT-9
   - 📜 SONNET
@@ -60,7 +60,7 @@ unseal the dock, and one of them built Airlock 7 and was told to forget where. H
 > makes me nervous." Down past the docks, past hatch 6 and hatch 8, to a plain wall between
 > them. The wall is warm. The last row of the scarf is a picture of a door.
 - **Setup:** Follow the scarf with one gravity outage on the way (ten seconds floating in a stairwell). The wall opens to the hummed tune.
-- **Jobs for the kids:** Keisha hums at the wall. Arya reads the last row.
+- **Jobs for the kids:** Keshu hums at the wall. Aarya reads the last row.
 - **Choices:**
   - 🎵 Hum
   - 🔨 Knock
@@ -76,7 +76,7 @@ unseal the dock, and one of them built Airlock 7 and was told to forget where. H
 > small light in it, humming the high half of the song. A label in your handwriting: "Piece 4.
 > Keep it safe. Tell ORBIT who we are, every day, until she remembers."
 - **Setup:** The player-safe twist: the heroes were crew; ORBIT's outage erased them from the station's records; they lived here and told her who they were daily until they forgot too. The jar is the child's light. It stays here for now.
-- **Jobs for the kids:** Keisha finds her own drawing. Arya reads the calendar.
+- **Jobs for the kids:** Keshu finds her own drawing. Aarya reads the calendar.
 - **Choices:**
   - 🫙 Pick up the jar
   - 📅 Read the calendar

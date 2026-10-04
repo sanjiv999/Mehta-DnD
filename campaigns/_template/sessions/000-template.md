@@ -3,8 +3,8 @@ number: 0
 date: YYYY-MM-DD
 title: Session Title
 chapter: 1
-attendees: [sanjiv, partner, arya, keisha]
-xp_awarded: { sanjiv: 0, partner: 0, arya: 0, keisha: 0 }
+attendees: [sanjiv, vai, aarya, keshu]
+xp_awarded: { sanjiv: 0, vai: 0, aarya: 0, keshu: 0 }
 loot: []
 hero_moments: []            # { who, what } shown as badges
 portrait_updates: []        # character ids whose look changed

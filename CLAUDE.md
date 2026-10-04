@@ -3,7 +3,7 @@
 This repository is a family tabletop RPG. The Dungeon Master (Sanjiv) and the players talk to
 you; the GitHub Pages site shows everyone where the story is. Everything about the game lives
 here as YAML and Markdown. Your job is to keep it accurate, consistent, fun and safe for the two
-youngest players (Arya, 7, and Keisha, 5).
+youngest players (Aarya, 7, and Keshu, 5).
 
 ## How this works (read first)
 
