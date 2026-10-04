@@ -1,4 +1,23 @@
-# Human spark: write a better prompt for any image slot here and it replaces the generated one.
-# Slot names come from `python tools/images.py plan --campaign <id>`. Example:
-# ch01-s3: "A vast stepwell at twilight, 108 zigzag steps, a white elephant at the bottom beside a giggling child made of orange smoke"
-{}
+# Human spark: a better prompt for any image slot replaces the generated one.
+# Slot names come from `python tools/images.py plan --campaign <id>`.
+# Chapter 1 scenes rewritten so the party's own heroes are in each moment.
+ch01-s1: >-
+  At the Nauroz weighing in a crowded red sandstone courtyard, a boy king of eleven in a turban too big for him
+  sits in one pan of a huge wooden balance while men stack sacks of grain in the other pan, drummers beside it.
+  In the foreground, a fourteen-year-old girl in a plain servant's shawl with ink on her fingers presses a small
+  brass elephant bell into Bolt's hand, while Machli leans in to sniff her inky fingers.
+ch01-s2: >-
+  A bazaar street running downhill under low striped cloth awnings, cones of yellow turmeric and red chilli on the
+  stalls, and huge round yellow footprints as wide as a cartwheel leading down the street. Bolt follows the
+  footprints, pointing with one stretched tentacle and holding a small brass bell. Machli looks up at grey langur
+  monkeys in red sashes sitting on the awning poles and laughing at them.
+ch01-s3: >-
+  Looking down into a deep square stepwell: zigzag stone steps going down past three floors of shaded carved
+  arches. At the bottom, flat ash-grey water and an old white elephant painted with marigolds, trunk raised,
+  standing beside a small child made of orange smoke who is stuck to the lowest step and crying. Machli and Bolt
+  are halfway down the steps, looking down, pigeons in the arches.
+ch01-s4: >-
+  A sunset parade through a red sandstone gate, the walls glowing peach. Machli and Bolt ride on the back of an
+  old white elephant painted with marigolds, waving to a huge cheering crowd with drums and kites. Behind them a
+  golden jewelled throne is carried on poles, a boy king of eleven standing on it waving both arms. One large ruby
+  in the throne has gone dull grey, and a tall man in grey silk stands in front of the boy, blocking his view.

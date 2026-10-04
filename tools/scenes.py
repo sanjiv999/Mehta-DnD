@@ -208,7 +208,7 @@ def cast_sheet(cid: str) -> list[dict]:
                 continue
             cur = (h.get("portrait") or {}).get("current")
             ref = CHARACTERS / hid / cur if cur and (CHARACTERS / hid / cur).exists() else None
-            out.append({"name": h["name"], "keys": _keys(h["name"]) + ["heroes", "hero", "party", "children", "child", "kids", "the kids"],
+            out.append({"name": h["name"], "keys": _keys(h["name"]) + [str(h.get("player", "")).lower(), "heroes", "hero", "party", "children", "child", "kids", "the kids"],
                         "look": hero_canon(h), "ref": ref, "hero": True})
     except Exception:
         pass
@@ -253,7 +253,7 @@ def place_sheet(cid: str) -> list[dict]:
 
 
 def _mentions(text: str, entry: dict) -> bool:
-    low = " " + re.sub(r"[^a-z0-9' ]+", " ", text.lower()) + " "
+    low = " " + re.sub(r"[^a-z0-9' ]+", " ", re.sub(r"['\u2019]s\b", "", text.lower())) + " "
     return any(f" {k} " in low for k in entry["keys"])
 
 
