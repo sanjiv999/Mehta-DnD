@@ -1,6 +1,6 @@
 # Pictures to make
 
-Every picture the game is still missing, most needed first. Regenerated 2026-10-04: 0 done, 196 to go.
+Every picture the game is still missing, most needed first. Regenerated 2026-10-04: 1 done, 195 to go.
 
 **How:** copy a prompt into Gemini (or Claude), attach any reference pictures it names, save the one you like as the number shown (`07.png`), and upload it to the `inbox/` folder here on GitHub (Add file → Upload files, works on a phone). GitHub files it, rebuilds the site and crosses it off this list. Or paste it in the chat and say the number.
 
@@ -14,14 +14,6 @@ Save as **`01.png`** and upload to `inbox/`. Landscape 16:9. <sub>slot `cover` �
 
 ```text
 Style: Mughal miniature painting influence: flat jewel-toned colors, gold leaf accents, fine ink outlines, ornate floral borders, profile or three-quarter view, with modern storybook warmth and expressive faces suitable for children. Palette: lapis and ultramarine, vermilion, saffron, malachite green, ivory, gold leaf; Sikri's sandstone is rust-red, its marble cream. Flat colour with no cast shadows, fine black outlines, a high horizon with stacked perspective, patterned textiles, late-afternoon gold light. Faces three-quarter, calm, big eyes. Never: photographic realism, lens blur, European castles, modern clothes. Subject: A red sandstone city with white marble domes under kites of every colour, a white elephant in a parade, a jewelled peacock throne glowing, Mughal miniature style. Wide establishing illustration for a book cover, landscape 16:9. One consistent style across the whole book: same palette, same line, same light. No text, no lettering, no speech bubbles, no watermark. Child-friendly, warm, no gore, no weapons pointed at the viewer.
-```
-
-### 02 · The Elephant Who Walked Away
-
-Save as **`02.png`** and upload to `inbox/`. Landscape 16:9. <sub>slot `ch01` → `campaigns/peacock-throne/images/`</sub>
-
-```text
-Style: Mughal miniature painting influence: flat jewel-toned colors, gold leaf accents, fine ink outlines, ornate floral borders, profile or three-quarter view, with modern storybook warmth and expressive faces suitable for children. Palette: lapis and ultramarine, vermilion, saffron, malachite green, ivory, gold leaf; Sikri's sandstone is rust-red, its marble cream. Flat colour with no cast shadows, fine black outlines, a high horizon with stacked perspective, patterned textiles, late-afternoon gold light. Faces three-quarter, calm, big eyes. Never: photographic realism, lens blur, European castles, modern clothes. Moment: An old white elephant painted with marigolds walking calmly out of a red sandstone gate at dawn while two guards bow to him, paper kites over the roofs behind. Wide establishing shot that opens a chapter, landscape 16:9. One consistent style across the whole book: same palette, same line, same light. No text, no lettering, no speech bubbles, no watermark. Child-friendly, warm, no gore, no weapons pointed at the viewer.
 ```
 
 ### 03 · The Elephant Who Walked Away: The weighing
@@ -1579,5 +1571,13 @@ Save as **`196.png`** and upload to `inbox/`. Landscape 16:9. <sub>slot `map` �
 ```text
 Style: Retro-futurist space opera illustration: soft nebula glow in violet and teal, chunky friendly robots, clean hard-surface suits with coloured stripes, optimistic Moebius-like linework, expressive faces suitable for children. Palette: nebula violet and teal outside, cream and warm grey inside the station, with orange and blue stripes on suits and hatches. Clean linework with soft gouache fill and a little paper grain; velcro strips, nets and hooked sleeping bags visible on walls; robots chunky and rounded. In zero gravity hair and small objects float. Never: grey military sci-fi, lens flare, horror, photographic realism. Subject: An illustrated storybook map of Starfall Station orbits a glowing violet nebula where ships go to be repaired, stories are traded, and something has started singing from inside the cloud. The station is run by a cheerful forgetful AI, a dockmaster octopus, robots with hobbies, and a council of traders who want the nebula left alone. Gravity fails for ten seconds every hour. Everyone floats politely. Top-down illustrated storybook map with painted terrain, landscape 16:9, no labels. One consistent style across the whole book: same palette, same line, same light. No text, no lettering, no speech bubbles, no watermark. Child-friendly, warm, no gore, no weapons pointed at the viewer.
 ```
+
+</details>
+
+## Done
+
+<details><summary>1 pictures in place</summary>
+
+- `peacock-throne/ch01` → `campaigns/peacock-throne/images/ch01.jpg`
 
 </details>
