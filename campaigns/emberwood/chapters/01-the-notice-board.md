@@ -80,7 +80,7 @@ piece of what sleeps under the mountain, and it has started coming up.
 > toward you between the trunks, a ball of ember-light the size of a cat, on legs. It stops in
 > front of Keshu and crackles. It seems to want something.
 - **Setup:** An **Ember-Wisp** (dm/bestiary.md): a sliver of Kindle, curious, drawn to children. Calm it and it follows as a lantern. Strike it and it splits.
-- **Jobs for the kids:** Keshu holds out her hand; the wisp lands. Aarya names it (canon).
+- **Jobs for the kids:** Keshu holds out his hand; the wisp lands. Aarya names it (canon).
 - **Choices:**
   - 🤲 Hold out your hand
   - 🍄 Offer a glowing mushroom (it eats it; pleased)

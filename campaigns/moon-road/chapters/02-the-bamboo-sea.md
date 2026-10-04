@@ -63,7 +63,7 @@ stronger in the dark here.
 > to the station lantern, lit by a hundred lamps. And at the far end of that line, in the dark
 > past the last lantern, a straw hat.
 - **Setup:** The parade walks. Every hero carries a lantern. Mischief sprites snatch and tickle. At the end, the **Shadow** (12 HP here) stands between the parade and the post.
-- **Jobs for the kids:** Keshu keeps the beat (if she stops, the paths move; she will not stop). Aarya keeps her lantern from the sprites (DEX save Easy).
+- **Jobs for the kids:** Keshu keeps the beat (if he stops, the paths move; he will not stop). Aarya keeps her lantern from the sprites (DEX save Easy).
 - **Choices:**
   - 🥁 Keep drumming whatever happens
   - 🧂 Salt the shadow

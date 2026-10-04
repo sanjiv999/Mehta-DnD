@@ -46,7 +46,7 @@ children tell her becomes the climate for the rest of the road.
 > Kiko has three tails here and is delighted. "A dream," she says. "The rules are soft. Be kind
 > to everything. It's all her."
 - **Setup:** Three dream rooms, in any order: the Room of Lost Things (each hero finds something they really lost; ask the kids what; it is real in the dream), the Room of the Whisper (the charm, humming), the Room of the Egg (the dragon's daughter, asleep).
-- **Jobs for the kids:** Keshu finds something she actually lost at home. Aarya hears the whisper and repeats it exactly.
+- **Jobs for the kids:** Keshu finds something he actually lost at home. Aarya hears the whisper and repeats it exactly.
 - **Choices:**
   - 🔎 Lost things
   - 👂 The whisper

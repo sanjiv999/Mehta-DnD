@@ -42,7 +42,7 @@ taking shapes down here: dwarves of coal, and then, when it sees them, the heroe
 > they see you. One of them tilts its head. And slowly, starting at the feet, it changes into
 > the shape of Keshu.
 - **Setup:** Three **Ember-Shapes** (dm/bestiary.md, HP 12 each). They copy. They stop when a hero tells them what they really are. The lullaby works too.
-- **Jobs for the kids:** Keshu tells her copy who she is (it bows and becomes a wisp). Aarya sings the chorus.
+- **Jobs for the kids:** Keshu tells his copy who he is (it bows and becomes a wisp). Aarya sings the chorus.
 - **Choices:**
   - 🗣️ Tell them what they are
   - 🎵 The lullaby

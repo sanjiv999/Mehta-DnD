@@ -10,7 +10,7 @@ import argparse
 import re
 import sys
 from datetime import date
-from common import CHARACTERS, load_character, load_campaign, world, dump_yaml, load_yaml
+from common import ROOT, CHARACTERS, load_character, load_campaign, world, dump_yaml, load_yaml
 
 
 def compose(h: dict) -> str:
@@ -22,6 +22,22 @@ def compose(h: dict) -> str:
     pers = h.get("personality", {}) or {}
     look = ", ".join(f"{k} {v}" for k, v in ap.items() if v and k not in ("colors", "distinguishing", "clothing"))
     who = " ".join(x for x in [ap.get("age"), h.get("species"), h.get("class")] if x) or "hero"
+    canon = (h.get("portrait") or {}).get("canon")
+    if canon:
+        art = ""
+        sf = ROOT / "campaigns" / (cid or "") / "images" / "STYLE.md"
+        if cid and sf.exists():
+            art = " ".join(l.strip() for l in sf.read_text(encoding="utf-8").splitlines()
+                           if l.strip() and not l.lstrip().startswith(("#", "<!--")))
+        parts = [f"Style: {style.rstrip('.')}.", art,
+                 f"Portrait of {h.get('name') or 'a hero'}, a hero in a children's storybook. "
+                 f"Draw exactly this look, the same in every picture: {canon.strip().rstrip('.')}.",
+                 f"Signature colours: {ap['colors']}." if ap.get("colors") else "",
+                 f"Expression: {', '.join(pers.get('traits') or [])}." if pers.get("traits") else "",
+                 "Composition: waist-up, centred, looking slightly past the viewer, plain background in the world's "
+                 "palette with a narrow ornamental border, portrait 3:4. Illustration, not a photograph. No text, no "
+                 "lettering, no watermark. Child-friendly, warm, nothing scary."]
+        return re.sub(r"\s+", " ", " ".join(x for x in parts if x)).strip()
     parts = [f"Portrait of {h.get('name') or 'a hero'}, a {who}."]
     if look:
         parts.append(look.capitalize() + ".")

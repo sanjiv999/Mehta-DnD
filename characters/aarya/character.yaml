@@ -1,33 +1,63 @@
 id: aarya
 player: Aarya
-name: ""
-status: draft
+name: Machli
+status: active
 kids_mode: true
 campaign_origin: peacock-throne
 aliases: {}
-concept: ""
-species: ""
-class: ""
+concept: A shark-girl from the bottom of the ocean who breathes fire on land, glides on her fin, and followed a map with one place missing up the river to Sikri.
+species: Shark-kin
+class: Mage
 level: 1
 xp: 0
 proficiency: 2
-abilities: { str: 10, dex: 10, con: 10, int: 10, wis: 10, cha: 10 }
-hp: { max: 10, current: 10 }
-ac: 10
+abilities: { str: 10, dex: 14, con: 13, int: 15, wis: 12, cha: 8 }
+hp: { max: 7, current: 7 }
+ac: 12
 speed: 30
 hero_points: 3
-hit_dice: d8
-trained_skills: []
-powers: []
-inventory: []
-keepsake: ""
+hit_dice: d6
+trained_skills: [Acrobatics, Athletics, Perception, Lore]
+powers:
+  - { name: Spark, kid_name: Fire Breath, description: "On land I breathe fire at one thing I can see (ranged magic attack, 1d8). Only when I am out of the water. The sparks on my fingers glow brighter when I do it (Light cantrip).", uses: always, source: class }
+  - { name: Keen Smell, kid_name: Shark Nose, description: "I can smell friends, food and trouble from far away (advantage when finding things by smell), and I can always find my way back to water.", uses: always, source: species }
+  - { name: Glide, kid_name: Wing-fin Glide, description: "When I jump from somewhere high, my back fin opens into wings and I glide down safely, steering up to 30 feet across.", uses: 1 per short rest, source: player }
+inventory:
+  - { name: A waterskin, qty: 1, notes: "a splash on the head when I have been on land too long" }
+  - { name: A coil of rope, qty: 1, notes: "for swinging" }
+keepsake: A map with one place missing, found in a treasure chest in a shipwreck at the bottom of the ocean.
 coins: 10
-appearance: { age: "", height: "", build: "", hair: "", eyes: "", skin: "", clothing: "", distinguishing: "", colors: "" }
-personality: { traits: [], loves: [], fears: [], dream: "", ideal: "", bond: "", flaw: "" }
-backstory: ""
+appearance:
+  age: "young"
+  height: "small"
+  build: "strong and springy"
+  hair: ""
+  eyes: "big dark friendly eyes"
+  skin: "dark blue shark skin with silver stripes and a pale belly"
+  clothing: "a simple sea-green sleeveless tunic with a rope belt, bare feet"
+  distinguishing: "a tall shark fin down her back that opens into wings, tiny orange sparks dancing on her fingertips"
+  colors: "dark blue, silver, orange"
+personality:
+  traits: [bold, loyal, curious]
+  loves: [swimming in the river, her brother Keshu]
+  fears: [jumping off cliffs]
+  dream: To spend time and make special memories with her brother Keshu, her best friend.
+  ideal: Friends come first.
+  bond: Keshu's hero is her best friend.
+  flaw: When she is nervous, she bites things.
+backstory: |
+  I lived at the bottom of the ocean, where it is dark and quiet and the whales sing far away.
+  In a shipwreck I found a chest, and in the chest a map with one place missing. The map pointed
+  up a river, so I swam up it, all the way to Sikri. I came out on the river steps by the
+  washing, and the washerwomen were the first ones to say hello.
 companions: []
-relationships: []
+relationships:
+  - { who: "Keshu's hero", campaign: peacock-throne, feeling: love, note: "My best friend already. Keshu decides how we met." }
 conditions: []
 achievements: []
-portrait: { style_override: "", current: "", history: [] }
-secret: ""
+portrait:
+  canon: "A small, friendly shark-girl: a girl's shape and face with dark blue shark skin, silver stripes and a pale belly, a tall back fin that can open into wings, a wide friendly shark grin, big dark eyes, tiny orange sparks dancing on her fingertips, a sea-green sleeveless tunic with a rope belt, bare feet, an old rolled map tucked in her belt."
+  style_override: ""
+  current: ""
+  history: []
+secret: The missing place on her map is real and close to Sikri. The DM decides where it is and when she finds it.

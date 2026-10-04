@@ -782,5 +782,9 @@
   "196": {
     "campaign": "starfall",
     "slot": "map"
+  },
+  "197": {
+    "campaign": "heroes",
+    "slot": "portrait-aarya"
   }
 }

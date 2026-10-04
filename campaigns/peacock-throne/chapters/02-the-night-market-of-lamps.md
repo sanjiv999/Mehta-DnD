@@ -66,7 +66,7 @@ gets. Hanuvant knows who built it. He has not said, because he has said things b
 > a row with a sound like someone blowing out candles very quickly. People scream. From the
 > roofs, a whistle: the guild has seen where it is going. The old bridge.
 - **Setup:** Night. The **Clockwork Peacock** (dm/bestiary.md) skates the water on folded feet and swallows lamps whole. It is heading for the bridge, under which the Vizier's man waits with a jar. Chase by roof, water, or air.
-- **Jobs for the kids:** Keshu floats her Wish Lamp and watches which way it drifts: it drifts after the thief, against the current (cannot fail). Aarya goes up on Patang's kite with the guild holding the string (Acrobatics Easy; a fail means she comes down in the lake, which she will enjoy).
+- **Jobs for the kids:** Keshu floats his Wish Lamp and watches which way it drifts: it drifts after the thief, against the current (cannot fail). Aarya goes up on Patang's kite with the guild holding the string (Acrobatics Easy; a fail means she comes down in the lake, which she will enjoy).
 - **Choices:**
   - 🪁 From the air, on the kite
   - 🐒 Across the roofs with the runners
@@ -99,7 +99,7 @@ gets. Hanuvant knows who built it. He has not said, because he has said things b
 ## Complications (roll d6)
 1. A lamp catches an awning. Everyone with hands: Athletics Easy, one round, buckets.
 2. The tail-dazzle makes a kid see three peacocks. Only one has a shadow on the water.
-3. Rukmini's boat takes water. Keshu bails with her lamp and counts the scoops.
+3. Rukmini's boat takes water. Keshu bails with his lamp and counts the scoops.
 4. The Vizier's mirror says a hero's fear back to them. WIS Easy or disadvantage next roll.
 5. Chhaya surfaces with a river pearl in her mouth and will not say where she got it.
 6. The runners bring back the wrong lamp: gold, the Padishah's own. Returning it is Court +1.

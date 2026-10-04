@@ -27,7 +27,7 @@ unseal the dock, and one of them built Airlock 7 and was told to forget where. H
 > Your ship stays docked until the lane is sealed. I'm sure you understand." At the back of the
 > room an octopus is slowly turning red.
 - **Setup:** Vexley is not a villain; he signed the letters last time. He cannot be argued round today. He lets slip that the robots hold the seals "and only talk about their hobbies."
-- **Jobs for the kids:** Keshu asks Vexley what he is scared of; he tells her the truth. Aarya notices the robot in the corner taking the minutes in rhyme.
+- **Jobs for the kids:** Keshu asks Vexley what he is scared of; he tells him the truth. Aarya notices the robot in the corner taking the minutes in rhyme.
 - **Choices:**
   - 🗣️ Argue for the ship (Persuasion Hard; a kind no)
   - ❓ Ask what he is afraid of
@@ -76,7 +76,7 @@ unseal the dock, and one of them built Airlock 7 and was told to forget where. H
 > small light in it, humming the high half of the song. A label in your handwriting: "Piece 4.
 > Keep it safe. Tell ORBIT who we are, every day, until she remembers."
 - **Setup:** The player-safe twist: the heroes were crew; ORBIT's outage erased them from the station's records; they lived here and told her who they were daily until they forgot too. The jar is the child's light. It stays here for now.
-- **Jobs for the kids:** Keshu finds her own drawing. Aarya reads the calendar.
+- **Jobs for the kids:** Keshu finds his own drawing. Aarya reads the calendar.
 - **Choices:**
   - 🫙 Pick up the jar
   - 📅 Read the calendar

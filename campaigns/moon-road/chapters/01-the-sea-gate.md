@@ -48,7 +48,7 @@ blow it out again.
 > dozens of worn-out straw sandals, and down into a tide pool behind it. Something green is
 > crouched in the pool with its arms round a turtle the size of a cart wheel, and it is crying.
 - **Setup:** The cat must be bowed to or paid in fish. The sandal fence is where pilgrims hang their worn pair for luck; there have been no new ones for years. Gen bows first, out of caution.
-- **Jobs for the kids:** Follow the prints. Count the toes. Keshu bows to the cat (it lets her pass).
+- **Jobs for the kids:** Follow the prints. Count the toes. Keshu bows to the cat (it lets him pass).
 - **Choices:**
   - 🙇 Bow to the kappa (he bows back; his dish spills; he is honest and harmless)
   - 🥒 Offer a cucumber (a fisher's wife has one and a story about her son's name on it)
@@ -79,7 +79,7 @@ blow it out again.
 > raises a hand to its mouth and blows, the way you blow out a birthday candle. The lantern
 > gutters. The fox's fur stands on end.
 - **Setup:** The **Shadow** (dm/bestiary.md) cannot be caught this chapter. It flees from salt and from a lantern held close. It drops something.
-- **Jobs for the kids:** Keshu cups her hands round the flame (it stays lit; cannot fail). Aarya sees which way the hat goes.
+- **Jobs for the kids:** Keshu cups his hands round the flame (it stays lit; cannot fail). Aarya sees which way the hat goes.
 - **Choices:**
   - 🏃 Chase it over the roofs
   - 🛡️ Guard the lantern

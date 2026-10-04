@@ -52,7 +52,7 @@ the baoli in the heat of the afternoon, the parade at sunset.
 > round and yellow and as wide as a cartwheel, all the way down the hill.
 > On the awning poles above, langurs in red sashes are watching you and finding it funny.
 - **Setup:** Morning, the hour of bargaining. The vanara guild saw everything from the roofs. A banana seller is shouting that the elephant ate his stock; the langurs did. Daulat's mirror stall is at the quiet end of the street; a kind word to him now pays off in chapter 5.
-- **Jobs for the kids:** Keshu follows the yellow footprints with her finger in the air (cannot fail). Aarya notices that one print, near the bottom, points back uphill, and beside it there is a smaller set of prints with three toes that go on alone.
+- **Jobs for the kids:** Keshu follows the yellow footprints with his finger in the air (cannot fail). Aarya notices that one print, near the bottom, points back uphill, and beside it there is a smaller set of prints with three toes that go on alone.
 - **Choices:**
   - 🥭 Offer the langurs mangoes and ask what they saw
   - 🧗 Climb the awning pole and ask them face to face

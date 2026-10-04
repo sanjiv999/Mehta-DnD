@@ -63,7 +63,7 @@ reviewed than fought.
 > wall, and he is sitting in the middle of the room painting another one. He does not turn
 > round. "Visitors," he says. "Tell me honestly. Am I magnificent?"
 - **Setup:** Dhoomketu can be fought (HP 40, three illusions, only the one with a shadow is real) or won. Winning takes three sincere compliments and one honest criticism, and the criticism is the one that lands; nobody has told him the truth in twenty years. A lie makes him grow another head, each more offended.
-- **Jobs for the kids:** Each kid gives one real compliment (he can tell). Keshu picks which jar is the baoli's blue; she is right. Aarya tells him something about the painting that is actually wrong with it.
+- **Jobs for the kids:** Each kid gives one real compliment (he can tell). Keshu picks which jar is the baoli's blue; he is right. Aarya tells him something about the painting that is actually wrong with it.
 - **Choices:**
   - 🎭 Compliment him, sincerely
   - 🖼️ Tell him what is wrong with the painting
@@ -80,7 +80,7 @@ reviewed than fought.
 > Vizier, smiling, the way he smiles at the Padishah. "Friends of the Throne. So far from home."
 > The black glass cracks. Something grey climbs out of every crack.
 - **Setup:** Escape. Mirror-Shards come through the walls, one per hero per round for three rounds. The ceiling is coming down as sand. Dhoomketu knows the back way: a mirror in his own bedroom that reflects the baoli in Sikri, which he has never used because he had nowhere to go.
-- **Jobs for the kids:** Keshu carries the blue jar in both arms and does not drop it (she will not). Aarya counts the rounds aloud; on three, Dhoomketu's mirror opens.
+- **Jobs for the kids:** Keshu carries the blue jar in both arms and does not drop it (he will not). Aarya counts the rounds aloud; on three, Dhoomketu's mirror opens.
 - **Choices:**
   - 🏃 Run with Dhoomketu
   - 🛡️ Hold the hall while the jars are passed hand to hand
