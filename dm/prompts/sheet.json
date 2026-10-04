@@ -786,5 +786,9 @@
   "197": {
     "campaign": "heroes",
     "slot": "portrait-aarya"
+  },
+  "198": {
+    "campaign": "heroes",
+    "slot": "portrait-keshu"
   }
 }

@@ -43,7 +43,7 @@ personality:
   fears: [jumping off cliffs]
   dream: To spend time and make special memories with her brother Keshu, her best friend.
   ideal: Friends come first.
-  bond: Keshu's hero is her best friend.
+  bond: Bolt, the robot she found in the shipwreck, is her best friend.
   flaw: When she is nervous, she bites things.
 backstory: |
   I lived at the bottom of the ocean, where it is dark and quiet and the whales sing far away.
@@ -52,7 +52,7 @@ backstory: |
   washing, and the washerwomen were the first ones to say hello.
 companions: []
 relationships:
-  - { who: "Keshu's hero", campaign: peacock-throne, feeling: love, note: "My best friend already. Keshu decides how we met." }
+  - { who: Bolt, campaign: peacock-throne, feeling: love, note: "I found him asleep in the shipwreck and woke him up. My best friend." }
 conditions: []
 achievements: []
 portrait:

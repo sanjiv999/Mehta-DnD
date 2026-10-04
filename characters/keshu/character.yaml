@@ -1,33 +1,62 @@
 id: keshu
 player: Keshu
-name: ""
-status: draft
+name: Bolt
+status: active
 kids_mode: true
 campaign_origin: peacock-throne
 aliases: {}
-concept: ""
-species: ""
-class: ""
+concept: A small purple robot from the bottom of the ocean who turns into any machine he has seen, loves science experiments, and wants to find treasure.
+species: Clockwork
+class: Inventor
 level: 1
 xp: 0
 proficiency: 2
-abilities: { str: 10, dex: 10, con: 10, int: 10, wis: 10, cha: 10 }
+abilities: { str: 12, dex: 13, con: 14, int: 15, wis: 10, cha: 8 }
 hp: { max: 10, current: 10 }
-ac: 10
+ac: 12
 speed: 30
 hero_points: 3
 hit_dice: d8
-trained_skills: []
-powers: []
-inventory: []
-keepsake: ""
+trained_skills: [Tinkering, Investigation, Athletics, Perception]
+powers:
+  - { name: Gadget, kid_name: Transform, description: "I turn into any machine I have seen. Small changes (a car, a boat, a ladder) any time. Once a day my transformation solves a Tricky problem by itself.", uses: "small any time; big 1 per long rest", source: class }
+  - { name: Reach, kid_name: Tentacle Arms, description: "My hair grows into long tentacle arms that grab, carry and press things up to 15 feet away (advantage on grabbing and climbing).", uses: always, source: player }
+  - { name: Helpers, kid_name: Machine Friends, description: "Up to three machines near me join my body for a scene and help. Together they do one simple job each turn, like a companion with 5 HP.", uses: 1 per short rest, source: player }
+inventory:
+  - { name: A tummy drawer of science bottles, qty: 1, notes: "for experiments" }
+  - { name: A little oil can, qty: 1, notes: "for squeaky joints" }
+keepsake: A golden feather. He does not know where it came from, and he is always trying to find out who it belongs to.
 coins: 10
-appearance: { age: "", height: "", build: "", hair: "", eyes: "", skin: "", clothing: "", distinguishing: "", colors: "" }
-personality: { traits: [], loves: [], fears: [], dream: "", ideal: "", bond: "", flaw: "" }
-backstory: ""
+appearance:
+  age: "young"
+  height: "small"
+  build: "round and sturdy"
+  hair: "short black robot tentacles with tiny lights on the tips"
+  eyes: "big round glowing eyes"
+  skin: "shiny purple metal"
+  clothing: ""
+  distinguishing: "a solar panel on top of his head, a few barnacles on one shoulder"
+  colors: "purple, black, gold"
+personality:
+  traits: [curious, cheerful, brave]
+  loves: [Machli, science experiments]
+  fears: [jumping off a tree, running out of energy]
+  dream: To find treasure.
+  ideal: Test everything.
+  bond: Machli found him in the shipwreck and woke him up.
+  flaw: When his energy is low he goes slow and sleepy until the sun comes out.
+backstory: |
+  I slept at the bottom of the sea in an old ship for a long, long time. Machli found me and
+  woke me up, and we swam up the river together. I had a gold feather with me. I do not know
+  where it came from.
 companions: []
-relationships: []
+relationships:
+  - { who: Machli, campaign: peacock-throne, feeling: love, note: "She found me in the shipwreck and swam me up the river. My best friend." }
 conditions: []
 achievements: []
-portrait: { style_override: "", current: "", history: [] }
-secret: ""
+portrait:
+  canon: "A small, friendly purple robot boy: shiny purple metal body, round and sturdy, a round friendly face with big round glowing eyes, short black hair made of little robot tentacles with tiny blue lights on the tips, a small solar panel on top of his head among the tentacles, a few barnacles on one shoulder, holding a golden feather."
+  style_override: ""
+  current: ""
+  history: []
+secret: The golden feather came from the Peacock Throne and was on the ship that sank. It grows warm near the throne, and in chapter 5 it points to the throne's central feather. The DM decides when he learns this.
