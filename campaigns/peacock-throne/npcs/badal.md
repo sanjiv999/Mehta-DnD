@@ -1,16 +1,17 @@
 ---
 name: Badal
-role: The Padishah's white elephant
-location: The royal stables, or wherever someone needs help
+role: The Padishah's elephant, old and white, grandson of the elephant the tower was built for
+location: The royal stables, or wherever the water is
 attitude: friendly
 public: true
+image_prompt: An old white elephant painted with marigold flowers on the forehead, silver caps on the tusks, bells on the ankles, standing in a red sandstone gateway with his trunk lifted
 ---
 # Badal
 
-**Looks:** White as a cloud, painted with festival flowers, one tusk capped in gold, eyes like a kind grandfather.
-**Sounds like:** Rumbles. Hums. Trumpets exactly once per chapter at the perfect moment.
-**Wants:** For everyone to be all right.
-**Offers:** Rides, a wall to hide behind, and a nose that can lift a cart.
+**Looks:** White with age, painted for Nauroz with marigolds on the forehead and silver caps on the tusks. Bells on his ankles that he sheds when he does not want to be followed.
+**Sounds like:** A low sound you feel in the floor. Trumpets once a chapter, when it matters.
+**Wants:** For the small frightened voice under the city to stop crying. He has been pulling toward the baoli for weeks and nobody read the register.
+**Offers:** A ride, a wall, and a nose that finds water underground, which old mahouts know and young courtiers have forgotten.
 
 ## Secret
-Badal can hear colour. He knows where every stolen colour is and will lead the party there if they learn to listen to his hum (Animals, Hard, or just ask Zeb).
+Elephants smell water. Badal can hear where the colour has gone, because colour is water-luck, and will lead the party to it if someone learns to follow him (Animals, Hard) or simply asks Zeb.

@@ -1,14 +1,16 @@
 ---
 name: Repair Bay 7
-region: Starfall Station, lower ring
+region: The hub, lower docks
 map: { x: 22, y: 70 }
 public: true
 visited: false
-image_prompt: A warm cluttered repair bay with a big window onto a violet nebula, a small dented ship on a cradle, tools drifting
+image_prompt: A warm cluttered repair bay with velcro strips on every surface, a small dented ship on a cradle, tools in net bags, a big window with a violet nebula wheeling past
 ---
 # Repair Bay 7
 
-**First impression:** Warm floor, humming walls, a window full of cloud.
-**Sights, sounds, smells:** Hum, welding ozone, someone's lunch.
-**Who is here:** The *Pakora*, ORBIT, whoever is fixing the left thruster.
-**What can happen here:** Chapter 1. Home.
+**Built by:** The yard, as one of twelve bays for ship repair. The crew made it home: a kettle, a hooked sleeping bag by the fan, a drawing on the wall.
+**First seen:** The floor, because you are lying on it. Then the ship. Then the window, where the cloud goes past once a minute.
+**Hour:** The station keeps a 24-hour clock with no sun to check it against. The gravity goes at the top of every hour.
+**Sound and smell:** Fans, a kettle, welding ozone, somebody's lunch that ORBIT sent to the wrong bay.
+**Who is here now:** The *Pakora*, ORBIT, a note.
+**Recently changed:** Four people have woken up on the floor with no memory of lying down.

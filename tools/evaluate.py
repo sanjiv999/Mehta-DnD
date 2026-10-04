@@ -104,6 +104,26 @@ def eval_content(W: Path):
     check("image slots enumerate for every world", slots >= 150, str(slots))
 
 
+def eval_prose(W: Path):
+    section("Prose: the tells of machine writing")
+    r = run(["tools/prose_lint.py", "--strict", "--show", "6"], W, check_rc=False)
+    first = r.stdout.strip().splitlines()[0] if r.stdout.strip() else ""
+    check("narrative files are under the prose ceiling", r.returncode == 0, first)
+    m = re.search(r"([\d.]+) per 1,000 words", first)
+    check("overall density under 3 per 1,000 words", bool(m) and float(m.group(1)) < 3.0, first)
+    for cid in ("peacock-throne", "moon-road", "emberwood", "starfall"):
+        check(f"{cid} has a world bible with people and secrets", (W / "campaigns" / cid / "world.md").exists()
+              and "## The people" in (W / "campaigns" / cid / "world.md").read_text() and "## Secret" in (W / "campaigns" / cid / "world.md").read_text())
+    sys.path.insert(0, str(W / "tools")); import scenes, common
+    long_ones = []
+    for cid in common.campaign_ids():
+        for ch in scenes.chapters(cid):
+            for s in ch["scenes"]:
+                words = sum(len(p.split()) for p in s["read_aloud"])
+                if words > 110: long_ones.append(f"{cid}/ch{ch['number']:02d}/s{s['number']} ({words}w)")
+    check("every read-aloud is at most 110 words", not long_ones, ", ".join(long_ones[:6]))
+
+
 def eval_dice(W: Path):
     section("Dice and tables")
     a = run(["tools/roll.py", "4d6kh3", "-n", "3", "--seed", "9", "--no-log"], W).stdout
@@ -481,7 +501,7 @@ def main(argv=None):
     if not a.no_browser:
         pw, browser = launch_browser()
     try:
-        eval_content(W); eval_dice(W); eval_character_cli(W)
+        eval_content(W); eval_prose(W); eval_dice(W); eval_character_cli(W)
         run(["tools/build_site.py"], W)
         eval_character_web(W, browser)
         eval_story(W); eval_images(W); eval_conversation(W); eval_links(W); eval_leaks(W); eval_lifecycle(W); eval_browser(W, browser)

@@ -1,17 +1,18 @@
 ---
 name: Mirza
-role: Royal parrot, two hundred years old
-location: Wherever the kid heroes are
+role: Court parrot, two hundred years old by the register, who has stopped talking
+location: On the shoulder of the smallest hero
 attitude: friendly
 public: true
+image_prompt: A green parrot with a red leather collar and one tail feather missing, head tilted, perched on a child's shoulder, close up
 ---
-# Mirza the Parrot
+# Mirza
 
-**Looks:** Emerald green, a red collar, one missing tail feather, eyes too wise for a bird.
-**Sounds like:** Has stopped talking. Communicates in single words at dramatic moments.
-**Wants:** To tell the truth about the Vizier, but the greying stole his voice.
-**Offers:** One word per session. Choose it well.
+**Looks:** Green, a red leather collar with a brass tag, one tail feather missing. Tilts his head to listen with one eye, the way parrots do when they are deciding whether to repeat you.
+**Sounds like:** Nothing, for a year. Then one word, once a session, at a moment of his choosing.
+**Wants:** To say what he heard.
+**Offers:** The one word. Choose where he is standing when he says it.
+**Thinks:** Children are the only people who listen to birds.
 
 ## Secret
-Mirza heard the Vizier swear, twenty years ago, to "own the throne by owning its colours". His full
-voice returns in chapter 5. His missing feather is in the Vizier's mirror.
+He heard Qamar, aged twenty and alone in the Diwan-i-Am, say he would own the throne by owning its colours. The mirror took his voice with the first gem. His missing tail feather is in the Vizier's mirror and becomes the maze guardian in chapter 5. His voice comes back when the feather does.

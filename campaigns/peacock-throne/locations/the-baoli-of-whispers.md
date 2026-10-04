@@ -1,16 +1,19 @@
 ---
 name: The Baoli of Whispers
-region: Sikri, beneath the old city
-public: true
+region: Under the old city
 map: { x: 47, y: 48 }
+public: true
 visited: false
+image_prompt: A deep stepwell seen from the top, 108 stone steps zigzagging down past arched galleries to a square of grey water, pigeons on the ledges, one small white elephant at the bottom
 ---
 # The Baoli of Whispers
 
-**First impression:** A palace turned upside down into the earth: 108 steps descending in zigzags to a square of water that should be green and is grey.
-**Sights, sounds, smells:** Cool air, pigeons, your name whispered from every carved niche, wet stone.
-**Who is here:** Lady Shabnam and the djinn, Firoz, and whoever has fallen in and been fished out.
-**What can happen here:** Chapter 1's climax, boon questions, and the Door to other worlds (the lowest step is always dry).
+**Built by:** The first Padishah's masons, the year the city was founded, as the city's deep well: 108 steps down past three storeys of shaded galleries where people once sat out the heat. The lowest step has been dry as long as anyone remembers, whatever the water does.
+**First seen:** A square hole in the old city with a carved rim. Then the cold air coming up out of it on a hot day. Then the steps.
+**Hour:** Always cool. Pigeons in the galleries. The light reaches the water only at noon.
+**Sound and smell:** Pigeons. Drips. Your own name said back to you from the galleries in a voice you do not know. Wet stone and cold.
+**Who is here now:** Lady Shabnam and the djinn. Firoz. Anyone who has come down for water and stayed to listen.
+**Recently changed:** The water has gone grey and still. Something at the bottom is crying.
 
 ## Secret
-The dry step is the Door. It opens once the Lantern's wick is recovered in chapter 5.
+The dry step is the Door between worlds. It opens when the wick is recovered in chapter 5.

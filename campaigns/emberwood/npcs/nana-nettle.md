@@ -1,17 +1,17 @@
 ---
 name: Nana Nettle
-role: The oldest goblin, who remembers the dwarves
-location: Stall 9, the Night Market
+role: Herb-wife and the oldest goblin, who remembers the dwarves
+location: Stall 9 at the Night Market
 attitude: friendly
 public: true
-image_prompt: A tiny ancient goblin wrapped in six colourful shawls, sitting by a lantern with a cup of tea, eyes bright
+image_prompt: A very small, very old goblin wrapped in six shawls sitting by a lantern with a cup of tea and a drying rack of herbs, eyes bright
 ---
 # Nana Nettle
 
-**Looks:** Small as a loaf, six shawls, eyes like wet currants.
-**Sounds like:** Slow, fond, drifts off mid-story and comes back with the important part.
-**Wants:** Somebody to remember the dwarves.
-**Offers:** The gate-song, the memory, a dwarven cloak, and the actual pie in chapter 5.
+**Looks:** Small as a loaf, six shawls, bundles of herbs on a rack behind her, a cup of something that is never finished.
+**Sounds like:** Slow, drifts off, and comes back with the one thing you needed.
+**Wants:** Someone to remember the dwarves. She hums their lullaby every night and did not know what it was until the heroes asked.
+**Offers:** The gate-song, the memory of the night the dwarves came through, a dwarven cloak her great-great-grandmother was given, and the pie.
 
 ## Secret
-Her great-great-granny was given the lullaby by Brokk's wife. It is the key to everything, and she has hummed it every night for ninety years without knowing why.
+Her great-great-grandmother sold the dwarves lamp oil and was handed the lullaby by the thane's wife at the gate, with the words "don't let it remember you." She has the lamp-oil ledger. The last entry is in dwarven.

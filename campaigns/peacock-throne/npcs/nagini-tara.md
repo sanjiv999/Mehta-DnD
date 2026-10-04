@@ -1,17 +1,17 @@
 ---
 name: Nagini Tara
-role: Padma's youngest daughter, who has never seen the sky
-location: The Naga Court, later Sikri
+role: Rani Padma's youngest, who has never seen the sky
+location: The naga court; later Sikri, staring upward
 attitude: friendly
 public: true
-image_prompt: A small, bright-eyed naga girl with a tiny pearl crown, half out of the water, staring up at the sky in wonder
+image_prompt: A small naga girl with a tiny crown of pearls slipping over one eye, half out of green water, looking straight up with her mouth open
 ---
 # Nagini Tara
 
-**Looks:** Small, quick, a tiny pearl crown that is always slipping.
-**Sounds like:** Questions, all of them, at once.
-**Wants:** To see the sky. Then everything else.
-**Offers:** Friendship, a summonable ally, and rain on demand (once).
+**Looks:** Small and quick, a pearl crown that is always sliding over one eye.
+**Sounds like:** Questions, at the same moment, none waited for.
+**Wants:** To see the sky. Then pigeons, which she has heard about and does not believe in.
+**Offers:** Friendship, a summonable ally once per session (pour water on the ground), and rain, once.
 
 ## Secret
-She is the one who told her mother the Vizier's envoy "smiled like a mirror". Children notice.
+She told her mother the Vizier's envoy smiled like a mirror. Children notice. Her mother did not listen, and is ashamed of it.

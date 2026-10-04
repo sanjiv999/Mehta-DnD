@@ -47,6 +47,7 @@ youngest players (Arya, 7, and Keisha, 5).
 | Random tables | `dm/tables/*.yaml` |
 | Prompt templates and the picture prompt sheet | `dm/prompts/` |
 | Tools you run (never the family) | `tools/`, reference in `docs/TOOLS.md` |
+| How to write, and the tells to avoid | `docs/WRITING.md`, `campaigns/<id>/world.md` |
 
 ## Jobs
 
@@ -121,6 +122,13 @@ unless the file does.
 party, what the next hook is, and what the site shows.
 
 ## Style for narrative text
-Short sentences. Concrete sensory detail. Second person for anything read aloud. Journals are
-first person in the hero's voice and must sound like that hero (Kids Mode: short words, at most
-one exclamation mark). Session logs are third person, past tense, with headings.
+Read `docs/WRITING.md` before writing any read-aloud text, person, place, journal or recap, and
+hold to it. The short version: depth first (the world bible in `campaigns/<id>/world.md`, then
+the description chosen from it); read-aloud under 90 words with one thing to do at the end;
+nouns that could not be anywhere else; no metaphor unless it is truer than the literal; no
+triplets, no "not X but Y", no "something ancient", no telling players what they feel. People
+want something this week and are afraid of something specific. Run `python tools/prose_lint.py`
+on anything you write; it is a smoke alarm, and the evaluation fails above its ceiling.
+Second person for anything read aloud. Journals are first person in the hero's voice and must
+sound like that hero (Kids Mode: short words, at most one exclamation mark). Session logs are
+third person, past tense, with headings.

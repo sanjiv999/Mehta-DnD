@@ -19,6 +19,7 @@ The report lands in `_eval/report.md` with screenshots in `_eval/shots/`.
 | Stage | What happens | What is checked |
 |---|---|---|
 | Content | Parses all 23 chapters | every scene has read-aloud text, a kids' mission, two or more choices and art direction; every chapter has a six-entry complication table, rewards and an ending; 190 image slots enumerate |
+| Prose | Runs the prose linter in strict mode, checks every world has a bible, measures every read-aloud | no file above the ceiling, overall density under 3 per 1,000 words, read-aloud text under 110 words |
 | Dice | Rolls thousands of dice | seeds reproduce, d20 spans 1 to 20 with a fair mean, advantage raises it, modifiers add, every table rolls, the oracle answers, rolls are logged |
 | Keisha makes a hero | Scripted answers to the CLI builder | the sheet is written, kids mode set, the "coolest thing" picks the class and the highest ability, HP and AC follow the rules, three powers and a keepsake, a first-person journal, the repo validates, the portrait prompt names her and uses the world's art style |
 | Arya makes a hero | A real browser walks all 17 steps of the web wizard on a phone-sized screen | no JS errors, the downloaded YAML parses, INT is highest for a mage, skills and powers carry over, the sheet validates once dropped into the repo |

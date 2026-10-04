@@ -5,101 +5,108 @@ status: planned
 levels: [4, 5]
 sessions_estimate: 2
 hours_estimate: 3
-summary: The monsoon has failed and the river runs backward toward the mountains. Ride it uphill to the naga queen's court and make peace.
-music: rain, bansuri flute, deep drums
-image_prompt: A river flowing uphill into mountains under storm clouds, a small boat riding it, river dolphins leaping beside
+summary: The monsoon has not come. The river is running backward toward the hills, because the naga queen is pulling her rain home. Ride it up and find out what she was promised.
+music: bansuri flute, rain that is not falling, then rain
+image_prompt: A brown river flowing uphill toward distant hills under a sky with no clouds, a small flat boat with eyes on its prow riding the current the wrong way, a dolphin beside it
 ---
 # Chapter 4: The River That Flows Up
 
 ## Premise
-The Vizier traded the colour of the sky to **Rani Padma**, queen of the naga, for her rain.
-Now the monsoon never reaches Sikri, the river runs backward as Padma pulls her water home, and
-the fields are cracking. The heroes must ride the river uphill, pass the Makara rapids, enter the
-naga court underwater, and broker peace between a cheated queen and a city that is thirsty.
+The Vizier's envoy went under the lake with a jar of sky-blue and told Rani Padma it was the
+Vizier's to trade. She gave her rain for it. Now she is pulling the river home to pay the debt,
+the monsoon has missed Sikri, the fields are splitting, and the lake is two more steps down
+the ghats. Padma does not know the blue was a child's. Telling her is the chapter.
 
 ## Goal the party will understand
-"Follow the river to where it is going, find out who is taking the rain, and bring the monsoon back."
+"Follow the river to where it is going and bring the rain back."
 
 ## Scenes
 
-### Scene 1: The dry city (social)
-> The fountains have stopped. Dust where the fish market was. Padishah Azim sits on the throne
-> and does not laugh at anything, and everyone pretends not to notice. Zeb finds you on the ghats
-> where the river is flowing the wrong way, uphill, carrying boats backward toward the mountains.
-> "Rukmini says she will take you up," Zeb says. "She says the river asked her to."
-- **Setup:** Set the stakes gently: thirsty animals, a quiet Padishah. Rukmini the boatwoman has a boat and a dolphin friend named Chhaya.
-- **Jobs for the kids:** Choose what to bring the naga as a gift (a lamp, a mango, a drawing). Keisha names the dolphin's trick.
+### Scene 1: The dry fountain (social)
+> The fountain in the pachisi court has stopped and there is dust in the basin. The Padishah
+> is sitting on the giant board with his servants standing on the squares around him, and
+> nobody is moving, because he has not told them to, because he has forgotten the game. Zeb
+> finds you at the ghats, where the water is two steps below Rukmini's scratched line and the
+> river beyond the lake is flowing uphill, carrying a fishing boat backward toward the hills.
+> "Rukmini says she will take you up," Zeb says. "She says the river asked."
+- **Setup:** The city is thirsty. The Padishah has gone quiet; the court pretends not to notice. Rukmini's boat has eyes painted on the prow and Chhaya the dolphin follows it. Chhaya carries a riddle from Padma: "I gave my rain for the sky and was given a face instead."
+- **Jobs for the kids:** Choose a gift for the naga queen (a Wish Lamp, a mango, a drawing). Keisha names Chhaya's trick (she will now do it on request).
 - **Choices:**
-  - 🚣 Go up by boat with Rukmini
-  - 🐘 Go up the bank on Badal (slower, safer, meets the farmers)
-  - 🪁 Fly up on the big kite (fast, lands you in the rapids)
-- **Outcomes:** The river dolphin Chhaya delivers Padma's riddle: "I gave the sky to a mirror and got back nothing but my own face." The party understands the Vizier cheated her.
-- **Image:** A dry fountain in a marble courtyard, a boy emperor sitting very still on a jewelled throne, dust in the sunbeams
+  - 🚣 Up the river in Rukmini's boat
+  - 🐘 Up the bank on Badal (slower, meets the farmers and their split fields)
+  - 🪁 Up on Patang's kite (fast, and lands you in the rapids)
+- **Outcomes:** The party understands the Vizier cheated the queen. Rukmini says the river changed a day before anyone noticed, "and the last time I said something about the water I was fined."
+- **Image:** A boy sitting on a giant board game cut into a stone courtyard, servants standing motionless on the squares around him, a dry fountain behind
+- **Music:** a bansuri, a long way off
 
-### Scene 2: Upriver (exploration, action)
-> The boat rides the backward river like a leaf in a gutter. Fields slide past, then forest, then
-> cliffs. Chhaya the dolphin leaps ahead and squeaks warnings. Rukmini grips the tiller.
-> "Rapids," she says. "And something in them that is bigger than the boat."
-- **Setup:** The **Makara** (dm/bestiary.md) guards its eggs in the rapids. It capsizes boats that come too close. It is not evil.
-- **Jobs for the kids:** Keisha bails water (counting scoops). Arya spots the eggs on the rock (Perception Easy) and realises why it is angry.
+### Scene 2: The eggs on the rock (action)
+> The boat goes up the river like a leaf in a gutter, fields and then trees and then the banks
+> standing up into cliffs. Chhaya leaps ahead and comes back squeaking. Rukmini stands on the
+> tiller. "Rapids," she says. "And something in them wider than the boat." Then you see it: a
+> grey back the length of the hull, and behind it, on a flat rock in the white water, a clutch
+> of eggs the size of melons.
+- **Setup:** The **Makara** (dm/bestiary.md) is guarding its eggs and capsizes boats that come near. It is not angry; it is a parent. Show it the party means no harm and it will carry the boat past.
+- **Jobs for the kids:** Keisha bails and counts the scoops. Arya spots the eggs before anyone else (Perception Easy) and says why the thing is angry.
 - **Choices:**
-  - 🥚 Show the Makara you mean no harm to the eggs
-  - 🗡️ Fight it from the boat
+  - 🥚 Show it you will not touch the eggs
   - 🐬 Let Chhaya talk to it
-  - 🎵 Play the Wish Lamp of music, if someone made one
-- **Rolls:** Animals Tricky to calm it. Fighting: its bite hits the boat first (HP 10 for the boat). Dexterity saves Tricky if capsized; everyone can swim.
-- **Outcomes:** Calmed, the Makara ferries the party on its back past the rapids and tells them (in rumbles that Chhaya translates) that "the queen cries every night".
-- **Image:** A crocodile-dragon makara rising from white rapids beside a small boat, eggs glowing on a rock, a dolphin leaping
-- **Music:** rushing water, drums
+  - 🎵 Play a music-shaped Wish Lamp, if anyone made one
+  - 🗡️ Fight it from the boat (the boat has 10 HP and loses)
+- **Rolls:** Animals Tricky to calm it. DEX saves Tricky if the boat goes over; everyone can swim; the water is warm.
+- **Outcomes:** The Makara ferries the boat past the rapids on its back. Chhaya translates its rumble: "The queen cries at night. Everyone in the river can hear it."
+- **Image:** A crocodile-dragon makara rising out of white water beside a small flat boat, a clutch of melon-sized eggs on a rock behind it, a dolphin leaping
+- **Music:** rushing water, a drum under it
 
-### Scene 3: Breathing underwater (exploration, wonder)
-> The river ends in a lake, and the lake is the sky's colour: the exact blue that is missing from
-> above. Firoz hiccups and blows a bubble around each of your heads. "Mama said you would need
-> these," he says. The water closes over you, and it is warm, and there are lights below.
-> A city of pearl. Snakes with crowns. Everyone is extremely polite.
-- **Setup:** The naga court. Etiquette matters: bow, give the gift, do not step on tails.
-- **Jobs for the kids:** Present the gift. Keisha counts the crowns. Arya notices the court musicians are playing the Padishah's parade song, slowly and sadly.
+### Scene 3: Bubbles (wonder)
+> The river ends at a lake, and the lake is the one blue that has been missing from the sky all
+> summer. Firoz hiccups, and a bubble closes round each of your heads with a small pop.
+> "Mama says you'll need them," he says. You walk in. The water is warm. Lights below. Pillars
+> of shell. Crowned heads turning to look at you, all together, with great politeness.
+- **Setup:** The naga court. Manners matter: bow, give the gift, do not step on tails. The court musicians are playing the Padishah's parade song very slowly, because it came with the jar.
+- **Jobs for the kids:** Present the gift. Keisha counts the crowns. Arya recognises the parade song and says where she heard it.
 - **Choices:**
   - 🎁 Give the gift first
   - 🙇 Bow and wait to be spoken to
-  - 😤 Demand the rain back (court gasps; reputation −1, but Padma is intrigued)
-- **Outcomes:** Rani Padma receives the party. She does not know the sky's colour was stolen from a child's throne. She believed the Vizier owned it.
-- **Image:** An underwater city of pearl lit from within, crowned naga courtiers, children in glowing bubbles descending into it
-- **Music:** slow bansuri, bubbles
+  - 😤 Demand the rain (the court inhales; reputation −1; Padma is interested)
+- **Outcomes:** Rani Padma receives the party. She believed the sky was the Vizier's to give. Her youngest daughter, under a table, says she told everyone the envoy "smiled like a mirror."
+- **Image:** Children in glowing bubbles walking down into an underwater city of shell, crowned naga turning to look at them
+- **Music:** a bell rung underwater, bubbles
 
-### Scene 4: The queen's bargain (social, climax)
-> Rani Padma is enormous and sad and beautiful, and in her coils is a jar of blue so bright it hurts.
-> "He said it was his to give," she says. "I pulled my rain home to pay for it. Is the sky not his?"
-> Behind you, the court whispers. Somewhere far above, a city is thirsty.
-- **Setup:** The heroes must convince Padma to return the rain and give up the sky-jar, without a war. Honesty wins. Three truths from three heroes (the Vizier lied; the Padishah is a child; the city is thirsty) each move her.
-- **Jobs for the kids:** Each kid tells Padma one true thing about why the city needs rain (they can name their own camel, their own lamp, Badal). Cannot fail.
+### Scene 4: What the sky was (social, climax)
+> The queen fills the throne room. In her coils is a sealed clay jar with blue light leaking at
+> the seal, and she is looking at it, not at you. "He said it was his to give," she says. "I
+> pulled my rain home to pay him. Is the sky not his?" Behind you, the court whispers. Far above,
+> a city with dust in its fountains.
+- **Setup:** Persuasion by honesty. Three truths move her: the Vizier lied; the throne belongs to an eleven-year-old; the city is thirsty. Each hero can give one. A threat makes the Naga Guard draw tridents (HP 20 each), and backing down with an apology is accepted.
+- **Jobs for the kids:** Each kid tells Padma one true thing about why the city needs rain (their camel, their lamp, Badal's dry trough). Cannot fail.
 - **Choices:**
   - 💧 Ask her to send the rain back now
-  - 🪞 Offer to break the Vizier's mirror in exchange
-  - 🤝 Invite her to the restored throne's festival
-  - ⚔️ Threaten (she coils; the court draws tridents; back down and apologise, or fight the Naga Guard, HP 20 each)
-- **Rolls:** Persuasion Tricky per truth; automatic if the player says it sincerely.
-- **Outcomes:** Padma releases the rain (it begins above, immediately, and the party hears it hit the lake like applause). She gives **Padma's Pearl** (turns any grey thing to colour once) and the sky-jar. She asks the heroes to tell the Vizier she is "not angry, which is worse".
-- **Image:** A vast naga queen with a crown of pearls holding out a jar of impossible blue to four small heroes
-- **Music:** rain beginning, then full monsoon with drums
+  - 🪞 Promise to break the Vizier's mirror
+  - 🤝 Invite her to the parade when the throne is whole
+  - ⚔️ Threaten (and then apologise, or fight the Guard)
+- **Rolls:** Persuasion Tricky per truth; automatic if sincere.
+- **Outcomes:** She lets the rain go, and the first of it hits the lake above like applause. She gives **Padma's Pearl** (turns one grey thing to colour, once) and the sky-jar, and asks the heroes to tell the Vizier she is "not angry, which is worse." Nagini Tara asks to come up and see the sky.
+- **Image:** A vast naga queen with a crown of river pearls holding a sealed clay jar leaking blue light toward four small heroes
+- **Music:** rain beginning, then all of it
 
 ## Complications (roll d6)
-1. The bubble pops for a kid hero. Firoz blows another; the kid now speaks in bubbles for the scene.
-2. The Naga Guard mistakes the Wish Lamp for a weapon. Explain (Easy).
-3. Chhaya the dolphin gets lost in the court. A job for Keisha: find her by her squeak.
-4. Padma's youngest daughter, Nagini Tara, wants to come up and see the sky. Say yes for a new friend.
-5. The Makara follows the party to the lake and sits outside the court looking embarrassed.
-6. The rain returns too fast; the party rides the flood back to Sikri in one scene (fun, loud).
+1. A bubble pops. Firoz blows another; the hero speaks in bubbles for the scene and the court finds it hilarious.
+2. The Naga Guard take a Wish Lamp for a weapon. Explain (Easy).
+3. Chhaya is lost in the court. Keisha finds her by her squeak.
+4. Tara wants to come now. Say yes and gain a friend for the campaign.
+5. The Makara follows the party to the lake and waits outside the court, embarrassed.
+6. The rain comes too hard and the party rides the flood back to Sikri in a single loud scene.
 
 ## Side quests
-- Nagini Tara's first day above water (a short, sweet interlude in Sikri).
-- The farmers' thank-you feast (Court +1, Bazaar +1).
+- Nagini Tara's first day under the sky (she does not believe in pigeons).
+- The farmers' feast (Court +1, Bazaar +1).
 
 ## Rewards
 - 300 XP each. Level 5.
-- Padma's Pearl. The sky-jar (restores the sky itself in chapter 5). Naga +3.
-- The monsoon. The Padishah laughs again.
+- Padma's Pearl. The sky-jar. Naga +3.
+- Rain. The Padishah laughs.
 
 ## How it ends and what it sets up
-Rain over Sikri. Two jars restored to the throne; one gem left grey. The Vizier is seen
-in the throne room at midnight with his mirror raised. Chapter 5 begins the next morning.
+Rain on Sikri. Two jars poured on the throne; one gem left grey. The night watchman at the
+Diwan-i-Am says he saw the Vizier at midnight with his mirror raised to the throne and his lips
+moving. Tomorrow is the full moon and the court will sit.

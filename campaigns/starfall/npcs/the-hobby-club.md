@@ -1,19 +1,19 @@
 ---
 name: The Hobby Club (KNIT-9, SONNET, PIP, TUBA)
-role: The station's robots, who run everything and meet on Thursdays
-location: The Garden Deck
+role: The station's robots, who run everything and meet on Thursdays on the Garden Deck
+location: The Garden Deck, among the tomatoes
 attitude: friendly
 public: true
-image_prompt: "Four robots in a greenhouse: a welding robot knitting a huge scarf, a security robot reading poetry to a tomato, a tiny painting robot, a cargo robot with a tuba"
+image_prompt: "Four robots in a greenhouse: a welding robot knitting a scarf that runs off down a path, a security robot reading a poem to a tomato plant, a tiny robot at an easel, a cargo robot with a tuba"
 ---
 # The Hobby Club
 
-- **KNIT-9**, welding-bot, knits. Built Airlock 7 and forgot; her scarf is the map.
-- **SONNET**, security-bot, writes poetry. Terrible. Sincere. Guards sit down to listen.
-- **PIP**, tiny maintenance-bot, paints the nebula over and over. In each, the thing inside is closer.
-- **TUBA**, cargo-bot, plays the tuba badly and loudly. Plays in tune exactly once, at the end.
+- **KNIT-9**, welding-bot, knits. Her scarf is forty metres long and its pattern is a map, because she built Airlock 7 and was told to forget where.
+- **SONNET**, security-bot, writes poetry. Bad. Sincere. Dock guards sit down to listen and forget to guard.
+- **PIP**, maintenance-bot, paints the nebula every day. In every painting the thing inside is nearer.
+- **TUBA**, cargo-bot, plays the tuba loudly and badly and will, once, at the very end, play in tune.
 
-**Wants:** A new member. **Offers:** The dock seals, distractions, a forty-metre scarf, loyalty.
+**Want:** A new member. **Offer:** The dock seals, distractions, the scarf, and loyalty.
 
 ## Secret
-They remember the crew too. Robots do not forget; they were told to keep quiet by a station that was ashamed.
+Robots do not forget. They remember the crew. A station that was ashamed asked them not to mention it, and they are bad at not mentioning things.

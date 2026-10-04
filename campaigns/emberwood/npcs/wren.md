@@ -1,17 +1,19 @@
 ---
 name: Wren
-role: Seven-year-old wizard of the Tower
-location: The Tower, then with the party
+role: Seven, the most powerful wizard in the wood, grounded
+location: The fourth floor of the Tower, on a flying carpet
 attitude: friendly
 public: true
-image_prompt: A small girl in an enormous pointed hat sitting on a flying carpet, surrounded by floating chess pieces, grinning
+image_prompt: A small girl in a pointed hat far too big for her sitting cross-legged on a floating carpet among three chess boards, moving a piece without looking, grinning
 ---
 # Wren
 
-**Looks:** Seven. A hat three sizes too big. Ink on her nose. A flying carpet she treats like a sofa.
-**Sounds like:** "I always win and it's boring." Rapid, clever, lonely under it.
-**Wants:** A friend her own age. Two would be better.
-**Offers:** One spell per scene (the kids choose; the DM scales it), rune-reading, a bear.
+**Looks:** Seven. A hat three sizes too big, held up by her ears. Ink on her nose. A flying carpet she treats as a sofa. Three chess games on the go.
+**Sounds like:** "I always win and it's boring." Fast. Explains spells while casting them.
+**Wants:** Someone her own age. She has met one child in three years and it was a goblin and he was not allowed to stay.
+**Afraid of:** That the tower will never let her out. It has not.
+**Offers:** One spell a scene, chosen by the kids and scaled by the DM; she can read dwarven; she has a bear.
+**Thinks:** The cat is rude. The cat thinks the same.
 
 ## Secret
-Her parents are not "away"; they are the Tower. They turned themselves into it to keep her safe and cannot turn back until she does not need them to, which she is about to stop needing.
+Her parents are the Tower. They bound themselves into its stones three years ago when the Ember stirred, to hold the wards, and cannot come out until she does not need them to. The end of chapter 2 is the first time she stops needing it.

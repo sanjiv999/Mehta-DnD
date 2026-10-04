@@ -71,4 +71,5 @@ Anyone with the link can read it, so leave it off if a player might peek.
 
 More: `docs/PLAYBOOK.md` (a game night, step by step), `docs/DESIGN.md` (why it is built this
 way), `docs/ARCHITECTURE.md`, `docs/IMAGES.md`, `docs/NO-API.md`, `docs/TOOLS.md` (the commands
-Claude runs), `docs/EVALUATION.md` (how the whole thing is tested).
+Claude runs), `docs/EVALUATION.md` (how the whole thing is tested), `docs/WRITING.md` (how the
+stories are written, and the machine-writing tells they must avoid).

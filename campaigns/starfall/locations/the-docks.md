@@ -1,14 +1,15 @@
 ---
 name: The Docks
-region: Starfall Station, outer ring
+region: The hub, outer
 map: { x: 54, y: 58 }
 public: true
 visited: false
-image_prompt: A vast docking bay with ships on cradles, big doors open to the nebula, an octopus directing traffic
+image_prompt: A docking bay with ships on cradles and the great doors open to the nebula, crates floating in zero gravity, an octopus in a bubble suit on the ceiling directing
 ---
 # The Docks
 
-**First impression:** Big doors, bigger sky, ships like sleeping birds.
-**Sights, sounds, smells:** Clangs, Oola's eight voices, cold fuel.
-**Who is here:** Oola, crews, the Choir, Vexley's ship the *Prudence*.
-**What can happen here:** Cargo catching, grounding, the heist, every departure.
+**Built by:** The yard. Big doors, bigger sky, ships on cradles, nets for what floats.
+**First seen:** The doors open. The cloud. A crate going past your head slowly.
+**Sound and smell:** Clangs, Oola in several voices, cold fuel, and after an airlock cycles, hot metal.
+**Who is here now:** Oola, the crews, a freighter's crew coming down the ramp humming, and later, Vexley's ship the *Prudence* across the doors.
+**Recently changed:** Four ships this week have come back humming.

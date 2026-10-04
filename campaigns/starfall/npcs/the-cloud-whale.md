@@ -1,17 +1,17 @@
 ---
-name: The Cloud-Whale and the Child
-role: "The nebula's heart: a mother the size of a city and her lost, dimming child"
+name: The Whale and the Child
+role: The nebula's mother and her lost child
 location: The deep cloud
 attitude: unknown
 public: true
-image_prompt: A whale-shaped being made of violet cloud and slow light, the size of a city, with a vast gentle eye, and a small glowing child-shape nearby
+image_prompt: A whale-shaped being of violet cloud and slow light with an eye the size of a dock, and far below it a small dim glowing shape
 ---
-# The Cloud-Whale and the Child
+# The Whale and the Child
 
-**Looks:** A whale, a mountain, a cloud that decided to be an animal, lit in slow pulses. The child is the size of a house and nearly dark.
-**Sounds like:** The vast half of the song. The child sings the small half.
-**Wants:** Its child's light back. Then, to be answered.
-**Offers:** First contact, images in the cloud, a path, and finally a gift of its own light.
+**Looks:** The mother is a shape in the cloud that is also the cloud, lit in slow pulses, with an eye that opens like a dock door. The child is as long as the dock and nearly dark.
+**Sounds like:** The mother sings the low half of the song. The child sings the high half, thinly.
+**Wants:** Her child's light. Then, to be answered.
+**Offers:** First contact in pictures made of cloud, a path through the storm, and at the end a piece of her own light, given.
 
 ## Secret
-Not an enemy at any point. The storms are its anxiety. It goes still, once, for ten seconds, so a child can bring its child home.
+Never an enemy. The storms are her worry. She holds still for ten seconds so that a child can take her child its light.

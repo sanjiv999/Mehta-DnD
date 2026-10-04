@@ -5,96 +5,97 @@ status: planned
 levels: [4, 4]
 sessions_estimate: 2
 hours_estimate: 2.5
-summary: The Council has impounded the Pakora. To get her back, win over the station's robots, each with a hobby, and find Airlock 7.
-music: playful synth, clanks, a robot choir
-image_prompt: A cluttered robot workshop where a welding robot knits, a security robot reads poetry, and a tiny robot paints, children sitting among them, retro-futurist illustration
+summary: The council has impounded the ship. Win over the robots who hold the dock seals, one hobby at a time, and follow a forty-metre scarf to a corridor that is not on the plans.
+music: a tuba, badly; then a robot choir
+image_prompt: A greenhouse deck where a welding robot knits, a security robot reads poetry to a tomato, a tiny robot paints and a cargo robot plays tuba, children sitting among them
 ---
 # Chapter 2: The Robots' Hobby Club
 
 ## Premise
-Chair Vexley of the Traders' Council has impounded the *Pakora* "for safety" and sealed the dock.
-The station's robots run everything and belong to no one; they meet on Thursdays as the Hobby
-Club. Win them over, one hobby at a time, and they will unseal the dock, and one of them knows
-where Airlock 7 is, because she built it.
+Chair Vexley has impounded the *Pakora* and sealed the dock. The robots run the seals and belong
+to nobody; they meet on Thursdays on the Garden Deck as the Hobby Club. Win them over and they
+unseal the dock, and one of them built Airlock 7 and was told to forget where. Her scarf did not.
 
 ## Goal the party will understand
 "Make friends with the robots, get the ship back, and find Airlock 7."
 
 ## Scenes
 
-### Scene 1: The Council (social)
-> The Council chamber is all glass and the nebula glows through it. Chair Vexley is tall, polite,
-> and absolutely certain. "The cloud is a hazard. Four crews lost to a *song*. Your ship stays
-> docked until we've sealed the lane. I'm sure you understand." Oola, in the back, is turning
-> red, which octopuses do when they are furious.
-- **Setup:** Vexley is not a villain: he is scared and responsible. He cannot be argued around today. But he lets slip that the robots control the dock seals, and "they're impossible; they only talk about their hobbies".
-- **Jobs for the kids:** Keisha asks Vexley what he is scared of (he tells her, honestly: losing more people). Arya notices a robot in the corner taking minutes, in verse.
+### Scene 1: I'm sure you understand (social)
+> The council chamber is glass and the cloud fills it. Chair Vexley is tall and holds his
+> clipboard flat against his chest. "The cloud is a hazard," he says. "Four crews to a song.
+> Your ship stays docked until the lane is sealed. I'm sure you understand." At the back of the
+> room an octopus is slowly turning red.
+- **Setup:** Vexley is not a villain; he signed the letters last time. He cannot be argued round today. He lets slip that the robots hold the seals "and only talk about their hobbies."
+- **Jobs for the kids:** Keisha asks Vexley what he is scared of; he tells her the truth. Arya notices the robot in the corner taking the minutes in rhyme.
 - **Choices:**
-  - 🗣️ Argue for the ship (Persuasion Hard; he says no kindly)
+  - 🗣️ Argue for the ship (Persuasion Hard; a kind no)
   - ❓ Ask what he is afraid of
-  - 🤖 Talk to the minute-taking robot
-  - 🐙 Side with Oola (Dock Guild +1, Council −1)
-- **Outcomes:** The robots hold the seals. The Hobby Club meets tonight in the Garden Deck.
-- **Image:** A glass council chamber with the nebula glowing through it, a tall polite man at a podium, an octopus in the back turning red, a robot in the corner writing poetry
+  - 🤖 Talk to the minute-taker
+  - 🐙 Side with Oola (Docks +1, Council −1)
+- **Outcomes:** The seals are the robots'. Thursday is tonight.
+- **Image:** A glass council chamber with the nebula behind it, a tall man with a clipboard at a lectern, an octopus at the back going red, a robot in the corner writing in verse
+- **Music:** air handling, a pen
 
-### Scene 2: The Hobby Club (social, minigames)
-> The Garden Deck is a greenhouse spinning slowly under the stars. In it, robots. The welding-bot
-> KNIT-9 is knitting a scarf forty metres long. The security-bot SONNET reads poetry to a
-> tomato. A tiny bot called PIP paints the same nebula over and over. A huge cargo-bot, TUBA,
-> is practising, badly, the tuba. "Visitors!" says KNIT-9, delighted. "Do you have a hobby?"
-- **Setup:** Each robot is won over by joining its hobby. Four robots, four heroes (or the kids take two each). KNIT-9: knit a row (DEX Easy or just describe). SONNET: write a two-line poem (a kid's job). PIP: paint the nebula (describe it; PIP weeps with joy). TUBA: play along (Performance Easy; being bad together is the point).
-- **Jobs for the kids:** Keisha paints with PIP. Arya writes a poem with SONNET.
+### Scene 2: Do you have a hobby (minigames)
+> The Garden Deck is tomatoes under lamps and a path that spirals down. On the path, robots.
+> A welding bot is knitting a scarf that runs off round the bend. A security bot is reading a
+> poem to a tomato. A bot the size of a kettle is painting the cloud for what looks like the
+> hundredth time. A cargo bot the size of a car is playing a tuba, badly. "Visitors!" says the
+> welder. "Do you have a hobby?"
+- **Setup:** Each robot is won by joining in: knit a row (DEX Easy or describe it), write two lines with SONNET (a kid's job), paint the cloud with PIP (describe it; PIP weeps coolant), play along with TUBA (Performance Easy; being bad together is the point).
+- **Jobs for the kids:** Keisha paints. Arya writes the poem.
 - **Choices:**
-  - 🧶 Knit with KNIT-9
-  - 📜 Poetry with SONNET
-  - 🎨 Paint with PIP
-  - 🎺 Tuba with TUBA
-- **Outcomes:** All four won: the Hobby Club votes the heroes in as members. KNIT-9 says: "Airlock 7? Oh, I built that. ORBIT made me forget where. But my scarf remembers." The scarf is forty metres long and has been knitted in a pattern that is a map.
-- **Image:** A spinning greenhouse deck under stars, a child painting beside a tiny robot, another child reading a poem to a security robot holding a tomato
-- **Music:** a tuba, badly, then a robot choir
+  - 🧶 KNIT-9
+  - 📜 SONNET
+  - 🎨 PIP
+  - 🎺 TUBA
+- **Outcomes:** Members. KNIT-9: "Airlock 7? I built it. ORBIT asked me to forget where. But I knitted while I did it, and the scarf didn't forget."
+- **Image:** A spinning greenhouse under lamps, a child painting beside a kettle-sized robot, another child reading a poem to a security robot holding a tomato
+- **Music:** a tuba, then four robots trying to sing
 
-### Scene 3: The scarf map (exploration, puzzle)
-> The scarf unrolls down the Garden Deck's spiral path and keeps going. The pattern is corridors.
-> ORBIT, overhead: "What a lovely scarf! I don't know why it makes me nervous." The scarf leads
-> down, past the Ring, past the docks, to a maintenance hatch marked 6 and a maintenance hatch
-> marked 8, with a plain wall between them. The wall is warm.
-- **Setup:** Follow the scarf through the station (a montage with one gravity failure en route: ten seconds of floating in a stairwell; kids love it). Find the wall between 6 and 8. ORBIT cannot see it. The wall opens to a hummed note (the nebula's tune).
-- **Jobs for the kids:** Keisha hums the note at the wall. Arya spots that the scarf's last row is a picture of a door.
+### Scene 3: The scarf (puzzle)
+> The scarf unrolls down the garden path and keeps going, out of the door and along the Ring,
+> and its pattern is corridors. ORBIT, overhead: "What a lovely scarf. I don't know why it
+> makes me nervous." Down past the docks, past hatch 6 and hatch 8, to a plain wall between
+> them. The wall is warm. The last row of the scarf is a picture of a door.
+- **Setup:** Follow the scarf with one gravity outage on the way (ten seconds floating in a stairwell). The wall opens to the hummed tune.
+- **Jobs for the kids:** Keisha hums at the wall. Arya reads the last row.
 - **Choices:**
-  - 🎵 Hum at the wall
+  - 🎵 Hum
   - 🔨 Knock
   - 🤖 Ask ORBIT (she gets a headache and apologises)
-  - 🧶 Follow the scarf's last row exactly
-- **Outcomes:** The wall opens. Airlock 7. Beyond it: a corridor not on the plans, warm, with the heroes' handwriting on the wall: a tally of days, and a drawing of the *Pakora*, and the words "WE WERE HERE BEFORE. ORBIT FORGOT US. DON'T LET HER."
+  - 🧶 Follow the last row exactly
+- **Outcomes:** The wall opens. A corridor, warm. On its wall, in the heroes' handwriting: a tally of days, a drawing of the ship, and the words "WE WERE HERE BEFORE. ORBIT FORGOT US. DON'T LET HER."
 - **Image:** A forty-metre knitted scarf unrolled along a station corridor like a trail, children following it to a blank warm wall between two hatches
+- **Music:** fans, then a wall sliding
 
-### Scene 4: The corridor (exploration, revelation)
-> The corridor is somebody's home. Four bunks. Drawings on the walls, in crayon, of the station
-> and the ship and the cloud. A calendar with a hundred days crossed off. And at the end, a
-> window onto the nebula, and in the window's frame, a small glowing thing in a jar: a fragment
-> of light, humming the song. A label, in your handwriting: "Piece 4. Keep it safe. Tell ORBIT
-> who we are, every day, until she remembers."
-- **Setup:** The twist, player-safe: the heroes have been here before, as crew, and ORBIT's memory fault erased them from the station (not from themselves; they just forgot the *station*). The jar is the Lantern's light, already found. It is why the nebula sings: it wants its piece back, or wants to be answered, or both. Oola half-recognised them because she met them before.
-- **Jobs for the kids:** Keisha finds her own crayon drawing. Arya reads the calendar.
+### Scene 4: Piece four (revelation)
+> Four bunks. Crayon drawings on the walls: the station, the ship, the cloud. A calendar with a
+> hundred days crossed off. At the end, a window onto the cloud, and in the window a jar with a
+> small light in it, humming the high half of the song. A label in your handwriting: "Piece 4.
+> Keep it safe. Tell ORBIT who we are, every day, until she remembers."
+- **Setup:** The player-safe twist: the heroes were crew; ORBIT's outage erased them from the station's records; they lived here and told her who they were daily until they forgot too. The jar is the child's light. It stays here for now.
+- **Jobs for the kids:** Keisha finds her own drawing. Arya reads the calendar.
 - **Choices:**
-  - 🫙 Take the jar
+  - 🫙 Pick up the jar
   - 📅 Read the calendar
   - 🖍️ Add today's drawing
-  - 🤖 Tell ORBIT who you are, right now
-- **Outcomes:** Telling ORBIT, through the corridor's intercom, makes her go quiet for a long moment and then say: "...Crew. You're my crew. Oh. Oh, I'm so sorry." She unseals the dock herself. Vexley is overruled by a station. Level 5. The jar stays in the corridor for now; the party has what they need: a reason.
-- **Image:** A hidden corridor with four bunks and crayon drawings on the walls, a calendar of crossed-off days, a glowing jar in a window onto the nebula
-- **Music:** quiet synth, then ORBIT's voice warm and sad
+  - 🤖 Tell ORBIT who you are, on the corridor intercom, now
+- **Outcomes:** ORBIT goes quiet for a long time. "...Crew. You're my crew. Oh. Oh, I'm so sorry." She unseals the dock herself. Vexley is overruled by a station. Level 5.
+- **Image:** A hidden corridor with four bunks and crayon drawings, a calendar of crossed-off days, a glowing jar in a window onto the nebula
+- **Music:** nothing; then ORBIT's voice, small
 
 ## Complications (roll d6)
-1. TUBA follows the party and gets stuck in a hatch. He plays while stuck.
-2. SONNET's poem is about a kid hero and makes them blush.
-3. The scarf is also a scarf; it is cold in the maintenance shafts; wear it.
-4. Vexley sends a trade inspector who is quickly recruited by KNIT-9 to knit.
-5. Gravity fails while the party is on the Garden Deck's spiral; the tomatoes float.
-6. PIP's paintings of the nebula are all slightly different: in each, the thing inside is closer.
+1. TUBA follows and gets stuck in a hatch. He plays while stuck.
+2. SONNET's poem is about a child hero and makes them go red.
+3. The scarf is also a scarf. It is cold in the shafts. Wear it.
+4. Vexley sends an inspector, who is recruited by KNIT-9 within a minute.
+5. Gravity goes while the party is on the garden spiral. The tomatoes float.
+6. PIP's paintings, laid out in order, show the thing inside the cloud getting closer every day.
 
 ## Rewards
-- 200 XP. Level 5. Hobby Club membership (one robot ally per scene). The scarf. The corridor. ORBIT's memory of the crew. Council −1 (Vexley sulks), Robots +3.
+- 200 XP. Level 5. Club membership (one robot ally per scene). The scarf. The corridor. ORBIT's memory. Robots +3, Council −1.
 
 ## How it ends and what it sets up
-The ship is free. The crew is remembered. The nebula is singing louder. Chapter 3 is the flight in.
+The ship is free. The crew is remembered. The song is louder. Chapter 3 is the flight in.

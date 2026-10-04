@@ -1,17 +1,17 @@
 ---
 name: Kindle (the Ember)
-role: The forge-fire under the mountain, which got lonely and forgot itself
-location: Under everything
+role: The dwarves' forge-fire, a spirit, which was left alone and forgot what it was
+location: Under everything; later, the bakery oven
 attitude: unknown
 public: true
-image_prompt: A small warm fire with a shy face, the size of a dog, sitting in a dwarven forge
+image_prompt: A small fire the size of a dog with a shy face, sitting in the firebox of a stone bread oven, a loaf browning above it
 ---
 # Kindle
 
-**Looks:** Whatever it saw last. At the end: a small warm fire with a shy face.
-**Sounds like:** A forge. "Who am I?"
+**Looks:** Whatever it saw last. Wisps first, then coal-dwarves, then a dragon of ash. At the end, a fire the size of a dog with a face.
+**Sounds like:** "Who am I?"
 **Wants:** To be told.
-**Offers:** Nothing, until reminded; then warmth, the brass frame, and the bakery's best oven ever.
+**Offers:** The brass frame, and the best oven Hearth has ever had.
 
 ## Secret
-Not a villain. The dwarves' forge-fire, which was a spirit, and which was left alone so long it forgot it was a fire and started being whatever it saw. It is a child, in its way. Every "fight" with it is really a conversation.
+Not a villain. The forge-fire the dwarves talked to, left alone three hundred years, copying what it sees because it has nothing else. Every "fight" is a conversation. Four true things about forge-fire shrink it to a hearth.

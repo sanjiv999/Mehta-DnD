@@ -1,17 +1,18 @@
 ---
 name: Gulnar
 role: Camel-driver of the western road
-location: The caravanserai outside Sikri's west gate
+location: The caravanserai outside the west gate, where the road to the desert starts
 attitude: friendly
 public: true
-image_prompt: A weathered woman in indigo desert robes beside eleven camels, each with a coloured tassel, squinting at the horizon
+image_prompt: A sun-lined woman in indigo robes checking a camel's girth strap, eleven camels behind her each with a different coloured tassel, a caravanserai gate behind
 ---
 # Gulnar
 
-**Looks:** Sun-creased, indigo robes, a tassel for each camel tied to her belt.
-**Sounds like:** Dry, few words, every one of them a joke if you listen.
-**Wants:** Her camels fed and the desert respected.
-**Offers:** Passage to the Mirror Fort, desert lore, one camel per hero "on loan, forever".
+**Looks:** Indigo robes faded to grey at the shoulders, a tassel for each camel tied to her belt so she can count them in the dark.
+**Sounds like:** Six words where others use twenty. Every one of them is a joke if you listen.
+**Wants:** Her camels fed, the desert respected, and to be paid before, not after.
+**Offers:** Three days to the Mirror Fort, water discipline, and a camel each "on loan, forever."
+**Thinks:** The court has never once asked where its ice comes from.
 
 ## Secret
-Her eleventh camel is a cursed prince. She knows and does not care; he is a good camel.
+Her eleventh camel is a cursed prince. She knows. He is a good camel, and she does not see why that should change.

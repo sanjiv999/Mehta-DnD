@@ -1,17 +1,17 @@
 ---
-name: Ryūko
-role: The dragon under Lake Kagami who dreams the weather
-location: Under Lake Kagami
+name: Ryūko and her daughter
+role: The dragon under Lake Kagami, who dreams the weather, and the small gold one who speaks for her
+location: Under the lake
 attitude: unknown
 public: true
-image_prompt: A vast silver dragon curled asleep under a glassy lake, maple leaves drifting on the surface above her
+image_prompt: A vast silver dragon asleep under a glass-still lake seen from above, maple leaves on the surface, and curled on the shore a dragon the size of a cat, gold, awake
 ---
-# Ryūko
+# Ryūko and her daughter
 
-**Looks:** Silver, vast, mostly asleep.
-**Sounds like:** Does not speak. Her daughter does.
-**Wants:** A good dream.
-**Offers:** The weather, dragon scales, a glimpse of herself at the end of chapter 3.
+**Looks:** Ryūko is a shape under the water that turns over and makes the snow fall harder. Her daughter is the size of a cat, gold, with a crest she has not grown into.
+**Sounds like:** Ryūko does not speak. Her daughter says "I had a bad dream" and then tells you about it in detail.
+**Wants:** A better dream. Whatever the children tell her becomes the weather for the rest of the road.
+**Offers:** A dragon scale each (float on water once), a glimpse of the mother at the end of the station, and the climate.
 
 ## Secret
-Her dreams are the weather. The whisper-charm gave her nightmares. The kids' dream becomes the campaign's climate.
+A keeper's charm with a hole burned through it has been lying beside her ear for a month, humming "sleep, winter, sleep" in Hoshi's voice. He talks in his sleep. It is a recording, not a person.

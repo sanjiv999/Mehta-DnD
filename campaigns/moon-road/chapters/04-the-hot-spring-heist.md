@@ -5,96 +5,101 @@ status: planned
 levels: [4, 5]
 sessions_estimate: 2
 hours_estimate: 2.5
-summary: In a steamy mountain village of inns and baths, the station lantern has been stolen, and everybody is a suspect, including a very polite oni.
-music: shamisen, bubbling water, comedy drums
-image_prompt: A snowy hot-spring village of wooden inns with steam rising, red lanterns, a huge polite oni in a bathrobe bowing, ukiyo-e style
+summary: In a village of inns stacked up a hillside, the lantern has been lifted off its post, the wrong oni is in custody, and everybody was in the bath.
+music: shamisen, running water, wooden clogs
+image_prompt: Wooden inns stacked up a snowy hillside with steam rising from outdoor baths, red lanterns at every door, an enormous red oni in a bathrobe bowing on an inn step
 ---
 # Chapter 4: The Hot-Spring Heist
 
 ## Premise
-Yuzuki Springs is a village of inns, steam, and the most comfortable creatures in the world. The
-station lantern was not blown out. It is gone, lifted from its post in the night. Everyone is a
-suspect: the tanuki innkeeper, the kappa plumber, the one-eyed umbrella, and a visiting oni named
-Daigoro who is six feet of muscle and the politest person in the village. This chapter is a mystery.
+Yuzuki's lantern was not blown out. It was lifted, in the night, and carried up to the old
+bathhouse. The Shadow has learned: salt and parades make blowing impossible, so now it steals,
+and it has started making copies of itself. Captain Masaru has arrested an oni, because an oni
+was there. The oni was in the bath with six witnesses. The chapter is a mystery with steam in it.
 
 ## Goal the party will understand
-"Find who took the lantern, and why, before the Road Wardens arrest the wrong person."
+"Find out who took the lantern before the wardens take the wrong person away."
 
 ## Scenes
 
-### Scene 1: Welcome to Yuzuki (social)
-> Steam everywhere. Wooden inns stacked up a hillside, red lanterns, the smell of sulphur and
-> grilled rice cakes. A tanuki in an apron bows so low her leaf falls off. "Welcome, honoured
-> lantern-lighters! Terrible timing. Our lantern was stolen last night, and Captain Masaru has
-> arrested the oni, and the oni is the only one who could not possibly have done it, because he
-> was in the bath with me and six witnesses all night."
-- **Setup:** Innkeeper **Okami Tama** sets up the mystery. Suspects: Daigoro the oni (innocent, in custody), Kappa Shin the plumber (saw something), Kasa the umbrella-yokai (nervous), the Road Wardens (clumsy), and a visiting pilgrim with a straw hat who checked out at dawn.
-- **Jobs for the kids:** Keisha chooses the first suspect to interview. Arya draws a suspect board.
+### Scene 1: Six witnesses (social)
+> Steam. Wooden inns climbing a hillside one storey above the next, red lanterns at every door,
+> clogs going up and down wet stairs. A tanuki in an indigo apron bows so low her leaf falls
+> off. "Honoured lantern-lighters. Terrible timing. Our lantern was stolen in the night. The
+> captain has arrested the oni. The oni is the only person in the village who cannot have done
+> it, because he was in my bath with six witnesses, and I have written them down."
+- **Setup:** Evening. Okami Tama has a list. Suspects: Daigoro the oni (innocent, bowing in custody), Kappa Shin the plumber (saw a light), Kasa the umbrella (saw the hat), the wardens (arrested the obvious), and a pilgrim in a straw hat who checked out at dawn and left no footprints.
+- **Jobs for the kids:** Keisha picks who to visit first. Arya draws the suspects on a board with a line for each.
 - **Choices:**
-  - 👹 Visit Daigoro in custody
-  - 🔧 Talk to Kappa Shin
-  - ☂️ Talk to Kasa the umbrella
-  - 🛏️ Search the pilgrim's room
-- **Outcomes:** Each interview gives a clue (dm/secrets.md). Daigoro is so polite it is suspicious; he is innocent.
-- **Image:** A hillside village of wooden inns in steam and snow, a tanuki innkeeper in an apron bowing, red lanterns glowing
+  - 👹 Daigoro, in custody
+  - 🔧 Shin, among the pipes
+  - ☂️ Kasa, in the corner
+  - 🛏️ The pilgrim's empty room
+- **Outcomes:** Each visit gives a clue (dm/secrets.md). Daigoro is so polite it looks suspicious to a warden; he is innocent.
+- **Image:** A tanuki innkeeper in an indigo apron bowing on a wet wooden step with her leaf falling off, steam and red lanterns behind
+- **Music:** clogs, water, a shamisen through a wall
 
-### Scene 2: Clues in the steam (exploration, investigation)
-> Kappa Shin's workshop is pipes and puddles. "I saw a light go up the hill at midnight," he says.
-> "Not carried. Floating. Like somebody was holding it who wasn't there." Kasa the umbrella, in
-> the corner, opens and shuts nervously. "I saw the hat," she whispers. "The straw hat. It walked
-> through the wall of the pilgrim room. Through. The. Wall."
-- **Setup:** The clues point to the Hollow Monk's shadow stealing the lantern itself this time, because the party's salt and lanterns have made blowing impossible. The pilgrim's room has a straw hat, empty, and a fourth charm. The lantern's light was seen going up to the old bathhouse above the village.
-- **Jobs for the kids:** Keisha finds the charm under the pillow. Arya follows wet three-toed and no-toed footprints up the hill (Perception Easy).
+### Scene 2: A light that floated (investigation)
+> Shin's workshop is pipes and puddles and a bamboo flume dripping into a bucket. "I saw a
+> light go up the hill at midnight," he says. "Not carried. Floating. Like somebody was holding
+> it who wasn't there." In the corner an old umbrella with one eye opens and shuts, opens and
+> shuts. "I saw the hat," it whispers. "It walked through the wall of the pilgrim's room.
+> Through. The. Wall."
+- **Setup:** The pilgrim's room: a straw hat on the floor with nobody in it, and a fourth burned charm under the pillow. Wet three-toed prints (Shin's, checking pipes) and prints with no toes at all (nothing) go up the hill to the old bathhouse. Masaru will release Daigoro if six witnesses come to the checkpoint, which they will, in bathrobes.
+- **Jobs for the kids:** Keisha finds the charm under the pillow. Arya follows the no-toed prints (Perception Easy).
 - **Choices:**
   - 🔍 Search the pilgrim's room
   - ⛰️ Follow the light up the hill
-  - 👮 Convince Masaru to release Daigoro first
-- **Rolls:** Investigation Easy. Persuasion Tricky with Masaru, Easy if Daigoro's six witnesses come along.
-- **Outcomes:** Daigoro freed (he bows seventeen times and joins the party for the chapter). The trail leads to the old bathhouse.
-- **Image:** A kappa plumber among pipes and puddles pointing uphill, a nervous one-eyed umbrella yokai in the corner
+  - 👮 Get Daigoro released first
+- **Rolls:** Investigation Easy. Persuasion Tricky with Masaru, Easy with six witnesses in bathrobes.
+- **Outcomes:** Daigoro, released, bows seventeen times and asks to come along. The trail goes to the old bathhouse above the village.
+- **Image:** A kappa plumber in a room of bamboo pipes pointing uphill, a nervous one-eyed umbrella in the corner
+- **Music:** dripping, a shamisen
 
 ### Scene 3: The old bathhouse (action, puzzle)
-> The old bathhouse is a maze of empty pools and sliding doors, warm and dark. In the deepest
-> pool, the station lantern floats, glowing, and around it, a ring of shadows in straw hats,
-> all identical, all still. "Copies," whispers Kiko. "It learned. It's making more of itself."
-- **Setup:** Six Shadows (dm/bestiary.md), weak individually (6 HP each). They scatter when hit. The lantern must be carried out without being blown out: Daigoro can carry it (nothing blows out a lantern an oni is holding; this is a rule of the world).
-- **Jobs for the kids:** Keisha rides on Daigoro's shoulders holding the lantern. Arya opens the right sliding doors (puzzle: the doors with a painted moon lead out).
+> The old bathhouse is empty pools and sliding doors. It is warm and dark and it smells of sulphur. In
+> the deepest pool the station lantern floats, still lit, and round it in the water a ring of
+> figures in straw hats, all the same height, all perfectly still. "It's learned," Kiko says.
+> "It's making more of itself."
+- **Setup:** Six **Shadows**, 6 HP each, that scatter when hit. The lantern has to be carried out lit. Daigoro can carry it: nothing an oni holds can be blown out. The way out is through the doors with a painted moon; the others lead to more pools.
+- **Jobs for the kids:** Keisha rides on Daigoro's shoulders holding the lantern. Arya finds the moon doors.
 - **Choices:**
-  - 👹 Have Daigoro carry the lantern
-  - 🧂 Ring of salt around the pool
-  - 🥁 Ponkichi's drum: a tanuki transforms into a giant bath-plug
-  - ⚔️ Fight through
-- **Rolls:** Attacks normal. Dexterity saves Easy on wet floors. Perception Easy for the moon doors.
-- **Outcomes:** The lantern is carried out and remounted. The shadows dissolve into straw. Fourth ofuda: the salt-charm (a ring of salt no spirit can cross, once).
-- **Image:** A dark empty bathhouse, a glowing lantern floating in a deep pool ringed by identical straw-hatted shadows, a huge oni wading in with a child on his shoulders
-- **Music:** eerie shamisen, then comedy drums
+  - 👹 Daigoro carries the lantern
+  - 🧂 A ring of salt round the pool
+  - 🥁 Ponkichi's drum: a tanuki becomes a bath plug the size of a door
+  - ⚔️ Through them
+- **Rolls:** Attacks normal. DEX saves Easy on wet boards. Perception Easy for the moon doors.
+- **Outcomes:** The lantern is carried out and set on its post. The shadows fall into straw. Fourth ofuda: the salt-charm (a ring no spirit can cross, once).
+- **Image:** A dark empty bathhouse, a lit lantern floating in a deep pool ringed by identical straw-hatted figures, a huge oni wading in with a child on his shoulders
+- **Music:** shamisen, low, then a splash
 
-### Scene 4: Daigoro's bath (social, rest)
-> After, everybody goes in the bath. Even Kiko (she hates it). Daigoro, pink from the water,
-> explains that he was walking the road to the mountain shrine to apologise for something his
-> grandfather did a hundred years ago. "The keeper up there," he says, "is very old. And very
-> angry. And I think," he adds carefully, "he has stopped being able to tell who he is angry at."
-- **Setup:** Rest scene and the campaign's turn: the Hollow Monk is connected to the mountain keeper. Full long rest. Daigoro stays with the party.
-- **Jobs for the kids:** Keisha names the hot spring's smell. Arya decides what to ask Daigoro about his grandfather.
+### Scene 4: Everybody in the bath (rest)
+> After, everybody gets in the bath. Even Kiko, who hates it and says so. Daigoro, pink to the
+> horns, explains that he is walking to the mountain to apologise for something his
+> grandfather did a hundred years ago. "The keeper up there is very old," he says, "and very
+> angry. And I think," carefully, "he has stopped being able to tell who he is angry at."
+- **Setup:** Long rest. The turn: the Monk is connected to the mountain keeper. Daigoro stays with the party.
+- **Jobs for the kids:** Keisha names the smell of the spring. Arya asks Daigoro what his grandfather did (he will not say; he is embarrassed; it was a kettle).
 - **Choices:**
-  - 👹 Ask Daigoro's story
-  - 🏔️ Ask about the mountain keeper
-  - 😴 Just enjoy the bath
-- **Outcomes:** Level 5. Daigoro as an ally. Kiko remembers two more letters: "O" and... she stops. "That's enough for now."
-- **Image:** A steaming outdoor bath under snowy pines, a huge pink oni, a wet unhappy fox, children laughing
+  - 👹 Ask about the grandfather
+  - 🏔️ Ask about the keeper
+  - 😴 Just sit in the water
+- **Outcomes:** Level 5. Kiko: "O. K, I, K, O. That's... that's nearly it." She stops. "That's enough for now."
+- **Image:** A steaming outdoor bath under snowy pines, a huge pink oni, a wet unhappy fox on the rim, children laughing
+- **Music:** water, monkeys arguing on the roof
 
 ## Complications (roll d6)
-1. Captain Masaru tries to arrest Kasa the umbrella for "being suspicious". Vouch for her.
-2. The bath monkeys steal everyone's towels. A tiny heist within the heist.
-3. A Shadow hides in a hero's sandal and makes it walk by itself.
-4. Okami Tama's rice cakes are so good a hero refuses to leave. Persuasion Easy.
-5. The lantern, when found, is a little shy and dims when looked at. Keisha looks away politely.
-6. Daigoro's politeness is contagious. Everyone bows for the rest of the session.
+1. Masaru tries to arrest Kasa for being suspicious. Vouch for her.
+2. The bath monkeys take every towel. A small heist inside the heist.
+3. A Shadow hides in a sandal and walks it round the room on its own.
+4. Tama's rice cakes are so good a hero will not leave. Persuasion Easy.
+5. The lantern, found, dims when looked at directly. Keisha looks away politely and it brightens.
+6. Daigoro's politeness spreads. Everyone bows for the rest of the night.
 
 ## Rewards
-- 250 XP. Level 5. The salt-charm. Daigoro (ally; HP 30; carries lanterns; bows). Road Wardens +1 (Masaru is grateful, grudgingly).
+- 250 XP. Level 5. The salt-charm. Daigoro (ally; HP 30; carries; bows). Wardens +1.
 
 ## How it ends and what it sets up
-The thief is the mountain keeper's own shadow, somehow. The road climbs to Castle Shirogane,
-where the Shogun's festival is tomorrow, the tanuki are still not invited, and the last lowland
-lantern stands in the castle courtyard, where no spirit can go.
+The thief is the mountain keeper's own shadow, somehow. The road climbs to a castle where the
+Shogun's festival is tomorrow, the tanuki still have no card, and the lantern stands in a
+courtyard no spirit can enter.

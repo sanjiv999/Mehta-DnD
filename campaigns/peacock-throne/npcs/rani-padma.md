@@ -1,17 +1,18 @@
 ---
 name: Rani Padma
-role: Queen of the naga under the river
-location: The Naga Court
+role: Queen of the naga, under the lake where the river begins
+location: The naga court
 attitude: wary
 public: true
-image_prompt: An enormous, beautiful naga queen with a crown of pearls, coiled on a throne of shell, holding a jar of impossibly bright blue
+image_prompt: An enormous naga queen with green and gold scales and a crown of river pearls, coiled on a throne of shell, holding a sealed clay jar whose light is a vivid blue
 ---
 # Rani Padma
 
-**Looks:** Vast, iridescent green and gold, a crown of pearls, eyes that have seen floods.
-**Sounds like:** Slow, formal, every sentence ends like a wave going out.
-**Wants:** What she paid for. Then, once she understands, to put it right.
-**Offers:** The rain, the sky-jar, Padma's Pearl, her daughter's friendship.
+**Looks:** Green and gold, a crown of river pearls, coils that fill the throne room. In her coils a sealed clay jar with blue light leaking at the seal.
+**Sounds like:** Formal and slow. Finishes every sentence the way a wave goes out.
+**Wants:** What she paid for. She gave her rain for the colour of the sky, and the sky she was given was stolen from a child.
+**Offers:** The rain back, the sky-jar, Padma's Pearl, and her daughter's friendship.
+**Thinks:** The surface people lie because they are dry.
 
 ## Secret
-She was cheated, not wicked. The Vizier told her the sky's colour was his. She will be ashamed and then furious, and her fury is useful in chapter 5.
+She was cheated, not wicked. The Vizier's envoy "smiled like a mirror"; her youngest daughter noticed and was not listened to. Shame first, then fury, and the fury is useful in chapter 5.

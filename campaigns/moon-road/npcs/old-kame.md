@@ -1,17 +1,17 @@
 ---
 name: Old Kame
-role: Spirit turtle who carries messages between sea and mountain
-location: The sea, the road, wherever he is needed
+role: A sea turtle who has carried messages between the sea and the mountain since before the road
+location: The shore at Shiokaze; the road when he must
 attitude: friendly
 public: true
-image_prompt: An enormous ancient sea turtle with a mossy shell and kind eyes, resting on sand at dusk
+image_prompt: An ancient sea turtle with a mossed shell resting on wet sand at dusk, head lifted, a small folded paper tied to one flipper
 ---
 # Old Kame
 
-**Looks:** Huge, mossy, eyes like old lamps.
-**Sounds like:** Slow. Very slow. Worth waiting for.
-**Wants:** To deliver his message.
-**Offers:** One "send for help" per campaign; the mountain's message in chapter 1.
+**Looks:** Moss on the shell, a scar across it from a boat, a folded paper tied to one flipper with red thread.
+**Sounds like:** Slow. You will want to finish his sentences. Do not.
+**Wants:** To deliver this message, which he has carried from the mountain for a month because he lost the road when the lanterns went out.
+**Offers:** The message, and one "send for help" per campaign: he will carry a note to the sea or the mountain and something will come.
 
 ## Secret
-His message was from Hoshi: "Someone is walking the road the wrong way." Hoshi meant himself, and did not know it.
+The message is from Hoshi: "Someone is walking the road the wrong way." Hoshi meant himself, and does not know it.

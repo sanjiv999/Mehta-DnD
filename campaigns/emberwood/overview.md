@@ -1,37 +1,43 @@
 # The Emberwood
 
 ## The pitch (read this to the players)
-Hearth is a town where everyone knows everyone and the baker's cat sits on the council. Beyond
-its hedge is the Emberwood, where the trees glow faintly at night and goblins sell mushrooms at
-a night market. On the mountain lives the dragon Sunder, and every spring the town sends her
-pies, and she leaves the town alone. Everyone agrees it is a very good arrangement.
+Hearth is forty houses inside a hedge taller than a house. The church bell is the only clock.
+On Tuesdays everyone carries their dough to the oven in the square and waits for it, talking,
+which is how the town finds things out. The baker's cat sits on the council table and is
+counted when they vote.
 
-This spring the pies came back untouched. Something in the wood is waking up, and the dragon
-is scared of it. The town notice board has four new jobs on it, and each one has one of your
-names written on it in handwriting nobody recognises.
+Beyond the hedge is a wood where the trees glow after dark like coals under ash. Goblins sell
+mushrooms at the hedge on Saturdays. Charcoal burners sleep out there beside smouldering
+heaps of logs. And on the mountain above the wood there is a dragon, and every spring the
+town bakes her forty pies and pushes them up the hill in a cart, and she leaves the town alone.
+
+This spring the cart came back down with the pies still in it. The notice board in the square
+has four new jobs on it, and each one has one of your names written on it in handwriting
+nobody recognises, very small, as if by a paw.
 
 ## The world in five facts
-1. **Goblins are merchants, not monsters.** Their prices are terrible and their mushrooms are excellent.
-2. **The wizard in the tower is seven.** Her name is Wren, she is very powerful, and she needs babysitting.
-3. **The forest moves its paths at night.** Maps are suggestions. Fireflies know the way.
-4. **Dwarven halls run under everything.** The dwarves left in a hurry, three hundred years ago, and did not say why.
-5. **Dragons here are honest.** Sunder would never lie. She just does not tell you everything.
+1. Goblins are pedlars, not monsters. They do not steal, because the whole market would know by morning. Their prices are terrible.
+2. The wizard in the tower is seven. Her parents are the tower.
+3. The wood moves its paths at night, except for goblins and charcoal burners.
+4. Dwarven halls run under everything. The dwarves left in one night, three hundred years ago, through a gate the goblins now hold their market on.
+5. The dragon is honest. She has never said a word that was not true. She does not volunteer.
 
 ## What heroes do here
-Take jobs from the notice board, grow from errands to quests, befriend the goblins and the
-wizard-child, go under the mountain, and find out what the dwarves fled and why the dragon is afraid.
+Take jobs from the board. Babysit a wizard. Trade at the goblins' market. Go under the mountain
+and remember a people. Carry a pie up a hill to a dragon who is afraid of something, and find
+out what.
 
 ## Factions
-| Faction | What they want | Face |
+| Faction | What they want this spring | Face |
 |---|---|---|
-| Hearth Council | A quiet town and the pies to work | Mayor Bramble (and Councillor Biscuit, a cat) |
-| Night Market Goblins | Trade, and respect for the forest | Grizzle the Merchant |
-| The Tower | Someone to play with | Wren |
-| The Deep Halls | To be remembered | The Dwarf-Ghost Thane |
-| Sunder | The Ember to stay asleep | Sunder |
+| Hearth | The pies to work, and the mill fixed | Mayor Bramble, Councillor Biscuit |
+| The goblins | Fair trade and for the mushrooms to stop glowing like that | Grizzle |
+| The Tower | Wren safe, which means Wren inside | The Tower |
+| The Deep Halls | To be remembered | Brokk Emberward |
+| The mountain | Rest | Sunder |
 
 ## Hooks for each hero
-- A **kid hero**'s notice-board job is "find the councillor's cat". The cat is on the council. The cat wrote the note.
-- A **warrior**'s job is "a scarecrow in the hedge wants a hat". It does.
-- A **clever hero** is asked by the tower to "please come and play chess with Wren, she keeps winning".
-- A **charming hero** is owed money by a goblin, which has never happened before.
+- A **kid hero**'s job is "find the councillor's cat". The cat is sitting on the board. He wrote the note.
+- A **warrior**'s job is "a scarecrow in the hedge wants a hat". He does.
+- A **clever hero** is asked by the tower to "come and lose at chess to Wren, she is unbearable when she wins".
+- A **charming hero** is owed money by a goblin, which has never happened before and which the goblin wants settled before anyone hears.
