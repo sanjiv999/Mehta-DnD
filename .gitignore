@@ -7,3 +7,4 @@ dm/transcripts/*.mp3
 dm/transcripts/*.wav
 .env
 _site_dm/
+_eval/

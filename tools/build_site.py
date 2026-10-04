@@ -29,7 +29,8 @@ DM = False
 
 def md(text: str) -> str:
     MD.reset()
-    return MD.convert(text if DM else strip_secret_section(text or ""))
+    html = MD.convert(text if DM else strip_secret_section(text or ""))
+    return html.replace("<table>", '<div class="tablewrap"><table>').replace("</table>", "</table></div>")
 
 
 def secret_section(body: str) -> str:
@@ -123,7 +124,8 @@ def main(argv=None) -> int:
         for ch in chs:
             n = int(ch.get("number", 0))
             ch["image"] = image_url(cid, f"ch{n:02d}", ch.get("title", ""), "chapter", accent)
-            ch["deck"] = DM or ch.get("status") in ("active", "done")
+            reached = int(c["state"].get("chapter", 0) or 0) >= n and c.get("status") in ("active", "paused", "completed")
+            ch["deck"] = DM or ch.get("status") in ("active", "done") or reached
             ch["dm_html"] = MD.convert(ch["dm_md"]) if DM else ""
             for s in ch["scenes"]:
                 s["image_url"] = image_url(cid, f"ch{n:02d}-{s['slug']}", f"{ch.get('title','')}: {s['title']}", "scene", accent)

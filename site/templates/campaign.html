@@ -20,13 +20,16 @@
   </header>
 
   <div class="tabs">
-    <input type="radio" name="t" id="t-story" checked><label for="t-story">Story</label>
-    <input type="radio" name="t" id="t-map"><label for="t-map">Map</label>
-    <input type="radio" name="t" id="t-world"><label for="t-world">World</label>
-    <input type="radio" name="t" id="t-people"><label for="t-people">People</label>
-    <input type="radio" name="t" id="t-places"><label for="t-places">Places</label>
-    <input type="radio" name="t" id="t-sessions"><label for="t-sessions">Sessions ({{ campaign.sessions|length }})</label>
-    {% if dm %}<input type="radio" name="t" id="t-dm"><label for="t-dm">DM</label>{% endif %}
+    <input type="radio" name="t" id="t-story" checked>
+    <input type="radio" name="t" id="t-map">
+    <input type="radio" name="t" id="t-world">
+    <input type="radio" name="t" id="t-people">
+    <input type="radio" name="t" id="t-places">
+    <input type="radio" name="t" id="t-sessions">
+    {% if dm %}<input type="radio" name="t" id="t-dm">{% endif %}
+    <div class="tablist">
+      <label for="t-story">Story</label><label for="t-map">Map</label><label for="t-world">World</label><label for="t-people">People</label><label for="t-places">Places</label><label for="t-sessions">Sessions ({{ campaign.sessions|length }})</label>{% if dm %}<label for="t-dm">DM</label>{% endif %}
+    </div>
 
     <section class="tab" id="p-story">
       <h2>Chapters</h2>
@@ -61,6 +64,7 @@
         </a>
         {% endfor %}
       </div>
+      <div class="map-legend">{% for l in campaign.locations if l.map %}<span class="chip {% if l.visited %}visited{% endif %} {% if l.slug == campaign.state.location_id %}here{% endif %}">{{ '📍' if l.slug == campaign.state.location_id else '✓' if l.visited else '·' }} {{ l.name }}</span>{% endfor %}</div>
     </section>
 
     <section class="tab prose" id="p-world">{{ campaign.html|safe }}</section>

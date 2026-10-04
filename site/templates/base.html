@@ -7,6 +7,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ root }}static/style.css">
+<link rel="manifest" href="{{ root }}static/manifest.json">
+<link rel="icon" href="{{ root }}static/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ root }}static/icon.svg">
+<meta name="theme-color" content="{{ accent or '#0f766e' }}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 {% block head %}{% endblock %}
 </head>
 <body{% if accent %} style="--accent: {{ accent }}"{% endif %} data-active="{{ world.active_campaign or '' }}"{% if dm %} class="dm"{% endif %}>

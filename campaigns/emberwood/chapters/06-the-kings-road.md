@@ -55,3 +55,18 @@ mountain is safe. Bring them home.
 
 ## Rewards
 - 300 XP. The dwarves' friendship forever. A forged gift for each hero from the reopened forge.
+
+## Complications (roll d6)
+1. The milestones are numbered in dwarven. Wren translates; the seventh says "nearly".
+2. A firefly leads a kid hero down a side path to a dwarven picnic spot. Lovely, pointless.
+3. Sunder has to land to rest; the dwarves see a dragon first and the heroes second. Explain fast.
+4. Hild's baby wants the toy horse. Negotiate.
+5. The lullaby, sung by four hundred dwarves, puts Teddy to sleep. Carry him home.
+6. Grizzle sets up a stall at the valley entrance before anyone has said hello.
+
+## Rewards
+- 300 XP. The dwarves' friendship forever. A forged gift for each hero from the reopened forge.
+- "Keeper of the King's Road" achievement.
+
+## How it ends and what it sets up
+The Deep Halls are full again. Brokk sleeps. The Emberwood is at peace, and the oak Door stands open for the next world.

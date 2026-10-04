@@ -62,3 +62,18 @@ way for friends to visit between worlds, or simply a very good party.
 
 ## Rewards
 - 1,000 XP. The Lantern. A fifth world, if chosen. Every friend, always.
+
+## Complications (roll d6)
+1. Badal does not fit through his Door. Sunder, politely, widens it.
+2. Dhoomketu and Ponkichi discover they both love a parade and organise one in four minutes.
+3. The *Pakora* has parked herself in the Crossroads and refuses to move. It is Tuesday somewhere.
+4. Kiko and Mirza compare riddles. Nobody else can follow.
+5. The Lantern flickers whenever two kids argue about the fifth world. Decide together and it steadies.
+6. Oola's banner is forty metres long. KNIT-9 is delighted.
+
+## Rewards
+- 1,000 XP. The Lantern. A fifth world, if chosen. Every friend, always.
+- "Keeper of the Lantern" achievement for everyone, forever.
+
+## How it ends and what it sets up
+Whatever the family decides. The Lantern lights the next road, and the next campaign folder is where it goes.

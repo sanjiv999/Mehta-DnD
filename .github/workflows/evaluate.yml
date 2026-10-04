@@ -1,0 +1,21 @@
+name: Evaluate the whole system
+# Simulates character creation, two sessions, pictures, campaign switching, every deck in a browser,
+# and every page at phone width. Free on GitHub Actions; no API keys involved.
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+  workflow_dispatch:
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt -r requirements-dev.txt
+      - run: python -m playwright install --with-deps chromium
+      - run: python tools/evaluate.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: evaluation-report, path: _eval }

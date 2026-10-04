@@ -16,6 +16,19 @@ CLASSES = {
 }
 ARRAY = [15, 14, 13, 12, 10, 8]
 ABILS = ["str", "dex", "con", "int", "wis", "cha"]
+# keywords in "the coolest thing you can do" -> (class, key ability)
+COOL = [(("sword", "fight", "strong", "shield", "protect friends"), "warrior", "str"), (("arrow", "bow", "track", "hunt"), "ranger", "dex"),
+        (("sneak", "secret", "climb", "steal", "quick"), "rogue", "dex"), (("magic", "spell", "wizard", "fire"), "mage", "int"),
+        (("heal", "pray", "wise", "light"), "priest", "wis"), (("sing", "song", "music", "drum", "story"), "bard", "cha"),
+        (("animal", "talk to", "shape", "beast"), "beast-friend", "wis"), (("build", "gadget", "invent", "tinker", "machine"), "inventor", "int")]
+
+
+def guess(cool: str):
+    c = cool.lower()
+    for words, cls, ab in COOL:
+        if any(w in c for w in words):
+            return cls, ab
+    return "warrior", "str"
 
 
 def ask(q: str, default: str = "") -> str:
@@ -81,15 +94,19 @@ def main() -> int:
     c["powers"] = powers
     suggest("keepsakes")
     c["keepsake"] = ask("One treasure you already own (your keepsake)")
-    cls = ask(f"Class ({', '.join(CLASSES)})", "warrior").lower()
+    gcls, gab = guess(cool)
+    cls = ask(f"Class ({', '.join(CLASSES)})", gcls).lower()
     c["class"] = cls.capitalize()
     die, base = CLASSES.get(cls, ("d8", 8))
     c["hit_dice"] = die
-    print(f"Assign {ARRAY} to {', '.join(a.upper() for a in ABILS)}. Highest to the coolest thing.")
+    print(f"Assign {ARRAY} to abilities. Press Enter to accept the suggestion (highest goes to {gab.upper()}, the coolest thing).")
+    order = [gab] + [a for a in ABILS if a != gab]
+    suggested = dict(zip(order, ARRAY))
     remaining = ARRAY[:]
     for a in ABILS:
-        v = ask(f"  {a.upper()} (left: {remaining})", str(remaining[0]))
-        v = int(v) if v.isdigit() and int(v) in remaining else remaining[0]
+        default = suggested[a] if suggested[a] in remaining else remaining[0]
+        v = ask(f"  {a.upper()} (left: {remaining})", str(default))
+        v = int(v) if v.isdigit() and int(v) in remaining else default
         remaining.remove(v)
         c["abilities"][a] = v
     c["hp"] = {"max": base + bonus(c["abilities"]["con"]), "current": base + bonus(c["abilities"]["con"])}

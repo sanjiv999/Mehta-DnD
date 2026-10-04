@@ -10,6 +10,8 @@
 - Image pipeline: slots, consistent prompts, placeholders, generation, overrides, player art, PR approval
 - Transcript ingest: interactive (CLAUDE.md) and automatic (workflow + Anthropic API)
 - Dice roller, oracle and random tables (CLI and web)
+- Evaluation harness (tools/evaluate.py) covering content, dice, both hero builders, two simulated sessions, pictures, secrets, lifecycle, decks and phones
+- Mobile layout, home-screen manifest
 
 ## Next
 - [ ] Session Zero: build the four heroes, generate portraits, play chapter 1

@@ -34,10 +34,26 @@ DM-only. What is really going on.
 - **Music:** mood words
 
 ### Scene 2: Name (exploration)
-> ...
+> Read-aloud text for the second scene.
+- **Setup:** DM-only notes.
+- **Jobs for the kids:** Something to find or count; something to spot.
+- **Choices:**
+  - 🔍 Look closer
+  - 🚶 Keep going
+  - 🗣️ Ask someone
+- **Outcomes:** What each path leads to.
+- **Image:** One line of art direction.
 
 ### Scene 3: Name (action)
-> ...
+> Read-aloud text for the third scene.
+- **Setup:** The encounter, with a stat block from dm/bestiary.md and a "How it ends".
+- **Jobs for the kids:** Something that cannot fail during the action.
+- **Choices:**
+  - ⚔️ Face it
+  - 🎵 Try something clever
+  - 🏃 Run
+- **Outcomes:** Rewards and what it sets up.
+- **Image:** One line of art direction.
 
 ## Complications (roll d6)
 1.

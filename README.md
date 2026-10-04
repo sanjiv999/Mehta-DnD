@@ -36,6 +36,8 @@ collecting the four pieces of the Lantern of Many Roads. The series finale assem
 - **Story So Far**: every session recap in order, illustrated. **Sticker book**: every hero moment.
 - **Hero builder**: the open-ended walkthrough as a tablet wizard; downloads a `character.yaml`.
 - **Dice** and oracle for phones.
+- **Phone-first**: every page fits a 390px screen with no sideways scrolling, tap targets are
+  finger-sized, and the site can be added to a home screen like an app.
 
 ## Quick start
 
@@ -60,7 +62,14 @@ python tools/images.py intake ~/Downloads                     # file the picture
 5. **Illustrate**: copy prompts from the Prompts page into Gemini or Claude, then `images.py intake ~/Downloads`.
 6. **Publish**: push to `main`; the site rebuilds.
 
-Full detail: `docs/PLAYBOOK.md`, `docs/ARCHITECTURE.md`, `docs/IMAGES.md`, `docs/DESIGN.md`.
+Full detail: `docs/PLAYBOOK.md`, `docs/ARCHITECTURE.md`, `docs/IMAGES.md`, `docs/DESIGN.md`,
+`docs/NO-API.md`, `docs/EVALUATION.md`.
+
+## Checking it all works
+
+`python tools/evaluate.py` simulates a first month (two kids building heroes, two sessions
+ingested and published, pictures filed, campaigns switched, every deck stepped through in a
+browser, every page at phone width) and writes `_eval/report.md`. It runs on every pull request.
 
 ## No API keys
 
