@@ -74,8 +74,8 @@ def load_campaign(cid: str) -> dict:
 def sorted_sessions(cdir: Path) -> list[dict]:
     out = []
     for p in sorted((cdir / "sessions").glob("*.md")):
-        if p.name.startswith("000"):
-            continue
+        if p.name.startswith("000") or p.stem.endswith("-live"):
+            continue   # the template, and the live log kept during play (not a finished session)
         meta, body = load_md(p)
         meta["body"] = body
         meta["file"] = p.name

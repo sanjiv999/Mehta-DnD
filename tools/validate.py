@@ -89,7 +89,7 @@ def main() -> int:
                     problems.append(f"{sp}: thread {t!r} needs id and text")
         for sub in ["npcs", "locations", "chapters", "sessions"]:
             for md in (d / sub).glob("*.md") if (d / sub).exists() else []:
-                if md.name.startswith("_") or md.name.startswith("000"):
+                if md.name.startswith("_") or md.name.startswith("000") or md.stem.endswith("-live"):
                     continue
                 try:
                     meta, _ = load_md(md)
