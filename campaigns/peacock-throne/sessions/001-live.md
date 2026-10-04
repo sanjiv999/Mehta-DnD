@@ -6,3 +6,4 @@ are not built yet and will join later.
 
 ## Scene 1: The weighing
 - Started. Read-aloud given at the Nauroz weighing.
+- Pictures 03 to 06 made in Gemini and filed: all four chapter 1 scenes now have art.
