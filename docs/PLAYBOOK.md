@@ -1,60 +1,52 @@
-# Playbook: running a game night
+# Playbook: a game night, step by step
 
-## Before (10 minutes)
+You never run a command. You talk to Claude in Claude Code with this repository open, and you
+look at the website. Claude does the rest.
 
-1. `python tools/campaign.py status` to confirm the active campaign and chapter.
-2. `python tools/session.py prep` for the brief, or ask Claude to prep (dm/prompts/session-prep.md).
-3. Build the DM screen: `python tools/build_site.py --dm && python -m http.server -d _site_dm 8001`,
-   then open `http://localhost:8001/play/<campaign>/<chapter>.html`. This is the player deck
-   with your DM notes, complications and stat blocks on the same page. Never publish `_site_dm`.
-4. Put the public site on the TV or a tablet: the same deck without the notes. Phone: `dice.html`.
+## Session Zero (the first night, 45 minutes)
 
-## During (30 to 75 minutes depending on who is at the table)
+1. Type `/start`. Claude explains the world and reads the pitch.
+2. For each player, `/hero Keisha, age 5` (and so on). Claude asks one question at a time: what
+   creature, what is the coolest thing you can do, who do you love, what are you scared of, what do
+   you want. The grown-up relays the answers. Claude suggests three ideas after each. When the
+   player is happy, Claude writes the sheet, the first journal entry, and gives you a portrait
+   prompt for Gemini. Or the kids tap through **Make a hero** on the website and press
+   **Copy for Claude**.
+3. Paste the portrait prompts into Gemini, save each picture as `001.png`, upload to
+   `characters/<hero>/portraits/` on GitHub (or hand them to Claude).
+4. The site now shows four heroes. If there is time, `/play` for the first scene.
 
-- Open with the recap in second person. Let the kids finish the sentences.
-- Start recording in Claude. Say "Session N, campaign X, date" at the top.
-- Advance the deck one scene at a time. Read the read-aloud. Hand out the missions. Let the kids
-  tap the choice buttons on the tablet; a tapped button is their declared action.
-- Say dice results and state changes out loud ("Arya rolled 17", "the party now has the key").
-- Use the difficulty ladder. Default to Tricky (13).
-- Every fifteen minutes give the five-year-old a mission from the slide.
-- If a scene stalls, roll the chapter's d6 complication table.
-- End on the chapter's cliffhanger or the next scene's first line.
+## Before a session (5 minutes)
 
-## After (15 minutes, mostly Claude)
+`/recap`. Claude gives you a three-sentence recap to read aloud, the open threads, the next scenes
+with each kid's mission, a d6 complication table, and two encounters with stat blocks.
+Open the play deck on the TV or a tablet from the dashboard's **Play chapter** button.
 
-Two ways, pick one:
+## At the table (30 to 75 minutes)
 
-**Interactive.** Save the transcript as `dm/transcripts/NNN-YYYY-MM-DD.md`, then ask Claude Code:
-"Ingest `dm/transcripts/NNN-....md` for the active campaign." It follows CLAUDE.md and edits the files.
+1. `/play`. Claude gives you the read-aloud text, the missions and the choices for the scene.
+2. Read it. Let the kids tap or shout their choice. Tell Claude: "Keisha rang the bell and Arya
+   climbed to the monkeys and rolled a 14."
+3. Claude resolves it, narrates in a few sentences, and gives you the next beat. If you want
+   Claude to roll, say so; it rolls with the logged dice.
+4. Keep going scene by scene. Claude writes a live log as you go, so a dropped connection loses nothing.
+5. Say "we're done for tonight" (or `/ingest`). Claude writes the session log, updates every
+   hero and journal, awards badges, pushes, and tells you what the site will show.
 
-**Chat apps.** `python tools/ingest.py prompt dm/transcripts/NNN-....md`, paste the generated prompt
-file into claude.ai or Gemini, save the JSON reply, `python tools/ingest.py apply <transcript> reply.json`.
+Rules of thumb: default difficulty is Tricky (13); the five-year-old gets a mission every few
+minutes; if a scene stalls, ask Claude for a complication; if a kid is upset, tell Claude and the
+story bends.
 
-Then: review the diff, fix anything the kids would dispute, run `python tools/validate.py`,
-merge or push to `main`. The site rebuilds. If the session log has an `image_prompt`, it shows up on the
-Prompts page as `session-NNN` so the Story So Far page can be illustrated.
+## Between sessions
 
-## Session Zero (the first night)
+- `/status` any time to hear where you are.
+- `/pictures` for the next batch of prompts; paste into Gemini; upload the pictures on GitHub.
+- `/switch moon-road` to change worlds (Claude pauses the current one and writes each hero's
+  Crossing); `/switch resume peacock-throne` to come back; `/switch complete <world>` when a
+  world's finale is done (that counts a Lantern piece).
+- To add or rest a player, tell Claude.
 
-1. Open `build.html` on the tablet. Each player walks through the hero builder; it writes a
-   `character.yaml` to download. Or sit with Claude and dm/prompts/character-builder.md.
-2. Drop each file into `characters/<id>/character.yaml`, add the ids to `party:` in `state/world.yaml`.
-3. `python tools/images.py heroes --prompts`, paste each into Gemini, save as `portrait-<id>.png`,
-   `python tools/images.py intake ~/Downloads`.
-4. Read the campaign's pitch from the overview. Play scene 1 of chapter 1 if there is time.
+## If you recorded the session instead
 
-## Switching campaigns
-
-```bash
-python tools/campaign.py pause --note "left at the kappa"
-python tools/campaign.py switch moon-road
-python tools/campaign.py resume peacock-throne
-python tools/campaign.py complete peacock-throne     # counts a Lantern piece
-```
-
-Each switch writes a Crossing stub into every party journal. Fill it in (or let the ingest do it).
-
-## Adding or removing a player
-
-Edit `party:` in `state/world.yaml`. Heroes not in the party rest on the website and can return any time.
+Save the transcript as `dm/transcripts/NNN-YYYY-MM-DD.md` (upload on GitHub or paste it) and
+`/ingest dm/transcripts/NNN-....md`.

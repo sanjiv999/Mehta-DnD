@@ -1,8 +1,9 @@
-# Running everything on subscriptions only (no API keys)
+# Running everything on subscriptions only (no API keys, no installs)
 
-Nothing in this repository needs an API key. Every pipeline has a copy-and-paste route that works
-with the Claude and Gemini apps you already pay for, and with GitHub's own website. The optional
-workflows that call paid APIs never run unless you start them by hand.
+Nothing in this repository needs an API key, and the family never runs code. Claude Code (part of
+a Claude subscription) runs the tools; GitHub builds the site; pictures come from the Gemini or
+Claude apps by copy and paste. The optional workflows that call paid APIs never run unless you
+start them by hand. The commands below are what Claude runs when you ask.
 
 ## What uses what
 

@@ -73,9 +73,10 @@ def main(argv=None) -> int:
     global DM
     ap = argparse.ArgumentParser()
     ap.add_argument("--dm", action="store_true", help="build the DM screen into _site_dm/")
+    ap.add_argument("--out", help="output folder (default _site or _site_dm)")
     a = ap.parse_args(argv)
     DM = a.dm
-    out = ROOT / ("_site_dm" if DM else "_site")
+    out = Path(a.out) if a.out else ROOT / ("_site_dm" if DM else "_site")
 
     env = Environment(loader=FileSystemLoader(SITE / "templates"), autoescape=select_autoescape(["html"]))
     env.filters["md"] = md
@@ -160,6 +161,10 @@ def main(argv=None) -> int:
         h["origin"] = campaigns.get(h.get("campaign_origin"), {})
         pdir = h["dir"] / "portraits"
         h["portrait_files"] = sorted(p.name for p in pdir.glob("*.png")) + sorted(p.name for p in pdir.glob("*.jpg"))
+        h.setdefault("portrait", {})
+        if not h["portrait"].get("current") and h["portrait_files"]:
+            # a picture uploaded through the GitHub website counts even before the sheet is updated
+            h["portrait"]["current"] = "portraits/" + h["portrait_files"][-1]
         heroes[hid] = h
 
     rules = []
@@ -233,6 +238,9 @@ def main(argv=None) -> int:
                 render("deck.html", f"play/{cid}/{int(ch.get('number', 0)):02d}.html", campaign=c, chapter=ch)
     print(f"Built {out.name} ({'DM screen' if DM else 'public'}): {len(heroes)} heroes, {len(campaigns)} campaigns, "
           f"{sum(len(c['chapters']) for c in campaigns.values())} chapters, {sum(1 for c in campaigns.values() for ch in c['chapters'] if ch['deck'])} decks.")
+    if not DM and not a.out and w.get("publish_dm_screen"):
+        # the DM asked for the DM screen on the public site, at /dm/ (anyone with the link can read the secrets)
+        return main(["--dm", "--out", str(out / "dm")])
     return 0
 
 

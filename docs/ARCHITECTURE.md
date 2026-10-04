@@ -1,5 +1,9 @@
 # Architecture
 
+## Who runs what
+Claude Code runs the tools and edits the files in conversation with the DM. GitHub Actions
+validates and builds the site on every push. The family uses a chat and a browser.
+
 ## Principles
 
 1. **Files are the database.** Every fact about the game is a YAML or Markdown file. Git history

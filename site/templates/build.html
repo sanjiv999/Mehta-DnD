@@ -10,8 +10,9 @@
   <section id="result" hidden>
     <h2>Your hero</h2>
     <div id="summary" class="card"></div>
-    <p>Download the sheet and put it in <code>characters/&lt;id&gt;/character.yaml</code>, or show it to the Dungeon Master.</p>
-    <button id="download">Download character.yaml</button>
+    <p>Tap <strong>Copy for Claude</strong>, paste it into the game chat, and Claude will add the hero to the story.</p>
+    <button id="copyclaude">Copy for Claude</button> <button id="download" class="ghost">Download the file instead</button>
+    <p class="muted small" id="copied"></p>
     <details><summary>Show the file</summary><pre id="yaml"></pre></details>
   </section>
 </div>

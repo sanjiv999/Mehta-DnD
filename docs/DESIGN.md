@@ -1,5 +1,11 @@
 # Design: what makes it engaging, and where the humans come in
 
+## The shape of it
+The family talks to Claude. Claude holds the rules, the worlds, the secrets and the dice, and
+writes everything to plain files. GitHub turns the files into a website. The website is what the
+kids look at: their hero, their badges, the map, the next scene. No one installs or runs anything;
+the Python in `tools/` is Claude's and GitHub's, not the family's.
+
 ## The loop, for a five-year-old
 Every scene gives Keisha a **mission that cannot fail**: find, count, name, choose, hum, hold.
 These are written into every chapter as `Jobs for the kids` and appear on the play screen as

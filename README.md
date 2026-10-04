@@ -1,83 +1,74 @@
 # Mehta Family D&D
 
-A modular, file-based tabletop role-playing system that lives entirely in this repository and
-renders itself into a GitHub Pages site. Four worlds, twenty-three chapters, roughly sixty hours
-of play, written for a table of two parents, a seven-year-old and a five-year-old.
+A family tabletop role-playing game that you play by talking to Claude, with a website that
+shows everyone where the story is. Four worlds, twenty-three chapters, about sixty hours of
+play, written for two parents, a seven-year-old and a five-year-old.
 
-| Layer | What it holds | Where |
+**Nobody installs anything.** You talk to Claude in Claude Code with this repository open.
+Claude narrates, rolls the dice, writes everything down, and pushes. GitHub builds the website.
+The family looks at the website.
+
+## How you play
+
+| Moment | What you do | What Claude does |
 |---|---|---|
-| Heroes | One folder per character: sheet, journal, portrait history | `characters/` |
-| Campaigns | Self-contained worlds: chapters as scene decks, NPCs, places, sessions, state, images | `campaigns/` |
-| Global state | Active campaign, party, counters, Lantern pieces | `state/world.yaml` |
-| Rules | Family rules, kids mode, classes, combat, dice, crossings | `rules/` |
-| DM screen | Random tables, prompt templates, transcripts | `dm/` |
-| Tools | Dice, validator, campaign lifecycle, session prep, images, ingest, site build | `tools/` |
-| Website | Templates and static assets rendered to `_site/` (public) or `_site_dm/` (DM screen) | `site/` |
+| First night | Open the repo in Claude Code and type `/start` | Explains the world, then builds each hero by asking questions (`/hero Keisha, age 5`) |
+| Before a session | `/recap` | Reads the state and gives you a recap to read aloud, the next scenes, and the kids' missions |
+| At the table | `/play`, then tell Claude what the players decide | Narrates each scene, calls for rolls, resolves them, keeps a live log |
+| After | `/ingest` (or just say "we're done") | Writes the session log, updates every hero and journal, awards badges, pushes |
+| Any time | `/status`, `/pictures`, `/switch moon-road` | Tells you where you are; gives you picture prompts; moves between worlds |
+
+The website updates itself a minute after each push to `main`.
+
+## The website
+
+- **Dashboard**: where we are, the party, open threads, which world is active.
+- **Hero pages**: sheet, powers, pack, journal in the hero's voice, portrait history, badges.
+- **Play decks**: one slide per scene with read-aloud text, the kids' missions, big choice buttons. Open on the TV or tablet.
+- **Campaign pages**: chapters, an illustrated map that lights up visited places, people, places, sessions.
+- **Story So Far**, **Sticker Book**, **Dice** for phones, **Rules**, and a **Make a hero** wizard the kids can tap through (it copies the result for Claude).
+- Everything fits a phone and can be added to a home screen.
+
+## Pictures
+
+Claude gives you prompts (`/pictures`). You paste them into the Gemini or Claude app, save the
+picture with the file name Claude names, and either upload it on the GitHub website into
+`campaigns/<world>/images/` (or `characters/<hero>/portraits/`) or hand it to Claude. The site
+shows placeholder art in each world's colours until then, so nothing is ever blank. No API keys.
 
 ## The worlds
 
-| Id | Title | Setting | Chapters | Hours |
-|---|---|---|---|---|
-| `peacock-throne` | The Peacock Throne | Fantasy Mughal Hindustan: a throne losing its colours | 5 | ~15 |
-| `moon-road` | Lanterns of the Moon Road | Fantasy Japan: relight the pilgrim road's lanterns | 6 | ~15 |
-| `emberwood` | The Emberwood | Classic fantasy: a forest, a child wizard, a tired dragon | 6 | ~15 |
-| `starfall` | Starfall Station | Space opera: a singing nebula and first contact | 5 + finale | ~15 |
+| Id | Title | Setting | Chapters |
+|---|---|---|---|
+| `peacock-throne` | The Peacock Throne | Fantasy Mughal Hindustan: a throne losing its colours | 5 |
+| `moon-road` | Lanterns of the Moon Road | Fantasy Japan: relight the pilgrim road's lanterns | 6 |
+| `emberwood` | The Emberwood | Classic fantasy: a forest, a child wizard, a tired dragon | 6 |
+| `starfall` | Starfall Station | Space opera: a singing nebula and first contact | 5 + finale |
 
-Play them in any order. Pause and resume. Heroes cross between worlds carrying one keepsake,
-collecting the four pieces of the Lantern of Many Roads. The series finale assembles it.
+Play them in any order, pause and resume, carry heroes between worlds with one keepsake each,
+and collect the four pieces of the Lantern of Many Roads. The finale assembles it.
 
-## What the website does
+## What is in the repository
 
-- **Dashboard**: where we are, the party, open threads, the campaign switcher.
-- **Play decks**: one slide per scene with read-aloud text, the kids' missions, big choice buttons,
-  a music mood, and the scene's picture. The DM build adds notes and stat blocks on the same page.
-- **Campaign pages**: chapters, an illustrated map that lights up visited places, people, places, sessions.
-- **Hero pages**: sheet, powers, pack, journal, portrait history, badges. Printable.
-- **Story So Far**: every session recap in order, illustrated. **Sticker book**: every hero moment.
-- **Hero builder**: the open-ended walkthrough as a tablet wizard; downloads a `character.yaml`.
-- **Dice** and oracle for phones.
-- **Phone-first**: every page fits a 390px screen with no sideways scrolling, tap targets are
-  finger-sized, and the site can be added to a home screen like an app.
+| Folder | What it holds |
+|---|---|
+| `characters/` | One folder per hero: sheet, journal, portraits |
+| `campaigns/` | Each world: chapters as scene decks, people, places, sessions, state, pictures, DM-only notes |
+| `state/world.yaml` | Which world is active, who is in the party, Lantern pieces |
+| `rules/` | Family rules, kids mode, classes, combat, dice, crossings |
+| `dm/` | Random tables, prompt templates, picture prompt sheet, transcripts |
+| `CLAUDE.md`, `.claude/commands/` | What Claude knows and the slash commands |
+| `tools/`, `site/`, `.github/` | The machinery Claude and GitHub run: validation, site build, dice, images, evaluation |
 
-## Quick start
+## One-time setup
 
-```bash
-pip install -r requirements.txt
-python tools/validate.py
-python tools/build_site.py && python -m http.server -d _site 8000          # the public site
-python tools/build_site.py --dm && python -m http.server -d _site_dm 8001   # the DM screen (never publish)
-python tools/campaign.py status
-python tools/session.py prep
-python tools/roll.py d20 --adv
-python tools/images.py sheet --campaign peacock-throne       # prompts to paste into Gemini/Claude
-python tools/images.py intake ~/Downloads                     # file the pictures you downloaded
-```
+1. GitHub → Settings → Pages → Source: **GitHub Actions**. The site builds on every push to `main`.
+2. Open the repository in Claude Code and type `/start`.
 
-## The loop
+Optional: set `publish_dm_screen: true` in `state/world.yaml` and Claude's DM screen (your notes,
+stat blocks, secrets and picture prompts on the same slides) is served at `/dm/` on the site.
+Anyone with the link can read it, so leave it off if a player might peek.
 
-1. **Session Zero**: build heroes with `build.html` or Claude (`dm/prompts/character-builder.md`); generate portraits.
-2. **Prep**: `session.py prep` and the DM deck.
-3. **Play**: deck on the TV, dice on a phone, recording on in Claude.
-4. **Ingest**: drop the transcript in `dm/transcripts/` and ask Claude Code, or `ingest.py prompt` → paste into a chat app → `ingest.py apply`.
-5. **Illustrate**: copy prompts from the Prompts page into Gemini or Claude, then `images.py intake ~/Downloads`.
-6. **Publish**: push to `main`; the site rebuilds.
-
-Full detail: `docs/PLAYBOOK.md`, `docs/ARCHITECTURE.md`, `docs/IMAGES.md`, `docs/DESIGN.md`,
-`docs/NO-API.md`, `docs/EVALUATION.md`.
-
-## Checking it all works
-
-`python tools/evaluate.py` simulates a first month (two kids building heroes, two sessions
-ingested and published, pictures filed, campaigns switched, every deck stepped through in a
-browser, every page at phone width) and writes `_eval/report.md`. It runs on every pull request.
-
-## No API keys
-
-Everything runs on subscriptions you already have plus GitHub Pages. Pictures: copy prompts from
-the DM build's Prompts page into Gemini or Claude, download, `images.py intake`. Transcripts: ask
-Claude Code, or `ingest.py prompt` → paste → `ingest.py apply`. See `docs/NO-API.md`.
-The three workflows that call paid APIs are optional, manual-only, and can be deleted.
-
-## Enabling the website
-
-Settings → Pages → Source: **GitHub Actions**. The `pages` workflow deploys on every push to `main`.
+More: `docs/PLAYBOOK.md` (a game night, step by step), `docs/DESIGN.md` (why it is built this
+way), `docs/ARCHITECTURE.md`, `docs/IMAGES.md`, `docs/NO-API.md`, `docs/TOOLS.md` (the commands
+Claude runs), `docs/EVALUATION.md` (how the whole thing is tested).

@@ -71,7 +71,7 @@ def load(p): return yaml.safe_load(Path(p).read_text(encoding="utf-8"))
 # ------------------------------------------------------------------ setup
 def make_copy() -> Path:
     tmp = Path(tempfile.mkdtemp(prefix="mehta-eval-"))
-    for item in ["tools", "characters", "campaigns", "state", "rules", "dm", "site", "docs", "requirements.txt", "CLAUDE.md"]:
+    for item in ["tools", "characters", "campaigns", "state", "rules", "dm", "site", "docs", "requirements.txt", "CLAUDE.md", ".claude"]:
         src = REPO / item
         (shutil.copytree if src.is_dir() else shutil.copy)(src, tmp / item)
     (tmp / "dm" / "rolls.log").write_text("")
@@ -327,6 +327,29 @@ def eval_lifecycle(W: Path):
     r = run(["tools/build_site.py"], W); check("site builds with a completed, a paused and a new world", r.returncode == 0 and "Lantern of Many Roads: 1 of 4" in (W / "_site/index.html").read_text())
 
 
+def eval_conversation(W: Path):
+    section("Conversational front door")
+    cmds = {p.stem for p in (W / ".claude" / "commands").glob("*.md")}
+    check("slash commands exist for the whole loop", {"start", "hero", "play", "recap", "ingest", "pictures", "switch", "status"} <= cmds, str(cmds))
+    claude = (W / "CLAUDE.md").read_text()
+    check("CLAUDE.md names every command and the live-play protocol", all(f"/{c}" in claude for c in cmds) and "live log" in claude.lower() and "never runs code" in claude.lower())
+    check("CLAUDE.md forbids API keys and made-up dice", "Never suggest adding an API key" in claude and "Never make up a roll" in claude)
+    # a portrait uploaded through the GitHub website, with no sheet edit, shows on the site
+    w = load(W / "state" / "world.yaml"); hero = w["party"][-1]
+    pdir = W / "characters" / hero / "portraits"; pdir.mkdir(exist_ok=True); fake_png(pdir / "001.png")
+    run(["tools/build_site.py"], W)
+    html = (W / "_site" / "characters" / f"{hero}.html").read_text()
+    check("an uploaded portrait shows without editing the sheet", f"{hero}/portraits/001.png" in html and (W / "_site" / "characters" / hero / "portraits" / "001.png").exists())
+    # publish_dm_screen serves the DM screen under /dm/
+    w["publish_dm_screen"] = True; (W / "state" / "world.yaml").write_text(yaml.safe_dump(w, sort_keys=False))
+    r = run(["tools/build_site.py"], W)
+    check("publish_dm_screen builds the DM screen at /dm/", r.returncode == 0 and (W / "_site" / "dm" / "index.html").exists() and (W / "_site" / "dm" / "prompts.html").exists())
+    check("DM screen at /dm/ links back within itself", 'href="../index.html"' in (W / "_site" / "dm" / "characters" / f"{hero}.html").read_text())
+    w["publish_dm_screen"] = False; (W / "state" / "world.yaml").write_text(yaml.safe_dump(w, sort_keys=False))
+    # the website's hero wizard copies a message for Claude
+    check("hero wizard offers Copy for Claude", "Copy for Claude" in (W / "_site" / "build.html").read_text())
+
+
 def eval_links(W: Path):
     section("Every picture and link resolves")
     for label in ("_site", "_site_dm"):
@@ -461,7 +484,7 @@ def main(argv=None):
         eval_content(W); eval_dice(W); eval_character_cli(W)
         run(["tools/build_site.py"], W)
         eval_character_web(W, browser)
-        eval_story(W); eval_images(W); eval_links(W); eval_leaks(W); eval_lifecycle(W); eval_browser(W, browser)
+        eval_story(W); eval_images(W); eval_conversation(W); eval_links(W); eval_leaks(W); eval_lifecycle(W); eval_browser(W, browser)
     finally:
         if browser: browser.close()
         if pw: pw.stop()

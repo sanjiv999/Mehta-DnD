@@ -6,3 +6,4 @@ last_played: null                         # YYYY-MM-DD
 campaign_order: [peacock-throne, moon-road, emberwood, starfall]   # suggested sequence
 history: []                               # { campaign, event: started|paused|resumed|completed, date, session }
 lantern_pieces: 0                         # cross-campaign artifact progress, 0 to 4
+publish_dm_screen: false                  # true: the site also serves the DM screen (notes, secrets, prompts) at /dm/
