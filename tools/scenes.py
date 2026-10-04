@@ -127,10 +127,10 @@ def image_slots(cid: str, campaign: dict) -> list[dict]:
     slots = []
     style = (campaign.get("art_style") or "").strip()
 
-    def add(slot, kind, title, prompt, chapter=None, scene=None):
+    def add(slot, kind, title, prompt, chapter=None, scene=None, context=None, **extra):
         slots.append({"slot": slot, "kind": kind, "title": title, "prompt": (prompt or "").strip(),
-                      "style": style, "chapter": chapter, "scene": scene,
-                      "file": find_image(cid, slot)})
+                      "style": style, "chapter": chapter, "scene": scene, "context": context or {},
+                      "file": find_image(cid, slot), **extra})
 
     add("cover", "cover", campaign.get("title", cid), campaign.get("cover_prompt") or campaign.get("tagline"))
     add("map", "map", f"Map of {campaign.get('title', cid)}",
@@ -140,28 +140,158 @@ def image_slots(cid: str, campaign: dict) -> list[dict]:
         add(f"ch{n:02d}", "chapter", ch.get("title", ""), ch.get("image_prompt") or ch.get("summary"), chapter=n)
         for s in ch["scenes"]:
             add(f"ch{n:02d}-{s['slug']}", "scene", f"{ch.get('title','')}: {s['title']}",
-                s["image"] or " ".join(s["read_aloud"])[:400], chapter=n, scene=s["number"])
+                s["image"] or " ".join(s["read_aloud"])[:400], chapter=n, scene=s["number"],
+                context={"read_aloud": " ".join(s["read_aloud"]), "jobs": s.get("jobs") or "", "dm": s.get("dm_md") or ""})
     for sub, kind in (("npcs", "npc"), ("locations", "location")):
         for p in sorted((CAMPAIGNS / cid / sub).glob("*.md")):
             if p.name.startswith("_"):
                 continue
             meta, body = load_md(p)
             looks = re.search(r"\*\*(?:Looks|First impression):\*\*\s*(.+)", body)
-            add(f"{kind}-{p.stem}", kind, meta.get("name", p.stem),
-                meta.get("image_prompt") or (looks.group(1) if looks else meta.get("name", "")))
+            prompt = meta.get("image_prompt") or (looks.group(1) if looks else meta.get("name", ""))
+            if kind == "npc" and looks and looks.group(1).strip().rstrip(".") not in prompt:
+                prompt = prompt.rstrip(".") + ". Canon look: " + looks.group(1).strip()
+            g = lambda k: (re.search(r"\*\*" + k + r":\*\*\s*(.+)", body) or [None, ""])[1].strip()
+            add(f"{kind}-{p.stem}", kind, meta.get("name", p.stem), prompt, stem=p.stem,
+                place={"built": g("Built by"), "hour": g("Hour")} if kind == "location" else None)
     return slots
 
 
-def compose_prompt(slot: dict, overrides: dict | None = None, extra_style: str = "") -> str:
-    base = (overrides or {}).get(slot["slot"]) or slot["prompt"]
+GENERIC = {"road", "fort", "court", "mirror", "hall", "tower", "ring", "docks", "dock", "springs", "lake", "market",
+           "hedge", "peak", "station", "castle", "gate", "whispers", "western", "night", "deep", "halls", "core",
+           "garden", "deck", "edge", "heart", "cloud", "ship", "sea", "mountain", "shrine", "bay", "square", "great"}
+TITLE_WORDS = {"the", "and", "of", "old", "lady", "lord", "captain", "chair", "dockmaster", "keeper", "mayor",
+               "councillor", "hakim", "vizier", "bibi", "rani", "nagini", "padishah", "shahzadi", "thane", "nana",
+               "kappa", "okami", "parrot", "child", "whale", "hobby", "club", "and", "a", "an"}
+FRAMES = {
+    "cover": "Wide establishing illustration for a book cover, landscape 16:9.",
+    "map": "Top-down illustrated storybook map with painted terrain, landscape 16:9, no labels.",
+    "chapter": "Wide establishing shot that opens a chapter, landscape 16:9.",
+    "scene": "Storybook illustration of this exact moment, wide shot, landscape 16:9, the characters mid-action.",
+    "npc": "Character portrait, waist-up, centred, looking slightly past the viewer, plain background in the world's palette with a narrow ornamental border, portrait 3:4.",
+    "location": "Wide establishing illustration of the place at the stated hour, people small or absent, landscape 16:9.",
+    "portrait": "Character portrait, waist-up, centred, looking slightly past the viewer, plain background with a narrow ornamental border, portrait 3:4.",
+}
+RULES = ("One consistent style across the whole book: same palette, same line, same light. No text, no lettering, "
+         "no speech bubbles, no watermark. Child-friendly, warm, no gore, no weapons pointed at the viewer.")
+
+
+def _keys(name: str) -> list[str]:
+    """Words that identify a character or place in prose: 'Shahzadi Zeb' -> ['shahzadi zeb', 'zeb']."""
+    name = re.sub(r"\(.*?\)", "", name).strip()
+    keys = [name.lower()]
+    for w in re.split(r"[\s,]+", name):
+        w = w.strip("'\"*").lower()
+        if len(w) >= 3 and w not in TITLE_WORDS and w not in GENERIC and not w.endswith("-"):
+            keys.append(w)
+    return keys
+
+
+def cast_sheet(cid: str) -> list[dict]:
+    """Every recurring face in a world with its canonical look, so prompts describe it the same way every time."""
+    out = []
+    for p in sorted((CAMPAIGNS / cid / "npcs").glob("*.md")):
+        if p.name.startswith("_"):
+            continue
+        meta, body = load_md(p)
+        looks = re.search(r"\*\*(?:Looks|First impression):\*\*\s*(.+)", body)
+        if not looks:
+            continue
+        name = meta.get("name", p.stem)
+        out.append({"name": name, "keys": _keys(name), "look": looks.group(1).strip(),
+                    "ref": find_image(cid, f"npc-{p.stem}")})
+    try:
+        from common import character_ids, load_character, CHARACTERS
+        for hid in character_ids():
+            h = load_character(hid)
+            if h.get("status") != "active" or not h.get("name"):
+                continue
+            cur = (h.get("portrait") or {}).get("current")
+            ref = CHARACTERS / hid / cur if cur and (CHARACTERS / hid / cur).exists() else None
+            out.append({"name": h["name"], "keys": _keys(h["name"]) + ["heroes", "hero", "party", "children", "child", "kids", "the kids"],
+                        "look": hero_canon(h), "ref": ref, "hero": True})
+    except Exception:
+        pass
+    return out
+
+
+def hero_canon(h: dict) -> str:
+    """One sentence that every picture of a hero must agree with. The DM can pin it in portrait.canon."""
+    pinned = (h.get("portrait") or {}).get("canon")
+    if pinned:
+        return pinned.strip()
+    ap = h.get("appearance") or {}
+    bits = [" ".join(x for x in [ap.get("age"), h.get("species"), h.get("class")] if x)]
+    for k in ("height", "build"):
+        if ap.get(k): bits.append(ap[k])
+    if ap.get("hair"): bits.append(f"{ap['hair']} hair")
+    if ap.get("eyes"): bits.append(f"{ap['eyes']} eyes")
+    if ap.get("skin"): bits.append(ap["skin"])
+    if ap.get("clothing"): bits.append(f"wearing {ap['clothing']}")
+    if ap.get("distinguishing"): bits.append(ap["distinguishing"])
+    if ap.get("colors"): bits.append(f"colours {ap['colors']}")
+    if h.get("keepsake"): bits.append(f"carries {h['keepsake'].rstrip('.')}")
+    return ", ".join(b for b in bits if b)
+
+
+def place_sheet(cid: str) -> list[dict]:
+    out = []
+    for p in sorted((CAMPAIGNS / cid / "locations").glob("*.md")):
+        if p.name.startswith("_"):
+            continue
+        meta, body = load_md(p)
+        g = lambda k: (re.search(r"\*\*" + k + r":\*\*\s*(.+)", body) or [None, ""])[1].strip()
+        seen, hour, built = g("First seen"), g("Hour"), g("Built by")
+        if not (seen or built):
+            continue
+        name = meta.get("name", p.stem)
+        out.append({"name": name, "keys": _keys(name), "seen": seen, "hour": hour, "built": built,
+                    "ref": find_image(cid, f"loc-{p.stem}")})
+
+
+    return out
+
+
+def _mentions(text: str, entry: dict) -> bool:
+    low = " " + re.sub(r"[^a-z0-9' ]+", " ", text.lower()) + " "
+    return any(f" {k} " in low for k in entry["keys"])
+
+
+def compose_prompt(slot: dict, overrides: dict | None = None, extra_style: str = "",
+                   cast: list[dict] | None = None, places: list[dict] | None = None) -> str:
+    """Layered prompt: style anchor, the moment, who is in it (canon looks), where (canon place), framing, rules.
+
+    The same cast and place sentences are reused in every prompt that mentions them, which is what keeps
+    a face or a building the same from picture to picture. References to attach are listed in slot["refs"]."""
+    base = ((overrides or {}).get(slot["slot"]) or slot["prompt"]).strip().rstrip(".")
     kind = slot["kind"]
-    frame = {
-        "cover": "Wide establishing illustration, no text.",
-        "map": "Top-down illustrated fantasy map with painted terrain, no labels or text.",
-        "chapter": "Wide cinematic establishing shot, no text.",
-        "scene": "Storybook illustration of this moment, wide shot, no text.",
-        "npc": "Character portrait, waist-up, centered, clean background with an ornamental border, no text.",
-        "location": "Wide establishing illustration of the place, no people in the foreground, no text.",
-    }.get(kind, "Illustration, no text.")
-    return " ".join(x for x in [base.rstrip(".") + ".", frame, "Style: " + slot["style"], extra_style,
-                                "Child-friendly, warm, no gore, no weapons pointed at the viewer, no watermark."] if x)
+    ctx = slot.get("context") or {}
+    people_text = " ".join([base, ctx.get("read_aloud", ""), ctx.get("jobs", "")])
+    place_text = " ".join([base, ctx.get("read_aloud", "")])
+    who, where, refs = [], [], []
+    if kind in ("scene", "chapter", "cover", "npc"):
+        for c in (cast or []):
+            if kind == "npc" and slot["slot"] == f"npc-{slot.get('stem')}":
+                continue
+            if _mentions(people_text, c) and len(who) < 4:
+                who.append(f"{c['name']}: {c['look'].rstrip('.')}.")
+                if c.get("ref"): refs.append((c["name"], c["ref"]))
+    if kind in ("scene", "chapter", "cover"):
+        for pl in (places or []):
+            if _mentions(place_text, pl) and len(where) < 1:
+                desc = pl["seen"] or pl["built"]
+                light = f" Time of day: {pl['hour'].rstrip('.')}." if pl["hour"] and len(pl["hour"].split()) <= 14 else ""
+                where.append(f"{pl['name']}: {desc.rstrip('.')}.{light}")
+                if pl.get("ref"): refs.append((pl["name"], pl["ref"]))
+    if kind == "location" and slot.get("place"):
+        pl = slot["place"]
+        extra = " ".join(x for x in [pl.get("built"), f"Hour: {pl['hour']}" if pl.get("hour") else ""] if x)
+        if extra: where.append(extra.rstrip(".") + ".")
+    slot["refs"] = refs
+    parts = ["Style: " + slot["style"].rstrip(".") + ".", extra_style,
+             ("Moment: " if kind in ("scene", "chapter") else "Subject: ") + base + ".",
+             ("Who is in it, drawn exactly like this: " + " ".join(who)) if who else "",
+             ("Where: " + " ".join(where)) if where else "",
+             ("Match the attached reference pictures for " + ", ".join(n for n, _ in refs) + " (same face, costume and colours).") if refs else "",
+             FRAMES.get(kind, "Illustration."), RULES]
+    return re.sub(r"\s+", " ", " ".join(x for x in parts if x)).strip()

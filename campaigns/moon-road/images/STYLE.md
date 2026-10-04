@@ -1,2 +1,2 @@
-<!-- Lines starting with # or <!-- are ignored. Everything else is appended to every prompt for this campaign. Keep it to one or two lines. -->
-Consistency: same palette and line treatment across all images; recurring characters keep the same costume colours.
+<!-- Art bible for this world. Lines starting with # or <!-- are ignored; everything else is appended to every prompt. Keep it under about 90 words. -->
+Palette: indigo, vermilion, ochre, pale pink, paper cream, with bokashi gradients at the top and bottom of the sky. Flat colour fields with faint woodgrain, thin ink keylines, bands of mist, a large pale moon at night. Lantern light is warm orange; spirit light is pale green-white. Faces round and soft, Ghibli-kind. Never: drawn swords, blood, neon, photographic realism.

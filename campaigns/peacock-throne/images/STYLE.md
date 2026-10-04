@@ -1,2 +1,2 @@
-<!-- Lines starting with # or <!-- are ignored. Everything else is appended to every prompt for this campaign. Keep it to one or two lines. -->
-Consistency: same palette and line treatment across all images; recurring characters keep the same costume colours.
+<!-- Art bible for this world. Lines starting with # or <!-- are ignored; everything else is appended to every prompt. Keep the whole thing under about 90 words so it never crowds out the picture itself. -->
+Palette: lapis and ultramarine, vermilion, saffron, malachite green, ivory, gold leaf; Sikri's sandstone is rust-red, its marble cream. Flat colour with no cast shadows, fine black outlines, a high horizon with stacked perspective, patterned textiles, late-afternoon gold light. Faces three-quarter, calm, big eyes. Never: photographic realism, lens blur, European castles, modern clothes.

@@ -1,5 +1,6 @@
-Give the DM picture prompts to paste into Gemini or Claude, following CLAUDE.md job 8.
-Run `python tools/images.py sheet --campaign <active> --limit 8` (or as asked: $ARGUMENTS) and
-paste each prompt into the chat as its own block with the exact file name to save as and where
-to upload it on GitHub (`campaigns/<id>/images/`), or offer to file them if the DM sends them here.
-Hero portraits: `python tools/images.py heroes --prompts`.
+Give the DM the next picture prompts to paste into Gemini or Claude, following CLAUDE.md job 8.
+Run `python tools/images.py pictures --show 6` (or the number asked for: $ARGUMENTS). Paste each
+entry into the chat as its own block: the number to save it as, the aspect ratio, any reference
+pictures to attach first, and the prompt. Say where it goes: upload to `inbox/` on GitHub, or
+paste it here with the number. If the DM pastes pictures here, file them with
+`python tools/images.py intake <folder> --assign <numbers>`, commit and push.

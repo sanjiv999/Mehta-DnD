@@ -1,2 +1,2 @@
-<!-- Lines starting with # or <!-- are ignored. Everything else is appended to every prompt for this campaign. Keep it to one or two lines. -->
-Consistency: same palette and line treatment across all images; recurring characters keep the same costume colours.
+<!-- Art bible for this world. Lines starting with # or <!-- are ignored; everything else is appended to every prompt. Keep it under about 90 words. -->
+Palette: moss green, hedge brown, bronze, thatch gold, whitewash, and the ember orange of glowing bark seen through ash-grey. Visible brushwork like a classic picture book, golden-hour light outdoors and firelight indoors, round friendly shapes. Goblins are green with big ears and tweed waistcoats; dwarves are broad and red-cheeked. Never: grimdark, horror shadows, realistic weapons, photographic realism.

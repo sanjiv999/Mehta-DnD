@@ -23,21 +23,20 @@ generation in the Gemini app is part of Gemini Pro. Neither needs a key in this 
 
 ## The picture loop in practice
 
-1. `python tools/build_site.py --dm` and open `_site_dm/prompts.html`. It lists every missing
-   picture in a sensible order (covers, chapter covers, people, places, scenes, hero portraits)
-   with a Copy button and the file name to save as.
-2. Paste into Gemini (or Claude). Download the one you like. Name it as shown, or leave the
-   download's name alone and just make sure the slot name is somewhere in it: `Gemini_ch01-s3.png` works.
-3. `python tools/images.py intake ~/Downloads --move`. It files each picture into the right campaign
-   folder, writes a sidecar with the prompt, and records hero portraits on their sheets.
-4. Rebuild, commit, push.
+1. Open `PICTURES.md` at the top of the repo (GitHub shows it on a phone). It lists every missing
+   picture, most needed first: the current chapter's cover and scenes, the people and places in
+   it, then the heroes. Each entry has a number, the aspect ratio, any reference pictures to attach
+   first, and the prompt in a box with a copy button.
+2. Paste the prompt into Gemini (or Claude). If the entry names reference pictures, attach those
+   first so the face and costume match. Save the one you like as the number (`07.png`).
+3. Upload it to the `inbox/` folder on GitHub (**Add file → Upload files**). A workflow files it
+   into the right campaign, records hero portraits, refreshes `PICTURES.md` and rebuilds the site.
+   Or paste the pictures into the chat with Claude and say the numbers; Claude runs
+   `python tools/images.py intake <folder> --assign 07,12,13`.
+4. That is the whole loop. Nothing to approve, nothing to install.
 
-Twenty minutes of pasting covers a campaign's first chapter, its people and its places.
-Tick the ones you have done on the Prompts page; ticks are remembered on that device.
-
-If you are on a phone with no terminal: upload the pictures through GitHub's web interface into
-`campaigns/<id>/images/` with the slot name as the file name. The next build picks them up; the
-sidecar is optional.
+Twenty minutes of pasting covers a chapter's cover, its scenes, its people and the heroes, which
+is what the kids see first. `python tools/session.py prep` lists what the next chapter still needs.
 
 ## The transcript loop in practice
 

@@ -72,6 +72,18 @@ def cmd_prep(_a):
     print("\n## Reputation")
     for k, v in (st.get("reputation") or {}).items():
         print(f"- {k}: {v:+d}")
+    try:
+        from images import campaign_slots, chapter_mentions
+        cur = int(st.get("chapter") or 1)
+        near = chapter_mentions(cid, cur)
+        missing = [s for s in campaign_slots(cid) if not s["file"] and (s.get("chapter") == cur or s["slot"] in near or s["kind"] == "cover")]
+        have = [s for s in campaign_slots(cid) if s["file"] and (s.get("chapter") == cur or s["slot"] in near)]
+        print(f"\n## Pictures for this chapter\n{len(have)} ready, {len(missing)} still to make. "
+              f"The prompts are in PICTURES.md at the top of the repo, most needed first.")
+        for s in missing[:12]:
+            print(f"- {s['slot']}: {s['title']}")
+    except Exception:
+        pass
     print(f"\n_DM-only material: campaigns/{cid}/dm/_")
     return 0
 

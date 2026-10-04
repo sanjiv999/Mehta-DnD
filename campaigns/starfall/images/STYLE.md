@@ -1,2 +1,2 @@
-<!-- Lines starting with # or <!-- are ignored. Everything else is appended to every prompt for this campaign. Keep it to one or two lines. -->
-Consistency: same palette and line treatment across all images; recurring characters keep the same costume colours.
+<!-- Art bible for this world. Lines starting with # or <!-- are ignored; everything else is appended to every prompt. Keep it under about 90 words. -->
+Palette: nebula violet and teal outside, cream and warm grey inside the station, with orange and blue stripes on suits and hatches. Clean linework with soft gouache fill and a little paper grain; velcro strips, nets and hooked sleeping bags visible on walls; robots chunky and rounded. In zero gravity hair and small objects float. Never: grey military sci-fi, lens flare, horror, photographic realism.

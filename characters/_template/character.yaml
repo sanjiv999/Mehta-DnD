@@ -74,6 +74,7 @@ conditions: []                    # current: dizzy, poisoned, blessed...
 achievements: []                  # { title, session, note } shown as badges on the site
 
 portrait:
+  canon: ""                        # one sentence every picture of this hero must agree with; blank = built from appearance
   style_override: ""              # leave blank to use the campaign's art_style
   current: ""                     # e.g. portraits/001.png
   history: []                     # { file, session, date, note }

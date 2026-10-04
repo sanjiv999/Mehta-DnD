@@ -21,39 +21,54 @@ Files live at `campaigns/<id>/images/<slot>.png` (or .jpg/.webp/.svg). A sidecar
 `<slot>.yaml` records the prompt, provider and date. **Player art** at `campaigns/<id>/art/<slot>.png`
 always wins: scan the kids' drawings and they replace the generated picture.
 
-## Consistency
+## Consistency: how a face stays the same for sixty hours
 
-Every prompt is assembled the same way:
+Image models have no memory between pictures. The only persistence is in the words, and in
+reference pictures. Every prompt is therefore built in the same layers, in the same order:
 
 ```
-<slot prompt>. <framing for the kind>. Style: <campaign art_style>. <images/STYLE.md notes>. Child-friendly...
+Style: <the world's art_style>  <images/STYLE.md: palette, light, line, nevers>
+Moment: <the scene's Image line>
+Who is in it, drawn exactly like this: <Name: canon look>. <Name: canon look>.
+Where: <Place: what you see first>. Time of day: <its hour>.
+Match the attached reference pictures for <names>.
+<framing for the kind, with the aspect ratio>  <rules: one style, no text, child-friendly>
 ```
 
-The campaign's `art_style` is the single source of visual identity, so every image in a world
-shares palette and technique, and heroes are drawn in each world's language (the Mughal
-miniature in Sikri, the woodblock print on the Moon Road). `images/STYLE.md` is where you add
-"all characters keep the same costume colours" and similar continuity notes.
+- **Style anchor.** `campaign.yaml: art_style` names the medium; `images/STYLE.md` is the art
+  bible: a named palette, the light, the line, what the world never shows. Both go first in every
+  prompt so the model keys on them before anything else.
+- **Canon looks.** A character's **Looks** line in `npcs/<slug>.md` is the one description of
+  that character. Any scene whose read-aloud, jobs or Image line names them gets that sentence
+  verbatim. Change the line and every later picture follows. Heroes use `appearance` from their
+  sheet (or `portrait.canon`, one pinned sentence), so a hero looks the same in a portrait, a
+  scene and another world.
+- **Canon places.** A location's **First seen** and **Hour** lines do the same for buildings and
+  light.
+- **References.** Once a character or place has a picture, every later prompt that includes them
+  says to attach it. Gemini and Claude both accept reference pictures; this is the strongest
+  consistency tool there is. Make the people and places before the scenes they appear in, which
+  is the order `PICTURES.md` uses.
+- **Numbers never move.** `dm/prompts/sheet.json` gives every picture a number for life, so
+  `07.png` means the same picture whenever it is uploaded.
 
-## The human spark
+## The one list
 
-1. `python tools/images.py plan --campaign peacock-throne --missing` lists what is missing with the auto-prompt.
-2. For any slot you care about, write a better prompt in `campaigns/<id>/images/overrides.yaml`.
-3. Paste the prompt into Gemini or Claude and `images.py intake` the download.
-4. Paste, download, `intake`. You chose every picture, so there is nothing to approve.
+`python tools/images.py pictures` writes `PICTURES.md` at the top of the repo: the active world's
+current chapter first (cover, chapter opener, scenes in order), then the people and places that
+chapter mentions, then hero portraits, then everything else in order of need, then what is done.
+`session.py prep` repeats the current chapter's part of it. The site's DM screen renders the same
+prompts with copy buttons.
 
-## Making the pictures (no API key)
+## Getting pictures in
 
-```bash
-python tools/build_site.py --dm            # then open _site_dm/prompts.html: every prompt with a Copy button
-python tools/images.py sheet               # or a Markdown sheet at dm/prompts/PROMPTS.md
-python tools/images.py heroes --prompts    # portrait prompts for active heroes
-python tools/images.py intake ~/Downloads  # file the downloads by slot name or sheet number
-```
+| Route | How |
+|---|---|
+| `inbox/` on GitHub | Upload with the number or slot name; the intake workflow files it, refreshes the list and rebuilds the site |
+| The chat | Paste the pictures and say the numbers; Claude runs `images.py intake <folder> --assign 07,12,13` |
+| Any folder | `python tools/images.py intake ~/Downloads --move` |
 
-Paste each prompt into Gemini or Claude. Save the picture with the slot name (`ch01-s3.png`), or
-with the sheet number (`07.png`), or leave the download name and make sure the slot name appears in
-it. `intake` files everything, writes sidecars, and records hero portraits. Full walk-through in
-`docs/NO-API.md`.
+Player art at `campaigns/<id>/art/<slot>.png` always wins over generated art.
 
 ## Optional: letting an API do the pasting
 

@@ -45,7 +45,8 @@ youngest players (Aarya, 7, and Keshu, 5).
 | Characters | `characters/<id>/character.yaml`, `journal.md`, `portraits/` |
 | Rules | `rules/` |
 | Random tables | `dm/tables/*.yaml` |
-| Prompt templates and the picture prompt sheet | `dm/prompts/` |
+| Pictures still to make, with prompts | `PICTURES.md`, dropped-off pictures in `inbox/` |
+| Prompt templates | `dm/prompts/` |
 | Tools you run (never the family) | `tools/`, reference in `docs/TOOLS.md` |
 | How to write, and the tells to avoid | `docs/WRITING.md`, `campaigns/<id>/world.md` |
 
@@ -109,12 +110,18 @@ mission for the five-year-old that cannot fail. Every chapter needs a d6 complic
 rewards, and a "How it ends and what it sets up". Finales are conversations that look like fights.
 
 ### 8. Pictures (`/pictures`)
-No API keys. Run `python tools/images.py sheet --campaign <id> --limit N` and paste the prompts
-into the chat for the DM, each with the file name to save as. The DM pastes them into Gemini or
-Claude and either uploads the pictures to `campaigns/<id>/images/<slot>.png` through the GitHub
-website, or sends them to you. When pictures arrive, run `python tools/images.py intake <folder>`
-or record them, then commit and push. Hero portraits go to `characters/<id>/portraits/NNN.png`;
-the site uses the newest one even if the sheet has not been updated. Never claim a picture exists
+No API keys. `PICTURES.md` at the top of the repo is the one list of every picture still to make,
+most needed first (the active world's current chapter, its people and places, then the heroes),
+each with a number, the aspect ratio, the reference pictures to attach, and a prompt built from
+`docs/IMAGES.md`'s layers: the world's art bible (`campaigns/<id>/images/STYLE.md`), the moment,
+the canon look of everyone in it (from each NPC's **Looks** line and each hero's `appearance`),
+and the place. Run `python tools/images.py pictures --show N` and paste the entries into the chat.
+The DM makes the pictures in Gemini or Claude and either uploads them to `inbox/` on GitHub
+(a workflow files them, refreshes the list and rebuilds the site) or sends them to you; then run
+`python tools/images.py intake <folder> --assign <numbers>`, commit and push. Keep a face the
+same by keeping its **Looks** line the same; when a hero's look changes, change `appearance`
+(or pin `portrait.canon`) and every later prompt follows. Hero portraits go to
+`characters/<id>/portraits/NNN.png`; the site uses the newest one. Never claim a picture exists
 unless the file does.
 
 ### 9. Status (`/status`)

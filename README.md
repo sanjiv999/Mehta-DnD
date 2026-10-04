@@ -17,6 +17,7 @@ The family looks at the website.
 | At the table | `/play`, then tell Claude what the players decide | Narrates each scene, calls for rolls, resolves them, keeps a live log |
 | After | `/ingest` (or just say "we're done") | Writes the session log, updates every hero and journal, awards badges, pushes |
 | Any time | `/status`, `/pictures`, `/switch moon-road` | Tells you where you are; gives you picture prompts; moves between worlds |
+| Pictures | Open `PICTURES.md`, paste a prompt into Gemini, upload the result to `inbox/` | GitHub files it, rebuilds the site, and crosses it off the list |
 
 The website updates itself a minute after each push to `main`.
 
