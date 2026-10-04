@@ -89,6 +89,7 @@ def main(argv=None) -> int:
     out.mkdir()
     shutil.copytree(SITE / "static", out / "static")
     (out / ".nojekyll").touch()
+    shutil.copy(SITE / "static" / "robots.txt", out / "robots.txt")   # keep the family site out of search engines
 
     w = world()
 
