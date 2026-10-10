@@ -45,3 +45,7 @@ are not built yet and will join later.
 - Next: Lady Shabnam gives each hero one true question (answered the way a well answers); Badal kneels for the kids to climb on; then the parade.
 - Questions to the well. Bolt (Keshu): where does the golden feather belong, and to whom? Answer: the Peacock Throne's own feather, lost when the ship sank; warms near the throne; the throne belongs to the boy who sits on it. Machli (Aarya): where is the other half of the scroll, and what is it for? Answer: half a map of roads between worlds, missing place is where all roads meet; other half is with the star-man in the high red house (Fariduddin, Panch Mahal), who thinks it is a star chart.
 - Canon recorded in dm/secrets.md and both heroes' secret fields.
+- Lady Shabnam went quiet in the water and stopped answering. Bolt (Keshu) asked Firoz about his home and story.
+- Firoz (canon, a five-year-old's telling): the well is his house, blue and cold with the best echoes; Mama made him from steam on a hot day; his feet stuck to the dry step when he went to see why the water went grey; Mama says the water and the shiny stones in the big red house are friends, and when the stones go sleepy the water goes sleepy and goes away. A hiccup turned Badal's ear green for a minute.
+- Firoz asked to come along. Shabnam's word through him: when the lamps float on the lake, he can come for always (sets up chapter 2).
+- Party climbing the 108 steps on Badal toward the sunset parade (scene 4).
