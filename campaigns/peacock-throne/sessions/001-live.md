@@ -27,3 +27,6 @@ are not built yet and will join later.
 - Machli: it is the real Badal (marigold, hay, river mud, smoke from Firoz). The grey water smells of nothing at all.
 - Bolt: the golden feather glows warm over the peacock tile and points up toward the palace on the ridge. Clue logged for chapter 5.
 - Badal looked at the step and hummed: he came for Firoz.
+- Kids' dice: 15 and 16, both successes. Firoz freed (purple on the step, feather on the tile). Lady Shabnam thanked them.
+- The grey water stood up as two Mirror-Shards (two heroes, so two): one hammerhead shape, one tentacle-hair shape. HP 7, AC 12, +3, 1d4. Trick: copies the last action. Weakness: something colourful described aloud, 1d8.
+- Fight begins. Heroes act first. Machli HP 7/7, Bolt HP 10/10.
