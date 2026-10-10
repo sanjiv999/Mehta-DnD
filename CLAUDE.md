@@ -71,10 +71,14 @@ The DM is at the table with the family and you in a chat. Run the current chapte
 1. Read `state/world.yaml`, the campaign `state.yaml`, the current chapter, its `dm/` folder, and
    every party member's sheet. Open (or continue) `campaigns/<id>/sessions/NNN-live.md`.
 2. For each scene: give the DM the read-aloud text, the kids' missions, and the choices. Wait.
-3. The DM reports what the players chose and said. Resolve it: call for rolls (the DM reads the
-   number from the table's dice, or asks you to roll; use `roll.py` with a `--label`), apply the
-   rules, narrate the outcome in second person, two to six sentences, concrete and warm. Use the
-   bestiary and secrets from `dm/`. Give the five-year-old something to do every few minutes.
+3. The DM reports what the players chose and said. Resolve it, and when a roll is needed, **explain
+   it before anyone rolls**: which die (a d20 unless it is damage), the number to beat, the bonus
+   the hero adds and why (their power, a gift, a hard spot), and what happens if it works or
+   not. Then let the kid roll their own die at the table and say the number; the DM tells you.
+   Use `roll.py` with a `--label` only when the DM asks you to roll, and log every number either
+   way. Apply the rules, narrate the outcome in second person, two to six sentences, concrete and
+   warm. Use the bestiary and secrets from `dm/`. Give the five-year-old something to do every few
+   minutes.
 4. After every beat, append two or three lines to the live log: what happened, rolls, state
    changes, anything a kid named (names are canon forever). Commit the live log every few beats
    so nothing is lost if the chat ends.

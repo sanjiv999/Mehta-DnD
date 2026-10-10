@@ -15,3 +15,8 @@ are not built yet and will join later.
 - Bolt (Keshu) bought mangoes (2 coins) and offered them to the langurs: Persuasion Easy, adv, rolled 8/11 -1 = 10 vs 10, success. Hanuvant told them: Badal listened to the ground, went to the water, came back up, went into the old city; he does not go there.
 - Machli (Aarya) sniffed through the spice: Perception Tricky, 14 vs 13, success. Found Badal's trail down to the water, plus a small smoky second scent with three-toed prints going on alone.
 - Coins to update at ingest: Bolt 10 -> 8.
+- DM rule from now on: explain each roll first (die, number to beat, bonus and why, what happens), and the kids roll their own dice.
+- Both followed the footprints downhill to the river.
+
+## Scene 3: One hundred and eight steps
+- Ghats: the washerwomen (Machli's friends) saw the elephant drink and climb into the old city, a little smoke child with him. Party reaches the baoli.
