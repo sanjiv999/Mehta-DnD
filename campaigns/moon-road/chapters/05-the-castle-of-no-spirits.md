@@ -73,6 +73,7 @@ Hollow Monk, for the first time, comes in person.
 - **Rolls:** Attacks normal. CON save Tricky against his breath, lose a turn.
 - **Outcomes:** The lantern lights. The Monk looks at it as if it hurts and walks away up the road, not quickly. He drops a fifth charm. This one is not burned. On it, in a shaking hand, a name: **Kikyo**.
 - **Image:** A castle courtyard at night, a tall hollow figure in a straw hat facing a small two-tailed fox, a ring of salt, tanuki coming over the walls
+- **Image (after):** A tall hollow figure in a straw hat walking slowly away up a moonlit road, a lit lantern behind it in a castle courtyard, a small two-tailed fox picking up a paper charm with a name on it
 - **Music:** fireworks, then one flute
 
 ### Scene 4: Kikyo (revelation)

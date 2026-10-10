@@ -50,6 +50,7 @@ taking shapes down here: dwarves of coal, and then, when it sees them, the heroe
   - 🧸 Teddy hugs one (it goes out, gently)
 - **Outcomes:** The shapes fall into wisps and follow the party like a string of lamps. The halls are lit.
 - **Image:** Three figures of glowing coals shaped like dwarves in a dark hall, one of them half-changed into the shape of a small girl who is standing her ground
+- **Image (after):** Three coal-dwarf shapes falling apart into a string of small glowing wisps that follow the heroes down a dark dwarven street like a row of lamps, lighting the carved pillars
 - **Music:** coals settling
 
 ### Scene 3: Nobody has said that (social)
@@ -81,6 +82,7 @@ taking shapes down here: dwarves of coal, and then, when it sees them, the heroe
   - 🧙 Wren lays the drawing on the stone (a facet lights)
 - **Outcomes:** The Heart glows. The locks hold. Brokk bows and is solid for the length of the bow. In the deepest crack, a dragon's eye, tired, closing. Level 5.
 - **Image:** A cart-sized grey stone lit facet by facet into gold as children tell it stories, cracks of light closing in the floor, a ghost dwarf bowing
+- **Image (after):** A cart-sized stone glowing gold in a round hall, the cracks in the floor closed, a ghostly dwarf king bowing to the heroes, and far below in one dark crack a tired dragon's eye closing
 - **Music:** deep drums settling into one chord
 
 ## Complications (roll d6)

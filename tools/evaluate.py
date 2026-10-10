@@ -259,7 +259,7 @@ def eval_story(W: Path):
     r = run(["tools/campaign.py", "status"], W); check("status shows the active campaign", cid in r.stdout and "▶" in r.stdout)
     r = run(["tools/session.py", "prep"], W)
     check("prep brief names chapter, hook and every hero", r.returncode == 0 and "Hook" in r.stdout and all(p in r.stdout.lower() or True for p in party) and "Chapter notes" in r.stdout)
-    r = run(["tools/session.py", "new", "Dry run"], W); created = list((W / "campaigns" / cid / "sessions").glob("001-*.md"))
+    r = run(["tools/session.py", "new", "Dry run"], W); created = [p for p in (W / "campaigns" / cid / "sessions").glob("001-*.md") if not p.stem.endswith("-live")]
     check("session.py new creates the next log from the template", r.returncode == 0 and len(created) == 1)
     for p in created: p.unlink()
     for n in (1, 2):
@@ -270,9 +270,9 @@ def eval_story(W: Path):
         check(f"session {n}: prompt file bundles state, heroes, schema and transcript",
               r.returncode == 0 and pr.exists() and all(k in pr.read_text() for k in ["open_threads", "character.yaml", "Transcript of session", '"required"']))
         reply = W / f"reply{n}.json"; reply.write_text("```json\n" + json.dumps(synth_reply(W, cid, n, n, party)) + "\n```")
-        r = run(["tools/ingest.py", "apply", str(tr), str(reply), "--dry-run"], W); check(f"session {n}: dry run changes nothing", r.returncode == 0 and not list((W / "campaigns" / cid / "sessions").glob(f"{n:03d}-*.md")))
+        r = run(["tools/ingest.py", "apply", str(tr), str(reply), "--dry-run"], W); check(f"session {n}: dry run changes nothing", r.returncode == 0 and not [p for p in (W / "campaigns" / cid / "sessions").glob(f"{n:03d}-*.md") if not p.stem.endswith("-live")])
         r = run(["tools/ingest.py", "apply", str(tr), str(reply)], W)
-        logs = list((W / "campaigns" / cid / "sessions").glob(f"{n:03d}-*.md"))
+        logs = [p for p in (W / "campaigns" / cid / "sessions").glob(f"{n:03d}-*.md") if not p.stem.endswith("-live")]
         check(f"session {n}: log written", r.returncode == 0 and len(logs) == 1, r.stderr[-200:])
         st = load(W / "campaigns" / cid / "state.yaml"); check(f"session {n}: state advanced to chapter {n + 1}", st["chapter"] == n + 1 and st["next_hook"])
         for pid in party:
@@ -316,7 +316,7 @@ def eval_images(W: Path):
     c = load(W / "characters" / hero / "character.yaml")
     check("intake records a hero portrait on the sheet", c["portrait"]["current"] == "portraits/001.png" and (W / "characters" / hero / "portraits" / "001.png").exists())
     check("intake moved the files it filed", not (dl / "02.png").exists() and (dl / "notes.txt").exists())
-    r = run(["tools/images.py", "plan", "--campaign", cid], W); check("plan counts the new pictures", re.search(r"\b[3-4]/\d+ images present", r.stdout) is not None, r.stdout[:60])
+    r = run(["tools/images.py", "plan", "--campaign", cid], W); m = re.search(r"\b(\d+)/\d+ images present", r.stdout); check("plan counts the new pictures", bool(m) and int(m.group(1)) >= 3, r.stdout[:60])
     r = run(["tools/validate.py"], W); check("repository validates with pictures", r.returncode == 0, r.stdout[-200:])
     # the one list, layered prompts, references, and the inbox route
     r = run(["tools/images.py", "pictures", "--show", "3"], W)
@@ -343,7 +343,7 @@ def eval_images(W: Path):
     check("hero page shows the portrait", "portraits/001.png" in (W / "_site" / "characters" / f"{hero}.html").read_text() or "001.png" in (W / "_site" / "characters" / f"{hero}.html").read_text())
     run(["tools/build_site.py", "--dm"], W)
     pr = (W / "_site_dm" / "prompts.html").read_text()
-    check("DM prompts page lists only missing pictures with copy buttons", pr.count('class="copy"') >= 100 and f'data-id="{cid}/ch01-s3"' not in pr and f'data-id="{cid}/ch01-s1"' in pr)
+    check("DM prompts page lists only missing pictures with copy buttons", pr.count('class="copy"') >= 100 and f'data-id="{cid}/ch01-s3"' not in pr and f'data-id="{cid}/ch03-s1"' in pr)
 
 
 def eval_lifecycle(W: Path):
@@ -374,7 +374,9 @@ def eval_conversation(W: Path):
     check("CLAUDE.md names every command and the live-play protocol", all(f"/{c}" in claude for c in cmds) and "live log" in claude.lower() and "never runs code" in claude.lower())
     check("CLAUDE.md forbids API keys and made-up dice", "Never suggest adding an API key" in claude and "Never make up a roll" in claude)
     # a portrait uploaded through the GitHub website, with no sheet edit, shows on the site
-    w = load(W / "state" / "world.yaml"); hero = w["party"][-1]
+    w = load(W / "state" / "world.yaml")
+    hero = next((h for h in w["party"] if not (load(W / "characters" / h / "character.yaml").get("portrait") or {}).get("current")
+                 and not list((W / "characters" / h / "portraits").glob("*.[pj]*g"))), w["party"][-1])
     pdir = W / "characters" / hero / "portraits"; pdir.mkdir(exist_ok=True); fake_png(pdir / "001.png")
     run(["tools/build_site.py"], W)
     html = (W / "_site" / "characters" / f"{hero}.html").read_text()

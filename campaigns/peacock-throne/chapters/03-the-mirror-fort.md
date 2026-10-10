@@ -54,6 +54,7 @@ reviewed than fought.
   - 🐪 Send a camel first (its reflection declines)
 - **Outcomes:** Wrong corridors meet a **Reflection** (dm/bestiary.md), a grey copy with 5 HP that steps back into the glass when the hero says something true about themselves. Three black mirror pieces on the north wall are where the Vizier has been watching.
 - **Image:** Four small figures facing a wall of thousands of mirror pieces at sunset, one reflection among them with its hand raised
+- **Image (after):** A grey glass copy of a hero stepping back into a wall of thousands of mirror pieces at sunset, the real hero standing tall in front of it, three small black mirrors high on the wall
 - **Music:** glass ticking as it cools
 
 ### Scene 3: Four hundred portraits (social)
@@ -88,6 +89,7 @@ reviewed than fought.
 - **Rolls:** DEX saves Tricky for falling glass. Attacks as normal.
 - **Outcomes:** The party steps through a bedroom mirror and out onto the dry step of the baoli, three days away, with sand in their hair. Lady Shabnam is standing there. When the blue jar is opened over the water, one square of it goes the right colour. Firoz asks if he can come properly now.
 - **Image:** Four heroes running down a corridor of cracking black mirrors carrying lit glass jars, a tiger-faced figure leading, sand pouring from the ceiling
+- **Image (after):** The heroes stepping out of a tall bedroom mirror onto the dry bottom step of a sandstone stepwell with sand in their hair, a lady made of cool mist waiting, one square of the grey water turned blue
 - **Music:** drums, breaking glass, then water dripping
 
 ## Complications (roll d6)

@@ -30,3 +30,10 @@ are not built yet and will join later.
 - Kids' dice: 15 and 16, both successes. Firoz freed (purple on the step, feather on the tile). Lady Shabnam thanked them.
 - The grey water stood up as two Mirror-Shards (two heroes, so two): one hammerhead shape, one tentacle-hair shape. HP 7, AC 12, +3, 1d4. Trick: copies the last action. Weakness: something colourful described aloud, 1d8.
 - Fight begins. Heroes act first. Machli HP 7/7, Bolt HP 10/10.
+- Pictures for the fight (ch01-s3-fight) and its payoff (ch01-s3-after) made and filed. The payoff stays hidden until the fight is won.
+- DM rule: if the DM says a roll succeeded or failed, take it and move on.
+
+## Fight: the Mirror-Shards (round 1)
+- Bolt tried to lift and squeeze the water-glass with tentacles: it slid through. The shard knocked him down (cold bump, no damage taken).
+- Machli (Aarya) tried a fire sword, rolled 10. The hammerhead shard splashed it out.
+- Both shards stopped and watched when Firoz's purple hiccup drifted past: the colour clue. Heroes need a new plan; DM nudging toward colour.

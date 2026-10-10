@@ -55,6 +55,7 @@ opinions, a recording of a song, and a friend who is an octopus.
 - **Rolls:** Easy per crate; ten catches saves the cargo.
 - **Outcomes:** Gravity comes back gently. Dockmaster **Oola**, an octopus in a bubble suit with eight tool belts, looks at the heroes for a long moment and then says "Well. Good." The humming crate holds a recorder, still recording the cloud.
 - **Image:** Crates drifting through a docking bay like slow bubbles, children pushing off walls to catch them, an octopus in a bubble suit on the ceiling pointing with four arms
+- **Image (after):** Gravity coming back gently in a docking bay, the heroes landing on their feet holding stacked crates, an orange octopus in a bubble suit nodding approval with four arms folded, one humming crate glowing
 - **Music:** fans, then a soft thump as gravity returns
 
 ### Scene 3: We should go back (social)

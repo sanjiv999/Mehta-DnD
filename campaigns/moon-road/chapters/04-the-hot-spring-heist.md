@@ -71,6 +71,7 @@ was there. The oni was in the bath with six witnesses. The chapter is a mystery 
 - **Rolls:** Attacks normal. DEX saves Easy on wet boards. Perception Easy for the moon doors.
 - **Outcomes:** The lantern is carried out and set on its post. The shadows fall into straw. Fourth ofuda: the salt-charm (a ring no spirit can cross, once).
 - **Image:** A dark empty bathhouse, a lit lantern floating in a deep pool ringed by identical straw-hatted figures, a huge oni wading in with a child on his shoulders
+- **Image (after):** A lit lantern carried out of a dark bathhouse by the heroes and set on its post, the straw-hatted shadow figures falling into heaps of plain straw on the floor behind them
 - **Music:** shamisen, low, then a splash
 
 ### Scene 4: Everybody in the bath (rest)

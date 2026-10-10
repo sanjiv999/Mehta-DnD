@@ -72,6 +72,7 @@ stronger in the dark here.
 - **Rolls:** Attacks on the Shadow at normal odds while a lantern is within ten feet. At 0 HP it dissolves into a handful of straw and a second burned charm.
 - **Outcomes:** A hundred lamps light the station lantern together. Ponkichi has to sit down. The tanuki are now friends of the party.
 - **Image:** A night parade of a hundred lanterns through bamboo, tanuki changed into teapots and one-eyed umbrellas, a child drumming at the front
+- **Image (after):** A hundred paper lanterns all lighting one big stone lantern in a bamboo forest at night, tanuki in every shape cheering, one round tanuki sitting down in delight, the heroes in the middle
 - **Music:** drums, flute, a hundred tanuki laughing
 
 ### Scene 4: Two charms (investigation)

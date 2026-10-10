@@ -32,6 +32,7 @@ def split_sections(body: str) -> dict[str, str]:
 
 def parse_scene_block(number: int, title: str, kind: str, text: str) -> dict:
     read_aloud, jobs, choices, image, music, dm_lines = [], "", [], "", "", []
+    more = {}                                   # extra pictures: "fight" (the turn) and "after" (the payoff)
     lines = text.strip("\n").splitlines()
     i = 0
     while i < len(lines):
@@ -56,6 +57,8 @@ def parse_scene_block(number: int, title: str, kind: str, text: str) -> dict:
                 jobs = rest
             elif label == "image":
                 image = rest
+            elif re.fullmatch(r"image \((fight|after)\)", label):
+                more[label[7:-1]] = rest
             elif label == "music":
                 music = rest
             else:
@@ -75,7 +78,7 @@ def parse_scene_block(number: int, title: str, kind: str, text: str) -> dict:
         paragraphs.append(" ".join(cur))
     return {
         "number": number, "title": title, "kind": kind or "", "slug": f"s{number}",
-        "read_aloud": paragraphs, "jobs": jobs, "choices": choices, "image": image, "music": music,
+        "read_aloud": paragraphs, "jobs": jobs, "choices": choices, "image": image, "music": music, "more_images": more,
         "dm_md": "\n".join(dm_lines).strip(),
     }
 
@@ -142,12 +145,11 @@ def image_slots(cid: str, campaign: dict) -> list[dict]:
             add(f"ch{n:02d}-{s['slug']}", "scene", f"{ch.get('title','')}: {s['title']}",
                 s["image"] or " ".join(s["read_aloud"])[:400], chapter=n, scene=s["number"],
                 context={"read_aloud": " ".join(s["read_aloud"]), "jobs": s.get("jobs") or "", "dm": s.get("dm_md") or ""})
-    ex = CAMPAIGNS / cid / "images" / "extras.yaml"
-    if ex.exists():                      # extra pictures for a scene, such as a fight or its payoff
-        from common import load_yaml
-        for slot, e in (load_yaml(ex) or {}).items():
-            add(slot, "scene", e.get("title", slot), e.get("prompt", ""), chapter=e.get("chapter"),
-                scene=e.get("scene"), extra_of=e.get("scene"), dm_only=bool(e.get("dm_only")))
+            for which, prompt in (s.get("more_images") or {}).items():
+                label = "the fight" if which == "fight" else "how it ends"
+                add(f"ch{n:02d}-{s['slug']}-{which}", "scene", f"{ch.get('title','')}: {s['title']} ({label})", prompt,
+                    chapter=n, scene=s["number"], extra_of=s["number"], reveal_after=(which == "after"),
+                    context={"jobs": s.get("jobs") or ""})
     for sub, kind in (("npcs", "npc"), ("locations", "location")):
         for p in sorted((CAMPAIGNS / cid / sub).glob("*.md")):
             if p.name.startswith("_"):

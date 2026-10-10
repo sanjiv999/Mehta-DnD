@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate every YAML and Markdown data file. Exit 1 on problems."""
 from __future__ import annotations
+import re
 import sys
 from common import (CAMPAIGNS, CHARACTERS, TABLES, load_yaml, load_md, world,
                     campaign_ids, character_ids)
@@ -87,6 +88,19 @@ def main() -> int:
             for t in s.get("open_threads", []):
                 if not isinstance(t, dict) or "id" not in t or "text" not in t:
                     problems.append(f"{sp}: thread {t!r} needs id and text")
+        try:
+            import scenes as _sc
+            for ch in _sc.chapters(d.name):
+                for s in ch["scenes"]:
+                    k = (s["kind"] or "").lower(); more = s.get("more_images") or {}
+                    fight = re.search(r"action|climax|fight", k) or "bestiary.md" in (s.get("dm_md") or "")
+                    where = f"{d.name} chapter {ch.get('number')} scene {s['number']}"
+                    if fight and not more.get("after"):
+                        problems.append(f"{where}: a fight or climax needs '- **Image (after):**' for how it ends")
+                    if "then action" in k and not more.get("fight"):
+                        problems.append(f"{where}: a scene that turns into a fight needs '- **Image (fight):**'")
+        except Exception as e:  # noqa: BLE001
+            problems.append(f"{d}: scene picture check failed: {e}")
         for sub in ["npcs", "locations", "chapters", "sessions"]:
             for md in (d / sub).glob("*.md") if (d / sub).exists() else []:
                 if md.name.startswith("_") or md.name.startswith("000") or md.stem.endswith("-live"):

@@ -69,6 +69,7 @@ Vexley round or go through him. Nobody gets hurt.
 - **Rolls:** Persuasion Tricky per beat; sincere kid statements are automatic.
 - **Outcomes:** He moves his ship. He asks to come. "If it goes wrong, someone should be there to tell them I was wrong." Over every speaker: "Crew departing. Come home."
 - **Image:** A tall man with a clipboard on a ship's ramp looking down at a small girl holding up a glowing jar, a wall panel lit warm behind them
+- **Image (after):** A ship moving aside from a dock's open doors, a tall man with a clipboard walking up the ramp of the heroes' small round ship to join them, robots and an octopus waving, the nebula glowing ahead
 - **Music:** the clock stops
 
 ### Scene 4: Come home (departure)

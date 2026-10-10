@@ -54,6 +54,8 @@ DM-only. What is really going on.
   - 🏃 Run
 - **Outcomes:** Rewards and what it sets up.
 - **Image:** One line of art direction.
+- **Image (after):** Every fight or climax: how it ends, the payoff picture. Hidden from the kids' slides until it is won.
+- **Image (fight):** Only for a scene that turns into a fight halfway: the moment it turns. (Delete this line otherwise.)
 
 ## Complications (roll d6)
 1.

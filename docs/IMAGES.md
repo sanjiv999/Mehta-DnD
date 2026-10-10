@@ -52,12 +52,14 @@ Match the attached reference pictures for <names>.
 - **Numbers never move.** `dm/prompts/sheet.json` gives every picture a number for life, so
   `07.png` means the same picture whenever it is uploaded.
 
-## Extra pictures for a scene
+## Fight and payoff pictures
 
-A fight, a surprise or a payoff can have its own picture. Add it to `campaigns/<id>/images/extras.yaml`
-with a slot name, title, chapter, scene and prompt. It appears in `PICTURES.md` with a number like any other,
-and on that scene's slide once the picture exists. Add `dm_only: true` to keep a payoff off the kids'
-slides until you are ready.
+A scene's `- **Image:**` line is its opening picture. Every fight or climax also has
+`- **Image (after):**`, the payoff (slot `chNN-sN-after`), and a scene that turns into a fight
+halfway has `- **Image (fight):**` (slot `chNN-sN-fight`). They get numbers in `PICTURES.md` like any
+other picture. On the kids' slides the fight picture shows as soon as it exists; the payoff stays
+hidden until the fight is won (Claude adds the slot to `flags.revealed_images` in `state.yaml`) or
+the chapter is over. The validator refuses a fight without a payoff picture.
 
 ## The one list
 

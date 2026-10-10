@@ -76,7 +76,10 @@ The DM is at the table with the family and you in a chat. Run the current chapte
    the hero adds and why (their power, a gift, a hard spot), and what happens if it works or
    not. Then let the kid roll their own die at the table and say the number; the DM tells you.
    Use `roll.py` with a `--label` only when the DM asks you to roll, and log every number either
-   way. Apply the rules, narrate the outcome in second person, two to six sentences, concrete and
+   way. If the DM just says a roll succeeded (or failed), take that, log it as such, and move on;
+   do not ask for the exact number. When a fight is won, add its payoff picture's slot
+   (`chNN-sN-after`) to `flags.revealed_images` in the campaign `state.yaml` so it appears on the
+   kids' slides, and show it to the table. Apply the rules, narrate the outcome in second person, two to six sentences, concrete and
    warm. Use the bestiary and secrets from `dm/`. Give the five-year-old something to do every few
    minutes.
 4. After every beat, append two or three lines to the live log: what happened, rolls, state
@@ -109,7 +112,9 @@ Write new NPCs to `campaigns/<id>/npcs/<slug>.md` from the template, with an `im
 ### 7. Write or extend a chapter
 Follow the scene convention exactly (see `campaigns/_template/chapters/01-template.md` and
 `tools/scenes.py`): `### Scene N: Title (kind)`, read-aloud in blockquotes, `- **Jobs for the kids:**`,
-`- **Choices:**` with an emoji-led nested list, `- **Image:**`, `- **Music:**`. Every scene needs a
+`- **Choices:**` with an emoji-led nested list, `- **Image:**`, `- **Music:**`. Every fight or climax
+also gets `- **Image (after):**` (how it ends), and a scene that turns into a fight halfway gets
+`- **Image (fight):**`; the validator enforces both. Every scene needs a
 mission for the five-year-old that cannot fail. Every chapter needs a d6 complication table,
 rewards, and a "How it ends and what it sets up". Finales are conversations that look like fights.
 

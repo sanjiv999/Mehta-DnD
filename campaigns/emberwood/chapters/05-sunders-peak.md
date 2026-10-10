@@ -69,6 +69,7 @@ takes her shape.
 - **Rolls:** Breath: DEX save Tricky, 2d6 fire, halved under the wing. True things: Persuasion Easy, automatic if sincere.
 - **Outcomes:** It shrinks to a fire the size of a dog with a face and says, "Oh. I'm the forge." Sunder stands up for the first time in three centuries and the ledge shakes and she laughs, which sounds like a landslide.
 - **Image:** A dragon made of coals and ash looming over a small girl holding up a wooden toy horse and speaking to it, the real bronze dragon sheltering the other children under a wing
+- **Image (after):** A small friendly fire the size of a dog with a shy face sitting on a mountain ledge, and a huge bronze dragon standing up for the first time and laughing, the heroes cheering beside a cart of pies
 - **Music:** horns, then a hearth
 
 ### Scene 4: The anvil (epilogue)

@@ -798,5 +798,93 @@
   "200": {
     "campaign": "peacock-throne",
     "slot": "ch01-s3-fight"
+  },
+  "201": {
+    "campaign": "peacock-throne",
+    "slot": "ch02-s3-after"
+  },
+  "202": {
+    "campaign": "peacock-throne",
+    "slot": "ch02-s3-fight"
+  },
+  "203": {
+    "campaign": "peacock-throne",
+    "slot": "ch03-s2-after"
+  },
+  "204": {
+    "campaign": "peacock-throne",
+    "slot": "ch03-s4-after"
+  },
+  "205": {
+    "campaign": "peacock-throne",
+    "slot": "ch04-s2-after"
+  },
+  "206": {
+    "campaign": "peacock-throne",
+    "slot": "ch04-s4-after"
+  },
+  "207": {
+    "campaign": "peacock-throne",
+    "slot": "ch05-s2-after"
+  },
+  "208": {
+    "campaign": "peacock-throne",
+    "slot": "ch05-s4-after"
+  },
+  "209": {
+    "campaign": "starfall",
+    "slot": "ch01-s2-after"
+  },
+  "210": {
+    "campaign": "emberwood",
+    "slot": "ch01-s4-after"
+  },
+  "211": {
+    "campaign": "moon-road",
+    "slot": "ch01-s4-after"
+  },
+  "212": {
+    "campaign": "moon-road",
+    "slot": "ch02-s3-after"
+  },
+  "213": {
+    "campaign": "emberwood",
+    "slot": "ch02-s4-after"
+  },
+  "214": {
+    "campaign": "emberwood",
+    "slot": "ch03-s4-after"
+  },
+  "215": {
+    "campaign": "moon-road",
+    "slot": "ch03-s4-after"
+  },
+  "216": {
+    "campaign": "emberwood",
+    "slot": "ch04-s2-after"
+  },
+  "217": {
+    "campaign": "moon-road",
+    "slot": "ch04-s3-after"
+  },
+  "218": {
+    "campaign": "starfall",
+    "slot": "ch04-s3-after"
+  },
+  "219": {
+    "campaign": "emberwood",
+    "slot": "ch04-s4-after"
+  },
+  "220": {
+    "campaign": "emberwood",
+    "slot": "ch05-s3-after"
+  },
+  "221": {
+    "campaign": "moon-road",
+    "slot": "ch05-s3-after"
+  },
+  "222": {
+    "campaign": "moon-road",
+    "slot": "ch06-s3-after"
   }
 }

@@ -85,6 +85,7 @@ strangers. They are not wrong to worry.
   - 🧙 Let Wren handle it (butterflies; the tower sulks)
 - **Outcomes:** Wren and Teddy join. The tower passes a packed lunch out of a window without a word. Level 3.
 - **Image:** Furniture flying down a tower hallway, a small wizard with folded arms, an eleven-foot teddy bear filling a doorway, a child ducking a chair
+- **Image (after):** A small wizard girl in a huge hat riding on an eleven-foot teddy bear out of a crooked tower door with the heroes, a packed lunch being passed out of an upstairs window by itself
 - **Music:** a harp played very fast, then a long sigh
 
 ## Complications (roll d6)

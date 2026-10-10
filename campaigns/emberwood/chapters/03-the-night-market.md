@@ -88,6 +88,7 @@ spoons underground "to remember by."
   - 🧸 Teddy sits on it
 - **Outcomes:** It shrinks to a wisp and yawns. The stairs are open. Grizzle hands out lanterns "on credit" and writes it down. Level 4.
 - **Image:** A dwarven stone gate grinding open under a goblin market, a dog made of glowing coals coming up the stairs, children singing with their eyes shut
+- **Image (after):** A dog made of coals shrunk to a sleepy little wisp yawning on the top step of an open dwarven stairway, goblins in waistcoats handing the heroes lanterns, the heroes grinning
 - **Music:** the lullaby, then a yawn
 
 ## Complications (roll d6)

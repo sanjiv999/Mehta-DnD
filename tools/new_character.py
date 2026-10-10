@@ -61,9 +61,11 @@ def main() -> int:
     if dst.exists() and (dst / "character.yaml").exists():
         c = load_yaml(dst / "character.yaml")
         print(f"(editing existing hero {cid})")
+        old_name = c.get("name")
     else:
         shutil.copytree(CHARACTERS / "_template", dst, dirs_exist_ok=True)
         c = load_yaml(dst / "character.yaml")
+        old_name = c.get("name")
     c["id"], c["player"], c["kids_mode"] = cid, player, kids
 
     print("\n— Part 1: the spark —")
@@ -121,6 +123,8 @@ def main() -> int:
     c["backstory"] = f"{home} {why} {knows}".strip()
     c["status"] = "active" if ask("Happy with this hero? (y/n)", "y").lower().startswith("y") else "draft"
     c["inventory"] = c.get("inventory") or []
+    if old_name and c.get("name") != old_name:   # a new hero in this folder: the old pinned look no longer applies
+        (c.setdefault("portrait", {}))["canon"] = ""
     dump_yaml(dst / "character.yaml", c)
     (dst / "journal.md").write_text(
         f"# Journal of {c['name']}\n\n<!-- First-person entries in the hero's voice. Newest at the bottom. -->\n\n"

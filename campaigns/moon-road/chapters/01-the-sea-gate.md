@@ -87,6 +87,7 @@ blow it out again.
 - **Rolls:** Acrobatics Tricky to keep up on wet roofs. Salt works without a roll.
 - **Outcomes:** A paper charm on the roof tiles, a keeper's charm from the mountain shrine, with a hole burned through where the seal should be. The lantern holds. First **ofuda**: advantage against fear, once. Kiko: "K. That's a letter. I think it's mine."
 - **Image:** A figure in a wide straw hat on a rooftop blowing toward a stone lantern, a child below shielding the flame with cupped hands
+- **Image (after):** A stone lantern burning safely on a rooftop at night, the heroes holding up a burned paper charm they found on the roof tiles, a small two-tailed fox peering at the letter on it
 - **Music:** one drum hit, then quiet
 
 ## Complications (roll d6)

@@ -84,6 +84,7 @@ children tell her becomes the climate for the rest of the road.
   - ⚔️ Fight
 - **Outcomes:** The lantern lights. The lake lifts, and for the length of a breath there is a silver dragon in the air over the island, looking down at the small people, and then there is a lake again, and on the shore a dragon scale for each of them. Third ofuda: the weather-charm (change the weather for one scene). Kiko: "K again. K, I, K."
 - **Image:** A silver dragon rising from a lake over a small island with a lit stone lantern, children on the shore with their arms up, the maples red
+- **Image (after):** A silver dragon hanging in the air over a small island on a lake for one breath, looking down kindly at the heroes on the shore, a lit stone lantern beside them and a silver scale in each hand
 - **Music:** a gong, once
 
 ## Complications (roll d6)

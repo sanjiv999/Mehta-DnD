@@ -76,6 +76,8 @@ gets. Hanuvant knows who built it. He has not said, because he has said things b
 - **Action:** Under the old bridge the peacock turns and fans a tail of mirrored feathers; WIS save Tricky or lose a turn looking at yourself. Its weakness is the winding key on its back: Acrobatics Hard to reach it, or any Wish Lamp shaped like a key or a hand works at once. **How it ends:** it runs down with a long tick, folds its tail, and bows to the smallest hero, who it seems to think is in charge.
 - **Outcomes:** Inside the chest, a jar of lamplight and a mirror shard that shows a square building on a dune with no door. The **winding key** is small and brass and a kid will want it; it matters in chapter 5. The Vizier's man is gone.
 - **Image:** A brass clockwork peacock with a fanned tail of mirror pieces standing on black water under a stone bridge, lamps going out around it, a kite overhead
+- **Image (fight):** Under an old stone bridge at night, a brass clockwork peacock fans a tail of mirror pieces over black water full of floating paper lamps, and the heroes in a small boat shield their eyes from their own dazzling reflections
+- **Image (after):** A brass clockwork peacock wound down and still, its mirror tail folded, bowing low to the smallest hero on the bridge steps, paper lamps floating free again on the black water
 - **Music:** fast tabla, water, then a music-box ticking down
 
 ### Scene 4: The maker's mark (investigation)

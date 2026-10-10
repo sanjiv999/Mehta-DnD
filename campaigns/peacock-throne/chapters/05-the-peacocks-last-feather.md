@@ -57,6 +57,7 @@ wrong since he was nine.
 - **Rolls:** Attacks via reflection at normal odds, direct at disadvantage. Perception Tricky to find the shadowed path without Badal.
 - **Outcomes:** The feather returns to Mirza. He clears his throat. Everyone turns round.
 - **Image:** A pillared red hall turned into a maze of tall mirrors, a giant iridescent feather with an eye pacing between them, a boy's hand reaching from behind a pillar
+- **Image (after):** A giant iridescent peacock feather shrinking back into a single tail feather on an old parrot's back in a hall of mirrors, the parrot clearing its throat, the heroes turning round to listen
 - **Music:** tense strings, glass
 
 ### Scene 3: What the parrot heard (revelation)
@@ -94,6 +95,7 @@ wrong since he was nine.
 - **Rolls:** As above. The mirror has four "cracks" of HP.
 - **Outcomes:** The mirror breaks into coloured sand. The colour comes back into everything at once. The central feather of the throne opens and inside it is a wick that does not burn down. The Padishah laughs so hard he slides off the throne. Then the choice.
 - **Image:** A hand mirror breaking into a storm of coloured sand in a grey hall, colour flooding back from four small heroes standing together
+- **Image (after):** A hand mirror bursting into a storm of coloured sand in a red hall, colour flooding back into everything, the jewelled peacock throne's central feather opening to show a small flame, a boy king laughing so hard he slides off the throne, the heroes cheering
 - **Music:** everything, and drums
 
 ### Scene 5: A dyer's son (epilogue)

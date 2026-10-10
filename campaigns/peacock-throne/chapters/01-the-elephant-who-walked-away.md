@@ -81,6 +81,8 @@ the baoli in the heat of the afternoon, the parade at sunset.
 - **Action:** The shards copy whatever a hero did last. They take damage normally, and a hero who describes something colourful out loud (Performance Easy; a kid's description counts automatically) does 1d8 to the one that is copying her. **How it ends:** each shard falls into coloured sand on the dry step, and Firoz scoops it into his hands and laughs so hard he hiccups.
 - **Outcomes:** Lady Shabnam gives each hero one question, answered truly, in the form a well answers things. Badal kneels so the kids can climb up. The water is still grey.
 - **Image:** A stepwell seen from above, 108 zigzag steps past arched galleries, a white elephant at the bottom beside a small orange smoke-child, the water flat and grey
+- **Image (fight):** At the bottom of a deep square sandstone stepwell, the flat grey water has stood up into two tall shapes of grey glass, one with the head of a hammerhead shark and one with short tentacle hair, puzzled rather than scary, facing the heroes, an old white elephant guarding a small orange smoke child behind his leg
+- **Image (after):** The two grey glass shapes shattered into heaps of rainbow-coloured sand on the dry stone, the water now clear blue, a small orange smoke child scooping the sand and hiccuping purple puffs, the heroes cheering, an old white elephant kneeling for them
 - **Music:** drips, a low hum, then nothing
 
 ### Scene 4: The parade (celebration)

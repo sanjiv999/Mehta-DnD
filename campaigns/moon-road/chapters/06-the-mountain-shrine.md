@@ -69,6 +69,7 @@ tea, and holding a lantern lit while the saddest thing on the road walks up to b
 - **Rolls:** The Monk's breath, CON save Tricky each round; a fail makes the lantern gutter and two fails in a row put it out unless Daigoro holds it. Each 10 damage delays him a round. Three rounds.
 - **Outcomes:** Dawn. Every lantern on the mountain and the road relights at once, all the way to the sea. A straw hat lies on the step. Hoshi is solid. Kikyo has four tails. Inside the first lantern, painted with a fox and a mountain, the **paper shade** of the Lantern of Many Roads.
 - **Image:** Dawn on a mountain top, a river of lanterns relighting all the way down to the sea, an old keeper and a four-tailed fox, a straw hat empty on the step
+- **Image (after):** Dawn on a mountain top, every lantern down the road relighting all the way to the sea, a straw hat lying empty on a shrine step, an old keeper and a four-tailed fox smiling with the heroes
 - **Music:** every bell on the mountain
 
 ### Scene 4: Going home (epilogue)

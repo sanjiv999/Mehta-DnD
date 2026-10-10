@@ -55,6 +55,7 @@ the ghats. Padma does not know the blue was a child's. Telling her is the chapte
 - **Rolls:** Animals Tricky to calm it. DEX saves Tricky if the boat goes over; everyone can swim; the water is warm.
 - **Outcomes:** The Makara ferries the boat past the rapids on its back. Chhaya translates its rumble: "The queen cries at night. Everyone in the river can hear it."
 - **Image:** A crocodile-dragon makara rising out of white water beside a small flat boat, a clutch of melon-sized eggs on a rock behind it, a dolphin leaping
+- **Image (after):** A huge friendly crocodile-dragon makara carrying a small flat boat with the heroes on its back past white river rapids, a small bat on the bow
 - **Music:** rushing water, a drum under it
 
 ### Scene 3: Bubbles (wonder)
@@ -87,6 +88,7 @@ the ghats. Padma does not know the blue was a child's. Telling her is the chapte
 - **Rolls:** Persuasion Tricky per truth; automatic if sincere.
 - **Outcomes:** She lets the rain go, and the first of it hits the lake above like applause. She gives **Padma's Pearl** (turns one grey thing to colour, once) and the sky-jar, and asks the heroes to tell the Vizier she is "not angry, which is worse." Nagini Tara asks to come up and see the sky.
 - **Image:** A vast naga queen with a crown of river pearls holding a sealed clay jar leaking blue light toward four small heroes
+- **Image (after):** A vast naga queen with a crown of river pearls letting rain fall from her open hands into a lake that shines above, handing the heroes a sealed clay jar leaking blue light and a single pearl
 - **Music:** rain beginning, then all of it
 
 ## Complications (roll d6)

@@ -89,6 +89,7 @@ piece of what sleeps under the mountain, and it has started coming up.
 - **Rolls:** Animals or Nature Easy. No roll for a held-out hand.
 - **Outcomes:** The wisp rides on a shoulder. Biscuit: "That's a bit of the Ember. There are more cracks. We need someone who reads dwarven, and the only one is seven and grounded."
 - **Image:** A small ball of ember-light with tiny legs landing on a child's hand in a glowing night wood, a ginger cat watching
+- **Image (after):** A small ball of ember-light with tiny legs riding happily on a hero's shoulder like a lantern, the heroes walking on through the glowing night wood, a ginger cat leading the way
 - **Music:** fireflies, which make no sound
 
 ## Complications (roll d6)
