@@ -49,3 +49,5 @@ are not built yet and will join later.
 - Firoz (canon, a five-year-old's telling): the well is his house, blue and cold with the best echoes; Mama made him from steam on a hot day; his feet stuck to the dry step when he went to see why the water went grey; Mama says the water and the shiny stones in the big red house are friends, and when the stones go sleepy the water goes sleepy and goes away. A hiccup turned Badal's ear green for a minute.
 - Firoz asked to come along. Shabnam's word through him: when the lamps float on the lake, he can come for always (sets up chapter 2).
 - Party climbing the 108 steps on Badal toward the sunset parade (scene 4).
+- More from Firoz: the big red house is the palace the party is walking to. His mother is Lady Shabnam; Shabnam means dew, she is the cold that rises from the deep water and is clearest in the morning. She made a promise to a king long ago and will tell him when he is bigger.
+- Party reached the top of the steps on Badal. Firoz waved goodbye (lamps on the lake, chapter 2). Next: Scene 4, the sunset parade. Picture 06 (shows the grey ruby) held until the ruby goes dim.
