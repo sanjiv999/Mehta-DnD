@@ -9,7 +9,7 @@ No API key is needed. The default workflow is copy-and-paste:
                                                     shows it at prompts.html with copy buttons
   images.py intake <folder-or-files...>             file downloaded images: names like ch01-s3.png, npc-badal.jpg,
                                                     portrait-aarya.png, or the sheet number (07.png) all work
-  images.py pictures [--show N]                     write PICTURES.md at the repo root: every missing picture,
+  images.py pictures [--campaign id] [--show N]     write PICTURES.md (or PICTURES-<id>.md for one world) at the repo root: every missing picture,
                                                     most needed first, with the prompt and the number to save as
   images.py intake [folder] [--assign 07,12]        file what landed in inbox/ (default) and refresh PICTURES.md
   images.py plan [--campaign id] [--missing]        what exists, what is missing
@@ -340,23 +340,54 @@ def _entry(s: dict) -> list[str]:
             f"<sub>slot `{s['slot']}` → `{where}`</sub>", "", "```text", s["final_prompt"], "```", ""]
 
 
+def hero_restyle(cid: str) -> list[dict]:
+    """Portrait prompts that redraw each active hero in another world's art style, from their current portrait."""
+    from portrait_prompt import compose
+    title = load_campaign(cid).get("title", cid)
+    rows = []
+    for hid in character_ids():
+        h = load_character(hid)
+        if h.get("status") != "active" or not h.get("name"):
+            continue
+        cur = (h.get("portrait") or {}).get("current")
+        ref = CHARACTERS / hid / cur if cur and (CHARACTERS / hid / cur).exists() else None
+        prompt = compose(h, cid)
+        if ref:
+            prompt += (" Redraw this hero in the style above, keeping the same face, costume and colours as the "
+                       "attached portrait.")
+        rows.append({"slot": f"portrait-{hid}", "kind": "portrait", "title": f"{h['name']} in the {title} style",
+                     "final_prompt": prompt, "campaign": "heroes", "hero": hid, "file": None,
+                     "refs": [(h["name"], ref)] if ref else [], "aspect": "portrait 3:4", "rank": (0, 0, hid)})
+    return rows
+
+
 def cmd_pictures(a):
-    """Write PICTURES.md at the repo root: every missing picture, most needed first, with the prompt to paste."""
-    w = world(); active = w.get("active_campaign")
-    rows = sheet_rows(campaign_ids(), 0)
-    done = [(cid, s) for cid in campaign_ids() for s in campaign_slots(cid) if s["file"]]
+    """Write PICTURES.md at the repo root: every missing picture, most needed first, with the prompt to paste.
+    With --campaign <id>, write PICTURES-<id>.md for that world only, heroes redrawn in its style first."""
+    w = world(); only = getattr(a, "campaign", None)
+    active = only or w.get("active_campaign")
+    cids = [only] if only else campaign_ids()
+    rows = sheet_rows(cids, 0, include_heroes=not only)
+    heroes = hero_restyle(only) if only else []
+    if heroes:
+        assign_numbers(heroes)
+    done = [(cid, s) for cid in cids for s in campaign_slots(cid) if s["file"]]
     cur = int((load_campaign(active).get("state") or {}).get("chapter") or 1) if active else 1
     title = load_campaign(active).get("title", active) if active else ""
-    L = ["# Pictures to make", "",
-         f"Every picture the game is still missing, most needed first. Regenerated {date.today()}: "
-         f"{len(done)} done, {len(rows)} to go.", "",
+    L = ["# Pictures to make" + (f": {title}" if only else ""), "",
+         f"Every picture the {'world' if only else 'game'} is still missing, most needed first. Regenerated {date.today()}: "
+         f"{len(done)} done, {len(rows) + len(heroes)} to go.", "",
          "**How:** copy a prompt into Gemini (or Claude), attach any reference pictures it names, save the one you like "
          f"as the number shown (`07.png`), and upload it to the `inbox/` folder here on GitHub (Add file → Upload files, "
          "works on a phone). GitHub files it, rebuilds the site and crosses it off this list. Or paste it in the chat "
          "and say the number.", ""]
-    nxt = [s for s in rows if s["campaign"] == active and (s["rank"][0] <= 2 or s.get("hero"))] if active else []
+    if only:
+        L += ["**Heroes first.** The two new portraits are the reference pictures for every scene, so make them before "
+              "anything else. Filing one makes it the hero's current portrait on the site, so hold them until you switch "
+              "to this world.", ""]
+    nxt = heroes + ([s for s in rows if s["campaign"] == active and (s["rank"][0] <= 2 or s.get("hero"))] if active else [])
     if nxt:
-        L += [f"## Next session: {title}, chapter {cur}", "",
+        L += [f"## {'Start here' if only else 'Next session'}: {title}, chapter {cur}", "",
               "These are the ones the kids will see first: the cover, this chapter's scenes, the people and places "
               "in it, and the heroes.", ""]
         for s in nxt: L += _entry(s)
@@ -368,8 +399,9 @@ def cmd_pictures(a):
     if done:
         L += ["## Done", "", "<details><summary>" + f"{len(done)} pictures in place</summary>", ""]
         L += [f"- `{cid}/{s['slot']}` → `{s['file'].relative_to(ROOT)}`" for cid, s in done] + ["", "</details>", ""]
-    PICTURES.write_text("\n".join(L), encoding="utf-8")
-    print(f"PICTURES.md: {len(nxt)} for the next session, {len(rest)} more, {len(done)} done.")
+    out = ROOT / (f"PICTURES-{only}.md" if only else "PICTURES.md")
+    out.write_text("\n".join(L), encoding="utf-8")
+    print(f"{out.name}: {len(nxt)} to start with, {len(rest)} more, {len(done)} done.")
     if a.show:
         for s in (nxt or rows)[:a.show]:
             print("\n" + "\n".join(_entry(s)))
@@ -445,7 +477,9 @@ def cmd_intake(a):
         if done and not done.startswith("skip") and a.move:
             f.unlink()
     if not a.no_list:
-        cmd_pictures(argparse.Namespace(show=0))
+        cmd_pictures(argparse.Namespace(show=0, campaign=None))
+        for extra in sorted(ROOT.glob("PICTURES-*.md")):          # keep any world-specific lists current too
+            cmd_pictures(argparse.Namespace(show=0, campaign=extra.stem[len("PICTURES-"):]))
     print("Rebuild the site to see them: python tools/build_site.py")
     return 0
 
@@ -459,7 +493,7 @@ def main(argv=None):
     p = sub.add_parser("record"); p.add_argument("campaign"); p.add_argument("slot"); p.add_argument("file"); p.add_argument("--note", default=""); p.set_defaults(fn=cmd_record)
     p = sub.add_parser("heroes"); p.add_argument("--limit", type=int, default=0); p.add_argument("--provider"); p.add_argument("--dry-run", action="store_true"); p.add_argument("--prompts", action="store_true"); p.set_defaults(fn=cmd_heroes)
     p = sub.add_parser("sheet"); p.add_argument("--campaign"); p.add_argument("--limit", type=int, default=0); p.add_argument("--out"); p.set_defaults(fn=cmd_sheet)
-    p = sub.add_parser("pictures"); p.add_argument("--show", type=int, default=0, help="also print the first N entries"); p.set_defaults(fn=cmd_pictures)
+    p = sub.add_parser("pictures"); p.add_argument("--show", type=int, default=0, help="also print the first N entries"); p.add_argument("--campaign", help="write PICTURES-<id>.md for one world, with the heroes redrawn in its style"); p.set_defaults(fn=cmd_pictures)
     p = sub.add_parser("intake"); p.add_argument("paths", nargs="*", help="folder(s) or files; default: inbox/"); p.add_argument("--assign", help="picture numbers for the files in upload order, e.g. 07,12,13"); p.add_argument("--no-list", action="store_true"); p.add_argument("--campaign", help="campaign for slot names that exist in several worlds (default: the active one)"); p.add_argument("--move", action="store_true", help="delete the source file after filing"); p.set_defaults(fn=cmd_intake)
     a = ap.parse_args(argv)
     return a.fn(a)

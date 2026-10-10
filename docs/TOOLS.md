@@ -12,7 +12,7 @@ Claude Code; the GitHub workflows run them on every push. Listed so Claude knows
 | `tools/session.py prep\|new` | DM brief for the next session; a session log from the template. |
 | `tools/new_character.py` | Interactive hero builder (the conversational route in CLAUDE.md is preferred). |
 | `tools/portrait_prompt.py <id> [--record FILE]` | Portrait prompt from the sheet and the world's art style; record a saved portrait. |
-| `tools/images.py pictures [--show N]` | Write `PICTURES.md`: every missing picture, most needed first, with stable numbers and layered prompts. |
+| `tools/images.py pictures [--campaign id] [--show N]` | Write `PICTURES.md`: every missing picture, most needed first, with stable numbers and layered prompts. `--campaign <id>` writes `PICTURES-<id>.md` for one world, heroes redrawn in its style first. |
 | `tools/images.py intake [folder] [--assign 07,12] [--move]` | File pictures from `inbox/` (default) by number or slot name; `--assign` numbers files in upload order. |
 | `tools/prose_lint.py [paths] [--strict] [--show N]` | Score player-facing prose for the tells of machine writing (banned words, triplets, "not X but Y"); `--strict` fails above the ceiling. |
 | `tools/images.py sheet\|intake\|plan\|prompt\|record\|heroes` | Picture prompts and filing of downloaded pictures. No API. |

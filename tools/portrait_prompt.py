@@ -13,9 +13,9 @@ from datetime import date
 from common import ROOT, CHARACTERS, load_character, load_campaign, world, dump_yaml, load_yaml
 
 
-def compose(h: dict) -> str:
+def compose(h: dict, cid: str | None = None) -> str:
     w = world()
-    cid = w.get("active_campaign") or h.get("campaign_origin")
+    cid = cid or w.get("active_campaign") or h.get("campaign_origin")
     camp = load_campaign(cid) if cid else {}
     style = (h.get("portrait", {}).get("style_override") or camp.get("art_style", "storybook illustration")).strip()
     ap = h.get("appearance", {}) or {}

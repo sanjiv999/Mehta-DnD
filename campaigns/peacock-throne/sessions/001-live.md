@@ -51,3 +51,5 @@ are not built yet and will join later.
 - Party climbing the 108 steps on Badal toward the sunset parade (scene 4).
 - More from Firoz: the big red house is the palace the party is walking to. His mother is Lady Shabnam; Shabnam means dew, she is the cold that rises from the deep water and is clearest in the morning. She made a promise to a king long ago and will tell him when he is bigger.
 - Party reached the top of the steps on Badal. Firoz waved goodbye (lamps on the lake, chapter 2). Next: Scene 4, the sunset parade. Picture 06 (shows the grey ruby) held until the ruby goes dim.
+
+- The table moved on after the parade set-up. DM asked to prepare the next world (Moon Road): pictures list PICTURES-moon-road.md and a DM briefing at campaigns/moon-road/dm/briefing.md. Peacock Throne stays paused at chapter 1, scene 4 (parade not finished; the grey ruby reveal is still to come). Session 1 is not yet ingested.

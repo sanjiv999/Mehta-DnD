@@ -170,7 +170,7 @@ GENERIC = {"road", "fort", "court", "mirror", "hall", "tower", "ring", "docks", 
            "garden", "deck", "edge", "heart", "cloud", "ship", "sea", "mountain", "shrine", "bay", "square", "great"}
 TITLE_WORDS = {"the", "and", "of", "old", "lady", "lord", "captain", "chair", "dockmaster", "keeper", "mayor",
                "councillor", "hakim", "vizier", "bibi", "rani", "nagini", "padishah", "shahzadi", "thane", "nana",
-               "kappa", "okami", "parrot", "child", "whale", "hobby", "club", "and", "a", "an"}
+               "kappa", "okami", "parrot", "child", "whale", "hobby", "club", "and", "a", "an", "her", "his", "their", "its", "with"}
 FRAMES = {
     "cover": "Wide establishing illustration for a book cover, landscape 16:9.",
     "map": "Top-down illustrated storybook map with painted terrain, landscape 16:9, no labels.",
@@ -186,8 +186,9 @@ RULES = ("One consistent style across the whole book: same palette, same line, s
 
 def _keys(name: str) -> list[str]:
     """Words that identify a character or place in prose: 'Shahzadi Zeb' -> ['shahzadi zeb', 'zeb']."""
-    name = re.sub(r"\(.*?\)", "", name).strip()
-    keys = [name.lower()]
+    inside = re.findall(r"\(([^)]*)\)", name)
+    name = re.sub(r"\(.*?\)", " ", name).strip()
+    keys = [name.lower()] + [x.strip().lower() for x in inside if len(x.strip()) >= 3]
     for w in re.split(r"[\s,]+", name):
         w = w.strip("'\"*").lower()
         if len(w) >= 3 and w not in TITLE_WORDS and w not in GENERIC and not w.endswith("-"):

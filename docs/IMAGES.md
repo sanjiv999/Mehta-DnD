@@ -69,6 +69,15 @@ chapter mentions, then hero portraits, then everything else in order of need, th
 `session.py prep` repeats the current chapter's part of it. The site's DM screen renders the same
 prompts with copy buttons.
 
+## Preparing the next world
+
+`python tools/images.py pictures --campaign moon-road` writes `PICTURES-moon-road.md`: the world's
+whole list, with each active hero redrawn in that world's art style first (their current portrait is
+named as the reference to attach), then the cover, the first chapter and the rest. Make the hero
+portraits first, because every scene lists them as references. Hold them until you switch worlds:
+filing a hero portrait makes it the hero's current one on the site. The world's DM briefing is in
+`campaigns/<id>/dm/briefing.md`.
+
 ## Getting pictures in
 
 | Route | How |

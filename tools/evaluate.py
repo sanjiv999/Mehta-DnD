@@ -58,6 +58,10 @@ def run(args, cwd, stdin=None, env=None, check_rc=True):
     return r
 
 
+def common_ids(W: Path):
+    return sorted(p.name for p in (W / "campaigns").iterdir() if p.is_dir() and not p.name.startswith("_"))
+
+
 def fake_png(path: Path, w=8, h=8, rgb=(16, 118, 110)):
     raw = b"".join(b"\x00" + bytes(rgb) * w for _ in range(h))
     def chunk(t, d): return struct.pack(">I", len(d)) + t + d + struct.pack(">I", zlib.crc32(t + d) & 0xffffffff)
@@ -328,6 +332,11 @@ def eval_images(W: Path):
     nums = json.loads((W / "dm" / "prompts" / "sheet.json").read_text())
     first = dict(nums)
     run(["tools/images.py", "pictures"], W)
+    other = next(c for c in common_ids(W) if c != cid)
+    r = run(["tools/images.py", "pictures", "--campaign", other], W)
+    pl = (W / f"PICTURES-{other}.md").read_text() if (W / f"PICTURES-{other}.md").exists() else ""
+    check("a world-specific picture list redraws the heroes in that world's style first",
+          r.returncode == 0 and "Heroes first" in pl and "style" in pl.split("###")[1] and "Attach first:" in pl.split("###")[1], r.stdout[-200:])
     check("picture numbers never move", json.loads((W / "dm" / "prompts" / "sheet.json").read_text()) == first)
     inbox = W / "inbox"; inbox.mkdir(exist_ok=True)
     todo = [k for k, v in sorted(nums.items()) if v["campaign"] == cid and v["slot"].startswith("ch02") and not (imgs / (v["slot"] + ".png")).exists()][:2]
