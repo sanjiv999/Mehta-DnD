@@ -12,3 +12,6 @@ are not built yet and will join later.
 
 ## Scene 2: Turmeric
 - Party follows the scent and the bell into the Shahi Bazaar.
+- Bolt (Keshu) bought mangoes (2 coins) and offered them to the langurs: Persuasion Easy, adv, rolled 8/11 -1 = 10 vs 10, success. Hanuvant told them: Badal listened to the ground, went to the water, came back up, went into the old city; he does not go there.
+- Machli (Aarya) sniffed through the spice: Perception Tricky, 14 vs 13, success. Found Badal's trail down to the water, plus a small smoky second scent with three-toed prints going on alone.
+- Coins to update at ingest: Bolt 10 -> 8.
