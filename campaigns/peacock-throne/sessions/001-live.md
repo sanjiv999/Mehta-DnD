@@ -23,3 +23,7 @@ are not built yet and will join later.
 - Bolt (Keshu) told Firoz his favourite colour is purple (canon: Bolt's favourite colour). Firoz says his is purple too; first purple hiccup floats beside the step, not yet on the stone.
 - Bolt wants to inspect the peacock-feather tile with his golden feather. Rolling Investigation Easy 10, +4, kid rolls.
 - Machli (Aarya) wants to sniff Badal to be sure it is the real elephant (she fears a trick), then ask him what he wants. Rolling Perception Easy 10, +3, advantage (Shark Nose; no spice here), kid rolls twice.
+- Kids' dice: Aarya rolled 16 (best of two, adv from Shark Nose) +3 = 19 vs 10, success. Keshu rolled 14 +4 = 18 vs 10, success.
+- Machli: it is the real Badal (marigold, hay, river mud, smoke from Firoz). The grey water smells of nothing at all.
+- Bolt: the golden feather glows warm over the peacock tile and points up toward the palace on the ridge. Clue logged for chapter 5.
+- Badal looked at the step and hummed: he came for Firoz.
