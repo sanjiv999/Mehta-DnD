@@ -21,6 +21,8 @@ reputation:
   bazaar: 0
   vanara-guild: 0
   naga: 0
-flags: {}
+flags:
+  revealed_images:
+  - ch01-s3-after
 resume_note: ''
 location_id: sikri

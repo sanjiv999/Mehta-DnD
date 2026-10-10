@@ -37,3 +37,9 @@ are not built yet and will join later.
 - Bolt tried to lift and squeeze the water-glass with tentacles: it slid through. The shard knocked him down (cold bump, no damage taken).
 - Machli (Aarya) tried a fire sword, rolled 10. The hammerhead shard splashed it out.
 - Both shards stopped and watched when Firoz's purple hiccup drifted past: the colour clue. Heroes need a new plan; DM nudging toward colour.
+
+## Fight won: the Mirror-Shards
+- Plan (kids' idea): Bolt used Machine Friends (once per short rest, used) to make the steps dance and beep around the well as a distraction. Rolled: success (DM said). Machli (Aarya) used her stripes to light Badal's trunk rainbow and stretch it into the water. Rolled: success (DM said).
+- Badal drank the grey water through the rainbow trunk, shot it out as a rainbow fountain. Shards shrank and fell to coloured sand; Firoz plays in it. Payoff picture ch01-s3-after revealed on the slides.
+- Water went clear blue for a breath, then greyed again from the edges (keeps canon: the well is still grey until chapter 3).
+- Next: Lady Shabnam gives each hero one true question (answered the way a well answers); Badal kneels for the kids to climb on; then the parade.
