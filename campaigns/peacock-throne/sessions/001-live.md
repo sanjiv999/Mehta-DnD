@@ -43,3 +43,5 @@ are not built yet and will join later.
 - Badal drank the grey water through the rainbow trunk, shot it out as a rainbow fountain. Shards shrank and fell to coloured sand; Firoz plays in it. Payoff picture ch01-s3-after revealed on the slides.
 - Water went clear blue for a breath, then greyed again from the edges (keeps canon: the well is still grey until chapter 3).
 - Next: Lady Shabnam gives each hero one true question (answered the way a well answers); Badal kneels for the kids to climb on; then the parade.
+- Questions to the well. Bolt (Keshu): where does the golden feather belong, and to whom? Answer: the Peacock Throne's own feather, lost when the ship sank; warms near the throne; the throne belongs to the boy who sits on it. Machli (Aarya): where is the other half of the scroll, and what is it for? Answer: half a map of roads between worlds, missing place is where all roads meet; other half is with the star-man in the high red house (Fariduddin, Panch Mahal), who thinks it is a star chart.
+- Canon recorded in dm/secrets.md and both heroes' secret fields.

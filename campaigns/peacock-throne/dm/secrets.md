@@ -24,3 +24,7 @@ Hanuvant: a tiny brass telescope. Dhoomketu: a portrait of the party (becomes a 
 
 ## The Vizier's mirror in chapter 2
 The "tracker mirror" he lends leads the party away from the peacock on purpose. If they notice (Investigation Tricky), it is the first proof. If they do not, Hakim notices in scene 4.
+
+## What the well told the heroes in session 1 (canon now)
+- **Bolt asked where the golden feather belongs and whose it is.** It is a feather of the Peacock Throne, lost from the middle of its fan when the treasure ship sank; the sea kept it. It grows warm near the throne. The throne belongs to the boy who sits on it. *Chapter 5 payoff:* it fits the empty socket in the central feather and helps open it (the Lantern wick).
+- **Machli asked where the other half of her scroll is, and what it is for.** Her map is half of an old map of the roads between worlds; the missing place is the Crossroads where all roads meet. The other half is in Hakim Fariduddin's star-books in the Panch Mahal; he thinks it is a star chart he cannot read. *Payoff:* when Machli joins the two halves, the Crossroads appears. Ties to the Lantern finale and to `rules/crossings.md`.
