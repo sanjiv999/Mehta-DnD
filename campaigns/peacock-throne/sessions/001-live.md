@@ -20,3 +20,6 @@ are not built yet and will join later.
 
 ## Scene 3: One hundred and eight steps
 - Ghats: the washerwomen (Machli's friends) saw the elephant drink and climb into the old city, a little smoke child with him. Party reaches the baoli.
+- Bolt (Keshu) told Firoz his favourite colour is purple (canon: Bolt's favourite colour). Firoz says his is purple too; first purple hiccup floats beside the step, not yet on the stone.
+- Bolt wants to inspect the peacock-feather tile with his golden feather. Rolling Investigation Easy 10, +4, kid rolls.
+- Machli (Aarya) wants to sniff Badal to be sure it is the real elephant (she fears a trick), then ask him what he wants. Rolling Perception Easy 10, +3, advantage (Shark Nose; no spice here), kid rolls twice.
