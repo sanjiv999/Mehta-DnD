@@ -1,0 +1,23 @@
+# Extra pictures for a scene: fights, payoffs, anything the table wants to see. Slot name -> details.
+# dm_only: true keeps a picture off the kids' slides until you take that flag out (for a payoff).
+ch01-s3-fight:
+  title: "One hundred and eight steps: the Mirror-Shards rise"
+  chapter: 1
+  scene: 3
+  prompt: >-
+    At the bottom of a deep square sandstone stepwell, the flat grey water has stood up into two tall shapes of
+    grey glass: one with the head of a hammerhead shark and a tall fin, one with a round head and short tentacle
+    hair. They look puzzled and shy rather than scary, copying the heroes' poses. Machli and Bolt stand ready on the
+    dry stone square facing them, Machli with orange sparks at her fingertips and Bolt with his tentacle lights
+    glowing blue. Badal, the old white elephant, stands in front of a small orange smoke child who peeks out from
+    behind his front leg. Zigzag steps and arched galleries rise behind them, pigeons in the arches.
+ch01-s3-after:
+  title: "One hundred and eight steps: coloured sand"
+  chapter: 1
+  scene: 3
+  dm_only: true
+  prompt: >-
+    At the bottom of the stepwell, the two grey glass shapes have just shattered into heaps of sparkling coloured
+    sand in every colour of the rainbow on the dry stone, and the water behind them is now clear blue. A small orange
+    smoke child scoops the sand into his hands, laughing so hard that purple puffs hiccup out of him. Machli and
+    Bolt cheer with their arms up, and the old white elephant Badal kneels so they can climb onto his back.

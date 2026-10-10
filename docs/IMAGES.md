@@ -52,6 +52,13 @@ Match the attached reference pictures for <names>.
 - **Numbers never move.** `dm/prompts/sheet.json` gives every picture a number for life, so
   `07.png` means the same picture whenever it is uploaded.
 
+## Extra pictures for a scene
+
+A fight, a surprise or a payoff can have its own picture. Add it to `campaigns/<id>/images/extras.yaml`
+with a slot name, title, chapter, scene and prompt. It appears in `PICTURES.md` with a number like any other,
+and on that scene's slide once the picture exists. Add `dm_only: true` to keep a payoff off the kids'
+slides until you are ready.
+
 ## The one list
 
 `python tools/images.py pictures` writes `PICTURES.md` at the top of the repo: the active world's

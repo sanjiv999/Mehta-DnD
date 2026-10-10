@@ -790,5 +790,13 @@
   "198": {
     "campaign": "heroes",
     "slot": "portrait-keshu"
+  },
+  "199": {
+    "campaign": "peacock-throne",
+    "slot": "ch01-s3-after"
+  },
+  "200": {
+    "campaign": "peacock-throne",
+    "slot": "ch01-s3-fight"
   }
 }

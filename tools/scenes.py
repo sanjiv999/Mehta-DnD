@@ -142,6 +142,12 @@ def image_slots(cid: str, campaign: dict) -> list[dict]:
             add(f"ch{n:02d}-{s['slug']}", "scene", f"{ch.get('title','')}: {s['title']}",
                 s["image"] or " ".join(s["read_aloud"])[:400], chapter=n, scene=s["number"],
                 context={"read_aloud": " ".join(s["read_aloud"]), "jobs": s.get("jobs") or "", "dm": s.get("dm_md") or ""})
+    ex = CAMPAIGNS / cid / "images" / "extras.yaml"
+    if ex.exists():                      # extra pictures for a scene, such as a fight or its payoff
+        from common import load_yaml
+        for slot, e in (load_yaml(ex) or {}).items():
+            add(slot, "scene", e.get("title", slot), e.get("prompt", ""), chapter=e.get("chapter"),
+                scene=e.get("scene"), extra_of=e.get("scene"), dm_only=bool(e.get("dm_only")))
     for sub, kind in (("npcs", "npc"), ("locations", "location")):
         for p in sorted((CAMPAIGNS / cid / sub).glob("*.md")):
             if p.name.startswith("_"):

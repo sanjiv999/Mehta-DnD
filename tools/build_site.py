@@ -129,8 +129,11 @@ def main(argv=None) -> int:
             reached = int(c["state"].get("chapter", 0) or 0) >= n and c.get("status") in ("active", "paused", "completed")
             ch["deck"] = DM or ch.get("status") in ("active", "done") or reached
             ch["dm_html"] = MD.convert(ch["dm_md"]) if DM else ""
+            extras = [x for x in image_slots(cid, c) if x.get("extra_of") and x.get("chapter") == n]
             for s in ch["scenes"]:
                 s["image_url"] = image_url(cid, f"ch{n:02d}-{s['slug']}", f"{ch.get('title','')}: {s['title']}", "scene", accent)
+                s["extras"] = [{"url": image_url(cid, x["slot"], x["title"], "scene", accent), "title": x["title"]}
+                               for x in extras if x["extra_of"] == s["number"] and x["file"] and (DM or not x["dm_only"])]
                 s["dm_html"] = MD.convert(s["dm_md"]) if DM else ""
         c["chapters"] = chs
         c["hours"] = sum(float(ch.get("hours_estimate", 0) or 0) for ch in chs)

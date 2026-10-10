@@ -17,7 +17,7 @@
   </section>
   {% for s in chapter.scenes %}
   <section class="slide" data-i="{{ loop.index }}">
-    <div class="slide-img"><img src="{{ root }}{{ s.image_url }}" alt=""></div>
+    <div class="slide-img"><img src="{{ root }}{{ s.image_url }}" alt="">{% for x in s.extras %}<img class="extra" src="{{ root }}{{ x.url }}" alt="{{ x.title }}">{% endfor %}</div>
     <div class="slide-body">
       <p class="eyebrow">Scene {{ s.number }}{% if s.kind %} · {{ s.kind }}{% endif %}</p>
       <h2>{{ s.title }}</h2>
